@@ -1,0 +1,953 @@
+# Test info
+
+- Name: Navigate to Amazon Help and explore Kindle Help topic
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/checkDelivery.spec.js:4:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for locator('a').filter({ hasText: 'Kindle E-Reader Help' })
+
+    at checkDelivery.clickHelpTopic (/home/ashok/Desktop/amazon-playwright-js/pages/checkDelivery.js:23:21)
+    at /home/ashok/Desktop/amazon-playwright-js/tests/checkDelivery.spec.js:10:14
+```
+
+# Page snapshot
+
+```yaml
+- button "Shortcuts menu"
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: Amazon Fashion
+      - combobox "Select the department you want to search in":
+        - option "All Categories"
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion" [selected]
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fbrowse.html%3Fnode%3D6648217031%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+    - link "Amazon Fashion":
+      - /url: /b/?ie=UTF8&node=6648217031&ref_=topnav_storetab_top_ap_mega
+      - img "Amazon Fashion"
+    - link "Women, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=7459780031&ref_=sv_top_ap_mega_1
+      - text: Women
+    - link "Men, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=7459781031&ref_=sv_top_ap_mega_2
+      - text: Men
+    - link "Kids, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=9361420031&ref_=sv_top_ap_mega_3
+      - text: Kids
+    - link "Bags & Luggage, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=2454169031&ref_=sv_top_ap_mega_4
+      - text: Bags & Luggage
+    - link "Sportswear, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=12302882031&ref_=sv_top_ap_mega_5
+      - text: Sportswear
+    - link "Sales & Deals, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=4188827031&ref_=sv_top_ap_mega_6
+      - text: Sales & Deals
+    - dialog
+- list:
+  - listitem:
+    - link "Men's Clothing":
+      - /url: "/b/ref=AF_WIN_bub_w_cml_t_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=1968024031\t"
+      - img "Men's Clothing"
+      - text: Men's Clothing
+  - listitem:
+    - link "Women's Clothing":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=1953602031
+      - img "Women's Clothing"
+      - text: Women's Clothing
+  - listitem:
+    - link "Kids' Fashion":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=9361420031
+      - img "Kids' Fashion"
+      - text: Kids' Fashion
+  - listitem:
+    - link "Footwear":
+      - /url: "/b/ref=AF_WIN_bub_w_cml_t_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&ie=UTF8&node=1983396031\t"
+      - img "Footwear"
+      - text: Footwear
+  - listitem:
+    - link "Luggage & Bags":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=13714205031
+      - img "Luggage & Bags"
+      - text: Luggage & Bags
+  - listitem:
+    - link "Jewellery":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=5210079031
+      - img "Jewellery"
+      - text: Jewellery
+  - listitem:
+    - link "Watches":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=2563504031
+      - img "Watches"
+      - text: Watches
+  - listitem:
+    - link "Beauty":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_8?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=1355016031
+      - img "Beauty"
+      - text: Beauty
+  - listitem:
+    - link "Handbags":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_9?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=1983338031
+      - img "Handbags"
+      - text: Handbags
+  - listitem:
+    - link "Sunglasses & Frames":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_10?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=27060357031
+      - img "Sunglasses & Frames"
+      - text: Sunglasses & Frames
+  - listitem:
+    - link "Store":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_13?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&&node=27014680031
+      - img "Store"
+      - text: Store
+  - listitem:
+    - link "Read & Shop":
+      - /url: /b/ref=AF_WIN_bub_w_cml_t_14?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=5613be71-5f79-459a-aee6-048261d9fe58&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=100252823031
+      - img "Read & Shop"
+      - text: Read & Shop
+- link "No hero v en-IN":
+  - /url: javascript:void(0)
+  - img "No hero v en-IN"
+- list:
+  - listitem:
+    - img "Shop now"
+    - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_1_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=94954775031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_2_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=58779633031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /gp/browse.html/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_3_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=65664968031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_4_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=100129645031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_5_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=65994034031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /l/100548746031/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_6_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_7_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=94831367031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_8_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=207271184031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_9_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=100130387031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_10_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=203909968031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_11_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=77985784031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - link "Shop now":
+      - /url: /b/ref=Br_MuCl_QAHzEditorial_en_IN_test_multiAk_12_1_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=306a255c-dfd2-4e8a-87f3-7cd6af37fab2&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=6648217031&node=205565144031
+      - text: Link
+  - listitem:
+    - img "Shop now"
+    - text: Link
+- link "icici":
+  - /url: /b/?_encoding=UTF8&node=28044306031&ref_=cct_cg_deals_1a1&pf_rd_p=744fa9eb-ccea-414e-86ae-b9f1c6729352&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V
+  - img "icici"
+- link "join prime":
+  - /url: /amazonprime/?_encoding=UTF8&ref_=cct_cg_deals_1b1&pf_rd_p=744fa9eb-ccea-414e-86ae-b9f1c6729352&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V
+  - img "join prime"
+- heading "Enoy extra Savings" [level=2]
+- list:
+  - listitem:
+    - link "Deals":
+      - /url: /b/ref=incremental_Pc_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=0cc879df-7a37-4dce-866f-4e64d7398198&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=6648217031&node=15325111031
+      - img "Deals"
+  - listitem:
+    - link "Coupons":
+      - /url: /b/ref=incremental_Pc_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=0cc879df-7a37-4dce-866f-4e64d7398198&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=6648217031&node=15788770031
+      - img "Coupons"
+  - listitem:
+    - link "Clearance":
+      - /url: /b/ref=incremental_Pc_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=0cc879df-7a37-4dce-866f-4e64d7398198&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=6648217031&node=18016023031
+      - img "Clearance"
+- heading "Gifts They’ll Love" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /b/ref=QANav11Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&node=207271186031
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=100568117031&rh=n%3A6648217031%2Cn%3A100568117031%2Cn%3A7459781031%2Cn%3A1983518031%2Cp_36%3A200000-%2Cp_85%3A10440599031%2Cp_72%3A1318476031%2Cp_n_pct-off-with-tax%3A2665402031&s=exact-aware-popularity-rank&dc&hidden-keywords=-sponsored&ds=v1%3AoxTBMWjMnejPVfjh9zMF0Da7uti2I4IsD6DefhqV5DE&qid=1746781894&rnid=7459781031&ref=sr_nr_n_3
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&i=fashion&srs=206851530031&rh=n%3A206851530031&s=popularity-rank&fs=true&ref=lp_206851530031_sar
+  - listitem:
+    - link:
+      - /url: /b/ref=QANav11Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&node=206253844031
+  - listitem:
+    - link:
+      - /url: /b/ref=QANav11Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&node=206815915031
+  - listitem:
+    - link:
+      - /url: /l/100898838031/ref=QANav11Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031
+- list:
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&i=fashion&srs=206851524031&rh=n%3A206851524031&s=popularity-rank&fs=true&ref=lp_206851524031_sar
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_8?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&i=jewelry&srs=207196901031&rh=n%3A207196901031&s=popularity-rank&fs=true&ref=lp_207196901031_sar
+  - listitem:
+    - link:
+      - /url: /b/ref=QANav11Expander_en_IN_8/ref=QANav11Expander_en_IN_9?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&pf_rd_r=59YZPKAPPN2023ZKQZ80&pf_rd_p=f1817afa-16d0-4131-a8de-163d4f1517c5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-4&pf_rd_t=&pf_rd_i=21536495031&node=100130387031
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_10?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&i=beauty&srs=206887771031&rh=n%3A206887771031&s=popularity-rank&fs=true&ref=lp_206887771031_sar
+  - listitem:
+    - link:
+      - /url: /b/ref=QANav11Expander_en_IN_11?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&node=207271185031
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_12?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=896c7e31-1254-4eed-8373-daf7c570028a&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=100568117031&rh=n%3A6648217031%2Cn%3A100568117031%2Cn%3A7459780031%2Cn%3A1983578031&dc&hidden-keywords=-sponsored&ds=v1%3AC27QgH3rlJ735HYcKYRij%2FsdIyyBKdbUjP7s6ZqmrzA&qid=1746781601&rnid=7459780031&ref=sr_nr_n_3
+- list:
+  - listitem:
+    - img "2"
+  - listitem:
+    - link "1":
+      - /url: /s/ref=QAHzEditorial_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=88834a57-fec3-47ac-8c51-f86e71e2b1c6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=6648217031&i=fashion&srs=100099425031&rh=n%3A100099425031%2Cp_36%3A86000-&s=exact-aware-popularity-rank&fs=true&ds=v1%3AI%2BZ0D7l02MFEGBsSdjTSE8kOIJzVKI9eeSY%2FCpqNI84&qid=1746516095&rnid=1318502031&ref=sr_st_exact-aware-popularity-rank
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /s/ref=QAHzEditorial_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=88834a57-fec3-47ac-8c51-f86e71e2b1c6&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-8&pf_rd_t=&pf_rd_i=6648217031&i=apparel&rh=n%3A1571271031%2Cn%3A1968024031%2Cp_123%3A1446980&dc&ds=v1%3AKLQVLaWjtzloIuZqQZPpPpW3YY8InlRABcAEG%2FlXSa0&qid=1746032726&rnid=1571271031&ref=sr_nr_n_1
+      - img "2"
+  - listitem:
+    - img "1"
+- list:
+  - listitem:
+    - img "8"
+  - listitem:
+    - link "1":
+      - /url: /s/ref=QAHzEditorial_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=100873994031&rh=n%3A100873994031%2Cp_85%3A10440599031%2Cp_36%3A-40000&dc&qid=1729233366&rnid=1318502031&ref=sr_nr_p_36_0_0
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /s/ref=QAHzEditorial_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968120031&rh=n%3A1968120031%2Cp_85%3A10440599031%2Cp_n_feature_browse-bin%3A95166419031%2Cp_123%3A1298678%7C156780%7C179318%7C198664%7C200356%7C2006%7C232621%7C232755%7C232761%7C232762%7C232763%7C240905%7C256097%7C319726%7C339433%7C373328%7C3878%7C390827%7C398346%7C406102%7C411593%7C435051%7C46245%7C484051%7C484445%7C573837%7C586466%7C5922463%7C613702%7C7459781031%7C951834%2Cp_36%3A-49000&s=exact-aware-popularity-rank&dc&hidden-keywords=-women-woman-boy-girl-kid-sneaker-vest-sleeveless&qid=1729259376&rnid=4595083031&ref=sr_nr_p_36_0_0
+      - img "2"
+  - listitem:
+    - link "3":
+      - /url: /l/27017903031/ref=QAHzEditorial_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031
+      - img "3"
+  - listitem:
+    - link "4":
+      - /url: /s/ref=QAHzEditorial_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983396031&rh=n%3A1983396031%2Cp_36%3A-60000%2Cp_72%3A1318477031%2Cp_n_feature_nineteen_browse-bin%3A11301363031%7C14917613031%2Cp_28%3Ashoe%2Cp_n_deal_type%3A26921224031&dc&ds=v1%3AZsfceUlqszTyg8pmrAE8dXkevrLNuq4bNROVdAMEFdI&qid=1721142622&rnid=26921223031&ref=sr_nr_p_n_deal_type_2
+      - img "4"
+  - listitem:
+    - link "5":
+      - /url: /b/ref=QAHzEditorial_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&node=27915138031
+      - img "5"
+  - listitem:
+    - link "6":
+      - /url: /s/ref=QAHzEditorial_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&i=jewelry&bbn=5210079031&rh=n%3A1951048031%2Cn%3A5210079031%2Cn%3A7124358031%2Cp_36%3A-29900%2Cp_72%3A1318476031%2Cp_85%3A10440599031&dc&hidden-keywords=-sponsored&qid=1720508056&rnid=10440598031&ref=sr_nr_p_85_1&ds=v1%3AClBWtVm0EocbAqkPJRZD9HIQGnzfPtjvmMRptOhVuac
+      - img "6"
+  - listitem:
+    - link "7":
+      - /url: /s/ref=QAHzEditorial_en_IN_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=100898626031&rh=n%3A100898626031%2Cp_36%3A-70000&dc&qid=1729256393&rnid=1318502031&ref=sr_nr_p_36_0_0
+      - img "7"
+  - listitem:
+    - link "8":
+      - /url: /s/ref=QAHzEditorial_en_IN_8?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=c64e1071-7aef-4fb3-9d22-bd5a86af6b20&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-9&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=94183119031&rh=n%3A94183119031%2Cp_36%3A-51000%2Cp_89%3AAmazon+Brand+-+Eden+%26+Ivy%7CAmazon+Brand+-+Jam+%26+Honey%7CAmazon+Brand+-+Myx%7CAmazon+Brand+-+Symbol%2Cp_72%3A1318476031&dc&ds=v1%3AkgWIV6eCmv4%2BicKPP3nhUgJ2Oi0crey%2B%2FoCd3Hjzu9U&qid=1729239834&rnid=1318475031&ref=sr_nr_p_72_1
+      - img "8"
+  - listitem:
+    - img "1"
+- heading "Shop Clothing" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968256031&rh=n%3A1968256031%2Cp_36%3A-50000%2Cp_85%3A10440599031%2Cp_123%3A1014744%257C1419113%257C1838783%257C382916%257C387301%257C397806%257C426422%257C4277152%257C518805%257C55362%257C58483%257C639645%257C714729%257C863710%2Cp_n_pct-off-with-tax%3A2665401031&s=exact-aware-popularity-rank&dc&hidden-keywords=-Petticoat&qid=1744710657&ref=sr_st_exact-aware-popularity-rank&ds=v1%3A0S8HeX2X1BB2phRg77%2FBxVDfArOesxE30ZLxiTrYP2k
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968120031&rh=n%3A1968120031%2Cp_36%3A-40000%2Cp_85%3A10440599031%2Cp_123%3A1298678%7C156780%7C179318%7C198664%7C200356%7C2006%7C232621%7C232755%7C232761%7C232762%7C232763%7C240905%7C256097%7C319726%7C339433%7C373328%7C3878%7C390827%7C398346%7C406102%7C411593%7C435051%7C46245%7C484051%7C484445%7C573837%7C586466%7C5922463%7C606241%7C613702%7C7459781031%7C951834&s=review-rank&dc&hidden-keywords=-women-woman-boy-girl-kid-sneaker-vest-sleeveless&qid=1729259533&rnid=91049095031&ref=sr_st_review-rank&ds=v1%3AIETXxZp%2BIvXKvlaX7ndteb4EovMGtDEvr%2Fg6%2BJdQ%2FPU
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=100024931031&rh=n%3A100024931031%2Cp_36%3A-90000&s=exact-aware-popularity-rank&dc&qid=1727764033&rnid=1318502031&ref=sr_st_exact-aware-popularity-rank&ds=v1%3A%2FfQWnF0OAz9GjcilcPcqeYih5i3JHnxsA0KuxYRKtqI
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=11400137031&rh=n%3A1968542031%2Cp_36%3A24500-50000%2Cp_85%3A10440599031%2Cp_123%3A134373%7C156780%7C179318%7C232761%7C319726%7C357713%7C359167%7C391307%7C398346%7C429719%7C430584%7C44424%7C4593774%7C46245%7C470192%7C472933%7C560565%7C613702%7C630476%7C73330%2Cp_n_pct-off-with-tax%3A2665400031%2Cp_72%3A1318476031&s=review-rank&dc&qid=1727772861&rnid=1318475031&ref=sr_st_review-rank&ds=v1%3AycNqb9r5JZTVdyfywE5i8SyE7Vc%2BXMCHmCstJwi1Tq8
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968457031&rh=n%3A1968457031%2Cp_36%3A-50000%2Cp_85%3A10440599031%2Cp_123%3A1002464%257C179318%257C1980252%257C2006%257C204554%257C232761%257C237276%257C359167%257C370678%257C381473%257C397198%257C406102%257C426060%257C611368%257C87273%2Cp_72%3A1318476031&s=review-rank&dc&hidden-keywords=-Thermal&ds=v1%3A7T%2FyjEodbevpz2BtnHe9mLnigbo05dc8yQ9IlthC5XQ&_encoding=UTF8&pf_rd_p=930ff089-439b-4f1b-adc3-f55118b667d5&pf_rd_r=594BHA59956TS09NES97&qid=1740555380&rnid=2665398031&ref=aa_sbox_sort
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&k=men+shirts&i=apparel&rh=n%3A1571271031%2Cp_36%3A-90000%2Cp_123%3A200356%257C232761%257C319726%257C339433%257C390827%257C398346%257C4067905%257C411593%257C435051%257C484445%257C552577%257C806079%257C951834%257C977930&dc&ds=v1%3AHBg9JKw1Y%2By%2B6mTV%2B27hLU8Z52JrbAvnOriftUaB1ec&crid=1W6BELTHSST8C&qid=1740574580&rnid=91049095031&sprefix=men+shirt%2Capparel%2C231&ref=sr_nr_p_123_21
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=11400137031&rh=n%3A15330093031%2Cp_36%3A27500-71000%2Cp_85%3A10440599031%2Cp_123%3A134373%7C1464581%7C179318%7C230590%7C232761%7C258461%7C319726%7C357713%7C359167%7C391307%7C398346%7C429719%7C430584%7C44424%7C4593774%7C46245%7C560565%7C630476&s=exact-aware-popularity-rank&dc&qid=1727772878&rnid=91049095031&ref=sr_nr_p_123_17&ds=v1%3AqbtZCoyRb3rOaoOI%2Fyw%2BjEjH1nxpwzoDXbh%2B81T2fJ0
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_8?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968024031&rh=n%3A1968076031%2Cp_36%3A-89000%2Cp_85%3A10440599031%2Cp_n_pct-off-with-tax%3A27060456031%2Cp_123%3A129490%7C1298678%7C140036%7C15575683%7C156780%7C179318%7C198664%7C200356%7C2006%7C232621%7C232755%7C232761%7C232762%7C232763%7C240905%7C319726%7C339433%7C373328%7C3878%7C390827%7C393482%7C398346%7C406102%7C411593%7C435051%7C46245%7C484445%7C586466%7C606239%7C606241%7C613702%7C951834&s=review-rank&dc&hidden-keywords=-ethnic-sport-women-boy-&pf_rd_i=18016023031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=935fa512-b4ea-49d6-9675-642f35b0acc8&pf_rd_r=NXB4CR0KDSNYBKGYMDWM&pf_rd_s=mobile-hybrid-8&pf_rd_t=30901&qid=1729259625&rnid=91049095031&ref=sr_st_review-rank&ds=v1%3A3VLcU72jgYzuT0LTvgaGbdgJ8HaSLvA3KddIuP84eHg
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_9?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=380a4ee5-8fbf-4e28-a7f0-175fbf6c883b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968126031&rh=n%3A1968126031%2Cp_36%3A-30000%2Cp_85%3A10440599031%2Cp_123%3A1184586%7C179318%7C200356%7C2006%7C201514%7C232761%7C244163%7C319726%7C339433%7C381473%7C390827%7C483825%7C483948%7C484372%7C484413%7C484610%7C550994%7C573837%7C580011%7C614381%7C615618%7C651408%7C651776%7C679061%2Cp_n_deal_type%3A26921224031&s=popularity-rank&dc&_encoding=UTF8&qid=1729237729&rnid=14261380031&ref=sr_st_popularity-rank&ds=v1%3A74fyzMT5AR9%2FMqctSnL2sx2aZHz6rRoubmbqHQFUp8s
+- heading "Shop Footwear" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=a97d62f5-4b1a-4133-be1e-918210c19a90&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-11&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983575031&rh=n%3A1983575031%2Cp_72%3A1318476031%2Cp_85%3A10440599031&s=price-asc-rank&fs=true&pf_rd_i=6648217031&pf_rd_i=6648217031&pf_rd_i=6648217031&pf_rd_m=A1K21FY43GMZF8&pf_rd_m=A1K21FY43GMZF8&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=25cd77c4-4296-403b-a1c3-e4aa034b1667&pf_rd_p=7963bfa3-2552-4683-aed9-ea100df3c21d&pf_rd_p=8334237d-a8a0-4d7f-a492-c03ef6d1af5e&pf_rd_r=1V6S29V1E4XKJGWCBVQM&pf_rd_r=G7A57P62FGMRAWXVG8WK&pf_rd_r=NRRA1M3Z6DD935C14KA8&pf_rd_s=merchandised-search-5&pf_rd_s=merchandised-search-6&pf_rd_s=mobile-hybrid-5&pf_rd_t=101&pf_rd_t=30901&qid=1720506043&rnid=4516629031&ref=sr_nr_p_36_0_0&low-price=199&high-price=400
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=a97d62f5-4b1a-4133-be1e-918210c19a90&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-11&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=9780814031&rh=n%3A1571283031%2Cn%3A1983396031%2Cn%3A1983518031%2Cn%3A9780814031%2Cp_36%3A4516638031%2Cp_72%3A1318477031&s=watches&hidden-keywords=-cleaning
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=a97d62f5-4b1a-4133-be1e-918210c19a90&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-11&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983519031&rh=n%3A1983519031%2Cp_36%3A-79900%2Cp_72%3A1318477031%2Cp_n_feature_nineteen_browse-bin%3A11301363031&dc&fs=true&pf_rd_i=6648217031&pf_rd_i=6648217031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=7849b63c-849a-428b-8b21-a5d7d7d304e5&pf_rd_p=7963bfa3-2552-4683-aed9-ea100df3c21d&pf_rd_r=1V6S29V1E4XKJGWCBVQM&pf_rd_r=6WZFPD0APNYEB9CHDKGP&pf_rd_s=merchandised-search-6&pf_rd_s=mobile-hybrid-6&pf_rd_t=30901&qid=1713346506&rnid=11301362031&ref=sr_nr_p_n_feature_nineteen_browse-bin_1&ds=v1%3AiYr9v%2FEY9rT3p6SSIeo285vZlUA4Qt%2BKbaZJ2cnqDrE
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=a97d62f5-4b1a-4133-be1e-918210c19a90&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-11&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983578031&rh=n%3A1983639031%2Cp_72%3A1318476031&s=watches&dc=&pf_rd_i=27037351031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=7484ce90-82f2-4384-bf64-02fbc32aeab9&pf_rd_r=S7816ECB1QFDCRS045SP&pf_rd_s=merchandised-search-6&pf_rd_t=30901&qid=1728575634&rnid=4516629031&ref=sr_nr_p_36_0_0&low-price=250&high-price=500
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=a97d62f5-4b1a-4133-be1e-918210c19a90&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-11&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983633031&rh=n%3A1571283031%2Cn%3A1983396031%2Cn%3A1983578031%2Cn%3A1983633031%2Cp_36%3A4516638031%2Cp_n_feature_seven_browse-bin%3A27400648031%7C27400650031%7C27400651031%7C27400653031%7C27400655031%7C27400656031%2Cp_72%3A1318477031&s=watches&dc&pf_rd_i=27037351031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=7484ce90-82f2-4384-bf64-02fbc32aeab9&pf_rd_r=S7816ECB1QFDCRS045SP&pf_rd_s=merchandised-search-6&pf_rd_t=30901&qid=1712586822&rnid=1318475031&ref=sr_nr_p_72_2&ds=v1%3AAg0uJp0HpjIqjet13F3IgUzXWenwHSULZd8li3Sh%2BSw
+  - listitem:
+    - link:
+      - /url: /s/ref=QANav11Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=a97d62f5-4b1a-4133-be1e-918210c19a90&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-11&pf_rd_t=&pf_rd_i=6648217031&i=shoes&rh=n%3A1983579031%2Cp_36%3A-79900%2Cp_72%3A1318477031&s=shoes&dc&fs=true&qid=1712586960&rnid=1318475031&ref=sr_nr_p_72_2&ds=v1%3ABegE3Czst6vfQ%2FkA5ynoSxDyg4HTCKORR10%2BoWLbD4E
+- heading "Budget Add-Ons" [level=2]
+- list:
+  - listitem:
+    - link "1":
+      - /url: /s/ref=QA6up10Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d19ec744-221c-48a7-b129-9ced422bdbae&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=6648217031&i=watches&bbn=2563505031&rh=n%3A2563505031%2Cp_36%3A-50000&s=watches&dc&qid=1720523525&rnid=3439816031&ref=sr_nr_p_36_0_0
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /s/ref=QA6up10Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d19ec744-221c-48a7-b129-9ced422bdbae&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=6648217031&i=watches&bbn=2563504031&rh=n%3A2563504031%2Cp_36%3A-47000&s=watches&dc&qid=1720523486&rnid=3439816031&ref=sr_nr_p_36_0_0
+      - img "2"
+  - listitem:
+    - link "3":
+      - /url: /b/ref=QA6up10Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d19ec744-221c-48a7-b129-9ced422bdbae&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=6648217031&node=66529960031
+      - img "3"
+  - listitem:
+    - link "4":
+      - /url: /s/ref=QA6up10Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d19ec744-221c-48a7-b129-9ced422bdbae&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983338031&rh=n%3A17095063031%2Cp_36%3A25000-49900%2Cp_n_pct-off-with-tax%3A27060456031%2Cp_72%3A1318476031&s=shoes&dc&ds=v1%3Ag12LlfF5WdKUEpxvJB7yXX%2F6Vnmw5vSQ2ChBVwFlryM&qid=1728575568&rnid=1318475031&ref=sr_nr_p_72_1
+      - img "4"
+  - listitem:
+    - link "5":
+      - /url: /s/ref=QA6up10Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d19ec744-221c-48a7-b129-9ced422bdbae&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=93992309031&rh=n%3A93992309031&dc=&qid=1718867315&rnid=1318502031&ref=sr_nr_p_36_0_0&low-price=&high-price=700
+      - img "5"
+  - listitem:
+    - link "6":
+      - /url: /s/ref=QA6up10Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d19ec744-221c-48a7-b129-9ced422bdbae&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=6648217031&i=jewelry&bbn=5210079031&rh=n%3A1951048031%2Cn%3A5210079031%2Cn%3A7124359031%2Cp_72%3A1318477031&s=exact-aware-popularity-rank&hidden-keywords=-sponsored-certified-gem-rakhi-stone-KADAM-coin&qid=1729253122&rnid=3439822031&ref=sr_nr_p_36_0_0&low-price=299&high-price=3200
+      - img "6"
+- heading "Shop Luggage" [level=2]
+- list:
+  - listitem:
+    - link "Men's watches":
+      - /url: /s/ref=AF_WIN_bub_w_cml_t_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d27eb9ad-fdf7-4241-bb35-9d20d060c6a1&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-14&pf_rd_t=&pf_rd_i=6648217031&i=luggage&bbn=2917432031&rh=n%3A2454169031%2Cn%3A2917432031%2Cn%3A2917450031%2Cp_n_feature_nineteen_browse-bin%3A11301361031&s=popularity-rank&dc&ds=v1%3AL2gO80UNN8UcCBi9vcFE0lNevKEbNbIJ8LTv%2FUVkaXs&pf_rd_i=13714205031&pf_rd_i=13714205031&pf_rd_i=13714205031%2C13714205031&pf_rd_i=6648217031&pf_rd_i=6648217031&pf_rd_i=6648217031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF%2CA1VBAL9TL5WCBF&pf_rd_p=34016f26-bc74-47e7-b5d3-2f255120e73f%2C7029cbbc-69c0-45de-b15e-dbfa02a697ee&pf_rd_p=35f70922-33c2-469b-979e-311c4cef0b5a&pf_rd_p=378439c4-9222-49c2-a5c7-d4c30eadb98f&pf_rd_p=6e9eafb6-ab2c-4ce9-ba53-919586af0fec&pf_rd_p=7e2667f9-89d3-4caa-afdd-4718014f0771&pf_rd_p=9d2c17d7-4d21-46a2-b1b1-3b613eb8a57a&pf_rd_r=600MPPN6FS4V1SG1KF0R&pf_rd_r=62ZD4DAST3YFWRVMPKZA&pf_rd_r=6E5NM2H54N7GVCX51NEP&pf_rd_r=A6C75EBV9D7BP2PA37XW&pf_rd_r=DX3GW10ZKN05XRNVTRNY%2CN6WFGF92EP2K470NMNJE&pf_rd_r=M2KHT7BA40JCJDYMS6WP&pf_rd_s=merchandised-search-1&pf_rd_s=merchandised-search-1&pf_rd_s=merchandised-search-11&pf_rd_s=merchandised-search-6%2Cmerchandised-search-8&pf_rd_s=mobile-hybrid-10&pf_rd_s=mobile-hybrid-10&pf_rd_t=30901&pf_rd_t=30901&qid=1689189236&rnid=2917432031&ref=sr_nr_n_1
+      - img "Men's watches"
+  - listitem:
+    - link "Women's watches":
+      - /url: /s/ref=AF_WIN_bub_w_cml_t_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d27eb9ad-fdf7-4241-bb35-9d20d060c6a1&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-14&pf_rd_t=&pf_rd_i=6648217031&i=luggage&rh=n%3A2917431031%2Cp_72%3A1318477031&s=luggage&dc&fs=true&ds=v1%3A34bCy0gFX9rpMZcI39WQNlLxTRnQtiU9RETKgmCAOmQ&qid=1716290232&rnid=1318475031&ref=sr_nr_p_72_2
+      - img "Women's watches"
+  - listitem:
+    - link "Luggage":
+      - /url: /s/ref=AF_WIN_bub_w_cml_t_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=d27eb9ad-fdf7-4241-bb35-9d20d060c6a1&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-14&pf_rd_t=&pf_rd_i=6648217031&i=luggage&rh=n%3A2917484031%2Cp_72%3A1318477031&s=wallets&dc&fs=true&ds=v1%3AmG7TgyiC0suDy1iZ1T0PPff4kfUxxmteqC0v4TC0VBo&qid=1716290199&rnid=1318475031&ref=sr_nr_p_72_2
+      - img "Luggage"
+- heading "Shop Beauty" [level=2]
+- list:
+  - listitem:
+    - link "1":
+      - /url: /s/ref=QANav11Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=dd7bac79-8863-4e3c-b2bb-d85b848ee8d9&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-19&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1374407031&rh=n%3A1374407031%2Cp_36%3A9999-155000&hidden-keywords=-handwash-electric-groming
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /s/ref=QANav11Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=dd7bac79-8863-4e3c-b2bb-d85b848ee8d9&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-19&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=9851597031&rh=n%3A9851597031%2Cp_36%3A50000-910000&dc&qid=1725426331&rnid=1741387031&ref=sr_nr_p_36_0_0
+      - img "2"
+  - listitem:
+    - link "3":
+      - /url: /s/ref=QANav11Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=dd7bac79-8863-4e3c-b2bb-d85b848ee8d9&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-19&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1374357031&rh=n%3A1374357031%2Cp_36%3A9800-160000&dc&qid=1725426421&rnid=1741387031&ref=sr_nr_p_36_0_0
+      - img "3"
+  - listitem:
+    - link "4":
+      - /url: /s/ref=QANav11Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=dd7bac79-8863-4e3c-b2bb-d85b848ee8d9&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-19&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1374298031&rh=n%3A1374298031%2Cp_36%3A39000-400000&dc&qid=1725426502&rnid=1741387031&ref=sr_nr_p_36_0_0
+      - img "4"
+  - listitem:
+    - link "5":
+      - /url: /s/ref=QANav11Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=dd7bac79-8863-4e3c-b2bb-d85b848ee8d9&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-19&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1374276031&rh=n%3A1374276031%2Cp_36%3A29500-350000&dc&qid=1725426571&rnid=1741387031&ref=sr_nr_p_36_0_0
+      - img "5"
+  - listitem:
+    - link "6":
+      - /url: /s/ref=QANav11Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=dd7bac79-8863-4e3c-b2bb-d85b848ee8d9&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-19&pf_rd_t=&pf_rd_i=6648217031&bbn=43520450031&rh=n%3A43520450031%2Cp_72%3A1318476031&dc&pf_rd_i=6648217031&pf_rd_i=99975667031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=661251e4-e595-40a5-8aaa-3dafcbd194e0&pf_rd_p=Preview-Of-ea0099b3-e23a-4a46-ab78-500994594362&pf_rd_r=0KHVQ5WET8RCADCZEZSC&pf_rd_r=XZHBKMCEVBHQAA717CMW&pf_rd_s=merchandised-search-17&pf_rd_s=mobile-hybrid-14&pf_rd_t=30901&qid=1720003694&rnid=1318475031&ref=lp_43520450031_nr_p_72_0
+      - img "6"
+- heading "Footwear & Handbags | Up to 70% off" [level=3]
+- link "See more products":
+  - /url: /s?i=fashion&rh=n%3A100611317031%2Cp_36%3A60000-&page=3&hidden-keywords=-sponsored-gangster-messenger&qid=1725611638&ref=sr_pg_3&pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_cta
+- group:
+  - group:
+    - list:
+      - listitem:
+        - link:
+          - /url: /s?i=fashion&rh=n%3A100611317031%2Cp_36%3A60000-&page=3&hidden-keywords=-sponsored-gangster-messenger&qid=1725611638&ref=sr_pg_3&pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_hero
+      - listitem:
+        - 'link "Puma Unisex Lace Up Badminton Shoes Puma Unisex Lace Up Badminton Shoes ₹2,149.00 M.R.P: ₹4,999.00"':
+          - /url: /Puma-Unisex-Adult-Badminton-Sprint-Black-White-Silver/dp/B0CKYRF3YC?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0CKYRF3YC
+          - img "Puma Unisex Lace Up Badminton Shoes"
+          - text: "Puma Unisex Lace Up Badminton Shoes ₹2,149.00 M.R.P: ₹4,999.00"
+      - listitem:
+        - 'link "Men''s Boys Casual Shoes Amico Men''s & Boys Multicolor Running Casual Sports Shoes ₹599.00 M.R.P: ₹2,499.00"':
+          - /url: /Amico-Multicolor-Running-Casual-Numeric_7/dp/B09QYS2PDC?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B09QYS2PDC
+          - img "Men's Boys Casual Shoes"
+          - text: "Amico Men's & Boys Multicolor Running Casual Sports Shoes ₹599.00 M.R.P: ₹2,499.00"
+      - listitem:
+        - 'link "Campus 2GC-18 Men''s Slip-On Outdoor Sandals Campus 2GC-18 Men''s Slip-On Outdoor Sandals ₹699.00 M.R.P: ₹749.00"':
+          - /url: /Campus-2GC-18-Outdoor-Sandals-10-UK/dp/B09498937D?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B09498937D
+          - img "Campus 2GC-18 Men's Slip-On Outdoor Sandals"
+          - text: "Campus 2GC-18 Men's Slip-On Outdoor Sandals ₹699.00 M.R.P: ₹749.00"
+      - listitem:
+        - 'link "Campus GC-10 Men''s Hook & Loop Outdoor Sandals Campus GC-10 Men''s Hook & Loop Outdoor Sandals ₹888.00 M.R.P: ₹1,049.00"':
+          - /url: /Campus-GC-10-D-GRY-Outdoor-Sandals/dp/B0974X89W9?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0974X89W9
+          - img "Campus GC-10 Men's Hook & Loop Outdoor Sandals"
+          - text: "Campus GC-10 Men's Hook & Loop Outdoor Sandals ₹888.00 M.R.P: ₹1,049.00"
+      - listitem:
+        - 'link "Liberty Men Clogs Liberty Men Clogs ₹445.00 M.R.P: ₹1,299.00"':
+          - /url: /Liberty-HA-LPMXT-800-Casual-Clogs/dp/B0BM5QL6K7?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0BM5QL6K7
+          - img "Liberty Men Clogs"
+          - text: "Liberty Men Clogs ₹445.00 M.R.P: ₹1,299.00"
+      - listitem:
+        - 'link "ASIAN Men''s Everest-01 Sports Trekking & Hiking,Walking Shoes with Rubber Outsole & Memory Foam Insole Lace-Up Shoes for Me… ASIAN Men''s Everest-01 Sports Trekking & Hiking,Walking Shoes with Rubber Outsole & Memory Foam Insole Lace-Up Shoes for Men''s & Boy''s ₹1,199.00 M.R.P: ₹1,999.00"':
+          - /url: /ASIAN-Everest-01-Trekking-Walking-Outsole/dp/B0CQVDC9XT?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0CQVDC9XT
+          - img "ASIAN Men's Everest-01 Sports Trekking & Hiking,Walking Shoes with Rubber Outsole & Memory Foam Insole Lace-Up Shoes for Me…"
+          - text: "ASIAN Men's Everest-01 Sports Trekking & Hiking,Walking Shoes with Rubber Outsole & Memory Foam Insole Lace-Up Shoes for Men's & Boy's ₹1,199.00 M.R.P: ₹1,999.00"
+      - listitem:
+        - 'link "DOCTOR EXTRA SOFT Men''s Classic Casual Clogs/Sandals with Adjustable Back Strap for Adult | Comfortable & Light Weight | St… DOCTOR EXTRA SOFT Men''s Classic Casual Clogs/Sandals with Adjustable Back Strap for Adult | Comfortable & Light Weight | Stylish & Anti-Skid | Waterproof & Daily Mules for Gents & Boys D-501 ₹799.00 M.R.P: ₹1,799.00"':
+          - /url: /DOCTOR-EXTRA-SOFT-Comfortable-D-501-BLACK-10UK/dp/B0C8V9QJCT?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0C8V9QJCT
+          - img "DOCTOR EXTRA SOFT Men's Classic Casual Clogs/Sandals with Adjustable Back Strap for Adult | Comfortable & Light Weight | St…"
+          - text: "DOCTOR EXTRA SOFT Men's Classic Casual Clogs/Sandals with Adjustable Back Strap for Adult | Comfortable & Light Weight | Stylish & Anti-Skid | Waterproof & Daily Mules for Gents & Boys D-501 ₹799.00 M.R.P: ₹1,799.00"
+      - listitem:
+        - 'link "Sparx Men Mesh Running Shoes Sparx Men Mesh Running Shoes ₹1,259.00 M.R.P: ₹1,799.00"':
+          - /url: /Sparx-SX0241G-White-Running-Shoes/dp/B01AQPHKC4?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B01AQPHKC4
+          - img "Sparx Men Mesh Running Shoes"
+          - text: "Sparx Men Mesh Running Shoes ₹1,259.00 M.R.P: ₹1,799.00"
+      - listitem:
+        - 'link "SPARX Mens Sm 727 Running Shoe SPARX Mens Sm 727 Running Shoe ₹747.00 M.R.P: ₹1,249.00"':
+          - /url: /Sparx-Mens-SX0727G-Blackneonorange-Running/dp/B0B5F6BXYF?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0B5F6BXYF
+          - img "SPARX Mens Sm 727 Running Shoe"
+          - text: "SPARX Mens Sm 727 Running Shoe ₹747.00 M.R.P: ₹1,249.00"
+      - listitem:
+        - 'link "Fostelo Women''s Vegan Leather Westside Handbag Shoulder Hobo Bag Ladies Purse (Large) Fostelo Women''s Vegan Leather Westside Handbag Shoulder Hobo Bag Ladies Purse (Large) ₹664.00 M.R.P: ₹2,299.00"':
+          - /url: /Fostelo-Westside-Womens-Handbag-Maroon/dp/B07D7W3P41?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B07D7W3P41
+          - img "Fostelo Women's Vegan Leather Westside Handbag Shoulder Hobo Bag Ladies Purse (Large)"
+          - text: "Fostelo Women's Vegan Leather Westside Handbag Shoulder Hobo Bag Ladies Purse (Large) ₹664.00 M.R.P: ₹2,299.00"
+      - listitem:
+        - 'link "Skechers Men Sneaker Shoes Skechers Men Sneaker Shoes ₹3,009.00 M.R.P: ₹4,299.00"':
+          - /url: /Skechers-Black-Mens-Casual-Shoes-232057ID-BBK-SUMMITS-Brisbane-UK9/dp/B09XXR4TXK?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B09XXR4TXK
+          - img "Skechers Men Sneaker Shoes"
+          - text: "Skechers Men Sneaker Shoes ₹3,009.00 M.R.P: ₹4,299.00"
+      - listitem:
+        - 'link "Vendoz Women Casual Shoes White Beige Sneakers Vendoz Women Casual Shoes White Beige Sneakers ₹659.00 M.R.P: ₹999.00"':
+          - /url: /Vendoz-Women-Casual-Shoes-Sneakers/dp/B0CBV7Z4X4?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0CBV7Z4X4
+          - img "Vendoz Women Casual Shoes White Beige Sneakers"
+          - text: "Vendoz Women Casual Shoes White Beige Sneakers ₹659.00 M.R.P: ₹999.00"
+      - listitem:
+        - 'link "SPARX Men Mesh Sneaker Shoes SPARX Men Mesh Sneaker Shoes ₹947.00 M.R.P: ₹1,399.00"':
+          - /url: /Sparx-Black-Running-Shoes-9-SX0406G_BKBK0009/dp/B07VZ82LFY?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B07VZ82LFY
+          - img "SPARX Men Mesh Sneaker Shoes"
+          - text: "SPARX Men Mesh Sneaker Shoes ₹947.00 M.R.P: ₹1,399.00"
+      - listitem:
+        - 'link "Lavie Women''s Pamukkale Satchel Bag | Ladies Purse Handbag Lavie Women''s Pamukkale Satchel Bag | Ladies Purse Handbag ₹1,099.00 M.R.P: ₹3,999.00"':
+          - /url: /Lavie-Pamukkale-Womens-Satchel-Beige/dp/B07TDN7777?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B07TDN7777
+          - img "Lavie Women's Pamukkale Satchel Bag | Ladies Purse Handbag"
+          - text: "Lavie Women's Pamukkale Satchel Bag | Ladies Purse Handbag ₹1,099.00 M.R.P: ₹3,999.00"
+      - listitem:
+        - 'link "ASIAN Casual Sneaker Shoes for Women | Soft Cushioned Insole || PARADISE-01 Sneakers for Women ASIAN Casual Sneaker Shoes for Women | Soft Cushioned Insole || PARADISE-01 Sneakers for Women ₹645.00 M.R.P: ₹999.00"':
+          - /url: /ASIAN-Paradise-01-Sneaker-Cushion-Lightweight/dp/B0CL4Z8YSC?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0CL4Z8YSC
+          - img "ASIAN Casual Sneaker Shoes for Women | Soft Cushioned Insole || PARADISE-01 Sneakers for Women"
+          - text: "ASIAN Casual Sneaker Shoes for Women | Soft Cushioned Insole || PARADISE-01 Sneakers for Women ₹645.00 M.R.P: ₹999.00"
+      - listitem:
+        - 'link "AIRSON AL-5 Slipper for Women | Orthopedic, Diabetic, Pregnancy | Soft Doctor Anti-Skid Slipper for Womens |Slides, Flip-Fl… AIRSON AL-5 Slipper for Women | Orthopedic, Diabetic, Pregnancy | Soft Doctor Anti-Skid Slipper for Womens |Slides, Flip-Flops, Slippers, Chappals | For Ladies and Girls ₹349.00 M.R.P: ₹999.00"':
+          - /url: /Orthopedic-Diabetic-Pregnancy-Anti-Skid-Flip-Flops/dp/B0CCYRN1RB?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0CCYRN1RB
+          - img "AIRSON AL-5 Slipper for Women | Orthopedic, Diabetic, Pregnancy | Soft Doctor Anti-Skid Slipper for Womens |Slides, Flip-Fl…"
+          - text: "AIRSON AL-5 Slipper for Women | Orthopedic, Diabetic, Pregnancy | Soft Doctor Anti-Skid Slipper for Womens |Slides, Flip-Flops, Slippers, Chappals | For Ladies and Girls ₹349.00 M.R.P: ₹999.00"
+      - listitem:
+        - 'link "ASIAN Men''s Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men''s & Boy''s ASIAN Men''s Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men''s & Boy''s ₹739.00 M.R.P: ₹999.00"':
+          - /url: /ASIAN-Mens-Cosco-Walking-Shoes/dp/B07FS6N6PT?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B07FS6N6PT
+          - img "ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's"
+          - text: "ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's ₹739.00 M.R.P: ₹999.00"
+      - listitem:
+        - 'link "SPARX Mens SM 675 | Enhanced Durability & Soft Cushion SPARX Mens SM 675 | Enhanced Durability & Soft Cushion ₹729.00 M.R.P: ₹999.00"':
+          - /url: /Sparx-SX0675G-Running-Shoe-9-SX0675GNBSB0009/dp/B08WJ1XN7B?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B08WJ1XN7B
+          - img "SPARX Mens SM 675 | Enhanced Durability & Soft Cushion"
+          - text: "SPARX Mens SM 675 | Enhanced Durability & Soft Cushion ₹729.00 M.R.P: ₹999.00"
+      - listitem:
+        - 'link "AKSUTI Fashionable for Women cute Hobo Tote handbag mini clutch with zipper AKSUTI Fashionable for Women cute Hobo Tote handbag mini clutch with zipper ₹299.00 M.R.P: ₹799.00"':
+          - /url: /AKSUTI-Fashionable-handbag-clutch-zipper/dp/B0CHTR726K?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B0CHTR726K
+          - img "AKSUTI Fashionable for Women cute Hobo Tote handbag mini clutch with zipper"
+          - text: "AKSUTI Fashionable for Women cute Hobo Tote handbag mini clutch with zipper ₹299.00 M.R.P: ₹799.00"
+      - listitem:
+        - link "Liberty mens Accuplus-1-eva Slipper Liberty mens Accuplus-1-eva Slipper ₹599.00":
+          - /url: /HA-Liberty-ACCUPLUS-1-Sandals-8-9967001102420/dp/B07H7VV7SX?pf_rd_p=0ac5daa6-e6a1-4233-a1ed-af55c24b5a39&pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&ref_=IN_Footwear_B07H7VV7SX
+          - img "Liberty mens Accuplus-1-eva Slipper"
+          - text: Liberty mens Accuplus-1-eva Slipper ₹599.00
+- heading "Celeb Approved Brands" [level=2]
+- list:
+  - listitem:
+    - link "1":
+      - /url: /s/ref=QANav11Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968255031&rh=n%3A1968255031%2Cp_85%3A10440599031%2Cp_123%3A625756%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1729235281&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3AmXWfamEtOlTGnRJNw%2FTJwlwQo1dOFriTLIzNn0n72So
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /s/ref=QANav11Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1355016031&rh=n%3A1355016031%2Cp_89%3AL%E2%80%99Or%C3%A9al+Paris%2Cp_36%3A-41000&dc&qid=1728630209&rnid=1741387031&ref=sr_nr_p_36_0_0
+      - img "2"
+  - listitem:
+    - link "3":
+      - /url: /s/ref=QANav11Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968024031&rh=n%3A1968024031%2Cp_36%3A-69900%2Cp_85%3A10440599031%2Cp_89%3AU.S.+POLO+ASSN.&dc&hidden-keywords=-women-girls-boys-kids-accessories-innerwear-sweatshirt-winter-sweat-thermals-hoodie&pf_rd_i=76337264031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=67860d07-7a4e-4b0b-b59c-43cc4d92224f&pf_rd_r=FYEQDZVCMVGBTK5TAA6T&pf_rd_s=merchandised-search-1&qid=1720437930&rnid=3837712031&ref=sr_nr_p_89_1&ds=v1%3AQbpMU98dQoQPBnBU%2BUxSyUf420a2ft%2BwLn7sAHzqfxM
+      - img "3"
+  - listitem:
+    - link "4":
+      - /url: /s/ref=QANav11Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983396031&rh=n%3A1983396031%2Cp_72%3A1318477031%2Cp_89%3AASIAN&dc=&qid=1718707480&rnid=4516629031&ref=sr_nr_p_36_0_0&low-price=&high-price=700
+      - img "4"
+  - listitem:
+    - link "5":
+      - /url: /s/ref=QANav11Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=watches&bbn=2563505031&rh=n%3A2563505031%2Cp_89%3ATIMEX&dc=&pf_rd_i=2563505031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=28c5efcd-c7c4-4c6e-a75e-55585ae456b6&pf_rd_r=XZZDY5TGC48TZ17T1J52&pf_rd_s=merchandised-search-11&qid=1720523609&rnid=3439816031&ref=sr_nr_p_36_0_0&low-price=&high-price=2000
+      - img "5"
+  - listitem:
+    - link "6":
+      - /url: /s/ref=QANav11Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=luggage&rh=n%3A2917431031%2Cp_36%3A50000-%2Cp_123%3A418063&s=exact-aware-popularity-rank&dc&hidden-keywords=skybags&qid=1725549533&rnid=1318502031&ref=sr_st_exact-aware-popularity-rank&ds=v1%3A%2BEme%2FT530%2F2y9DLfEqeHSqr26ttPdJuYCGhXEnAbrVA
+      - img "6"
+  - listitem:
+    - link "7":
+      - /url: /s/ref=QANav11Expander_en_IN_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=34783c2d-046a-45e3-84ac-12be79435867&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-22&pf_rd_t=&pf_rd_i=6648217031&i=jewelry&bbn=5210079031&rh=n%3A5210079031%2Cp_89%3ASukkhi%2Cp_72%3A1318476031%2Cp_85%3A10440599031&s=jewellery&dc&fs=true&ds=v1%3A%2B%2BLaTa0U9FfpGP1p%2Fkz2Hwu3%2B3xxuoa3dCQnQxN8xzY&pf_rd_i=5210079031&pf_rd_i=94086406031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=422469a6-00eb-49a6-85bb-c54df4003129&pf_rd_p=99f233bf-c812-46f6-b2c7-c799bb64ecf3&pf_rd_r=4M2353SK6DXPDWGDX1DF&pf_rd_r=RQW2296DN51YTCR5N27P&pf_rd_s=merchandised-search-13&pf_rd_s=mobile-hybrid-10&pf_rd_t=30901&qid=1711605703&rnid=10440598031&ref=sr_nr_p_85_1
+      - img "7"
+- heading "Evergreen Stores" [level=2]
+- list:
+  - listitem:
+    - link "1":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=66526206031
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=22124378031
+      - img "2"
+  - listitem:
+    - link "3":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=100293958031
+      - img "3"
+  - listitem:
+    - link "4":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=93660686031
+      - img "4"
+  - listitem:
+    - link "5":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=98079569031
+      - img "5"
+  - listitem:
+    - link "6":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=100878955031
+      - img "6"
+  - listitem:
+    - link "7":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=96179819031
+      - img "7"
+  - listitem:
+    - link "8":
+      - /url: /b/ref=AF_WIN_bub_w_cml_storepc_8?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=ded1ac35-f405-4dba-9680-f8710226cc45&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-24&pf_rd_t=&pf_rd_i=6648217031&node=33892032031
+      - img "8"
+- heading "Brands We're Loving" [level=2]
+- list:
+  - listitem:
+    - link "1":
+      - /url: /s/ref=QA6up10Expander_en_IN_1?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&k=Anni+designer&i=apparel&rh=n%3A1968255031%2Cp_123%3A389797%2Cp_85%3A10440599031&dc=&qid=1729235336&rnid=4595083031&ref=sr_nr_p_36_0_0&low-price=&high-price=500
+      - img "1"
+  - listitem:
+    - link "2":
+      - /url: /s/ref=QA6up10Expander_en_IN_2?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968255031&rh=n%3A1968255031%2Cp_85%3A10440599031%2Cp_n_pct-off-with-tax%3A2665401031%2Cp_123%3A44424&dc=&qid=1729235373&rnid=4595083031&ref=sr_nr_p_36_0_0&low-price=&high-price=600
+      - img "2"
+  - listitem:
+    - link "3":
+      - /url: /s/ref=QA6up10Expander_en_IN_3?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983396031&rh=n%3A1983396031%2Cp_89%3ASparx%2Cp_72%3A1318477031&hidden-keywords=-slipper-flip&qid=1718707176&rnid=4516629031&ref=sr_nr_p_36_0_0&low-price=300&high-price=600
+      - img "3"
+  - listitem:
+    - link "4":
+      - /url: /s/ref=QA6up10Expander_en_IN_4?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1374357031&rh=n%3A1374357031%2Cp_89%3ALAKM%C3%89&dc=&qid=1720443974&rnid=1741387031&ref=sr_nr_p_36_0_0&low-price=&high-price=210
+      - img "4"
+  - listitem:
+    - link "5":
+      - /url: /b/ref=QA6up10Expander_en_IN_5?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&node=76337264031
+      - img "5"
+  - listitem:
+    - link "6":
+      - /url: /s/ref=QA6up10Expander_en_IN_6?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=jewelry&bbn=5210079031&rh=n%3A5210079031%2Cp_89%3AVOYLLA%2Cp_36%3A19900-&s=jewellery&dc&fs=true&pf_rd_i=5210079031&pf_rd_i=5210079031&pf_rd_i=94086406031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=3ca51b19-00f2-4ac3-bc60-320b085dacf3&pf_rd_p=97015a3f-e4f0-481a-a66a-f04ac6626649&pf_rd_p=Preview-Of-96fcae36-11a3-4032-a137-0a183b270acc&pf_rd_r=BGJ57D52M7KZ6MWB9S81&pf_rd_r=D2Y668V6JWBC83ECR0BN&pf_rd_r=YQ38V43V0Q1YPPC2AMN6&pf_rd_s=merchandised-search-6&pf_rd_s=merchandised-search-8&pf_rd_s=mobile-hybrid-6&pf_rd_t=30901&qid=1720508403&rnid=3439822031&ref=sr_nr_p_36_0_0
+      - img "6"
+- list:
+  - listitem:
+    - link "7":
+      - /url: /s/ref=QA6up10Expander_en_IN_7?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=shoes&bbn=1983396031&rh=n%3A1983396031%2Cp_89%3ABata%2Cp_72%3A1318477031&s=shoes&dc=&qid=1728575463&rnid=4516629031&ref=sr_nr_p_36_0_0&low-price=500&high-price=700
+      - img "7"
+  - listitem:
+    - link "8":
+      - /url: /s/ref=QA6up10Expander_en_IN_8?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=beauty&bbn=1355016031&rh=n%3A1355016031%2Cp_89%3Adove%2Cp_36%3A-50000&dc&qid=1728630679&rnid=1741387031&ref=sr_nr_p_36_0_0
+      - img "8"
+  - listitem:
+    - link "9":
+      - /url: /s/ref=QA6up10Expander_en_IN_9?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=apparel&bbn=1968126031&rh=n%3A1968126031%2Cp_85%3A10440599031%2Cp_123%3A232761&dc&ds=v1%3AP7hspYwuANvVO5n6xi3MlZBWHm8qPj4jWt%2FqlYWqS94&qid=1729237822&rnid=91049095031&ref=sr_nr_p_123_4
+      - img "9"
+  - listitem:
+    - link "10":
+      - /url: /s/ref=QA6up10Expander_en_IN_10?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=luggage&rh=n%3A2454169031%2Cp_123%3A679128&dc=&hidden-keywords=lavie+sport&crid=1OZATMEOBUMYO&qid=1729256859&rnid=1318502031&sprefix=lavie+s%2Cluggage%2C219&ref=sr_nr_p_36_0_0&low-price=&high-price=1000
+      - img "10"
+  - listitem:
+    - link "11":
+      - /url: /s/ref=QA6up10Expander_en_IN_11?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&bbn=27915138031&rh=n%3A27915138031%2Cp_89%3ASWADESI+STUFF&dc&qid=1720556863&rnid=3837712031&ref=lp_27915138031_nr_p_89_22
+      - img "11"
+  - listitem:
+    - link "12":
+      - /url: /s/ref=QA6up10Expander_en_IN_12?pf_rd_r=2Q0JNXQ3WXBDJ6WCXR4V&pf_rd_p=2723519f-a769-440a-a9b6-aa8a04ea3ad5&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-25&pf_rd_t=&pf_rd_i=6648217031&i=fashion&bbn=94183119031&rh=n%3A94183119031%2Cp_36%3A-51000%2Cp_89%3AAmazon+Brand+-+Symbol&dc&qid=1729239722&ref=sr_ex_p_72_0&ds=v1%3ASDfatU38hbbhB%2FG0eU%2FbdUIMDm3dY7cuIUjvNvdpedY
+      - img "12"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | export class checkDelivery {
+   2 |   constructor(page) {
+   3 |     this.page = page;
+   4 |   }
+   5 |
+   6 |   async goToAmazonHome() {
+   7 |     await this.page.goto('https://www.amazon.in');
+   8 |   }
+   9 |
+  10 |   async scrollAndClickHelp() {
+  11 |     await this.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  12 |     const helpLink = this.page.locator('a[href*="/gp/help/customer/display.html"]').filter({ hasText: 'Help' });
+  13 |     await helpLink.first().click();
+  14 |   }
+  15 |
+  16 |   async clickCategory() {
+  17 |     const categoryLink = this.page.locator('a', { hasText: 'Fashion' });
+  18 |     await categoryLink.click();
+  19 |   }
+  20 |
+  21 |   async clickHelpTopic() {
+  22 |     const topicLink = this.page.locator('a', { hasText: 'Kindle E-Reader Help' });
+> 23 |     await topicLink.click();
+     |                     ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  24 |   }
+  25 | }
+  26 |
+```

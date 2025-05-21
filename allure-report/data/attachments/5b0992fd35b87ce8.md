@@ -1,0 +1,2129 @@
+# Test info
+
+- Name: Apply brand filter and verify the results
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/applyFilter.spec.js:4:5
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: locator('span.a-size-base.a-color-base:has-text("HP")') resolved to 3 elements:
+    1) <span class="a-size-base a-color-base s-line-clamp-2">↵                                                …</span> aka getByRole('link', { name: 'laptops hp' })
+    2) <span class="a-size-base a-color-base s-line-clamp-2">↵                                                …</span> aka getByRole('link', { name: 'hp laptops', exact: true })
+    3) <span class="a-size-base a-color-base">HP</span> aka getByRole('link', { name: 'Apply the filter HP to narrow' })
+
+Call log:
+  - waiting for locator('span.a-size-base.a-color-base:has-text("HP")')
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/applyFilter.spec.js:16:70
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": laptops
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dlaptops%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=CGQRGRB1SBN4VXNHYMQH
+      - img "Big Savings, More Happiness"
+- 'heading "1-16 of over 40,000 results for \"laptops\" Sort by: Featured" [level=1]':
+  - heading "1-16 of over 40,000 results for \"laptops\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "HP Laptops":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/stores/page/B2A6A3A7-C694-489E-89F2-B1502CC5268B/?_encoding=UTF8&store_ref=SB_A02131562M66ZW2E2M6V8-A0775812ZW3CQN67GGLH&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&lp_asins=B0CY2R1G3G%2CB0D4M66F6R%2CB0DTK9DZB4&lp_query=laptops&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_logo&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - img "HP Laptops"
+- link "Make your everyday easier with HP laptops":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/stores/page/B2A6A3A7-C694-489E-89F2-B1502CC5268B/?_encoding=UTF8&store_ref=SB_A02131562M66ZW2E2M6V8-A0775812ZW3CQN67GGLH&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&lp_asins=B0CY2R1G3G%2CB0D4M66F6R%2CB0DTK9DZB4&lp_query=laptops&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_hl&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+- link "Shop now":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/stores/page/B2A6A3A7-C694-489E-89F2-B1502CC5268B/?_encoding=UTF8&store_ref=SB_A02131562M66ZW2E2M6V8-A0775812ZW3CQN67GGLH&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&lp_asins=B0CY2R1G3G%2CB0D4M66F6R%2CB0DTK9DZB4&lp_query=laptops&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_cta&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - text: Shop HP Laptops
+- link "Branded image from HP Laptops":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/stores/page/B2A6A3A7-C694-489E-89F2-B1502CC5268B/?_encoding=UTF8&store_ref=SB_A02131562M66ZW2E2M6V8-A0775812ZW3CQN67GGLH&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&lp_asins=B0CY2R1G3G%2CB0D4M66F6R%2CB0DTK9DZB4&lp_query=laptops&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_ls&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - img "Branded image from HP Laptops"
+- link "HP 15, 12th Gen Intel Core i5-1235U Laptop (16GB DDR4, 512GB SSD) Anti-Glare, 15.6\"/39.6cm, FHD, Win 11, Office 21, Silver, 1.69kg, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0D4M66F6R/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - img "HP 15, 12th Gen Intel Core i5-1235U Laptop (16GB DDR4, 512GB SSD) Anti-Glare, 15.6\"/39.6cm, FHD, Win 11, Office 21, Silver, 1.69kg, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu"
+- link "Limited time deal":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0D4M66F6R/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_badge&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+- link "₹50,990 Eligible for Prime. ₹62,417 (18% off)":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0D4M66F6R/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_price&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - text: ₹50,990
+  - img "Eligible for Prime."
+  - text: ₹62,417 (18% off)
+- link "HP 15, 13th Gen Intel Core i5-1334U (16GB DDR4, 512GB SSD) Microsoft365* Office2024, Win11, 15.6inch(39.6cm) FHD Laptop, Intel Iris Xe, FHD Camera w/Privacy Shutter, Backlit, Silver, 1.59kg, fd0467tu":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0DTK9DZB4/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_img&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - img "HP 15, 13th Gen Intel Core i5-1334U (16GB DDR4, 512GB SSD) Microsoft365* Office2024, Win11, 15.6inch(39.6cm) FHD Laptop, Intel Iris Xe, FHD Camera w/Privacy Shutter, Backlit, Silver, 1.59kg, fd0467tu"
+- link "Limited time deal":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0DTK9DZB4/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_badge&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+- link "₹58,990 Eligible for Prime. ₹65,387 (10% off)":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0DTK9DZB4/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_price&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - text: ₹58,990
+  - img "Eligible for Prime."
+  - text: ₹65,387 (10% off)
+- link "HP 15, AMD Ryzen 5 7520U (8GB LPDDR5, 512GB SSD) Anti-Glare, FHD,15.6-inch (39.6 cm) Win 11, Office 21, FHD Camera with Privacy Shutter,15s-fc0155AU":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0CY2R1G3G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_2_img&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - img "HP 15, AMD Ryzen 5 7520U (8GB LPDDR5, 512GB SSD) Anti-Glare, FHD,15.6-inch (39.6 cm) Win 11, Office 21, FHD Camera with Privacy Shutter,15s-fc0155AU"
+- link "₹37,690 Eligible for Prime.":
+  - /url: https://aax-eu.amazon.in/x/c/JHLOHolZ9Ir3CFNs5M10MZoAAAGWe8u4kQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCDthds/https://www.amazon.in/gp/aw/d/B0CY2R1G3G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9820374cfcd6aa5710add338248abb88&hsa_cr_id=0&qid=1745833670&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_2_price&pd_rd_w=l6r81&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=qWwTi&pd_rd_r=47dd3757-848c-45cd-936a-a46d19c12842
+  - text: ₹37,690
+  - img "Eligible for Prime."
+- button "Leave feedback on Sponsored ad": Sponsored
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list
+- listitem:
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+  - button "View Sponsored information or leave ad feedback": Sponsored
+  - link "Sponsored Ad - Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Silver":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - heading "Sponsored Ad - Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Silver" [level=2]: Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Silver
+  - button "4.4 out of 5 stars, rating details"
+  - link "22 ratings":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+  - text: 50+ bought in past month Price, product page
+  - link "₹99,900":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+  - text: Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+  - link "+3 other colors/patterns":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+- listitem:
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDM5Mjk2MzMyODMzMjo6MDo6&url=%2FApple-MacBook-Laptop-12%25E2%2580%2591core-16%25E2%2580%2591core%2Fdp%2FB0DLHQC28P%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+  - button "View Sponsored information or leave ad feedback": Sponsored
+  - 'link "Sponsored Ad - Apple 2024 MacBook Pro Laptop with M4 Pro chip with 12‑core CPU and 16‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 24GB Unified Memory, 512GB SSD Storage; Space Black"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDM5Mjk2MzMyODMzMjo6MDo6&url=%2FApple-MacBook-Laptop-12%25E2%2580%2591core-16%25E2%2580%2591core%2Fdp%2FB0DLHQC28P%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - 'heading "Sponsored Ad - Apple 2024 MacBook Pro Laptop with M4 Pro chip with 12‑core CPU and 16‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 24GB Unified Memory, 512GB SSD Storage; Space Black" [level=2]': "Apple 2024 MacBook Pro Laptop with M4 Pro chip with 12‑core CPU and 16‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 24GB Unified Memory, 512GB SSD Storage; Space Black"
+  - button "5.0 out of 5 stars, rating details"
+  - link "6 ratings":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDM5Mjk2MzMyODMzMjo6MDo6&url=%2FApple-MacBook-Laptop-12%25E2%2580%2591core-16%25E2%2580%2591core%2Fdp%2FB0DLHQC28P%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+  - text: 50+ bought in past month Price, product page
+  - 'link "₹1,91,990 M.R.P: ₹1,99,900 M.R.P: ₹1,99,900"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYXRmOjMwMDM5Mjk2MzMyODMzMjo6MDo6&url=%2FApple-MacBook-Laptop-12%25E2%2580%2591core-16%25E2%2580%2591core%2Fdp%2FB0DLHQC28P%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+  - text: (4% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /Lenovo-IdeaPad-i5-12450H-Windows-83EQ0072IN/dp/B0DP7BZ8FD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-3
+  - link "Lenovo IdeaPad Slim 3, Intel Core i5-12450H, 12th Gen, 16GB RAM, 512GB SSD, FHD, 14\"/35.5cm, Windows 11, MS Office Home 2024, Grey, 1.37Kg, 83EQ0072IN, Alexa Built-in, 3 mon. Game Pass Laptop":
+    - /url: /Lenovo-IdeaPad-i5-12450H-Windows-83EQ0072IN/dp/B0DP7BZ8FD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-3
+    - heading "Lenovo IdeaPad Slim 3, Intel Core i5-12450H, 12th Gen, 16GB RAM, 512GB SSD, FHD, 14\"/35.5cm, Windows 11, MS Office Home 2024, Grey, 1.37Kg, 83EQ0072IN, Alexa Built-in, 3 mon. Game Pass Laptop" [level=2]
+  - button "3.9 out of 5 stars, rating details"
+  - link "511 ratings":
+    - /url: /Lenovo-IdeaPad-i5-12450H-Windows-83EQ0072IN/dp/B0DP7BZ8FD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-3#customerReviews
+  - text: 300+ bought in past month Price, product page
+  - 'link "₹49,990 M.R.P: ₹70,790 M.R.P: ₹70,790"':
+    - /url: /Lenovo-IdeaPad-i5-12450H-Windows-83EQ0072IN/dp/B0DP7BZ8FD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-3
+  - text: (29% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+  - button "i5-12th | Office 2024"
+  - button "12th Gen i5 | 16GB | 512GB SSD"
+  - button "i5 | 16GB | 512GB SSD"
+  - button "i5 | 8GB | 512GB SSD"
+  - button "i5-12th | FHD IPS | Office 2024"
+- listitem:
+  - link:
+    - /url: /L%E1%A5%B1novo-ThinkPad-Screen-14-inch-R%E1%A5%B1furbish%E1%A5%B1d/dp/B0F6319HJ5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-4
+  - link "Lᥱnovo ThinkPad T490 Touch Screen Laptop Intᥱl Core i7 8th Gen 14-inch Full HD Thin and Light (512GB SSD/16GB RAM/Win 10 pro)(Rᥱfurbishᥱd), Black":
+    - /url: /L%E1%A5%B1novo-ThinkPad-Screen-14-inch-R%E1%A5%B1furbish%E1%A5%B1d/dp/B0F6319HJ5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-4
+    - heading "Lᥱnovo ThinkPad T490 Touch Screen Laptop Intᥱl Core i7 8th Gen 14-inch Full HD Thin and Light (512GB SSD/16GB RAM/Win 10 pro)(Rᥱfurbishᥱd), Black" [level=2]
+  - text: Price, product page
+  - 'link "₹23,299 M.R.P: ₹45,995 M.R.P: ₹45,995"':
+    - /url: /L%E1%A5%B1novo-ThinkPad-Screen-14-inch-R%E1%A5%B1furbish%E1%A5%B1d/dp/B0F6319HJ5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-4
+  - text: (49% off) FREE delivery Tue, 6 May
+  - button "Add to cart"
+- listitem:
+  - group "Amazon's Choice for \"laptops\""
+  - link:
+    - /url: /Lenovo-Graphics-5500Mhz-Windows-Warranty/dp/B0F29HNJL1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-5
+  - link "Lenovo V15 G4 AMD Ryzen 5 7520U 15.6 inch FHD Thin & Lite Laptop, AMD Graphics, 16GB DDR5 5500Mhz Ram, 512GB SSD NVMe, Windows 11, Dolby Audio, Arctic Grey, 1 Year Onsite Brand Warranty":
+    - /url: /Lenovo-Graphics-5500Mhz-Windows-Warranty/dp/B0F29HNJL1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-5
+    - heading "Lenovo V15 G4 AMD Ryzen 5 7520U 15.6 inch FHD Thin & Lite Laptop, AMD Graphics, 16GB DDR5 5500Mhz Ram, 512GB SSD NVMe, Windows 11, Dolby Audio, Arctic Grey, 1 Year Onsite Brand Warranty" [level=2]
+  - button "4.5 out of 5 stars, rating details"
+  - link "32 ratings":
+    - /url: /Lenovo-Graphics-5500Mhz-Windows-Warranty/dp/B0F29HNJL1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-5#customerReviews
+  - text: 400+ bought in past month Price, product page
+  - 'link "₹34,990 M.R.P: ₹60,999 M.R.P: ₹60,999"':
+    - /url: /Lenovo-Graphics-5500Mhz-Windows-Warranty/dp/B0F29HNJL1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-5
+  - text: (43% off)
+  - img "Amazon Prime"
+  - text: "FREE delivery Fri, 2 May Service: Device Setup"
+  - button "Add to cart"
+- heading "Trending now" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- group "Trending now":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDX3JF4%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+3 other colors/patterns":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDX3JF4%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Silver":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDX3JF4%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Silver" [level=2]: Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Silver
+        - button "4.4 out of 5 stars, rating details"
+        - link "22 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDX3JF4%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 50+ bought in past month Price, product page
+        - link "₹99,900":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0NzczMjo6MDo6&url=%2FApple-MacBook-13-inch-10-core-Unified%2Fdp%2FB0DZDX3JF4%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDX3JF4%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Device Setup"
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjgzMjo6MTo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHFM2XL%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - 'link "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjgzMjo6MTo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHFM2XL%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - 'heading "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight" [level=2]': "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight"
+        - button "4.7 out of 5 stars, rating details"
+        - link "6 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjgzMjo6MTo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHFM2XL%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 100+ bought in past month Price, product page
+        - 'link "₹76,999 M.R.P: ₹85,900 M.R.P: ₹85,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjgzMjo6MTo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHFM2XL%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (10% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Device Setup"
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMzMDAzMjo6Mjo6&url=%2FApple-MacBook-13-inch-8%25E2%2580%2591core-Unified%2Fdp%2FB0DLHYCZMV%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHYCZMV%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Apple 2024 MacBook Air (13-inch, Apple M3 chip with 8‑core CPU and 8‑core GPU, 16GB Unified Memory, 256GB) - Midnight":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMzMDAzMjo6Mjo6&url=%2FApple-MacBook-13-inch-8%25E2%2580%2591core-Unified%2Fdp%2FB0DLHYCZMV%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHYCZMV%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Apple 2024 MacBook Air (13-inch, Apple M3 chip with 8‑core CPU and 8‑core GPU, 16GB Unified Memory, 256GB) - Midnight" [level=2]: Apple 2024 MacBook Air (13-inch, Apple M3 chip with 8‑core CPU and 8‑core GPU, 16GB Unified Memory, 256GB) - Midnight
+        - button "4.7 out of 5 stars, rating details"
+        - link "10 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMzMDAzMjo6Mjo6&url=%2FApple-MacBook-13-inch-8%25E2%2580%2591core-Unified%2Fdp%2FB0DLHYCZMV%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHYCZMV%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹98,990 M.R.P: ₹1,14,900 M.R.P: ₹1,14,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMzMDAzMjo6Mjo6&url=%2FApple-MacBook-13-inch-8%25E2%2580%2591core-Unified%2Fdp%2FB0DLHYCZMV%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLHYCZMV%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (14% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Device Setup"
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjQzMjo6Mzo6&url=%2FApple-2024-MacBook-Laptop-10%25E2%2580%2591core%2Fdp%2FB0DLJ82ZMT%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLJ82ZMT%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - 'link "Sponsored Ad - Apple 2024 MacBook Pro Laptop with M4 chip with 10‑core CPU and 10‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 14GB Unified Memory, 1TB SSD Storage; Space Black"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjQzMjo6Mzo6&url=%2FApple-2024-MacBook-Laptop-10%25E2%2580%2591core%2Fdp%2FB0DLJ82ZMT%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLJ82ZMT%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - 'heading "Sponsored Ad - Apple 2024 MacBook Pro Laptop with M4 chip with 10‑core CPU and 10‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 14GB Unified Memory, 1TB SSD Storage; Space Black" [level=2]': "Apple 2024 MacBook Pro Laptop with M4 chip with 10‑core CPU and 10‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 14GB Unified Memory, 1TB SSD Storage; Space Black"
+        - button "5.0 out of 5 stars, rating details"
+        - link "2 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjQzMjo6Mzo6&url=%2FApple-2024-MacBook-Laptop-10%25E2%2580%2591core%2Fdp%2FB0DLJ82ZMT%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLJ82ZMT%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹2,01,990 M.R.P: ₹2,09,900 M.R.P: ₹2,09,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM5Mjk2MzMyNjQzMjo6Mzo6&url=%2FApple-2024-MacBook-Laptop-10%25E2%2580%2591core%2Fdp%2FB0DLJ82ZMT%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DLJ82ZMT%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (4% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Device Setup"
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0OTAzMjo6NDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDDPXY5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDDPXY5%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+3 other colors/patterns":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0OTAzMjo6NDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDDPXY5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDDPXY5%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 16GB Unified Memory, 256GB) - Midnight":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0OTAzMjo6NDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDDPXY5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDDPXY5%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 16GB Unified Memory, 256GB) - Midnight" [level=2]: Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 16GB Unified Memory, 256GB) - Midnight
+        - button "5.0 out of 5 stars, rating details"
+        - link "4 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0OTAzMjo6NDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDDPXY5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDDPXY5%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹1,24,899 M.R.P: ₹1,24,900 M.R.P: ₹1,24,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozOTUxNzc1NzE0MzA5MzM1OjE3NDU4MzM2NzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ5OTQ1MzM0OTAzMjo6NDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDDPXY5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dlaptops%26keywords%3Dlaptops%26pd_rd_i%3DB0DZDDPXY5%26pd_rd_r%3Da8fb0c93-f22a-479b-9cf0-1ff942f77fae%26pd_rd_w%3DbDbtp%26pd_rd_wg%3DtmZEv%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3DCGQRGRB1SBN4VXNHYMQH%26qid%3D1745833670%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Device Setup"
+- heading "More results" [level=2]
+- list
+- listitem:
+  - link:
+    - /url: /Lenovo-39-62cm-Antiglare-Windows-83CQ000XIN/dp/B0DVGQPW13/ref=sr_1_6?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-6
+  - link "Lenovo V15 AMD Ryzen 3 7320U 15.6\" (39.62cm) FHD 250 Nits Antiglare Thin and Light Laptop (8GB/512GB SSD/Windows 11 Home/Arctic Grey/1.63 Kg), 83CQ000XIN":
+    - /url: /Lenovo-39-62cm-Antiglare-Windows-83CQ000XIN/dp/B0DVGQPW13/ref=sr_1_6?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-6
+    - heading "Lenovo V15 AMD Ryzen 3 7320U 15.6\" (39.62cm) FHD 250 Nits Antiglare Thin and Light Laptop (8GB/512GB SSD/Windows 11 Home/Arctic Grey/1.63 Kg), 83CQ000XIN" [level=2]
+  - button "3.8 out of 5 stars, rating details"
+  - link "33 ratings":
+    - /url: /Lenovo-39-62cm-Antiglare-Windows-83CQ000XIN/dp/B0DVGQPW13/ref=sr_1_6?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-6#customerReviews
+  - text: 200+ bought in past month
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹25,990 M.R.P: ₹50,760 M.R.P: ₹50,760"':
+    - /url: /Lenovo-39-62cm-Antiglare-Windows-83CQ000XIN/dp/B0DVGQPW13/ref=sr_1_6?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-6
+  - text: (49% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+  - button "Arctic Grey"
+  - button "Grey"
+- listitem:
+  - link:
+    - /url: /ASUS-Vivobook-Laptop-Office-E1404FA-NK325WS/dp/B0CCPC5DTD/ref=sr_1_7?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-7
+  - link "ASUS Vivobook Go 14, AMD Ryzen 3 7320U, Thin and Light Laptop, 14\" (35.56 cm) FHD, (8 GB RAM/512GB SSD/Windows 11/Office 2021/42WHr /Black/1.38 kg), E1404FA-NK325WS":
+    - /url: /ASUS-Vivobook-Laptop-Office-E1404FA-NK325WS/dp/B0CCPC5DTD/ref=sr_1_7?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-7
+    - heading "ASUS Vivobook Go 14, AMD Ryzen 3 7320U, Thin and Light Laptop, 14\" (35.56 cm) FHD, (8 GB RAM/512GB SSD/Windows 11/Office 2021/42WHr /Black/1.38 kg), E1404FA-NK325WS" [level=2]
+  - button "4.0 out of 5 stars, rating details"
+  - link "112 ratings":
+    - /url: /ASUS-Vivobook-Laptop-Office-E1404FA-NK325WS/dp/B0CCPC5DTD/ref=sr_1_7?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-7#customerReviews
+  - text: 300+ bought in past month Price, product page
+  - 'link "₹32,890 M.R.P: ₹50,990 M.R.P: ₹50,990"':
+    - /url: /ASUS-Vivobook-Laptop-Office-E1404FA-NK325WS/dp/B0CCPC5DTD/ref=sr_1_7?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-7
+  - text: (35% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Service: Device Setup"
+  - button "Add to cart"
+  - button "Black"
+  - button "Silver"
+- listitem:
+  - link:
+    - /url: /ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-8
+  - link "ASUS Vivobook Go 15 (2023), AMD Ryzen 5 7520U, Thin & Light Laptop,15.6\" (39.62 cm) FHD, (16GB/512GB SSD/Windows 11/Office 2021/Alexa Built-in/Mixed Black/1.63 kg), E1504FA-NJ542WS":
+    - /url: /ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-8
+    - heading "ASUS Vivobook Go 15 (2023), AMD Ryzen 5 7520U, Thin & Light Laptop,15.6\" (39.62 cm) FHD, (16GB/512GB SSD/Windows 11/Office 2021/Alexa Built-in/Mixed Black/1.63 kg), E1504FA-NJ542WS" [level=2]
+  - button "3.8 out of 5 stars, rating details"
+  - link "162 ratings":
+    - /url: /ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-8#customerReviews
+  - text: 300+ bought in past month Price, product page
+  - 'link "₹41,990 M.R.P: ₹60,990 M.R.P: ₹60,990"':
+    - /url: /ASUS-Vivobook-Laptop-Windows-E1504FA-NJ542WS/dp/B0BTWF2BQX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-8
+  - text: (31% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /Acer-Premium-Windows-AL15-41-Display/dp/B0CWTYGPH8/ref=sr_1_9?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-9
+  - link "Acer Aspire Lite AMD Ryzen 3 5300U Premium Thin and Light Laptop (Windows 11 Home/16 GB RAM/512 GB SSD) AL15-41 with 39.62 cm (15.6\") Full HD Display, Metal Body, Steel Gray, 1.6 KG":
+    - /url: /Acer-Premium-Windows-AL15-41-Display/dp/B0CWTYGPH8/ref=sr_1_9?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-9
+    - heading "Acer Aspire Lite AMD Ryzen 3 5300U Premium Thin and Light Laptop (Windows 11 Home/16 GB RAM/512 GB SSD) AL15-41 with 39.62 cm (15.6\") Full HD Display, Metal Body, Steel Gray, 1.6 KG" [level=2]
+  - button "3.9 out of 5 stars, rating details"
+  - link "1,188 ratings":
+    - /url: /Acer-Premium-Windows-AL15-41-Display/dp/B0CWTYGPH8/ref=sr_1_9?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-9#customerReviews
+  - text: 400+ bought in past month
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹28,990 M.R.P: ₹49,990 M.R.P: ₹49,990"':
+    - /url: /Acer-Premium-Windows-AL15-41-Display/dp/B0CWTYGPH8/ref=sr_1_9?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-9
+  - text: (42% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /5-5625U-Premium-Windows-AL15-41-Display/dp/B0DG2GCTD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-10
+  - link "Acer Aspire Lite, AMD Ryzen 5-5625U, 16GB RAM, 512GB SSD, Full HD, 15.6\"/39.62cm, Windows 11 Home, Steel Gray, 1.59KG, Premium Metal Body, AL15-41, Thin and Light Laptop":
+    - /url: /5-5625U-Premium-Windows-AL15-41-Display/dp/B0DG2GCTD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-10
+    - heading "Acer Aspire Lite, AMD Ryzen 5-5625U, 16GB RAM, 512GB SSD, Full HD, 15.6\"/39.62cm, Windows 11 Home, Steel Gray, 1.59KG, Premium Metal Body, AL15-41, Thin and Light Laptop" [level=2]
+  - button "3.9 out of 5 stars, rating details"
+  - link "1,188 ratings":
+    - /url: /5-5625U-Premium-Windows-AL15-41-Display/dp/B0DG2GCTD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-10#customerReviews
+  - text: 500+ bought in past month Price, product page
+  - 'link "₹34,490 M.R.P: ₹58,999 M.R.P: ₹58,999"':
+    - /url: /5-5625U-Premium-Windows-AL15-41-Display/dp/B0DG2GCTD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-10
+  - text: (42% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDQ5OTQ1MzM0ODYzMjo6MDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDQR47H%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+  - button "View Sponsored information or leave ad feedback": Sponsored
+  - link "Sponsored Ad - Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Silver":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDQ5OTQ1MzM0ODYzMjo6MDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDQR47H%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - heading "Sponsored Ad - Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Silver" [level=2]: Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Silver
+  - button "5.0 out of 5 stars, rating details"
+  - link "4 ratings":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDQ5OTQ1MzM0ODYzMjo6MDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDQR47H%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+  - text: Price, product page
+  - link "₹1,64,900":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDQ5OTQ1MzM0ODYzMjo6MDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDQR47H%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+  - text: Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+  - link "+3 other colors/patterns":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDQ5OTQ1MzM0ODYzMjo6MDo6&url=%2FApple-MacBook-15-inch-10-core-Unified%2Fdp%2FB0DZDQR47H%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+- listitem:
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDM5Mjk2MzMyNjgzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+  - button "View Sponsored information or leave ad feedback": Sponsored
+  - 'link "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDM5Mjk2MzMyNjgzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - 'heading "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight" [level=2]': "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight"
+  - button "4.7 out of 5 stars, rating details"
+  - link "6 ratings":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDM5Mjk2MzMyNjgzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+  - text: 100+ bought in past month Price, product page
+  - 'link "₹76,999 M.R.P: ₹85,900 M.R.P: ₹85,900"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfbXRmOjMwMDM5Mjk2MzMyNjgzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHFM2XL%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+  - text: (10% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JNYA2_D6Flaa6NZu8oiDAS0AAAGWe8u4dgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDVAAZV/https://www.amazon.in/dp/B08N5W4NNB?pd_rd_i=B08N5W4NNB&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=tmZEv&pd_rd_w=33uld&pd_rd_r=a8fb0c93-f22a-479b-9cf0-1ff942f77fae
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JNYA2_D6Flaa6NZu8oiDAS0AAAGWe8u4dgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDVAAZV/https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5W4NNB/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B08N5W4NNB&pd_rd_r=a8fb0c93-f22a-479b-9cf0-1ff942f77fae&pd_rd_w=33uld&pd_rd_wg=tmZEv&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Sponsored
+- 'link "Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey"':
+  - /url: https://aax-eu.amazon.in/x/c/JNYA2_D6Flaa6NZu8oiDAS0AAAGWe8u4dgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDVAAZV/https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5W4NNB/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B08N5W4NNB&pd_rd_r=a8fb0c93-f22a-479b-9cf0-1ff942f77fae&pd_rd_w=33uld&pd_rd_wg=tmZEv&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+  - 'heading "Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" [level=2]'
+- text: Number 1 Top-Rated
+- button "4.6 out of 5 stars, rating details"
+- link "6,672 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JNYA2_D6Flaa6NZu8oiDAS0AAAGWe8u4dgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDVAAZV/https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5W4NNB/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B08N5W4NNB&pd_rd_r=a8fb0c93-f22a-479b-9cf0-1ff942f77fae&pd_rd_w=33uld&pd_rd_wg=tmZEv&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+- text: 500+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹60,990 M.R.P: ₹92,900 M.R.P: ₹92,900"':
+  - /url: https://aax-eu.amazon.in/x/c/JNYA2_D6Flaa6NZu8oiDAS0AAAGWe8u4dgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDVAAZV/https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5W4NNB/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B08N5W4NNB&pd_rd_r=a8fb0c93-f22a-479b-9cf0-1ff942f77fae&pd_rd_w=33uld&pd_rd_wg=tmZEv&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: (34% off) Save extra with No Cost EMI
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 29 April FREE Delivery by Amazon
+- heading "More results" [level=2]
+- list
+- listitem:
+  - link:
+    - /url: /Primebook-Android-Based-MediaTek-MT8788/dp/B0D1Y3MVGL/ref=sr_1_13?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-13
+  - link "4G, 2025(New, WiFi+4G) Android Based MediaTek MT8788 - (PrimeOS) 4G SIM Slot, Thin and Light Laptop (11.6 Inch, 1.065 Kg, Type C, USB, HDMI, MicroSD) (4GB/64GB eMMC Storage, Black)":
+    - /url: /Primebook-Android-Based-MediaTek-MT8788/dp/B0D1Y3MVGL/ref=sr_1_13?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-13
+    - heading "4G, 2025(New, WiFi+4G) Android Based MediaTek MT8788 - (PrimeOS) 4G SIM Slot, Thin and Light Laptop (11.6 Inch, 1.065 Kg, Type C, USB, HDMI, MicroSD) (4GB/64GB eMMC Storage, Black)" [level=2]
+  - button "4.5 out of 5 stars, rating details"
+  - link "450 ratings":
+    - /url: /Primebook-Android-Based-MediaTek-MT8788/dp/B0D1Y3MVGL/ref=sr_1_13?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-13#customerReviews
+  - text: 100+ bought in past month Price, product page
+  - 'link "₹12,990 M.R.P: ₹24,990 M.R.P: ₹24,990"':
+    - /url: /Primebook-Android-Based-MediaTek-MT8788/dp/B0D1Y3MVGL/ref=sr_1_13?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-13
+  - text: (48% off)
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /HP-Ryzen-7520U-2-8Ghz-4-3Ghz/dp/B0F4KYTVCP/ref=sr_1_14?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-14
+  - link "HP 255 G10 AMD Ryzen 5 Quad Core 7520U 2.8Ghz Upto 4.3Ghz - (8 GB/512 GB SSD/Windows 11) 255 G10 Thin and Light Laptop (15.6 inch, Matt Silver, 1.45 kg)":
+    - /url: /HP-Ryzen-7520U-2-8Ghz-4-3Ghz/dp/B0F4KYTVCP/ref=sr_1_14?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-14
+    - heading "HP 255 G10 AMD Ryzen 5 Quad Core 7520U 2.8Ghz Upto 4.3Ghz - (8 GB/512 GB SSD/Windows 11) 255 G10 Thin and Light Laptop (15.6 inch, Matt Silver, 1.45 kg)" [level=2]
+  - button "5.0 out of 5 stars, rating details"
+  - link "4 ratings":
+    - /url: /HP-Ryzen-7520U-2-8Ghz-4-3Ghz/dp/B0F4KYTVCP/ref=sr_1_14?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-14#customerReviews
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹28,980 M.R.P: ₹42,369 M.R.P: ₹42,369"':
+    - /url: /HP-Ryzen-7520U-2-8Ghz-4-3Ghz/dp/B0F4KYTVCP/ref=sr_1_14?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-14
+  - text: (32% off)
+  - img "Amazon Prime"
+  - text: "FREE delivery Fri, 2 May Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /Lenovo-V14-G3-i5-1235U-Ms-Office/dp/B0F4XH5MVJ/ref=sr_1_15?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-15
+  - link "Lenovo V14 G3 14\" FHD Laptop, Intel Core i5-1235U, 16GB DDR4 RAM, 512GB SSD, Intel Iris Xe Graphics, Windows 11, Ms-Office Lifetime Validity, Iron Grey,1.6kg, 1 Year Onsite Brand Warranty":
+    - /url: /Lenovo-V14-G3-i5-1235U-Ms-Office/dp/B0F4XH5MVJ/ref=sr_1_15?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-15
+    - heading "Lenovo V14 G3 14\" FHD Laptop, Intel Core i5-1235U, 16GB DDR4 RAM, 512GB SSD, Intel Iris Xe Graphics, Windows 11, Ms-Office Lifetime Validity, Iron Grey,1.6kg, 1 Year Onsite Brand Warranty" [level=2]
+  - button "5.0 out of 5 stars, rating details"
+  - link "1 ratings":
+    - /url: /Lenovo-V14-G3-i5-1235U-Ms-Office/dp/B0F4XH5MVJ/ref=sr_1_15?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-15#customerReviews
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹40,989 M.R.P: ₹40,990 M.R.P: ₹40,990"':
+    - /url: /Lenovo-V14-G3-i5-1235U-Ms-Office/dp/B0F4XH5MVJ/ref=sr_1_15?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-15
+  - text: Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Fri, 2 May Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /ACER-Ryzen-Dual-Core-3250U/dp/B0F3354GDC/ref=sr_1_16?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-16
+  - link "ACER One 14 AMD Ryzen 3 Dual Core 3250U - (8 GB/512 GB SSD/Windows 11 Home) Z2-493 Thin and Light Laptop (14 inch HD Display, Silver, 1.5 Kg) 2 Years Brand Warranty":
+    - /url: /ACER-Ryzen-Dual-Core-3250U/dp/B0F3354GDC/ref=sr_1_16?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-16
+    - heading "ACER One 14 AMD Ryzen 3 Dual Core 3250U - (8 GB/512 GB SSD/Windows 11 Home) Z2-493 Thin and Light Laptop (14 inch HD Display, Silver, 1.5 Kg) 2 Years Brand Warranty" [level=2]
+  - button "3.7 out of 5 stars, rating details"
+  - link "13 ratings":
+    - /url: /ACER-Ryzen-Dual-Core-3250U/dp/B0F3354GDC/ref=sr_1_16?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-16#customerReviews
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹22,990 M.R.P: ₹39,999 M.R.P: ₹39,999"':
+    - /url: /ACER-Ryzen-Dual-Core-3250U/dp/B0F3354GDC/ref=sr_1_16?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-16
+  - text: (43% off)
+  - img "Amazon Prime"
+  - text: FREE delivery Thu, 1 May
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /Lenovo-i7-1255U-4-70Ghz-Windows-Warranty/dp/B0F32ZBDNJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-17
+  - link "Lenovo V14 G3, 12th Gen Intel Core i7-1255U Upto 4.70Ghz (16GB RAM/512GB SSD/Windows 11) 14.0\" FHD Display Thin and Light Laptop/Iron Grey /1.70 kg 1 Year Onsite Brand Warranty with MS Office":
+    - /url: /Lenovo-i7-1255U-4-70Ghz-Windows-Warranty/dp/B0F32ZBDNJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-17
+    - heading "Lenovo V14 G3, 12th Gen Intel Core i7-1255U Upto 4.70Ghz (16GB RAM/512GB SSD/Windows 11) 14.0\" FHD Display Thin and Light Laptop/Iron Grey /1.70 kg 1 Year Onsite Brand Warranty with MS Office" [level=2]
+  - button "4.2 out of 5 stars, rating details"
+  - link "16 ratings":
+    - /url: /Lenovo-i7-1255U-4-70Ghz-Windows-Warranty/dp/B0F32ZBDNJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-17#customerReviews
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹44,988 M.R.P: ₹65,000 M.R.P: ₹65,000"':
+    - /url: /Lenovo-i7-1255U-4-70Ghz-Windows-Warranty/dp/B0F32ZBDNJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-17
+  - text: (31% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Fri, 2 May Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /HP-i3-1215U-Anti-Glare-15-6inch-Graphics/dp/B0CJBL2QWY/ref=sr_1_18?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-18
+  - link "HP 15s, 12th Gen Intel Core i3-1215U Laptop (8GB DDR4, 512GB SSD) Anti-Glare, 15.6\"/39.6cm,FHD, Win 11, MS Office 21, Silver, 1.69kg, Intel UHD Graphics, HD Camera, Dual Speakers, fy5006tu":
+    - /url: /HP-i3-1215U-Anti-Glare-15-6inch-Graphics/dp/B0CJBL2QWY/ref=sr_1_18?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-18
+    - heading "HP 15s, 12th Gen Intel Core i3-1215U Laptop (8GB DDR4, 512GB SSD) Anti-Glare, 15.6\"/39.6cm,FHD, Win 11, MS Office 21, Silver, 1.69kg, Intel UHD Graphics, HD Camera, Dual Speakers, fy5006tu" [level=2]
+  - button "4.1 out of 5 stars, rating details"
+  - link "723 ratings":
+    - /url: /HP-i3-1215U-Anti-Glare-15-6inch-Graphics/dp/B0CJBL2QWY/ref=sr_1_18?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-18#customerReviews
+  - text: 500+ bought in past month Price, product page
+  - 'link "₹34,590 M.R.P: ₹50,903 M.R.P: ₹50,903"':
+    - /url: /HP-i3-1215U-Anti-Glare-15-6inch-Graphics/dp/B0CJBL2QWY/ref=sr_1_18?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-18
+  - text: (32% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /FUTOPIA-Ultimus-2-4GHz-Storage-NU14U6INC43BN-CS/dp/B0F26L99HK/ref=sr_1_19?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-19
+  - link "Ultimus PRO Intel Dual Core ~2.4GHz (4 GB/128 GB EMMC Storage/Windows 11 Home) NU14U6INC43BN-CS Thin and Light Laptop (14 Inch, Cloud Silver, 1.2 kg)":
+    - /url: /FUTOPIA-Ultimus-2-4GHz-Storage-NU14U6INC43BN-CS/dp/B0F26L99HK/ref=sr_1_19?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-19
+    - heading "Ultimus PRO Intel Dual Core ~2.4GHz (4 GB/128 GB EMMC Storage/Windows 11 Home) NU14U6INC43BN-CS Thin and Light Laptop (14 Inch, Cloud Silver, 1.2 kg)" [level=2]
+  - button "5.0 out of 5 stars, rating details"
+  - link "4 ratings":
+    - /url: /FUTOPIA-Ultimus-2-4GHz-Storage-NU14U6INC43BN-CS/dp/B0F26L99HK/ref=sr_1_19?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-19#customerReviews
+  - text: Price, product page
+  - 'link "₹11,990 M.R.P: ₹24,990 M.R.P: ₹24,990"':
+    - /url: /FUTOPIA-Ultimus-2-4GHz-Storage-NU14U6INC43BN-CS/dp/B0F26L99HK/ref=sr_1_19?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-19
+  - text: (52% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /Lenovo-V15-i7-1255U-Windows-82TTA073IN/dp/B0DDY3XT48/ref=sr_1_20?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-20
+  - link "Lenovo V15 12th Gen Intel Core i7-1255U 15.6\" FHD Thin and Light Laptop (16GB RAM/512GB SSD/Windows 11 Home/MS Office Home & Student 2021/Iron Grey/1.70 kg), 82TTA073IN":
+    - /url: /Lenovo-V15-i7-1255U-Windows-82TTA073IN/dp/B0DDY3XT48/ref=sr_1_20?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-20
+    - heading "Lenovo V15 12th Gen Intel Core i7-1255U 15.6\" FHD Thin and Light Laptop (16GB RAM/512GB SSD/Windows 11 Home/MS Office Home & Student 2021/Iron Grey/1.70 kg), 82TTA073IN" [level=2]
+  - button "3.4 out of 5 stars, rating details"
+  - link "20 ratings":
+    - /url: /Lenovo-V15-i7-1255U-Windows-82TTA073IN/dp/B0DDY3XT48/ref=sr_1_20?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-20#customerReviews
+  - text: 100+ bought in past month
+  - link "Limited time deal":
+    - /url: /gp/goldbox/
+  - text: Price, product page
+  - 'link "₹45,990 M.R.P: ₹90,540 M.R.P: ₹90,540"':
+    - /url: /Lenovo-V15-i7-1255U-Windows-82TTA073IN/dp/B0DDY3XT48/ref=sr_1_20?dib=eyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI&dib_tag=se&keywords=laptops&qid=1745833670&sr=8-20
+  - text: (49% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzUzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHWMPQL%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+  - button "View Sponsored information or leave ad feedback": Sponsored
+  - 'link "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzUzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHWMPQL%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - 'heading "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver" [level=2]': "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver"
+  - button "5.0 out of 5 stars, rating details"
+  - link "3 ratings":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzUzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHWMPQL%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+  - text: Price, product page
+  - 'link "₹88,990 M.R.P: ₹99,900 M.R.P: ₹99,900"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzUzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHWMPQL%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+  - text: (11% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- listitem:
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzAzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHGQ17K%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+  - button "View Sponsored information or leave ad feedback": Sponsored
+  - 'link "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Space Gray"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzAzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHGQ17K%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - 'heading "Sponsored Ad - 2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Space Gray" [level=2]': "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Space Gray"
+  - button "3.3 out of 5 stars, rating details"
+  - link "6 ratings":
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzAzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHGQ17K%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+  - text: Price, product page
+  - 'link "₹88,990 M.R.P: ₹99,900 M.R.P: ₹99,900"':
+    - /url: /sspa/click?ie=UTF8&spc=MToxOTU0MjQwNDc1NzMzNzU1OjE3NDU4MzM2NzA6c3BfYnRmOjMwMDM5Mjk2MzMyNzAzMjo6MDo6&url=%2F2022-Apple-MacBook-Laptop-chip%2Fdp%2FB0DLHGQ17K%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.WWSHczifcvvuADa-kTIh3VMyDBEB2NCUWBqemp3lYGo5mcxmRHGiw2oqNSjhZMAYGL2fpm2Axjosyjdb1KkyvQbHLRpXL1ctqEDy4-i3YebwXRfIcULyBeOoFthgpaL-szdYbzIBs_a68-9ZK6PQZPFwGQNE3F85_cOhVD7idH74HZhZipOYHbhEymDBRRxxsMcvi4oSXJ9kB4xFdepfXyUc4Rc56yg8Cmas2rQNeoY.ho0HFx83SH2yfuN9nTs_fa_xHUftQm6q9j39hA3lhZI%26dib_tag%3Dse%26keywords%3Dlaptops%26qid%3D1745833670%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+  - text: (11% off) Save extra with No Cost EMI
+  - img "Amazon Prime"
+  - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Device Setup"
+  - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JO_xgEH4w8n-m6iRpRwTJjQAAAGWe8u4dwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCmkHCr/https://www.amazon.in/dp/B018ZE6G7I?pd_rd_i=B018ZE6G7I&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_w=qV8dj&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JO_xgEH4w8n-m6iRpRwTJjQAAAGWe8u4dwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCmkHCr/https://www.amazon.in/Brother-DCP-L2520D-Multi-Function-Monochrome-Auto-Duplex/dp/B018ZE6G7I/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B018ZE6G7I&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&pd_rd_w=qV8dj&pd_rd_wg=gQQUv&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: Sponsored
+- link "Brother DCP-L2520D Multi-Function Monochrome Laser Printer with Auto-Duplex Printing":
+  - /url: https://aax-eu.amazon.in/x/c/JO_xgEH4w8n-m6iRpRwTJjQAAAGWe8u4dwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCmkHCr/https://www.amazon.in/Brother-DCP-L2520D-Multi-Function-Monochrome-Auto-Duplex/dp/B018ZE6G7I/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B018ZE6G7I&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&pd_rd_w=qV8dj&pd_rd_wg=gQQUv&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+  - heading "Brother DCP-L2520D Multi-Function Monochrome Laser Printer with Auto-Duplex Printing" [level=2]
+- button "4.3 out of 5 stars, rating details"
+- link "1,904 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JO_xgEH4w8n-m6iRpRwTJjQAAAGWe8u4dwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCmkHCr/https://www.amazon.in/Brother-DCP-L2520D-Multi-Function-Monochrome-Auto-Duplex/dp/B018ZE6G7I/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B018ZE6G7I&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&pd_rd_w=qV8dj&pd_rd_wg=gQQUv&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+- text: 100+ bought in past month Price, product page
+- 'link "₹16,499 M.R.P: ₹22,990 M.R.P: ₹22,990"':
+  - /url: https://aax-eu.amazon.in/x/c/JO_xgEH4w8n-m6iRpRwTJjQAAAGWe8u4dwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCmkHCr/https://www.amazon.in/Brother-DCP-L2520D-Multi-Function-Monochrome-Auto-Duplex/dp/B018ZE6G7I/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=laptops&keywords=laptops&pd_rd_i=B018ZE6G7I&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&pd_rd_w=qV8dj&pd_rd_wg=gQQUv&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&qid=1745833670&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: (28% off) Save extra with No Cost EMI FREE delivery by Wed, 30 Apr, 7:00 am - 10:00 pm
+- heading "Related searches" [level=2]
+- list:
+  - listitem:
+    - link "laptop":
+      - /url: /s?k=laptop&ref=rsl_st_0_0&pd_rd_w=9zHnK&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&qid=1745833670
+  - listitem:
+    - link "laptops hp":
+      - /url: /s?k=laptops+hp&ref=rsl_st_0_0&pd_rd_w=9zHnK&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&qid=1745833670
+  - listitem:
+    - link "laptops dell":
+      - /url: /s?k=laptops+dell&ref=rsl_st_0_0&pd_rd_w=9zHnK&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&qid=1745833670
+  - listitem:
+    - link "laptops lenovo":
+      - /url: /s?k=laptops+lenovo&ref=rsl_st_0_0&pd_rd_w=9zHnK&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&qid=1745833670
+  - listitem:
+    - link "hp laptops":
+      - /url: /s?k=hp+laptops&ref=rsl_st_0_0&pd_rd_w=9zHnK&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&qid=1745833670
+  - listitem:
+    - link "gaming laptops":
+      - /url: /s?k=gaming+laptops&ref=rsl_st_0_0&pd_rd_w=9zHnK&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=gQQUv&pd_rd_r=0e85e31d-61b9-43a1-b1e7-400f03a4bf10&qid=1745833670
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JCmCybsy2_AYLV8DQQtK1o4AAAGWe8u5OwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICD-eDW8/https://www.amazon.in/stores/page/7EADD116-0941-4C15-A480-94AF6FFF3B43/?_encoding=UTF8&store_ref=SB_A06808443K9KR8VS450F1-A08014543B27SJYFNXNJZ&pd_rd_plhdr=t&aaxitk=41a6a6da87dbb84c071b261279f78701&hsa_cr_id=0&lp_asins=B0DZF1485D%2CB0DLJ82ZMT%2CB0DZDDV7GC&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+  - img "Branded image from Apple India"
+- link "Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JCmCybsy2_AYLV8DQQtK1o4AAAGWe8u5OwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICD-eDW8/https://www.amazon.in/stores/page/7EADD116-0941-4C15-A480-94AF6FFF3B43/?_encoding=UTF8&store_ref=SB_A06808443K9KR8VS450F1-A08014543B27SJYFNXNJZ&pd_rd_plhdr=t&aaxitk=41a6a6da87dbb84c071b261279f78701&hsa_cr_id=0&lp_asins=B0DZF1485D%2CB0DLJ82ZMT%2CB0DZDDV7GC&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+  - img "Apple India"
+- link "MacBook. Built for Apple Intelligence.":
+  - /url: https://aax-eu.amazon.in/x/c/JCmCybsy2_AYLV8DQQtK1o4AAAGWe8u5OwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICD-eDW8/https://www.amazon.in/stores/page/7EADD116-0941-4C15-A480-94AF6FFF3B43/?_encoding=UTF8&store_ref=SB_A06808443K9KR8VS450F1-A08014543B27SJYFNXNJZ&pd_rd_plhdr=t&aaxitk=41a6a6da87dbb84c071b261279f78701&hsa_cr_id=0&lp_asins=B0DZF1485D%2CB0DLJ82ZMT%2CB0DZDDV7GC&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+- link "Branded image from INTEL SEMICONDUCTOR [US] LLC":
+  - /url: https://aax-eu.amazon.in/x/c/JIZTNtlDpA6Bql0P7eGVPI8AAAGWe8u5PAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICD9H7Lk/https://www.amazon.in/stores/page/4A363358-FFE7-478E-9302-E8D66BBB09F2/?_encoding=UTF8&store_ref=SB_A06911181SGBIMDFMMYYC-A097690960YC3NDKKE24&pd_rd_plhdr=t&aaxitk=8de5f33bfb79e093cee7d6063f22ed11&hsa_cr_id=0&lp_asins=B0D1YJR2ZY%2CB0DPQGMR3Z%2CB0DFHFCS4Y&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+  - img "Branded image from INTEL SEMICONDUCTOR [US] LLC"
+- link "INTEL SEMICONDUCTOR [US] LLC":
+  - /url: https://aax-eu.amazon.in/x/c/JIZTNtlDpA6Bql0P7eGVPI8AAAGWe8u5PAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICD9H7Lk/https://www.amazon.in/stores/page/4A363358-FFE7-478E-9302-E8D66BBB09F2/?_encoding=UTF8&store_ref=SB_A06911181SGBIMDFMMYYC-A097690960YC3NDKKE24&pd_rd_plhdr=t&aaxitk=8de5f33bfb79e093cee7d6063f22ed11&hsa_cr_id=0&lp_asins=B0D1YJR2ZY%2CB0DPQGMR3Z%2CB0DFHFCS4Y&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+  - img "INTEL SEMICONDUCTOR [US] LLC"
+- link "Level up your game with Intel® gaming laptops":
+  - /url: https://aax-eu.amazon.in/x/c/JIZTNtlDpA6Bql0P7eGVPI8AAAGWe8u5PAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICD9H7Lk/https://www.amazon.in/stores/page/4A363358-FFE7-478E-9302-E8D66BBB09F2/?_encoding=UTF8&store_ref=SB_A06911181SGBIMDFMMYYC-A097690960YC3NDKKE24&pd_rd_plhdr=t&aaxitk=8de5f33bfb79e093cee7d6063f22ed11&hsa_cr_id=0&lp_asins=B0D1YJR2ZY%2CB0DPQGMR3Z%2CB0DFHFCS4Y&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+- link "Branded image from Lenovo":
+  - /url: https://aax-eu.amazon.in/x/c/JPAQ_XWa_91iuMYqVbO8tl4AAAGWe8u5PQMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDN5PNN/https://www.amazon.in/stores/page/070B837C-7768-4125-A31B-10554510F1CF/?_encoding=UTF8&store_ref=SB_A056885332T7UX5MLMPXA-A05383343M5SA6AOQ5O8B&pd_rd_plhdr=t&aaxitk=3a94f46f8c458d75a97ff9d539092adb&hsa_cr_id=0&lp_asins=B0DR8NCVY1%2CB0B4JPC8GT%2CB0DKG94BTN&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+  - img "Branded image from Lenovo"
+- link "Lenovo":
+  - /url: https://aax-eu.amazon.in/x/c/JPAQ_XWa_91iuMYqVbO8tl4AAAGWe8u5PQMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDN5PNN/https://www.amazon.in/stores/page/070B837C-7768-4125-A31B-10554510F1CF/?_encoding=UTF8&store_ref=SB_A056885332T7UX5MLMPXA-A05383343M5SA6AOQ5O8B&pd_rd_plhdr=t&aaxitk=3a94f46f8c458d75a97ff9d539092adb&hsa_cr_id=0&lp_asins=B0DR8NCVY1%2CB0B4JPC8GT%2CB0DKG94BTN&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+  - img "Lenovo"
+- link "Tailor your performance with Intel®Core™":
+  - /url: https://aax-eu.amazon.in/x/c/JPAQ_XWa_91iuMYqVbO8tl4AAAGWe8u5PQMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDN5PNN/https://www.amazon.in/stores/page/070B837C-7768-4125-A31B-10554510F1CF/?_encoding=UTF8&store_ref=SB_A056885332T7UX5MLMPXA-A05383343M5SA6AOQ5O8B&pd_rd_plhdr=t&aaxitk=3a94f46f8c458d75a97ff9d539092adb&hsa_cr_id=0&lp_asins=B0DR8NCVY1%2CB0B4JPC8GT%2CB0DKG94BTN&lp_query=laptops&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=te090&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=CGQRGRB1SBN4VXNHYMQH&pd_rd_wg=X1qvR&pd_rd_r=bbe23cec-2561-4130-9190-05002e1801ee
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It Today to narrow results":
+        - /url: /s?k=laptops&rh=p_90%3A6741117031&dc&qid=1745833670&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3AfsbatwK9HrzMm4Uqm6X%2BXPd0NgXbfEHIt73Hgk7WLKg
+        - checkbox
+        - text: Get It Today
+    - listitem:
+      - link "Apply the filter Get It by Tomorrow to narrow results":
+        - /url: /s?k=laptops&rh=p_90%3A6741118031&dc&qid=1745833670&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3Amw3OnqgEIpwDVMjPOIwyV7sExS0hbvHrluyxP8hr83g
+        - checkbox
+        - text: Get It by Tomorrow
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=laptops&rh=p_90%3A20912642031&dc&qid=1745833670&rnid=6741116031&ref=sr_nr_p_90_3&ds=v1%3AornjMV%2BNbGKEAmnCKGYLBXt9HnoN96dAphz5aI%2FnSYA
+        - checkbox
+        - text: Get It in 2 Days
+- group "Processor Type":
+  - heading "Processor Type" [level=2]
+  - list "Processor Type":
+    - listitem:
+      - link "Apply the filter AMD Ryzen 3 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A16757429031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_1&ds=v1%3AgLO3HzkcuzW5EiwGXZ8q57yf%2F2vY19y1pfyyumzGgAo
+        - checkbox
+        - text: AMD Ryzen 3
+    - listitem:
+      - link "Apply the filter AMD Ryzen 5 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A16757430031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_2&ds=v1%3AYkWvFId54MhbFyqDyk5ieWkPIndhd9nM6lSbM7zHrIE
+        - checkbox
+        - text: AMD Ryzen 5
+    - listitem:
+      - link "Apply the filter AMD Ryzen 7 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A16757431031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_3&ds=v1%3Ai7pyZ9gN2UkJKxykFtNHFnvlUDW%2BPtGXpe41AQIQA%2Fg
+        - checkbox
+        - text: AMD Ryzen 7
+    - listitem:
+      - link "Apply the filter AMD Ryzen 9 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A21837407031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_4&ds=v1%3AJhq3Ns0zrSL5YlCh%2BNj7rjdsOFLKwL8xf80rhy%2FsSHY
+        - checkbox
+        - text: AMD Ryzen 9
+    - listitem:
+      - link "Apply the filter Intel Atom to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A12598158031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_5&ds=v1%3AQYtA0gunaDPB7bbYLIGgRg4811oA9UFLN%2BPaT0qPDgQ
+        - checkbox
+        - text: Intel Atom
+    - listitem:
+      - link "Apply the filter Intel Celeron to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A12598159031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_6&ds=v1%3ArwTVVSW9JanFaBxxLzw5Fo4f0KBcIX1Vh6ct32rC%2B64
+        - checkbox
+        - text: Intel Celeron
+    - listitem:
+      - link "Apply the filter Intel Core i3 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A12598161031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_7&ds=v1%3AmAbFrjvVH4uLyt1ICiPd9ZJom5IzmIHG0m16HXgAzvc
+        - checkbox
+        - text: Intel Core i3
+    - listitem:
+      - link "Apply the filter Intel Core i5 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A12598162031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_8&ds=v1%3AURoE2TOgas2oJAP0XAqm92ONV2Jum%2BEgkDZ2uTYRdgU
+        - checkbox
+        - text: Intel Core i5
+    - listitem:
+      - link "Apply the filter Intel Core i7 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A12598163031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_9&ds=v1%3AdjhT9nDArkc1ZvOXlitObasOHk5d%2FIuB9D1qC1BVJnw
+        - checkbox
+        - text: Intel Core i7
+    - listitem:
+      - link "Apply the filter Intel Core i9 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A16757432031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_10&ds=v1%3AORnDs%2B6aG5%2FNRrbvrzcitj%2FCSh9gBaqhFqx%2FBd18ek0
+        - checkbox
+        - text: Intel Core i9
+    - listitem:
+      - link "Apply the filter Intel Pentium to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A12598164031&dc&qid=1745833670&rnid=12598141031&ref=sr_nr_p_n_feature_thirteen_browse-bin_11&ds=v1%3Ai4GrnqQgscOot2YGE2ZBQvcseXAkJJi5r281hVVqpgs
+        - checkbox
+        - text: Intel Pentium
+- group "RAM size":
+  - heading "RAM size" [level=2]
+  - list "RAM size":
+    - listitem:
+      - link "Apply the filter 32 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-six_browse-bin%3A27399073031&dc&qid=1745833670&rnid=27399067031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_1&ds=v1%3APf4bxQI4NcB8HhtQ88hRC6DgBMd6hNrYEf4Ux8Z48g0
+        - checkbox
+        - text: 32 GB
+    - listitem:
+      - link "Apply the filter 16 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-six_browse-bin%3A27399069031&dc&qid=1745833670&rnid=27399067031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_2&ds=v1%3AV%2BHlnt4S61syA0kbPZOi1Qf6BnXrOl6prZX1fS0H1iQ
+        - checkbox
+        - text: 16 GB
+    - listitem:
+      - link "Apply the filter 8 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-six_browse-bin%3A27399070031&dc&qid=1745833670&rnid=27399067031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_3&ds=v1%3A9pnxs6AU2NknLphBMEdE524D1dQXTj3gsRBT0wH5jzo
+        - checkbox
+        - text: 8 GB
+    - listitem:
+      - link "Apply the filter 4 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-six_browse-bin%3A27399071031&dc&qid=1745833670&rnid=27399067031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_4&ds=v1%3Ar0MQMWH8MUDKf2iqbYvdabYu2aY2u0xEEQaq7Yb1zI0
+        - checkbox
+        - text: 4 GB
+- group:
+  - text: Price ₹44 ₹260,300+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "190"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=laptops&rh=p_n_deal_type%3A26921226031&dc&qid=1745833670&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AiSuuciGJao0fA0dk03s9l1AZvU3xm6UKKAeKXCFThs0
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=laptops&rh=p_n_deal_type%3A26921224031&dc&qid=1745833670&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3AKQKIKquwoWiTgX36gNq%2F%2FjnEylwfowr4WeHmtLdD0kI
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter Lenovo to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A391242&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AfZizZBrk%2BNhuXlg0Spx9ZlPhaFSFFvRWk7f3t1rWzYY
+        - checkbox
+        - text: Lenovo
+    - listitem:
+      - link "Apply the filter HP to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A308445&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3ArkgAKStLDJ8rqX8p9Sj11CNM0%2FJN4dkYTOZtfi2aYXw
+        - checkbox
+        - text: HP
+    - listitem:
+      - link "Apply the filter ASUS to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A219979&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3AvjxdL124WP1Q6KQXnqq0GL9cpiA4%2Fi4JLTpjhghTJac
+        - checkbox
+        - text: ASUS
+    - listitem:
+      - link "Apply the filter acer to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A247341&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_4&ds=v1%3ACUkcb8kW%2ByYJcD4HzL3k5XztHUvbLktvpE7gvydI6Ug
+        - checkbox
+        - text: acer
+    - listitem:
+      - link "Apply the filter Apple to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A110955&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_5&ds=v1%3AoA%2BSRq0deDPLgUJCgHXms2%2BM6HqBN6EXYXapN%2Bt6svw
+        - checkbox
+        - text: Apple
+    - listitem:
+      - link "Apply the filter Dell to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A241862&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_6&ds=v1%3ABmet4p21ErCZmLZXrSMQ1TFpmKGYIzXASuYSY0%2B6C74
+        - checkbox
+        - text: Dell
+    - listitem:
+      - link "Apply the filter MSI to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_123%3A378555&dc&qid=1745833670&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3AkEjtbGnXZSqqLvxbV5%2FMLQPKen4Kv9QazDWTTnPSvzw
+        - checkbox
+        - text: MSI
+    - listitem:
+      - button "See more, Brands": See more
+- group "Graphics Processor":
+  - heading "Graphics Processor" [level=2]
+  - list "Graphics Processor":
+    - listitem:
+      - link "Apply the filter Nvidia GeForce RTX Series to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A16757441031&dc&qid=1745833670&rnid=7005020031&ref=sr_nr_p_n_feature_seven_browse-bin_1&ds=v1%3Aq3UCdrY6ynzavHIs%2BTYJ3B4R7SA5r2q6I0LVK8HVua8
+        - checkbox
+        - text: Nvidia GeForce RTX Series
+    - listitem:
+      - link "Apply the filter Nvidia GeForce Series to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A7005024031&dc&qid=1745833670&rnid=7005020031&ref=sr_nr_p_n_feature_seven_browse-bin_2&ds=v1%3ANm6PVvgsCnxSbaQ%2BLV3hBthJsD7XzCDYiCtxbBWrKB4
+        - checkbox
+        - text: Nvidia GeForce Series
+- group "Item Condition":
+  - heading "Item Condition" [level=2]
+  - list "Item Condition":
+    - listitem:
+      - link "New":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_condition-type%3A8609960031&dc&qid=1745833670&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3AZaExQQZNjwzFCCLXpGuiEdTm4Ge4YpLi8qrZ6YTtr6c
+    - listitem:
+      - link "Renewed":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_condition-type%3A13736826031&dc&qid=1745833670&rnid=8609959031&ref=sr_nr_p_n_condition-type_2&ds=v1%3AK67mNAKN2k2OjA0szyJBMi9lA%2FMfP6NG3r2XWCuhQEo
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=laptops&rh=p_72%3A1318476031&dc&qid=1745833670&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3Aj%2BpWPAnYi4l%2FbmMC9XSvyHl02IxnkTOAsOY1SFZOjuk
+        - text: 4 Stars & Up & Up
+- group "Graphics Coprocessor":
+  - heading "Graphics Coprocessor" [level=2]
+  - list "Graphics Coprocessor":
+    - listitem:
+      - link "Apply the filter Intel Iris Xe Graphics to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003969031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_1&ds=v1%3ASqbSOqUj43WW8vGyJUFxMUGIU9KxMd5b7z4Jr354Tlc
+        - checkbox
+        - text: Intel Iris Xe Graphics
+    - listitem:
+      - link "Apply the filter NVIDIA GeForce RTX 3050 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003876031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_2&ds=v1%3A4lwa9QI7PXhrarvrk1JQmiQvDsKZbyZGHoMJYVFl2jE
+        - checkbox
+        - text: NVIDIA GeForce RTX 3050
+    - listitem:
+      - link "Apply the filter NVIDIA GeForce RTX 3050 Ti to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003821031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_3&ds=v1%3A8JBY9EKJof6SSVp38lToYZsKuPoCsKCxtKJ2xWOA7ag
+        - checkbox
+        - text: NVIDIA GeForce RTX 3050 Ti
+    - listitem:
+      - link "Apply the filter NVIDIA GeForce RTX 3060 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003912031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_4&ds=v1%3AS4FjDC9JDAIsF3Px8yBtDSgVN7P4LJXdgZaVppC6%2B7I
+        - checkbox
+        - text: NVIDIA GeForce RTX 3060
+    - listitem:
+      - link "Apply the filter NVIDIA GeForce RTX 3070 Ti to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003815031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_5&ds=v1%3AmL9215%2BwX34%2FtoAzjqPUSebT926VqLkHa7%2BMRZljr5k
+        - checkbox
+        - text: NVIDIA GeForce RTX 3070 Ti
+    - listitem:
+      - link "Apply the filter AMD Radeon 520 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003958031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_6&ds=v1%3AFIMxgOv7pIh9SAUf5jNMZzoqJ7XWSBMk1lq808l7%2B5o
+        - checkbox
+        - text: AMD Radeon 520
+    - listitem:
+      - link "Apply the filter Intel GMA 3150 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A66003936031&dc&qid=1745833670&rnid=66003793031&ref=sr_nr_p_n_feature_twelve_browse-bin_7&ds=v1%3AJ52nyhDOxwDB1Ej%2FtWuUiDHC2vaKCEHsnyNTA%2F%2BBaNQ
+        - checkbox
+        - text: Intel GMA 3150
+    - listitem:
+      - button "See more, Graphics Coprocessor": See more
+- group "Screen Size":
+  - heading "Screen Size" [level=2]
+  - list "Screen Size":
+    - listitem:
+      - link "Apply the filter Up to 10\" to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-nine_browse-bin%3A2917529031&dc&qid=1745833670&rnid=2917524031&ref=sr_nr_p_n_feature_thirty-nine_browse-bin_1&ds=v1%3ATivPRpFASY1cUpmJXCAhwhirQp9QvertpDcK4fGfVVY
+        - checkbox
+        - text: Up to 10"
+    - listitem:
+      - link "Apply the filter 13\" - 14\" to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-nine_browse-bin%3A2917526031&dc&qid=1745833670&rnid=2917524031&ref=sr_nr_p_n_feature_thirty-nine_browse-bin_2&ds=v1%3AJkSvzeGtusL9hDhzIOSW9zj4Vcty6ocVgy9k%2F4vNa5A
+        - checkbox
+        - text: 13" - 14"
+    - listitem:
+      - link "Apply the filter 15\" - 16\" to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-nine_browse-bin%3A2917527031&dc&qid=1745833670&rnid=2917524031&ref=sr_nr_p_n_feature_thirty-nine_browse-bin_3&ds=v1%3ArGfvCOnG9yqckGZW0jifFea3ZZA5WB699ew0tyP2z4k
+        - checkbox
+        - text: 15" - 16"
+    - listitem:
+      - link "Apply the filter 17\" & More to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-nine_browse-bin%3A2917528031&dc&qid=1745833670&rnid=2917524031&ref=sr_nr_p_n_feature_thirty-nine_browse-bin_4&ds=v1%3A1tZHdK7fLg1epGytBlL%2BwXXs95lqEXxF14C6Dt%2BTfOk
+        - checkbox
+        - text: 17" & More
+- group "CPU Manufacturer":
+  - heading "CPU Manufacturer" [level=2]
+  - list "CPU Manufacturer":
+    - listitem:
+      - link "Apply the filter AMD to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-three_browse-bin%3A27387161031&dc&qid=1745833670&rnid=27387108031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_1&ds=v1%3AtLGePPJTzlXGXgSc6XXIVsxjdDUeMJ0ZS7pJ8Qkxs8I
+        - checkbox
+        - text: AMD
+    - listitem:
+      - link "Apply the filter Apple to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-three_browse-bin%3A27387162031&dc&qid=1745833670&rnid=27387108031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_2&ds=v1%3A6vwMKLdEYU21WaFb%2FLRgHebvXIwUtoySnM3tLRAr3JA
+        - checkbox
+        - text: Apple
+    - listitem:
+      - link "Apply the filter Intel to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-three_browse-bin%3A27387168031&dc&qid=1745833670&rnid=27387108031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_3&ds=v1%3AoIK3wghxxufTP%2FsRm0kcBaCltdU46a3UC0rLBiolPNA
+        - checkbox
+        - text: Intel
+    - listitem:
+      - link "Apply the filter NVIDIA to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-three_browse-bin%3A27387164031&dc&qid=1745833670&rnid=27387108031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_4&ds=v1%3Az0iTnJ%2BasHSmqqlfLWwexUj4a3cfSqc4xYymY4DZsJY
+        - checkbox
+        - text: NVIDIA
+    - listitem:
+      - link "Apply the filter Qualcomm to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-three_browse-bin%3A27387166031&dc&qid=1745833670&rnid=27387108031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_5&ds=v1%3AFYGZkBlP19kN%2BK%2BecXPH%2FS0JsgBJD2uzWqGC5Opb7ig
+        - checkbox
+        - text: Qualcomm
+- group "HDD Size":
+  - heading "HDD Size" [level=2]
+  - list "HDD Size":
+    - listitem:
+      - link "Apply the filter Up to 159 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pattern_browse-bin%3A1464443031&dc&qid=1745833670&rnid=1464442031&ref=sr_nr_p_n_pattern_browse-bin_1&ds=v1%3AW9Fm%2F6kXyryHZMCVVGbneHuDsHplmm%2BqCxgO2dQ983w
+        - checkbox
+        - text: Up to 159 GB
+    - listitem:
+      - checkbox [disabled]
+      - text: 160 - 249 GB
+    - listitem:
+      - link "Apply the filter 250 - 499 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pattern_browse-bin%3A1464445031&dc&qid=1745833670&rnid=1464442031&ref=sr_nr_p_n_pattern_browse-bin_3&ds=v1%3AVBecLyv49NCVsN%2BOlmJEcBXzUgnTKiP82Qs2%2FF116%2FE
+        - checkbox
+        - text: 250 - 499 GB
+    - listitem:
+      - link "Apply the filter 500 - 999 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pattern_browse-bin%3A1464446031&dc&qid=1745833670&rnid=1464442031&ref=sr_nr_p_n_pattern_browse-bin_4&ds=v1%3AqT1dauLPUEZIr5Z25rZfQhlR79LbkeUnPX3Fn7lP5h0
+        - checkbox
+        - text: 500 - 999 GB
+    - listitem:
+      - link "Apply the filter 1 TB & above to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pattern_browse-bin%3A8609969031&dc&qid=1745833670&rnid=1464442031&ref=sr_nr_p_n_pattern_browse-bin_5&ds=v1%3AYOfRoZSnidQubZfSEyfQLkE1%2BHHE4DZRCUKa6qLfuyg
+        - checkbox
+        - text: 1 TB & above
+- group "Hard Drive Type":
+  - heading "Hard Drive Type" [level=2]
+  - list "Hard Drive Type":
+    - listitem:
+      - link "Apply the filter Emmc to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A88223414031&dc&qid=1745833670&rnid=88223392031&ref=sr_nr_p_n_feature_seventeen_browse-bin_1&ds=v1%3ARbPBsmVVGxj%2Bvqs1XuKGwlLV9QFZ01n5evk%2FmFA%2BhYA
+        - checkbox
+        - text: Emmc
+    - listitem:
+      - link "Apply the filter HDD to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A88223415031&dc&qid=1745833670&rnid=88223392031&ref=sr_nr_p_n_feature_seventeen_browse-bin_2&ds=v1%3Am17Ls8bOZewzi50u4t1DhvYvnuhSLkxSSHpv4KpA2R8
+        - checkbox
+        - text: HDD
+    - listitem:
+      - link "Apply the filter SSD to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A88223413031&dc&qid=1745833670&rnid=88223392031&ref=sr_nr_p_n_feature_seventeen_browse-bin_3&ds=v1%3Aembz4pd9RH%2FDKgF%2BIdohcbQTZTQzbP%2BhiV9rXaSDk4k
+        - checkbox
+        - text: SSD
+- group "Specific Uses":
+  - heading "Specific Uses" [level=2]
+  - list "Specific Uses":
+    - listitem:
+      - link "Apply the filter Business to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nineteen_browse-bin%3A27370248031&dc&qid=1745833670&rnid=27370247031&ref=sr_nr_p_n_feature_nineteen_browse-bin_1&ds=v1%3ATFSl5K9zTjsg7fgL66feUIVjtGGAuB8x1TKABaq2cZ8
+        - checkbox
+        - text: Business
+    - listitem:
+      - link "Apply the filter Developer to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nineteen_browse-bin%3A92119417031&dc&qid=1745833670&rnid=27370247031&ref=sr_nr_p_n_feature_nineteen_browse-bin_2&ds=v1%3A4IoY5r7OoVxtrikdkCo8%2BGGRSyR0ztT4xDpIziyCcvg
+        - checkbox
+        - text: Developer
+    - listitem:
+      - link "Apply the filter Entertainment to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nineteen_browse-bin%3A92119418031&dc&qid=1745833670&rnid=27370247031&ref=sr_nr_p_n_feature_nineteen_browse-bin_3&ds=v1%3Aq8kcCnHlMtC8nchIgTn1F6SyJe8lpkjEw%2Ff%2BkI8AKfE
+        - checkbox
+        - text: Entertainment
+    - listitem:
+      - link "Apply the filter Gaming to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nineteen_browse-bin%3A27370251031&dc&qid=1745833670&rnid=27370247031&ref=sr_nr_p_n_feature_nineteen_browse-bin_4&ds=v1%3AfcKiun4P8skMbY5KepiRDcZ18k%2Fv0waodaNssr3z%2BsQ
+        - checkbox
+        - text: Gaming
+    - listitem:
+      - link "Apply the filter Student to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nineteen_browse-bin%3A27370249031&dc&qid=1745833670&rnid=27370247031&ref=sr_nr_p_n_feature_nineteen_browse-bin_5&ds=v1%3AGUDXe9G2tN6Nsg6AJ%2BH880xyVerCvYQLfYtQOhBcm0Q
+        - checkbox
+        - text: Student
+- group "Graphics Memory":
+  - heading "Graphics Memory" [level=2]
+  - list "Graphics Memory":
+    - listitem:
+      - link "Apply the filter 8 GB & Above to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-two_browse-bin%3A27387117031&dc&qid=1745833670&rnid=27387106031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_1&ds=v1%3AfkDjnv6VLldvUhAyNRjG4GHap%2BFytDfvd%2BAv0phydrs
+        - checkbox
+        - text: 8 GB & Above
+    - listitem:
+      - link "Apply the filter 6 to 7 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-two_browse-bin%3A27387118031&dc&qid=1745833670&rnid=27387106031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_2&ds=v1%3AKf0kBthdvn7dSv4s7mljPqocNjHgBiCJxPqYyozIMvA
+        - checkbox
+        - text: 6 to 7 GB
+    - listitem:
+      - link "Apply the filter 4 to 5 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-two_browse-bin%3A27387116031&dc&qid=1745833670&rnid=27387106031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_3&ds=v1%3ANBAfj7agTNZi%2BiStITcbEe%2F%2B55WBYD0UMS9niAlaIfI
+        - checkbox
+        - text: 4 to 5 GB
+    - listitem:
+      - link "Apply the filter 2 to 3 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-two_browse-bin%3A27387115031&dc&qid=1745833670&rnid=27387106031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_4&ds=v1%3AU3fozvKJk2bCs3Xb0lE3lKATI7A94rv89wSi9tr7pk8
+        - checkbox
+        - text: 2 to 3 GB
+    - listitem:
+      - link "Apply the filter Up to 1 GB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-two_browse-bin%3A27387114031&dc&qid=1745833670&rnid=27387106031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_5&ds=v1%3A5tlFHayka7k8%2F6zMD%2FxMJokQEwnwJTJQX8p%2BFyZ1cIw
+        - checkbox
+        - text: Up to 1 GB
+- group "Operating System":
+  - heading "Operating System" [level=2]
+  - list "Operating System":
+    - listitem:
+      - link "Apply the filter Windows 11 Home to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A27413118031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_1&ds=v1%3AeLzeGLBrLoWqeo%2B25Ex%2FBgKo6RJI%2FVQwaMytgbPQRzo
+        - checkbox
+        - text: Windows 11 Home
+    - listitem:
+      - link "Apply the filter Windows 11 Pro to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A27413117031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_2&ds=v1%3A3w9nh42rRW6SoE%2FwWrwiJe%2FWOKiQGT0ouhWf8xHuQUo
+        - checkbox
+        - text: Windows 11 Pro
+    - listitem:
+      - link "Apply the filter Windows 10 Home to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A27413123031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_3&ds=v1%3Adcsjp1%2BLJ2gHM7PhAch9Ym5qPkoh1I8flV2FqkG8Kk0
+        - checkbox
+        - text: Windows 10 Home
+    - listitem:
+      - link "Apply the filter Windows 10 Pro to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A27413122031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_4&ds=v1%3A0jzHKPv1epDGy%2F8PS4SoyPw3Mw%2Fdt3E3FRhZnIEfE1o
+        - checkbox
+        - text: Windows 10 Pro
+    - listitem:
+      - link "Apply the filter Mac OS to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A1464491031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_5&ds=v1%3ADQkorwMkfL1djwjEi94wM07H0dN6JJoHyNJ%2BBv7i0os
+        - checkbox
+        - text: Mac OS
+    - listitem:
+      - link "Apply the filter Chrome to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A2646411031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_6&ds=v1%3AjhEkyjMbBEVnLBxVr0N224CWydcnUCZbd52scSK8W3Q
+        - checkbox
+        - text: Chrome
+    - listitem:
+      - link "Apply the filter DOS to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_operating_system_browse-bin%3A1464493031&dc&qid=1745833670&rnid=1464447031&ref=sr_nr_p_n_operating_system_browse-bin_7&ds=v1%3AYNK%2BJm99xMntYSm7DHqrupffwZrxDX%2BSpOAyDTAJ458
+        - checkbox
+        - text: DOS
+- group "RAM Technology":
+  - heading "RAM Technology" [level=2]
+  - list "RAM Technology":
+    - listitem:
+      - link "Apply the filter DDR3 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27355831031&dc&qid=1745833670&rnid=27355800031&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3AkHfloXEpxjJ99ANQSc%2FqDBGufutov%2FfS3YWDb5mjQ8o
+        - checkbox
+        - text: DDR3
+    - listitem:
+      - link "Apply the filter DDR4 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27355834031&dc&qid=1745833670&rnid=27355800031&ref=sr_nr_p_n_feature_six_browse-bin_2&ds=v1%3AfdlpfZLeQbfQIzron4dEjijWSbnos0iKA7GCAV%2BTat4
+        - checkbox
+        - text: DDR4
+    - listitem:
+      - link "Apply the filter DDR5 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27355835031&dc&qid=1745833670&rnid=27355800031&ref=sr_nr_p_n_feature_six_browse-bin_3&ds=v1%3AVU%2B8tID8LwA55zTaTJZ%2FBLF11qzHSIsmiWilY4anKBY
+        - checkbox
+        - text: DDR5
+    - listitem:
+      - link "Apply the filter LPDDR4 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27355832031&dc&qid=1745833670&rnid=27355800031&ref=sr_nr_p_n_feature_six_browse-bin_4&ds=v1%3AVrXfwzpzFSrziaSzxw8DPGcXMb5pHOgdYOqepCOEuyw
+        - checkbox
+        - text: LPDDR4
+    - listitem:
+      - link "Apply the filter LPDDR4X to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27355830031&dc&qid=1745833670&rnid=27355800031&ref=sr_nr_p_n_feature_six_browse-bin_5&ds=v1%3AYF%2FRMNGg0nVLNq986NrtnV%2Fay%2FIv0XNmyDJyf3cAMCA
+        - checkbox
+        - text: LPDDR4X
+    - listitem:
+      - link "Apply the filter LPDDR5 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A28220671031&dc&qid=1745833670&rnid=27355800031&ref=sr_nr_p_n_feature_six_browse-bin_6&ds=v1%3AC1ZSS%2BR25VEHBlKW%2FUH04WYY91D8aElSp4FyvnwdEV0
+        - checkbox
+        - text: LPDDR5
+- group "Processor Count":
+  - heading "Processor Count" [level=2]
+  - list "Processor Count":
+    - listitem:
+      - link "Apply the filter 24 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869295031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_1&ds=v1%3AtWOij8K71%2B38AGmOWHGm8rCzPbFFTtQkL%2Bg5eR8Hxng
+        - checkbox
+        - text: "24"
+    - listitem:
+      - link "Apply the filter 20 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869300031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_2&ds=v1%3AwzsexaFU0rNoRfXcTTjVWcwwILelqxt37hOhH79m%2B24
+        - checkbox
+        - text: "20"
+    - listitem:
+      - link "Apply the filter 16 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869301031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_3&ds=v1%3A7bopv4uN9FvmlGXhsh6zME9BHp7I4lvGe%2Bd5Nzkb75o
+        - checkbox
+        - text: "16"
+    - listitem:
+      - link "Apply the filter 14 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869299031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_4&ds=v1%3A5%2FqqvxjfYvaDjbawI7FLBY8XctYWYtCW1H5br0NiyC0
+        - checkbox
+        - text: "14"
+    - listitem:
+      - link "Apply the filter 12 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869289031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_5&ds=v1%3AetLAEj5cJPCMs5Y5wC%2F6WAGaN26S2MCG5VCZf8xDgEI
+        - checkbox
+        - text: "12"
+    - listitem:
+      - link "Apply the filter 10 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869291031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_6&ds=v1%3Ac7%2Bz3g%2B27%2F5oPmq4%2FlIzGC8xCSfvwgh4%2FCTdrNvxRVA
+        - checkbox
+        - text: "10"
+    - listitem:
+      - link "Apply the filter 8 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty_browse-bin%3A50869292031&dc&qid=1745833670&rnid=50869286031&ref=sr_nr_p_n_feature_thirty_browse-bin_7&ds=v1%3AcubIdvwtaLuegCMrmafXnH839Npq1aOxgo%2B%2Fn9TOuJQ
+        - checkbox
+        - text: "8"
+    - listitem:
+      - button "See more, Processor Count": See more
+- group "Display Type":
+  - heading "Display Type" [level=2]
+  - list "Display Type":
+    - listitem:
+      - link "Apply the filter LCD to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_browse-bin%3A27969052031&dc&qid=1745833670&rnid=27969049031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3A5%2BnHSKJY3eU5tSr1WfkUYry2Y8czXt7dpzQVPuMKzmA
+        - checkbox
+        - text: LCD
+    - listitem:
+      - link "Apply the filter LED to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_browse-bin%3A27969054031&dc&qid=1745833670&rnid=27969049031&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3Ask5MQaM9rybOTCBrDX6QNj5MYpINjGWh2U1l5xfOXjs
+        - checkbox
+        - text: LED
+    - listitem:
+      - link "Apply the filter OLED to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_browse-bin%3A27969053031&dc&qid=1745833670&rnid=27969049031&ref=sr_nr_p_n_feature_browse-bin_3&ds=v1%3A6mwzkmQDN9qKsno0pb7QHivdraEzNPELoBwgYpivbEw
+        - checkbox
+        - text: OLED
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Laptops":
+        - /url: /s?k=laptops&rh=n%3A1375424031&dc&qid=1745833670&rnid=3576079031&ref=sr_nr_n_1&ds=v1%3AEv2iSQvkKM8kKSQu0XHrvrIGwNzl%2FNxS0Sjk11im7o4
+    - listitem:
+      - link "Traditional Laptops":
+        - /url: /s?k=laptops&rh=n%3A1375424031%2Cn%3A22963796031&dc&qid=1745833670&rnid=3576079031&ref=sr_nr_n_2&ds=v1%3AN1CXT%2Bzn7xN6Tfl51et%2FEXoVgt18F8p8FG3cTadfxD0
+    - listitem:
+      - link "2 in 1 Laptops":
+        - /url: /s?k=laptops&rh=n%3A1375424031%2Cn%3A22963797031&dc&qid=1745833670&rnid=3576079031&ref=sr_nr_n_3&ds=v1%3AFuKC8chQZG7dtfPXbeIoX9RzWy5y90xzXt4cLvtoCNw
+- group "Battery Life":
+  - heading "Battery Life" [level=2]
+  - list "Battery Life":
+    - listitem:
+      - link "Apply the filter 11h & above to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-four_browse-bin%3A27389986031&dc&qid=1745833670&rnid=27389982031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_1&ds=v1%3AyNEN1OOdpM0v4iUS3VpXGRJSjAfAG%2Fs5Ptim%2B4dqaeY
+        - checkbox
+        - text: 11h & above
+    - listitem:
+      - link "Apply the filter 8 to 10h to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-four_browse-bin%3A27389985031&dc&qid=1745833670&rnid=27389982031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_2&ds=v1%3AksU4WAdbcFURjFDxZxd%2BkrmxMt%2FnFFELZeIHDiX0u1Q
+        - checkbox
+        - text: 8 to 10h
+    - listitem:
+      - link "Apply the filter 5 to 7h to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-four_browse-bin%3A27389987031&dc&qid=1745833670&rnid=27389982031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_3&ds=v1%3AGg5wKjZD2HcX%2FLBgA%2FqeIapE1u94wICrEESBphCbREk
+        - checkbox
+        - text: 5 to 7h
+    - listitem:
+      - link "Apply the filter Up to 4h to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-four_browse-bin%3A27389984031&dc&qid=1745833670&rnid=27389982031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_4&ds=v1%3ANF1u6a9ckdUsmYLOdE63guTDRdRqJSXGre1lfHbeyKw
+        - checkbox
+        - text: Up to 4h
+- group "Features":
+  - heading "Features" [level=2]
+  - list "Features":
+    - listitem:
+      - link "Apply the filter Anti Glare Coating to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990424031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_1&ds=v1%3A47PkPNaoF7eE0NIyVzI9gDhY97NwNfFOfdp03GbnAJI
+        - checkbox
+        - text: Anti Glare Coating
+    - listitem:
+      - link "Apply the filter Backlit Keyboard to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990430031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_2&ds=v1%3AyFTvTZnvRUEMUBm8xZNA3A7eY66RgHGFUyYvUSTJwY8
+        - checkbox
+        - text: Backlit Keyboard
+    - listitem:
+      - link "Apply the filter Fingerprint Reader to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990425031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_3&ds=v1%3APjo18WzLREqftQv1a632e%2B8BCNZnT0hHh4zhxJyKSjk
+        - checkbox
+        - text: Fingerprint Reader
+    - listitem:
+      - link "Apply the filter HD Audio to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990429031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_4&ds=v1%3AfMZPVwRZvrETOeO33ndeyDmuuVKj3bZsoQvVhgbZ6iM
+        - checkbox
+        - text: HD Audio
+    - listitem:
+      - link "Apply the filter Memory Card Slot to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990426031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_5&ds=v1%3AOXN2dwNjfq%2FjZyVtgFuyI8xoCrp7FfMNd0jS1MnZvBU
+        - checkbox
+        - text: Memory Card Slot
+    - listitem:
+      - link "Apply the filter Numeric Keypad to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990431031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_6&ds=v1%3AH9ljMCJj%2Bl3jeD%2BROJh5PeO2U4vAHUgU5JszEXkUj%2F0
+        - checkbox
+        - text: Numeric Keypad
+    - listitem:
+      - link "Apply the filter Spill Resistant to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_three_browse-bin%3A65990427031&dc&qid=1745833670&rnid=65990423031&ref=sr_nr_p_n_feature_three_browse-bin_7&ds=v1%3ATLO48ipVT3dmteCAVo%2ByTJc7CxJPbMiudhYtyJgCEcs
+        - checkbox
+        - text: Spill Resistant
+    - listitem:
+      - button "See more, Features": See more
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1745833670&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3A1YLmMwURAXImy0Qy8GI%2B5VpBD%2B%2B940sa7Hi%2FO3ao5LE
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1745833670&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3AmdUQkfqsr%2B3qq7UTznN2mx%2BYSxFKElypDlghrv92M04
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1745833670&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3Ag9bWKCVL0P7DTBGCCWSKV2DgQHgEQTP%2BVKf9QkZDX%2B4
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1745833670&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3Aue0zNazLUghtWS9zZxJfb5cVAN6AZ5YrADfZ%2BlowhIQ
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1745833670&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3A2RogyvdM9lxI5N6HAn6QTdNejUftTA6xwld4KUSggp0
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1745833670&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3AAi4zMclmEvRVCmfEioaAHF2jK73E4enclIjKqUAkykY
+- group "Processor Speed":
+  - heading "Processor Speed" [level=2]
+  - list "Processor Speed":
+    - listitem:
+      - link "Apply the filter 1 to 1.59 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894966031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_1&ds=v1%3ArcqVgvtsc57V8N3DoLJz2DjSqwR60LuurMi7VHAd9aY
+        - checkbox
+        - text: 1 to 1.59 GHz
+    - listitem:
+      - link "Apply the filter 1.60 to 1.79 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894968031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_2&ds=v1%3ATGsTXDLTKYS%2Fv5aTEb6qxhRo9LmzvGfVKsYS2JDyK00
+        - checkbox
+        - text: 1.60 to 1.79 GHz
+    - listitem:
+      - link "Apply the filter 1.80 to 1.99 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894962031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_3&ds=v1%3Aq%2BQEcE8BQKM194HL8lLkKk8rLDhfNq3XpIu3k3Ub5sQ
+        - checkbox
+        - text: 1.80 to 1.99 GHz
+    - listitem:
+      - link "Apply the filter 2.00 to 2.49 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894963031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_4&ds=v1%3ACYVxCsdpaOBzhyPCeMi%2B%2FJ8C4br6Qwb84Hlmn8tLZ4I
+        - checkbox
+        - text: 2.00 to 2.49 GHz
+    - listitem:
+      - link "Apply the filter 2.50 to 2.99 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894969031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_5&ds=v1%3A28OtOC5nPa2Fkp874tYeCw%2FuZjI5jsxrYYhjmJxBC6Y
+        - checkbox
+        - text: 2.50 to 2.99 GHz
+    - listitem:
+      - link "Apply the filter 3.00 to 3.49 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894965031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_6&ds=v1%3AKyqoBkMbEEC73TUCDny%2BnEyKzVv%2BvVRTjwNk4j21ADo
+        - checkbox
+        - text: 3.00 to 3.49 GHz
+    - listitem:
+      - link "Apply the filter 3.50 to 3.99 GHz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894964031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_7&ds=v1%3A0OdMcD7wR%2B4r7ZaNSAiRCHudh5c3uUNK9l2k%2FxmYe3w
+        - checkbox
+        - text: 3.50 to 3.99 GHz
+    - listitem:
+      - link "Apply the filter 4.0 GHz & Above to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-nine_browse-bin%3A49894967031&dc&qid=1745833670&rnid=49894961031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_8&ds=v1%3AaxVJQAPRbc95iiedgFEBddVmju843CIXialMxSK%2B92o
+        - checkbox
+        - text: 4.0 GHz & Above
+- group "Weight":
+  - heading "Weight" [level=2]
+  - list "Weight":
+    - listitem:
+      - link "Apply the filter Up to 0.9 kg to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-one_browse-bin%3A27387109031&dc&qid=1745833670&rnid=27387105031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_1&ds=v1%3A%2Be%2F6iilvbka4NFScJVc9KNMEn2xuy%2FeLoaORDDiRsQE
+        - checkbox
+        - text: Up to 0.9 kg
+    - listitem:
+      - link "Apply the filter 1.0 to 1.4 kg to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-one_browse-bin%3A27387113031&dc&qid=1745833670&rnid=27387105031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_2&ds=v1%3ASx0Ld77uLmerThhq9SfeLsTYsEHzuygyQB8yRxb0g5g
+        - checkbox
+        - text: 1.0 to 1.4 kg
+    - listitem:
+      - link "Apply the filter 1.5 to 1.9 kg to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-one_browse-bin%3A27387112031&dc&qid=1745833670&rnid=27387105031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_3&ds=v1%3AuBsaO7d1H%2BTSQ9ABILQrjD7%2BLhojGXrEHm1fd%2BQTN%2BE
+        - checkbox
+        - text: 1.5 to 1.9 kg
+    - listitem:
+      - link "Apply the filter 2.0 to 2.4 kg to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-one_browse-bin%3A27387111031&dc&qid=1745833670&rnid=27387105031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_4&ds=v1%3A3Ygz2dXYArcqP6hJeCR8VfQHeATDiDuTthRMahju6Oo
+        - checkbox
+        - text: 2.0 to 2.4 kg
+    - listitem:
+      - link "Apply the filter 2.5 kg & above to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-one_browse-bin%3A27387110031&dc&qid=1745833670&rnid=27387105031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_5&ds=v1%3AAoRsBybkXJkaMKtAheTZfLFyn4a04enG6tXdTNir6pE
+        - checkbox
+        - text: 2.5 kg & above
+- group "Display Refresh Rate":
+  - heading "Display Refresh Rate" [level=2]
+  - list "Display Refresh Rate":
+    - listitem:
+      - link "Apply the filter 121 Hz & Above to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A48923180031&dc&qid=1745833670&rnid=48923175031&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3AxHIxRxVINxM4z29FJ9hqtNZ1Tbvm1Zk%2FjpuFI%2FRcl4g
+        - checkbox
+        - text: 121 Hz & Above
+    - listitem:
+      - link "Apply the filter 90 to 120.9 Hz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A48923182031&dc&qid=1745833670&rnid=48923175031&ref=sr_nr_p_n_feature_nine_browse-bin_2&ds=v1%3AtGXO5LeZfudcOZq6GhL%2BCoBFcpySsIcCH0nw2lCdEwc
+        - checkbox
+        - text: 90 to 120.9 Hz
+    - listitem:
+      - link "Apply the filter 59 to 89.9 Hz to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A48923181031&dc&qid=1745833670&rnid=48923175031&ref=sr_nr_p_n_feature_nine_browse-bin_3&ds=v1%3ABrEm%2Ba0SwxuDyAa8J%2BskOzXRVxtNzwexAYPxISWqano
+        - checkbox
+        - text: 59 to 89.9 Hz
+- group "Connectivity":
+  - heading "Connectivity" [level=2]
+  - list "Connectivity":
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-five_browse-bin%3A56611008031&dc&qid=1745833670&rnid=27390962031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_1&ds=v1%3Au6DSf6rarn6tOPAiKs2RVmXoSOcweMFuuaxCYMDMDys
+        - checkbox
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter Ethernet to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-five_browse-bin%3A27390963031&dc&qid=1745833670&rnid=27390962031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_2&ds=v1%3AW7YACU%2FUsUA5YwwhG5hwR0xXl8grHKNMc2IMgbuC3eA
+        - checkbox
+        - text: Ethernet
+    - listitem:
+      - link "Apply the filter HDMI to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-five_browse-bin%3A27390964031&dc&qid=1745833670&rnid=27390962031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_3&ds=v1%3A0WwtsMy5WkH8v0poFQwNDIAT8HPWhmmscgEoEJV5eRU
+        - checkbox
+        - text: HDMI
+    - listitem:
+      - link "Apply the filter USB to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-five_browse-bin%3A27390965031&dc&qid=1745833670&rnid=27390962031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_4&ds=v1%3A1zzC%2FKcZV32%2BmV54oz5ibb75zonvLGVAnP2O6IQnHmM
+        - checkbox
+        - text: USB
+    - listitem:
+      - link "Apply the filter Wi-Fi to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-five_browse-bin%3A60046729031&dc&qid=1745833670&rnid=27390962031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_5&ds=v1%3A%2BPfSVGDf2qlcxzDUAU1xFaewjKTG%2Fb4yasbdxaZQSpA
+        - checkbox
+        - text: Wi-Fi
+- group "Display Resolution":
+  - heading "Display Resolution" [level=2]
+  - list "Display Resolution":
+    - listitem:
+      - link "Apply the filter 1080p to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_five_browse-bin%3A29613187031&dc&qid=1745833670&rnid=29613139031&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3AoDknN%2BfRxSozV7VfLtCCIRddGSzvwh8xC9Nvf8oZM5s
+        - checkbox
+        - text: 1080p
+    - listitem:
+      - link "Apply the filter 4K to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_five_browse-bin%3A29613181031&dc&qid=1745833670&rnid=29613139031&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3A1BMFI1FafzZyyWmvkMpJ%2BOEWRkFJIMo96nEV6jtOL5E
+        - checkbox
+        - text: 4K
+    - listitem:
+      - link "Apply the filter 720p to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_five_browse-bin%3A29613182031&dc&qid=1745833670&rnid=29613139031&ref=sr_nr_p_n_feature_five_browse-bin_3&ds=v1%3A0Qu1QiABwvlxp0GDX1UjlWfe7QQzxo45H9osc1YnmK8
+        - checkbox
+        - text: 720p
+- group "Computers & Accessories Brands":
+  - heading "Computers & Accessories Brands" [level=2]
+  - list "Computers & Accessories Brands":
+    - listitem:
+      - link "Apply the filter Made for Amazon to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_format_browse-bin%3A30678577031&dc&qid=1745833670&rnid=30678571031&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3AwtOWv6dAldRTXPIcFfBUYw6JiIcAl4TLxR0%2FMvNLO9g
+        - checkbox
+        - text: Made for Amazon
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_format_browse-bin%3A30678576031&dc&qid=1745833670&rnid=30678571031&ref=sr_nr_p_n_format_browse-bin_2&ds=v1%3A%2BN3lSySJwOpWHXOfWalERyQnRVLdOaGrc%2BaLsHSOHDs
+        - checkbox
+        - text: Top Brands
+- group "Security Feature":
+  - heading "Security Feature" [level=2]
+  - list "Security Feature":
+    - listitem:
+      - link "Apply the filter Face Recognition to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27023471031&dc&qid=1745833670&rnid=27023468031&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3A5BPk53YXw1tErdO2lN3Hibqo7UvDzchAr%2Feb6uJL2Rg
+        - checkbox
+        - text: Face Recognition
+    - listitem:
+      - link "Apply the filter Fingerprint Recognition to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27023470031&dc&qid=1745833670&rnid=27023468031&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3A7tfPo7WuluE7GIHHKagG2CWwllaM4tWRXk6lEvAkzUY
+        - checkbox
+        - text: Fingerprint Recognition
+- group "Input":
+  - heading "Input" [level=2]
+  - list "Input":
+    - listitem:
+      - link "Apply the filter Touch Bar to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A28220670031&dc&qid=1745833670&rnid=27023469031&ref=sr_nr_p_n_feature_fifteen_browse-bin_1&ds=v1%3AaiCLDql6S1wS1gc7mXCwzDb1WSVLKPAt4XVwaHtJzog
+        - checkbox
+        - text: Touch Bar
+    - listitem:
+      - link "Apply the filter Touch Pad to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A91613974031&dc&qid=1745833670&rnid=27023469031&ref=sr_nr_p_n_feature_fifteen_browse-bin_2&ds=v1%3AUyBqdDt8mPiGyzn%2BdfqgGj%2FrNMcCYeojKuO8xZwdfcs
+        - checkbox
+        - text: Touch Pad
+    - listitem:
+      - link "Apply the filter Touchscreen to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A27023475031&dc&qid=1745833670&rnid=27023469031&ref=sr_nr_p_n_feature_fifteen_browse-bin_3&ds=v1%3A2xBTtG%2FhslQ4XIKKaTr%2B1uCoec5%2F1NBDZXagvxQXX2s
+        - checkbox
+        - text: Touchscreen
+    - listitem:
+      - link "Apply the filter Touchscreen with Stylus Support to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A27023476031&dc&qid=1745833670&rnid=27023469031&ref=sr_nr_p_n_feature_fifteen_browse-bin_4&ds=v1%3AoqtCI%2BteCuSf1hEr9hbHZb2owGBVNS64CP9Nez2vulc
+        - checkbox
+        - text: Touchscreen with Stylus Support
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1745833670&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3A4lJMkQ0skQfDh4AZ99ccEjook50Q4YYtsiHDXgyxw7A
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1745833670&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3AhgvfuuPmEzAhKsU6209LJXGShLXQ6sCfW8b%2BMhvSaMo
+- group "Laptop Type":
+  - heading "Laptop Type" [level=2]
+  - list "Laptop Type":
+    - listitem:
+      - link "Apply the filter Notebook to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_four_browse-bin%3A7005007031&dc&qid=1745833670&rnid=7005004031&ref=sr_nr_p_n_feature_four_browse-bin_1&ds=v1%3A%2BR6gO%2BC4TvvXcXjk8VC%2FXedpEVvM7%2FcOAfFbCY6pV3E
+        - checkbox
+        - text: Notebook
+    - listitem:
+      - link "Apply the filter Ultrabook to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_four_browse-bin%3A7005008031&dc&qid=1745833670&rnid=7005004031&ref=sr_nr_p_n_feature_four_browse-bin_2&ds=v1%3Ae6gF9C%2Fd7zs7flrngn1k3sG6fqdyDZ2KZ6ryU%2BTzFlk
+        - checkbox
+        - text: Ultrabook
+- group "Notebook Computer Hardware Interface":
+  - heading "Notebook Computer Hardware Interface" [level=2]
+  - list "Notebook Computer Hardware Interface":
+    - listitem:
+      - link "Apply the filter 2.5mm Audio to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A30107447031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_1&ds=v1%3AXfNNVoKyvz7TebTQy8Qx2wYLxgWAoWr6SA9FmEjk0bc
+        - checkbox
+        - text: 2.5mm Audio
+    - listitem:
+      - link "Apply the filter 3.5mm Audio to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A30107470031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_2&ds=v1%3Aa7tBrljayyHDUfVtItYvjWEd%2FPHZlh0U26oE5AS6LnM
+        - checkbox
+        - text: 3.5mm Audio
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A30107424031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_3&ds=v1%3And2k87CoVomrYpsKY4bpF%2BACI77z0Q9SRU%2B%2BTj%2FOpG0
+        - checkbox
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter Bluetooth 5 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A30107426031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_4&ds=v1%3AGt972BDr1bxkMvP13kOTjrXFUteJ4s2gxoNFzjIie04
+        - checkbox
+        - text: Bluetooth 5
+    - listitem:
+      - link "Apply the filter DisplayPort to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A30107475031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_5&ds=v1%3ALw1FObem5n4rBD7hMmdUTKpbn%2BXTHpXuyVrhW%2FTvKQA
+        - checkbox
+        - text: DisplayPort
+    - listitem:
+      - link "Apply the filter Ethernet to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A27402479031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_6&ds=v1%3AChW0oXf2%2BrDorFyxDTaem4siUz%2BdaRKz0IrSlfal4ZU
+        - checkbox
+        - text: Ethernet
+    - listitem:
+      - link "Apply the filter HDMI to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-seven_browse-bin%3A27402481031&dc&qid=1745833670&rnid=27402475031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_7&ds=v1%3ActAtBe91vlajFb5UaRIiKcKdtIvmzNrXU19a1FWA4%2FM
+        - checkbox
+        - text: HDMI
+    - listitem:
+      - button "See more, Notebook Computer Hardware Interface": See more
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=laptops&rh=p_n_availability%3A1318485031&dc&qid=1745833670&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3AmkIjl%2FvRk64vfRLaxUs8%2BQ4SnsTGlYJYq%2FrDJnoSHJY
+        - checkbox
+        - text: Include Out of Stock
+- group "Laptop Cellular Technology":
+  - heading "Laptop Cellular Technology" [level=2]
+  - list "Laptop Cellular Technology":
+    - listitem:
+      - link "Apply the filter 2G to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty_browse-bin%3A27385644031&dc&qid=1745833670&rnid=27385640031&ref=sr_nr_p_n_feature_twenty_browse-bin_1&ds=v1%3A00WbcxInGvpS7LtJnSvj7%2BoPi5Q4Jmc%2BE6MkEtk0awQ
+        - checkbox
+        - text: 2G
+    - listitem:
+      - link "Apply the filter 5G to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty_browse-bin%3A27385643031&dc&qid=1745833670&rnid=27385640031&ref=sr_nr_p_n_feature_twenty_browse-bin_2&ds=v1%3AsuVntxI%2FAxGmFUNEbbIf%2FPNvYeCZbTT6pdtiG55zqL8
+        - checkbox
+        - text: 5G
+- group "Memory Slots":
+  - heading "Memory Slots" [level=2]
+  - list "Memory Slots":
+    - listitem:
+      - link "Apply the filter 1 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-six_browse-bin%3A100436233031&dc&qid=1745833670&rnid=100436137031&ref=sr_nr_p_n_feature_thirty-six_browse-bin_1&ds=v1%3ArESOuPE%2FE25D60U2pylNEegHjbAZlzqT%2B3sor65nFaw
+        - checkbox
+        - text: "1"
+    - listitem:
+      - link "Apply the filter 2 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-six_browse-bin%3A100436223031&dc&qid=1745833670&rnid=100436137031&ref=sr_nr_p_n_feature_thirty-six_browse-bin_2&ds=v1%3ANGpzgIQJcpxqu8QGb7SgZHlJFi1PMDzYcNx3hy0IrX4
+        - checkbox
+        - text: "2"
+- group "Hard Disk Interface":
+  - heading "Hard Disk Interface" [level=2]
+  - list "Hard Disk Interface":
+    - listitem:
+      - link "Apply the filter eSATA to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436182031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_1&ds=v1%3AlYeuyqcZrIGYZFGvynVxzjMuJjhAD7Cy0dnfI8pAeLs
+        - checkbox
+        - text: eSATA
+    - listitem:
+      - link "Apply the filter Ethernet to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436210031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_2&ds=v1%3AvjFeIS4alnaRPLg6ZAlTe4uuGrv77EyCt1%2BuYQJoxx8
+        - checkbox
+        - text: Ethernet
+    - listitem:
+      - link "Apply the filter PC Card to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436184031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_3&ds=v1%3Ar4Bx5SZjrEXVwlhr%2BsnL7r4bDewc72TturR2fLplY28
+        - checkbox
+        - text: PC Card
+    - listitem:
+      - link "Apply the filter PCIE x 2 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436214031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_4&ds=v1%3AEsnH0EiLFsrCBEv8RZR3Jj4uoMVBTsMvkbf4MMaFtvE
+        - checkbox
+        - text: PCIE x 2
+    - listitem:
+      - link "Apply the filter PCIE x 4 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436191031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_5&ds=v1%3AZRb8vcdEPZWCFoDINvB%2FR8CnYxNhV36ffD26SaVHA%2Bo
+        - checkbox
+        - text: PCIE x 4
+    - listitem:
+      - link "Apply the filter Serial ATA to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436197031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_6&ds=v1%3AvcaVqIiXXCAQL%2B6hrmYXfjWnbBMtRhl%2FkvYroeNpb0Q
+        - checkbox
+        - text: Serial ATA
+    - listitem:
+      - link "Apply the filter Solid State to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-four_browse-bin%3A100436201031&dc&qid=1745833670&rnid=100436135031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_7&ds=v1%3A0cD%2BGH9aHnilbQp95BdFyE9LfHNoJLkWSBXzq5UvLEc
+        - checkbox
+        - text: Solid State
+    - listitem:
+      - button "See more, Hard Disk Interface": See more
+- group "Wi-Fi Generation":
+  - heading "Wi-Fi Generation" [level=2]
+  - list "Wi-Fi Generation":
+    - listitem:
+      - link "Apply the filter Wi-Fi 5 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-one_browse-bin%3A89216017031&dc&qid=1745833670&rnid=89216012031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_1&ds=v1%3AG2ZS8JFtjliLff0pz9W%2BvO76vXDMxm85q3vG9P0AO%2F4
+        - checkbox
+        - text: Wi-Fi 5
+    - listitem:
+      - link "Apply the filter Wi-Fi 6 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-one_browse-bin%3A89216019031&dc&qid=1745833670&rnid=89216012031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_2&ds=v1%3A7H7MgRxxUiGxed6%2BMtqWkKBLvSnEP5uqvAwuow%2BIfeI
+        - checkbox
+        - text: Wi-Fi 6
+    - listitem:
+      - link "Apply the filter Wi-Fi 6E to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-one_browse-bin%3A89216016031&dc&qid=1745833670&rnid=89216012031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_3&ds=v1%3AHQDSOVVr7cNMDGq3KIBte9orN9cffD3oTywr1QH6Wok
+        - checkbox
+        - text: Wi-Fi 6E
+    - listitem:
+      - link "Apply the filter Wi-Fi 7 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-one_browse-bin%3A89216015031&dc&qid=1745833670&rnid=89216012031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_4&ds=v1%3ArJse86UgGlW0atjSQBjJpweQqPjHw776JDGSnheqj%2Bw
+        - checkbox
+        - text: Wi-Fi 7
+- group "Audio Output":
+  - heading "Audio Output" [level=2]
+  - list "Audio Output":
+    - listitem:
+      - link "Apply the filter Headphones to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-three_browse-bin%3A100426084031&dc&qid=1745833670&rnid=100426042031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_1&ds=v1%3ADJ%2FGwQwrWyjW5Qdk5zbELjCHNlKks9J7%2FXj0pEvo4bY
+        - checkbox
+        - text: Headphones
+    - listitem:
+      - link "Apply the filter Speakers to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-three_browse-bin%3A100426083031&dc&qid=1745833670&rnid=100426042031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_2&ds=v1%3AUVm23459F9P1MTCkWrlPDx6h4Wf8zIcd%2FitRc5WEFQ0
+        - checkbox
+        - text: Speakers
+- group "GPU Manufacturer":
+  - heading "GPU Manufacturer" [level=2]
+  - list "GPU Manufacturer":
+    - listitem:
+      - link "Apply the filter AMD to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-seven_browse-bin%3A100436240031&dc&qid=1745833670&rnid=100436138031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_1&ds=v1%3AiqgTIxIYBLKwWTv7Tfu4bQOjy15kf%2Bk9yVecMeMjLfo
+        - checkbox
+        - text: AMD
+    - listitem:
+      - link "Apply the filter Apple to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-seven_browse-bin%3A100436242031&dc&qid=1745833670&rnid=100436138031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_2&ds=v1%3A%2Bc6GCDNcSLJ5kjB9J90v%2BwnaQRN1mpdXyRUTWt41R8M
+        - checkbox
+        - text: Apple
+    - listitem:
+      - link "Apply the filter Intel to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-seven_browse-bin%3A100436245031&dc&qid=1745833670&rnid=100436138031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_3&ds=v1%3Aheo%2B9qFuKueZIx7XUdFBimK%2FBaecfSkmJK1SpWL2kZE
+        - checkbox
+        - text: Intel
+    - listitem:
+      - link "Apply the filter NVIDIA to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-seven_browse-bin%3A100436238031&dc&qid=1745833670&rnid=100436138031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_4&ds=v1%3A0KU4gK%2FS4rc2z%2F5nZH3%2BPS3d0k4jq5zplF1EoB5W6IE
+        - checkbox
+        - text: NVIDIA
+    - listitem:
+      - link "Apply the filter Qualcomm to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-seven_browse-bin%3A100436239031&dc&qid=1745833670&rnid=100436138031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_5&ds=v1%3ArtXn39qJnE3hKVymUk%2B29aAl010h68CEAwDc2wPQs84
+        - checkbox
+        - text: Qualcomm
+- group "Max Resolution":
+  - heading "Max Resolution" [level=2]
+  - list "Max Resolution":
+    - listitem:
+      - link "Apply the filter 1366 x 768 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140377031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3AaKElEdLxA%2BwBrZNVFWwVwLkkg5P8UvNbj1MoGhc2OZ4
+        - checkbox
+        - text: 1366 x 768
+    - listitem:
+      - link "Apply the filter 1900 x 1200 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140356031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3A3KZvnj3G9dLZimyIbAJ5lk638Goh6Fi%2BcGyTLph3yQ0
+        - checkbox
+        - text: 1900 x 1200
+    - listitem:
+      - link "Apply the filter 1920 x 1080 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140372031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_3&ds=v1%3AYf5Ku%2BmQ4KZTvxsx5XqH%2BdgEDKcvPpwL6dlDOUZy%2BVY
+        - checkbox
+        - text: 1920 x 1080
+    - listitem:
+      - link "Apply the filter 1920 x 1200 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140357031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_4&ds=v1%3AHMDN9yk75axC9ejF9mP64hmOD37d8mIqEzSxPw4zUT0
+        - checkbox
+        - text: 1920 x 1200
+    - listitem:
+      - link "Apply the filter 2560 x 1440 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140373031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_5&ds=v1%3ApW42qjUJ5Lvzw%2FhzxIFNat2Wf4Pp%2BEemUdcgraCwWXI
+        - checkbox
+        - text: 2560 x 1440
+    - listitem:
+      - link "Apply the filter 2560 x 1600 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140367031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_6&ds=v1%3AXNnIw63kKGT%2BuPiEuWaz5ePSfaVbKAxFoJrqAgyq4g8
+        - checkbox
+        - text: 2560 x 1600
+    - listitem:
+      - link "Apply the filter 2880 x 1800 to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A100140366031&dc&qid=1745833670&rnid=100140336031&ref=sr_nr_p_n_feature_two_browse-bin_7&ds=v1%3ANX5Wg%2B%2BcKYiJhR3e6Iju6%2BLJprn3qOO7GDIjrwawB30
+        - checkbox
+        - text: 2880 x 1800
+    - listitem:
+      - button "See more, Max Resolution": See more
+- group "Keyboard Type":
+  - heading "Keyboard Type" [level=2]
+  - list "Keyboard Type":
+    - listitem:
+      - link "Apply the filter Backlit to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-five_browse-bin%3A100436218031&dc&qid=1745833670&rnid=100436136031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_1&ds=v1%3AEl%2FauOjDSRKLhaqRKR4fH5Y5YofH0WY4fcXo7Din66c
+        - checkbox
+        - text: Backlit
+    - listitem:
+      - link "Apply the filter Chiclet to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-five_browse-bin%3A100436220031&dc&qid=1745833670&rnid=100436136031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_2&ds=v1%3AZrHwDwQa1PClRtJRAx8gHV8%2FFLfKlW036rHFOgKiQ6c
+        - checkbox
+        - text: Chiclet
+    - listitem:
+      - link "Apply the filter Ergonomic to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-five_browse-bin%3A100436219031&dc&qid=1745833670&rnid=100436136031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_3&ds=v1%3AL5jtS17Vf8cOEFXBmVGzSEYZubgA%2FgIdFr2%2Fe9b2q2c
+        - checkbox
+        - text: Ergonomic
+    - listitem:
+      - link "Apply the filter Gaming to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-five_browse-bin%3A100436217031&dc&qid=1745833670&rnid=100436136031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_4&ds=v1%3AhTYbGQ7kdc2VLrAXuYOKEcFkxYgcLWjXngnxG0XFvi4
+        - checkbox
+        - text: Gaming
+    - listitem:
+      - link "Apply the filter Mechanical to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-five_browse-bin%3A100436221031&dc&qid=1745833670&rnid=100436136031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_5&ds=v1%3AmV4jFrrOm4jWuIpdG%2FsbIdLohecEdPm%2FCUZff56vWDA
+        - checkbox
+        - text: Mechanical
+- group "RAM Type":
+  - heading "RAM Type" [level=2]
+  - list "RAM Type":
+    - listitem:
+      - link "Apply the filter DDR3 SDRAM to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-eight_browse-bin%3A100424337031&dc&qid=1745833670&rnid=100424326031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_1&ds=v1%3AeOprT7OyAltB15MrLdftE9tyWGRdoTm0xu9nDLqqP0I
+        - checkbox
+        - text: DDR3 SDRAM
+    - listitem:
+      - link "Apply the filter DDR4 SDRAM to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-eight_browse-bin%3A100424338031&dc&qid=1745833670&rnid=100424326031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_2&ds=v1%3AwZGBQnyjgj6CB0vpfRlIejegPHdOsWP11EREzxEH8Mo
+        - checkbox
+        - text: DDR4 SDRAM
+    - listitem:
+      - link "Apply the filter DDR5 RAM to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-eight_browse-bin%3A100424339031&dc&qid=1745833670&rnid=100424326031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_3&ds=v1%3AT3Ryu8IhWb69h%2FoxMC8%2FQkTq2FsJ0SvKde46cecEf8A
+        - checkbox
+        - text: DDR5 RAM
+    - listitem:
+      - link "Apply the filter SDRAM to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-eight_browse-bin%3A100424333031&dc&qid=1745833670&rnid=100424326031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_4&ds=v1%3Ar5RI2tZCklZ23hK%2F%2FUZ8DdejpIv0M2CQATJJljfjNBw
+        - checkbox
+        - text: SDRAM
+    - listitem:
+      - link "Apply the filter SODIMM to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_twenty-eight_browse-bin%3A100424332031&dc&qid=1745833670&rnid=100424326031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_5&ds=v1%3AIYhjoqL4O%2FCG2VzsDeG2d%2B8%2Bb1tX1DzW%2BJimHVpdJUM
+        - checkbox
+        - text: SODIMM
+- group "Cell Composition":
+  - heading "Cell Composition" [level=2]
+  - list "Cell Composition":
+    - listitem:
+      - link "Apply the filter Lithium Ion to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-two_browse-bin%3A100426076031&dc&qid=1745833670&rnid=100426040031&ref=sr_nr_p_n_feature_thirty-two_browse-bin_1&ds=v1%3AiBF4VkYzUNxtj9oHDsVYkSg0UuUyjm3uZCKQxAGiG80
+        - checkbox
+        - text: Lithium Ion
+    - listitem:
+      - link "Apply the filter Lithium Polymer to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_n_feature_thirty-two_browse-bin%3A100426065031&dc&qid=1745833670&rnid=100426040031&ref=sr_nr_p_n_feature_thirty-two_browse-bin_2&ds=v1%3AVyqbpLAdJ69pqTlrzTPihKS2GxANE1BsrB5u2MqNSdU
+        - checkbox
+        - text: Lithium Polymer
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter Clicktech Retail Private Ltd to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_6%3AAJ6SIZC8YQDZX&dc&qid=1745833670&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3A2c2Acpd5gS0QYI4AQme2FbrYYpBanH6wg9%2B7wRWBLPY
+        - checkbox
+        - text: Clicktech Retail Private Ltd
+    - listitem:
+      - link "Apply the filter Clicktech Business to narrow results":
+        - /url: /s?k=laptops&rh=n%3A976392031%2Cp_6%3AA34RBS7MAVZ4G4&dc&qid=1745833670&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AowZv6s3yfnsjJF56jxnb9OEdOR0H7wOZZMkpJP5WfnM
+        - checkbox
+        - text: Clicktech Business
+    - listitem:
+      - button "See more, Seller": See more
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=laptops&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1745833670&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3ALTPe5aq8uAhUOG9Bsav6Vq6g25EudLXL%2BhwDMB1nh0Y
+        - checkbox
+        - text: Eligible for Pay On Delivery
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dlaptops%26ref%3Dnb_sb_noss&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | // tests/applyFilter.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Apply brand filter and verify the results', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('https://www.amazon.in');
+   7 |
+   8 |   console.log('✅ Searching for "laptops"...');
+   9 |   await page.fill('#twotabsearchtextbox', 'laptops');
+  10 |   await page.press('#twotabsearchtextbox', 'Enter');
+  11 |
+  12 |   console.log('✅ Waiting for filters...');
+  13 |   await page.waitForSelector('span.a-size-base.a-color-base');
+  14 |
+  15 |   console.log('✅ Clicking on HP brand filter...');
+> 16 |   await page.locator('span.a-size-base.a-color-base:has-text("HP")').click();
+     |                                                                      ^ Error: locator.click: Error: strict mode violation: locator('span.a-size-base.a-color-base:has-text("HP")') resolved to 3 elements:
+  17 |
+  18 |   console.log('✅ Waiting for results update...');
+  19 |   await page.waitForLoadState('networkidle');
+  20 |
+  21 |   const filterApplied = await page.locator('span.a-size-base.a-color-base:has-text("HP")').isVisible();
+  22 |   expect(filterApplied).toBeTruthy();
+  23 |
+  24 |   console.log('🎯 Filter applied and verified!');
+  25 | });
+  26 |
+```

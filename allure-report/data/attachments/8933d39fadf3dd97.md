@@ -1,0 +1,661 @@
+# Test info
+
+- Name: Click Today's Deals and scroll down and up
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/checkTodaysDeals.spec.js:3:5
+
+# Error details
+
+```
+Error: page.waitForLoadState: Test timeout of 60000ms exceeded.
+=========================== logs ===========================
+  "domcontentloaded" event fired
+  "load" event fired
+============================================================
+    at /home/ashok/Desktop/amazon-playwright-js/tests/checkTodaysDeals.spec.js:12:14
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: Deals
+      - combobox "Select the department you want to search in":
+        - option "Deals" [selected]
+        - option "All Categories"
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fevents%2Fgreatsummersale%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=8S8NVY5NJ0BGYZTREYXS
+      - img "Big Savings, More Happiness"
+    - dialog
+- link "Himalaya":
+  - /url: /s/?_encoding=UTF8&rh=p_78%3AB074M3Z6Q5%257CB00NARTS1C%257C%25E2%2580%258EB0C6QQNRF5%257CB0B8L5Z7RQ%257CB0CNTFMSWV%257CB0CNTFQ8M6%257CB00GV914JA%257CB0CZ3JKSZB%257CB07C5Q3LBZ%257CB006LXC7SI%257CB072QLJZ1B&aaxitk=%5B%5BAAX_IMPRESSION_TOKEN%5D%5D&aref=%5B%5BCS_MADS_TOKEN%5D%5D&ref_=cct_cg_A24HdrR_1a1&pd_rd_w=9uIG9&content-id=amzn1.sym.8917c2f2-fe6d-45a1-8049-5b06f1bb526a&pf_rd_p=8917c2f2-fe6d-45a1-8049-5b06f1bb526a&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Himalaya"
+- img "header"
+- group:
+  - heading "Shop top categories" [level=1]
+  - button "Previous page"
+  - group:
+    - list:
+      - listitem:
+        - link "20% cashback* on first order 20% cashback* on first order":
+          - /url: https://www.amazon.in/l/29657746031/ref=May25ART_LEO_UnrecRNP_Teaser?_encoding=UTF8&pd_rd_w=Afats&content-id=amzn1.sym.6eb46f86-b5a8-4597-b008-cbe3d9ea6d49&pf_rd_p=6eb46f86-b5a8-4597-b008-cbe3d9ea6d49&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "20% cashback* on first order"
+          - text: 20% cashback* on first order
+      - listitem:
+        - link "Mobile & accessories Mobile & accessories":
+          - /url: /b/ref=PCPO_WLD_MA25?_encoding=UTF8&ie=UTF8&node=206639856031&ref_=PCPO_WLD_MA25&pd_rd_w=56n2M&content-id=amzn1.sym.e08f0d1a-1fd5-4ccc-8adc-762fafdf5287&pf_rd_p=e08f0d1a-1fd5-4ccc-8adc-762fafdf5287&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Mobile & accessories"
+          - text: Mobile & accessories
+      - listitem:
+        - link "Home Appliances Home Appliances":
+          - /url: /b/ref=la-teaser-matart25?_encoding=UTF8&ie=UTF8&node=206819474031&pd_rd_w=rAXa8&content-id=amzn1.sym.cad3912d-29ec-4753-b714-3970a4540696&pf_rd_p=cad3912d-29ec-4753-b714-3970a4540696&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Home Appliances"
+          - text: Home Appliances
+      - listitem:
+        - link "Electronics & accessories Electronics & accessories":
+          - /url: https://www.amazon.in/l/89266439031/ref=RankedPCPO_CEPC_May25?_encoding=UTF8&pd_rd_w=Dcslx&content-id=amzn1.sym.346f6a87-a5fa-4f2f-8907-daad4882cd92&pf_rd_p=346f6a87-a5fa-4f2f-8907-daad4882cd92&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Electronics & accessories"
+          - text: Electronics & accessories
+      - listitem:
+        - link "Amazon Brands & more Amazon Brands & more":
+          - /url: https://www.amazon.in/b/ref=PCPO_PB_MA25?_encoding=UTF8&node=15390370031&ref_=PCPO_PB_MA25&pd_rd_w=lcWYv&content-id=amzn1.sym.93cdd316-fef6-43d1-9a5f-887ee92bd81b&pf_rd_p=93cdd316-fef6-43d1-9a5f-887ee92bd81b&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Amazon Brands & more"
+          - text: Amazon Brands & more
+  - button "Next page"
+- group:
+  - heading "Shop Crazy Low Prices | Up to 80% off" [level=1]
+  - group:
+    - list:
+      - listitem:
+        - link "Shop Bazaar Deals Revealed | Starting ₹99":
+          - /url: https://www.amazon.in/amazon-bazaar/merch/?_encoding=UTF8&ref=Bazaar&merchPageId=11&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Bazaar"
+          - text: Deals Revealed | Starting ₹99
+      - listitem:
+        - link "Shop Bazaar Bestellers | Starting ₹99":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=All&ref=MayART2025BazaarAll&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Bazaar"
+          - text: Bestellers | Starting ₹99
+      - listitem:
+        - link "Shop Women Kurtis & More Starting ₹129":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=Women&ref=MayART2025BazaarWomen&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Women"
+          - text: Kurtis & More Starting ₹129
+      - listitem:
+        - link "Shop Men Men's Fashion | Starting ₹99":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=Men&ref=MayART2025BazaarMen&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Men"
+          - text: Men's Fashion | Starting ₹99
+      - listitem:
+        - link "Shop Home Home Decor | Starting ₹119":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=Home&ref=MayART2025BazaarHome&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Home"
+          - text: Home Decor | Starting ₹119
+      - listitem:
+        - link "Shop Electronics Electronics | Starting ₹99":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=Electronics&ref=MayART2025BazaarElectronics&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Electronics"
+          - text: Electronics | Starting ₹99
+      - listitem:
+        - link "Shop Kitchen Kitchen tools | Starting ₹79":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=Kitchen&ref=MayART2025BazaarKitchen&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Kitchen"
+          - text: Kitchen tools | Starting ₹79
+      - listitem:
+        - link "Shop Kids' Kids' Corner | Starting ₹99":
+          - /url: https://www.amazon.in/amazon-bazaar/store/?_encoding=UTF8&deeplinkId=Kids&ref=MayART2025BazaarKids&pd_rd_w=TIBwd&content-id=amzn1.sym.256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_p=256839b6-bb6a-4e0c-91cc-3893e7b4bb6c&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Shop Kids'"
+          - text: Kids' Corner | Starting ₹99
+- img "1"
+- link "2":
+  - /url: /dp/B0DLW4QD72/?_encoding=UTF8&ref_=cct_cg_HSSCR_2a1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "2"
+- link "3":
+  - /url: /dp/B0CQN2BHW8/?_encoding=UTF8&ref_=cct_cg_HSSCR_2b1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "3"
+- link "4":
+  - /url: /dp/B0D6G4SKGK/?_encoding=UTF8&ref_=cct_cg_HSSCR_3a1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "4"
+- link "5":
+  - /url: /dp/B0CGQXY29P/?_encoding=UTF8&ref_=cct_cg_HSSCR_3b1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "5"
+- link "6":
+  - /url: https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&ref=nlx_dp_r_B0F43CHDSN&node=206821373031&ref_=cct_cg_HSSCR_4a1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "6"
+- link "7":
+  - /url: /dp/B09ZXD1CX2/?_encoding=UTF8&ref_=cct_cg_HSSCR_4b1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "7"
+- link "8":
+  - /url: /dp/B09BY17DLV/?_encoding=UTF8&ref_=cct_cg_HSSCR_5a1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "8"
+- link "9":
+  - /url: /dp/B0D73FGPS1/?_encoding=UTF8&ref_=cct_cg_HSSCR_5b1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "9"
+- link "10":
+  - /url: /dp/B0CYLB3MP1/?_encoding=UTF8&ref_=cct_cg_HSSCR_6a1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "10"
+- link "11":
+  - /url: /dp/B0CHRY72DD/?_encoding=UTF8&ref_=cct_cg_HSSCR_6b1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "11"
+- link "12":
+  - /url: https://www.amazon.in/promotion/psp/A3UNY83OVFFAH/?_encoding=UTF8&ref_=cct_cg_HSSCR_7a1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "12"
+- link "13":
+  - /url: /dp/B0BGPKL94W/?_encoding=UTF8&ref_=cct_cg_HSSCR_7b1&pd_rd_w=yfTCC&content-id=amzn1.sym.74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_p=74b823b1-f75b-4a0a-996e-a7efb10d3e7f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "13"
+- img "14"
+- link "Himalaya":
+  - /url: /dp/B01EHF68P4/?_encoding=UTF8&ref_=cct_cg_A24HdrR_1a1&pd_rd_w=NtVYy&content-id=amzn1.sym.8ce2f260-e3b6-4ffa-a125-c45d1a7dc8d9&pf_rd_p=8ce2f260-e3b6-4ffa-a125-c45d1a7dc8d9&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Himalaya"
+- group:
+  - heading "Brands in focus | Wishlist now" [level=1]
+  - group:
+    - list:
+      - listitem:
+        - link "Samsung WL 1 Galaxy S24 Ultra 5G":
+          - /url: /dp/B0CS5Z3T4M/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Samsung WL 1"
+          - text: Galaxy S24 Ultra 5G
+      - listitem:
+        - link "Intel 1 Lenovo Intel Core Ultra 9":
+          - /url: /dp/B0F1N18XWV/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Intel 1"
+          - text: Lenovo Intel Core Ultra 9
+      - listitem:
+        - link "Samsung HE Samsung QLED TV | Notify me":
+          - /url: /l/206821373031/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Samsung HE"
+          - text: Samsung QLED TV | Notify me
+      - listitem:
+        - link "Samsung WL 2 Samsung Galaxy A55 5G":
+          - /url: /dp/B0CWPC2W5V/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Samsung WL 2"
+          - text: Samsung Galaxy A55 5G
+      - listitem:
+        - link "Samsung LA Samsung 653 L Refrigerator":
+          - /url: /dp/B0BQC4Y4TP/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Samsung LA"
+          - text: Samsung 653 L Refrigerator
+      - listitem:
+        - link "Intel 2 ASUS Intel Core 5":
+          - /url: /dp/B0DXF4Q8C9/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Intel 2"
+          - text: ASUS Intel Core 5
+      - listitem:
+        - link "Samsung WL 3 Samsung Galaxy M35":
+          - /url: /dp/B0D7Z8CJP8/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Samsung WL 3"
+          - text: Samsung Galaxy M35
+      - listitem:
+        - link "Intel 3 HP 15 Intel Core Ultra 5":
+          - /url: /dp/B0DGX5X7NZ/?_encoding=UTF8&pd_rd_w=6Jjo7&content-id=amzn1.sym.0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_p=0af25628-f919-4653-ab54-4a4d0b6240a5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Intel 3"
+          - text: HP 15 Intel Core Ultra 5
+- group:
+  - heading "Offers you can't miss!" [level=1]
+  - group:
+    - list:
+      - listitem:
+        - link "Combos Up to 40% off":
+          - /url: https://www.amazon.in/mobile-phones/b/ref=PD24_LU_WL?_encoding=UTF8&ie=UTF8&node=206236330031&pd_rd_w=CqOHi&content-id=amzn1.sym.81b257f1-f6e2-4bc2-af76-7b7a3290496f&pf_rd_p=81b257f1-f6e2-4bc2-af76-7b7a3290496f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Combos"
+          - text: Up to 40% off
+      - listitem:
+        - link "Exclusive samples store Exclusive samples store":
+          - /url: https://www.amazon.in/b/ref=MAYARTSM?_encoding=UTF8&ie=UTF8&node=28202809031&pd_rd_w=vVkBs&content-id=amzn1.sym.73986d48-5dc0-420a-b1ea-757a873f7d4f&pf_rd_p=73986d48-5dc0-420a-b1ea-757a873f7d4f&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Exclusive samples store"
+          - text: Exclusive samples store
+      - listitem:
+        - link "99/Day EMI ₹99/Day EMI":
+          - /url: /b/ref=NCEMI_MAYART25/ref=BR_MAYART25_T2?_encoding=UTF8&node=90919674031&pd_rd_w=ezd3h&content-id=amzn1.sym.91a99e3b-7b8d-426c-b5f3-ebc74f66b5ff&pf_rd_p=91a99e3b-7b8d-426c-b5f3-ebc74f66b5ff&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "99/Day EMI"
+          - text: ₹99/Day EMI
+      - listitem:
+        - link "Get up to ₹55,000 off on exchange Get up to ₹55,000 off on exchange":
+          - /url: https://www.amazon.in/b/ref=EM25_MY_ART?_encoding=UTF8&node=65353582031&pd_rd_w=zWlGA&content-id=amzn1.sym.e8e52008-71d1-482a-bf86-e3255eab2eff&pf_rd_p=e8e52008-71d1-482a-bf86-e3255eab2eff&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Get up to ₹55,000 off on exchange"
+          - text: Get up to ₹55,000 off on exchange
+      - listitem:
+        - link "Coupons Save extra up to 35% off":
+          - /url: https://www.amazon.in/l/206236332031/ref=PD24_LU_WL?_encoding=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522reviewRating%255C%2522%253A%255B%255C%25223%255C%2522%255D%252C%255C%2522price%255C%2522%253A%255B%255C%25223%255C%2522%255D%252C%255C%2522percentOff%255C%2522%253A%255B%255C%25221%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=K2I3W&content-id=amzn1.sym.9d640b9d-0568-4ab9-9d42-d63138f62543&pf_rd_p=9d640b9d-0568-4ab9-9d42-d63138f62543&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Coupons"
+          - text: Save extra up to 35% off
+- link "Mobile & accessories":
+  - /url: /b/ref=Categorytiles_unrec?_encoding=UTF8&ie=UTF8&node=206639856031&ref_=Categorytiles_unrec&pd_rd_w=xyGU5&content-id=amzn1.sym.dc45f2cd-c976-414c-9c68-6366cbeedd8d&pf_rd_p=dc45f2cd-c976-414c-9c68-6366cbeedd8d&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Mobile & accessories"
+- link "Home, kitchen & outdoors":
+  - /url: /b/ref=Categorytiles_unrec?_encoding=UTF8&ie=UTF8&node=206639842031&ref_=Categorytiles_unrec&pd_rd_w=zMaSO&content-id=amzn1.sym.e7f00fde-2f17-43ce-9032-4b0259b7cacc&pf_rd_p=e7f00fde-2f17-43ce-9032-4b0259b7cacc&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Home, kitchen & outdoors"
+- link "Fashion & beauty":
+  - /url: /b/ref=SLB_unrec?_encoding=UTF8&ie=UTF8&node=206759458031&ref_=SLB_unrec&pd_rd_w=Oj5I6&content-id=amzn1.sym.65e2eb30-84ca-433f-afda-f0a1e898ad61&pf_rd_p=65e2eb30-84ca-433f-afda-f0a1e898ad61&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Fashion & beauty"
+- link "Home, kitchen & outdoors":
+  - /url: /b/ref=la-teaser-matart25?_encoding=UTF8&ie=UTF8&node=206819474031&pd_rd_w=QrJq7&content-id=amzn1.sym.55e53ee3-b29d-4d30-849c-4a19185e5c53&pf_rd_p=55e53ee3-b29d-4d30-849c-4a19185e5c53&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Home, kitchen & outdoors"
+- link "Small Businesses":
+  - /url: /b/ref=dealsEvent?_encoding=UTF8&node=20378172031&pd_rd_w=4m4Dt&content-id=amzn1.sym.68c402b6-8117-41c4-aef8-f7ee89ed1943&pf_rd_p=68c402b6-8117-41c4-aef8-f7ee89ed1943&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Small Businesses"
+- link "Daily needs":
+  - /url: /fmc/m/40000427/ref=dealsEvent?_encoding=UTF8&pd_rd_w=u91Cm&content-id=amzn1.sym.9f796c1e-6862-48fd-8d56-5d1f313f13e7&pf_rd_p=9f796c1e-6862-48fd-8d56-5d1f313f13e7&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Daily needs"
+- link "Books, toys & more":
+  - /url: /l/27375570031/ref=UnecMediaLongCatMobRankable?_encoding=UTF8&pd_rd_w=Bjxq9&content-id=amzn1.sym.9eba9330-b857-4ea6-8db1-628aa67f98d1&pf_rd_p=9eba9330-b857-4ea6-8db1-628aa67f98d1&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Books, toys & more"
+- link "Smart TVs & Projectors":
+  - /url: /b/ref=HE-teaser-mayart25?_encoding=UTF8&node=206405744031&pd_rd_w=21pLB&content-id=amzn1.sym.7aeb419e-417e-45de-a28e-97f0a5d4c540&pf_rd_p=7aeb419e-417e-45de-a28e-97f0a5d4c540&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Smart TVs & Projectors"
+- link "Travel":
+  - /url: /gp/redirect.html/ref=MayART25_Fresh_Teaser_CCcard_UnrecLong_Rankable?ie=UTF8&_encoding=UTF8&location=https%3A%2F%2Fwww.amazon.in%2Fflights%3Fref_%3Devent&source=standards&token=95C58C276D2F65775E7A00A1F4C12E2576CC28D5&pd_rd_w=wlfFg&content-id=amzn1.sym.4ec55ae1-ed4f-4afe-8823-033a4c9396d5&pf_rd_p=4ec55ae1-ed4f-4afe-8823-033a4c9396d5&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Travel"
+- link "Fresh":
+  - /url: /fmc/m/40000397/ref=MayART25_Fresh_Teaser_CCcard_UnrecLong_Rankable?_encoding=UTF8&almBrandId=ctnow&pd_rd_w=F0J08&content-id=amzn1.sym.c7314d15-66e9-494d-8d93-6c59c252c5d7&pf_rd_p=c7314d15-66e9-494d-8d93-6c59c252c5d7&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Fresh"
+- link "Amazon Brands & more":
+  - /url: /b/ref=CATCARDL_PB_MA25?_encoding=UTF8&node=15390370031&ref_=CATCARDL_PB_MA25&pd_rd_w=KJHxy&content-id=amzn1.sym.84fc518e-16eb-4d1d-81b0-4debdebb2cac&pf_rd_p=84fc518e-16eb-4d1d-81b0-4debdebb2cac&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Amazon Brands & more"
+- link "English Alt Text":
+  - /url: /b/ref=dealsEvent?_encoding=UTF8&node=21703586031&pd_rd_w=vdt84&content-id=amzn1.sym.c100a48e-39fe-41bd-b6af-00e82d0885d4&pf_rd_p=c100a48e-39fe-41bd-b6af-00e82d0885d4&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "English Alt Text"
+- link "CEPC":
+  - /url: /b/ref=vpr_b2c_eventpage_cat?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=18wpl&content-id=amzn1.sym.a7d6d1ae-09d1-4d70-96fc-46daf2ecedfc&pf_rd_p=a7d6d1ae-09d1-4d70-96fc-46daf2ecedfc&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "CEPC"
+- link "Single cell":
+  - /url: /r/?_encoding=UTF8&aid=bDM4RzJ8QYOOQhp5pG1Ibg&dest=https%3A%2F%2Fwww.amazon.in%2Fminitv%3Fref_%3Davod_in_minitv_mayart25&ref_=cct_cg_Budget_1a1&pd_rd_w=pnNkL&content-id=amzn1.sym.d28b080e-cf6c-47c4-8ef7-49e4f539976e&pf_rd_p=d28b080e-cf6c-47c4-8ef7-49e4f539976e&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Single cell"
+- group:
+  - heading "Discover more offers" [level=1]
+  - group:
+    - list:
+      - listitem:
+        - link "Up to 35% off | Medicines Up to 35% off":
+          - /url: https://www.amazon.in/b/?_encoding=UTF8&_encoding=UTF8&node=18049712031&ref_=MayART2025Pharmacy&pd_rd_w=QCYy1&content-id=amzn1.sym.65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_p=65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Up to 35% off | Medicines"
+          - text: Up to 35% off
+      - listitem:
+        - link "Up to 70% off | International brands Up to 70% off":
+          - /url: https://www.amazon.in/b/?_encoding=UTF8&_encoding=UTF8&node=29423973031&ref_=MayART2025_internationalbrands&pd_rd_w=QCYy1&content-id=amzn1.sym.65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_p=65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Up to 70% off | International brands"
+          - text: Up to 70% off
+      - listitem:
+        - link "Up to 70% off | Amazon Renewed Up to 70% off":
+          - /url: https://www.amazon.in/b/ref=amazonrenewmayart25/?_encoding=UTF8&node=78734027031&pd_rd_w=QCYy1&content-id=amzn1.sym.65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_p=65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Up to 70% off | Amazon Renewed"
+          - text: Up to 70% off
+      - listitem:
+        - link "Amazon MX Player 0% Referral Fee":
+          - /url: https://www.amazon.in/b/ref=sellon_mayart25/?_encoding=UTF8&node=10946023031&pd_rd_w=QCYy1&content-id=amzn1.sym.65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_p=65c267b1-2336-4acd-9c93-9926a881143a&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+          - img "Amazon MX Player"
+          - text: 0% Referral Fee
+- img "For a faster checkout"
+- link "Faster checkout":
+  - /url: /b/?_encoding=UTF8&node=65085356031&ref_=cct_cg_A24HdrR_2a1&pd_rd_w=7HI3d&content-id=amzn1.sym.8a0d6f57-02cc-4f60-ad18-0559af8d7dbb&pf_rd_p=8a0d6f57-02cc-4f60-ad18-0559af8d7dbb&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Faster checkout"
+- link "Faster checkout":
+  - /url: /b/?_encoding=UTF8&node=41791268031&ref_=cct_cg_A24HdrR_2b1&pd_rd_w=7HI3d&content-id=amzn1.sym.8a0d6f57-02cc-4f60-ad18-0559af8d7dbb&pf_rd_p=8a0d6f57-02cc-4f60-ad18-0559af8d7dbb&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Faster checkout"
+- link "Faster checkout":
+  - /url: /a/addresses/?_encoding=UTF8&ref_=cct_cg_A24HdrR_2c1&pd_rd_w=7HI3d&content-id=amzn1.sym.8a0d6f57-02cc-4f60-ad18-0559af8d7dbb&pf_rd_p=8a0d6f57-02cc-4f60-ad18-0559af8d7dbb&pf_rd_r=8S8NVY5NJ0BGYZTREYXS&pd_rd_wg=8cFLv&pd_rd_r=1e6de824-ddb4-43c0-9c86-2091ab17197e
+  - img "Faster checkout"
+- img "Faster checkout"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('Click Today\'s Deals and scroll down and up', async ({ page }) => {
+   4 |   // Step 1: Go to Amazon India homepage
+   5 |   await page.goto('https://www.amazon.in', { waitUntil: 'domcontentloaded' });
+   6 |
+   7 |   // Step 2: Click on "Today's Deals"
+   8 |   const todaysDeals = page.locator('a:has-text("Today\'s Deals")');
+   9 |   await todaysDeals.first().click();
+  10 |
+  11 |   // Step 3: Wait for page to load fully
+> 12 |   await page.waitForLoadState('networkidle');
+     |              ^ Error: page.waitForLoadState: Test timeout of 60000ms exceeded.
+  13 |
+  14 |   // Step 4: Scroll down to the bottom smoothly
+  15 |   await page.evaluate(async () => {
+  16 |     await new Promise(resolve => {
+  17 |       const distance = 1000;
+  18 |       const delay = 100;
+  19 |       const interval = setInterval(() => {
+  20 |         window.scrollBy(0, distance);
+  21 |         if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+  22 |           clearInterval(interval);
+  23 |           resolve();
+  24 |         }
+  25 |       }, delay);
+  26 |     });
+  27 |   });
+  28 |
+  29 |   // Step 5: Wait for 3 seconds
+  30 |   await page.waitForTimeout(3000);
+  31 |
+  32 |   // Step 6: Scroll back to top
+  33 |   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  34 |
+  35 |   // Optional wait to visually confirm
+  36 |   await page.waitForTimeout(2000);
+  37 | });
+  38 |
+```

@@ -1,0 +1,1292 @@
+# Test info
+
+- Name: Check delivery for a pincode
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/checkDelivery.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Add both to Cart' })
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/checkDelivery.spec.js:31:64
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 560095 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Fresh Meat"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": wireless keyboard
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dwireless%2Bkeyboard%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_grocery
+        - button "Fresh Details"
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+    - dialog
+- 'heading "1-16 of 406 results for \"wireless keyboard\" Sort by: Featured" [level=1]':
+  - heading "1-16 of 406 results for \"wireless keyboard\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "HP":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_logo&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - img "HP"
+- link "HP compact keyboards for comfortable typing":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_hl&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+- link "Shop HP":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_cta&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+- link "Branded image from HP":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_ls&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - img "Branded image from HP"
+- link "HP 350 Compact Multi-Device Bluetooth Wireless Keyboard; Spill Resistant; Swift Pair; OS Auto-Detection, LED Indicator, Battery Life Up to 24 Months":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B0BR3YKQQ1/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - img "HP 350 Compact Multi-Device Bluetooth Wireless Keyboard; Spill Resistant; Swift Pair; OS Auto-Detection, LED Indicator, Battery Life Up to 24 Months"
+- link "Limited time deal":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B0BR3YKQQ1/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_badge&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+- link "₹1,799 Eligible for Prime. ₹2,499 (28% off)":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B0BR3YKQQ1/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_price&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - text: ₹1,799
+  - img "Eligible for Prime."
+  - text: ₹2,499 (28% off)
+- link "HP 230 Wireless Black Keyboard with 2.4GHz connectivity up to 10m, 12 Function Keys and 16-Month Long Battery Life. 3-Years Warranty.(3L1E7AA)":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B09GBC1H4Z/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_img&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - img "HP 230 Wireless Black Keyboard with 2.4GHz connectivity up to 10m, 12 Function Keys and 16-Month Long Battery Life. 3-Years Warranty.(3L1E7AA)"
+- link "₹1,629 Eligible for Prime.":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B09GBC1H4Z/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_price&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - text: ₹1,629
+  - img "Eligible for Prime."
+- link "HP K500F Backlit Membrane Wired Gaming Keyboard with Mixed Color Lighting, Metal Panel with Logo Lighting, 26 Anti-Ghosting Keys, and Windows Lock Key / 3 Years Warranty(7ZZ97AA)":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B08498D67S/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_2_img&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - img "HP K500F Backlit Membrane Wired Gaming Keyboard with Mixed Color Lighting, Metal Panel with Logo Lighting, 26 Anti-Ghosting Keys, and Windows Lock Key / 3 Years Warranty(7ZZ97AA)"
+- link "₹1,599 Eligible for Prime.":
+  - /url: https://aax-eu.amazon.in/x/c/JHLxEkUQwjh3DYQpFliyTGIAAAGW6HmBuAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDmTDN2/https://www.amazon.in/gp/aw/d/B08498D67S/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&qid=1747656999&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_2_price&pd_rd_w=4h94t&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=wIBnk&pd_rd_r=27ea760f-67eb-4b38-9c80-404360caf27a
+  - text: ₹1,599
+  - img "Eligible for Prime."
+- button "Leave feedback on Sponsored ad": Sponsored
+- text: Showing products with fast delivery
+- link "See all products, across price ranges.":
+  - /url: /s?k=wireless+keyboard&nsdOptOutParam=true&ref=nb_sb_noss
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDQ1NTU4NTE0OTEzMjo6MDo6&url=%2FLogitech-Multi-Device-Bluetooth-Customisable-Easy-Switch%2Fdp%2FB0CGCZTYH2%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDQ1NTU4NTE0OTEzMjo6MDo6&url=%2FLogitech-Multi-Device-Bluetooth-Customisable-Easy-Switch%2Fdp%2FB0CGCZTYH2%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite" [level=2]: Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite
+    - button "4.3 out of 5 stars, rating details"
+    - link "664 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDQ1NTU4NTE0OTEzMjo6MDo6&url=%2FLogitech-Multi-Device-Bluetooth-Customisable-Easy-Switch%2Fdp%2FB0CGCZTYH2%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 400+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,995 M.R.P: ₹4,195 M.R.P: ₹4,195"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDQ1NTU4NTE0OTEzMjo6MDo6&url=%2FLogitech-Multi-Device-Bluetooth-Customisable-Easy-Switch%2Fdp%2FB0CGCZTYH2%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (29% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDUwODYwOTg2MzYzMjo6MDo6&url=%2FWireless-Keyboard-Spill-Resistant-Multimedia-Shortcut%2Fdp%2FB09SN6V59C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Amazon Basics Wireless Keyboard and Mouse Combo for Windows, 2.4 GHz Wireless, Spill-Resistant Design, 8 Multimedia & Shortcut Keys, PC, Computer Laptop, Notebook (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDUwODYwOTg2MzYzMjo6MDo6&url=%2FWireless-Keyboard-Spill-Resistant-Multimedia-Shortcut%2Fdp%2FB09SN6V59C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Amazon Basics Wireless Keyboard and Mouse Combo for Windows, 2.4 GHz Wireless, Spill-Resistant Design, 8 Multimedia & Shortcut Keys, PC, Computer Laptop, Notebook (Black)" [level=2]: Amazon Basics Wireless Keyboard and Mouse Combo for Windows, 2.4 GHz Wireless, Spill-Resistant Design, 8 Multimedia & Shortcut Keys, PC, Computer Laptop, Notebook (Black)
+    - text: Top Reviewed for Functionality
+    - button "3.5 out of 5 stars, rating details"
+    - link "291 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDUwODYwOTg2MzYzMjo6MDo6&url=%2FWireless-Keyboard-Spill-Resistant-Multimedia-Shortcut%2Fdp%2FB09SN6V59C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 400+ bought in past month Price, product page
+    - 'link "₹500 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYXRmOjMwMDUwODYwOTg2MzYzMjo6MDo6&url=%2FWireless-Keyboard-Spill-Resistant-Multimedia-Shortcut%2Fdp%2FB09SN6V59C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (80% off) FREE delivery 24 May - 1 Jun
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Zebronics-Zeb-Companion-107-Wireless-Keyboard/dp/B087FXHB6J/ref=sr_1_3?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-3
+    - link "Zebronics Zeb-Companion 107 USB Wireless Keyboard and Mouse Set with Nano Receiver (Black)":
+      - /url: /Zebronics-Zeb-Companion-107-Wireless-Keyboard/dp/B087FXHB6J/ref=sr_1_3?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-3
+      - heading "Zebronics Zeb-Companion 107 USB Wireless Keyboard and Mouse Set with Nano Receiver (Black)" [level=2]
+    - button "3.4 out of 5 stars, rating details"
+    - link "20,203 ratings":
+      - /url: /Zebronics-Zeb-Companion-107-Wireless-Keyboard/dp/B087FXHB6J/ref=sr_1_3?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-3#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹549 M.R.P: ₹999 M.R.P: ₹999"':
+      - /url: /Zebronics-Zeb-Companion-107-Wireless-Keyboard/dp/B087FXHB6J/ref=sr_1_3?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-3
+    - text: (45% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - group "Amazon's Choice for \"wireless keyboard\""
+    - link:
+      - /url: /Dell-Wireless-Keyboard-Mouse-Spill-Resistant/dp/B09T3H12GV/ref=sr_1_4?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-4
+    - link "Dell KM3322W Wireless USB Keyboard and Mouse Combo, Anti-Fade & Spill-Resistant Keys, up to 36 Month Battery Life, 3Y Advance Exchange Warranty - Black":
+      - /url: /Dell-Wireless-Keyboard-Mouse-Spill-Resistant/dp/B09T3H12GV/ref=sr_1_4?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-4
+      - heading "Dell KM3322W Wireless USB Keyboard and Mouse Combo, Anti-Fade & Spill-Resistant Keys, up to 36 Month Battery Life, 3Y Advance Exchange Warranty - Black" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "12,372 ratings":
+      - /url: /Dell-Wireless-Keyboard-Mouse-Spill-Resistant/dp/B09T3H12GV/ref=sr_1_4?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-4#customerReviews
+    - text: 4K+ bought in past month Price, product page
+    - 'link "₹1,399 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /Dell-Wireless-Keyboard-Mouse-Spill-Resistant/dp/B09T3H12GV/ref=sr_1_4?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-4
+    - text: (44% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Wireless-Keyboard-Receiver-Adjustable/dp/B0CN2ZWYNV/ref=sr_1_5?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-5
+    - link "Portronics Key7 Combo Wireless Keyboard & Mouse Set with Copilot AI, 2.4 GHz USB Receiver, 10m Range, 12 Shortcut Keys, Adjustable DPI (Up to 1600), 10M Key Life for PC, Laptop, Mac(Grey+Orange)":
+      - /url: /Portronics-Wireless-Keyboard-Receiver-Adjustable/dp/B0CN2ZWYNV/ref=sr_1_5?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-5
+      - heading "Portronics Key7 Combo Wireless Keyboard & Mouse Set with Copilot AI, 2.4 GHz USB Receiver, 10m Range, 12 Shortcut Keys, Adjustable DPI (Up to 1600), 10M Key Life for PC, Laptop, Mac(Grey+Orange)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "1,332 ratings":
+      - /url: /Portronics-Wireless-Keyboard-Receiver-Adjustable/dp/B0CN2ZWYNV/ref=sr_1_5?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-5#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹757 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+      - /url: /Portronics-Wireless-Keyboard-Receiver-Adjustable/dp/B0CN2ZWYNV/ref=sr_1_5?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-5
+    - text: (62% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+- heading "Trending now" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- group "Trending now":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0CJ4XQ3XK%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Amazon Basics Wireless Keyboard and Mouse Combo | 12 Months* Battery (Cells Included) | Silent Keys 800/1200/1600 DPI | Chiclet Keys Spill Resistant Keyboard for PC/Laptop (Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0CJ4XQ3XK%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Amazon Basics Wireless Keyboard and Mouse Combo | 12 Months* Battery (Cells Included) | Silent Keys 800/1200/1600 DPI | Chiclet Keys Spill Resistant Keyboard for PC/Laptop (Black)" [level=2]: Amazon Basics Wireless Keyboard and Mouse Combo | 12 Months* Battery (Cells Included) | Silent Keys 800/1200/1600 DPI | Chiclet Keys Spill Resistant Keyboard for PC/Laptop (Black)
+        - button "4.1 out of 5 stars, rating details"
+        - link "108 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0CJ4XQ3XK%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 200+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹849 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0CJ4XQ3XK%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (66% off)
+        - img "Amazon Prime"
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTEwMTQ5MTk5Njk4OjoxOjo&url=%2FGEAR-Typewriter-Inspired-Wireless-Keyboard%2Fdp%2FB08XQ999V3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB08XQ999V3%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - iGear KeyBee Retro Typewriter Inspired 2.4GHz Wireless Keyboard with Mouse Combo for Desktop/Laptop and Devices with USB Support, Single Nano Receiver, Round Keycaps, Cleaning Brush (White) (Blue)":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTEwMTQ5MTk5Njk4OjoxOjo&url=%2FGEAR-Typewriter-Inspired-Wireless-Keyboard%2Fdp%2FB08XQ999V3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB08XQ999V3%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - iGear KeyBee Retro Typewriter Inspired 2.4GHz Wireless Keyboard with Mouse Combo for Desktop/Laptop and Devices with USB Support, Single Nano Receiver, Round Keycaps, Cleaning Brush (White) (Blue)" [level=2]: iGear KeyBee Retro Typewriter Inspired 2.4GHz Wireless Keyboard with Mouse Combo for Desktop/Laptop and Devices with USB Support, Single Nano Receiver, Round Keycaps, Cleaning Brush (White) (Blue)
+        - button "4.1 out of 5 stars, rating details"
+        - link "2,009 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTEwMTQ5MTk5Njk4OjoxOjo&url=%2FGEAR-Typewriter-Inspired-Wireless-Keyboard%2Fdp%2FB08XQ999V3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB08XQ999V3%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 100+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹1,998 M.R.P: ₹3,500 M.R.P: ₹3,500"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTEwMTQ5MTk5Njk4OjoxOjo&url=%2FGEAR-Typewriter-Inspired-Wireless-Keyboard%2Fdp%2FB08XQ999V3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB08XQ999V3%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (43% off)
+        - img "Amazon Prime"
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU2Mzk2MTMyNDIzMjo6Mjo6&url=%2Fcimetech-Wireless-Keyboard-Ergonomic-Ultra-Thin%2Fdp%2FB0C7MPB98L%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C7MPB98L%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - cimetech Wireless Keyboard and Mouse Combo, 2.4G Comfortable Ultra Slim Ergonomic Keyboard, Plug and Play Compact Full Size Keyboard for Mac, Windows, Laptop, Tablet, Computer - Wine Red":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU2Mzk2MTMyNDIzMjo6Mjo6&url=%2Fcimetech-Wireless-Keyboard-Ergonomic-Ultra-Thin%2Fdp%2FB0C7MPB98L%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C7MPB98L%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - cimetech Wireless Keyboard and Mouse Combo, 2.4G Comfortable Ultra Slim Ergonomic Keyboard, Plug and Play Compact Full Size Keyboard for Mac, Windows, Laptop, Tablet, Computer - Wine Red" [level=2]: cimetech Wireless Keyboard and Mouse Combo, 2.4G Comfortable Ultra Slim Ergonomic Keyboard, Plug and Play Compact Full Size Keyboard for Mac, Windows, Laptop, Tablet, Computer - Wine Red
+        - button "4.0 out of 5 stars, rating details"
+        - link "336 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU2Mzk2MTMyNDIzMjo6Mjo6&url=%2Fcimetech-Wireless-Keyboard-Ergonomic-Ultra-Thin%2Fdp%2FB0C7MPB98L%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C7MPB98L%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹2,399 M.R.P: ₹3,599 M.R.P: ₹3,599"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU2Mzk2MTMyNDIzMjo6Mjo6&url=%2Fcimetech-Wireless-Keyboard-Ergonomic-Ultra-Thin%2Fdp%2FB0C7MPB98L%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C7MPB98L%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (33% off) Save ₹100 with coupon
+        - img "Amazon Prime"
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDMzNDYxNzIyNDMzMjo6Mzo6&url=%2FPortronics-Combo-Multimedia-Wireless-Light-Weight%2Fdp%2FB07X1KRPDZ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB07X1KRPDZ%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Portronics Key2-A Combo of Multimedia Wireless Keyboard & Mouse, Compact Light-Weight for PCs, Laptops and Smart TV, White":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDMzNDYxNzIyNDMzMjo6Mzo6&url=%2FPortronics-Combo-Multimedia-Wireless-Light-Weight%2Fdp%2FB07X1KRPDZ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB07X1KRPDZ%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Portronics Key2-A Combo of Multimedia Wireless Keyboard & Mouse, Compact Light-Weight for PCs, Laptops and Smart TV, White" [level=2]: Portronics Key2-A Combo of Multimedia Wireless Keyboard & Mouse, Compact Light-Weight for PCs, Laptops and Smart TV, White
+        - button "4.1 out of 5 stars, rating details"
+        - link "14,383 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDMzNDYxNzIyNDMzMjo6Mzo6&url=%2FPortronics-Combo-Multimedia-Wireless-Light-Weight%2Fdp%2FB07X1KRPDZ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB07X1KRPDZ%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹900 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDMzNDYxNzIyNDMzMjo6Mzo6&url=%2FPortronics-Combo-Multimedia-Wireless-Light-Weight%2Fdp%2FB07X1KRPDZ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB07X1KRPDZ%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (40% off)
+        - img "Amazon Prime"
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIwNjc5MjM5NDQzMjo6NDo6&url=%2Fcimetech-Wireless-Full-Sized-Ergonomic-Adjustable%2Fdp%2FB0C9967NHY%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C9967NHY%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - cimetech Full Sized Wireless Keyboard and Mouse Combo for MacBook, 2.4G Comfortable Ultra Slim Ergonomic Keyboard, Plug and Play USB Keyboard for Computer/Laptop - Black":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIwNjc5MjM5NDQzMjo6NDo6&url=%2Fcimetech-Wireless-Full-Sized-Ergonomic-Adjustable%2Fdp%2FB0C9967NHY%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C9967NHY%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - cimetech Full Sized Wireless Keyboard and Mouse Combo for MacBook, 2.4G Comfortable Ultra Slim Ergonomic Keyboard, Plug and Play USB Keyboard for Computer/Laptop - Black" [level=2]: cimetech Full Sized Wireless Keyboard and Mouse Combo for MacBook, 2.4G Comfortable Ultra Slim Ergonomic Keyboard, Plug and Play USB Keyboard for Computer/Laptop - Black
+        - button "4.1 out of 5 stars, rating details"
+        - link "10,528 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIwNjc5MjM5NDQzMjo6NDo6&url=%2Fcimetech-Wireless-Full-Sized-Ergonomic-Adjustable%2Fdp%2FB0C9967NHY%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C9967NHY%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹2,599 M.R.P: ₹3,999 M.R.P: ₹3,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyMzcxMjU0MDYzODU0ODcwOjE3NDc2NTY5OTk6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIwNjc5MjM5NDQzMjo6NDo6&url=%2Fcimetech-Wireless-Full-Sized-Ergonomic-Adjustable%2Fdp%2FB0C9967NHY%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%253Aamzn1.sym.739e670d-dfb3-4be0-9815-d8c5c0372e07%26cv_ct_cx%3Dwireless%2Bkeyboard%26keywords%3Dwireless%2Bkeyboard%26pd_rd_i%3DB0C9967NHY%26pd_rd_r%3De2245fd7-2c73-40f9-bb56-b03d9fe02359%26pd_rd_w%3D9VTdh%26pd_rd_wg%3De02Ka%26pf_rd_p%3D739e670d-dfb3-4be0-9815-d8c5c0372e07%26pf_rd_r%3DDTHVGB70S5H6ZTE7AA7C%26qid%3D1747656999%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (35% off) Save ₹100 with coupon
+        - img "Amazon Prime"
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Amkette-Optimus-Bluetooth-Switching-Blue/dp/B0F2HRQSSK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-6
+    - link "Amkette Optimus BT [New and Improved] Multi Device (4in1) Wireless Keyboard/Bluetooth Keyboard | One Click Device Switching and AI Access for Windows, MacOs, Android and iOS, Dual OS Layout (Blue)":
+      - /url: /Amkette-Optimus-Bluetooth-Switching-Blue/dp/B0F2HRQSSK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-6
+      - heading "Amkette Optimus BT [New and Improved] Multi Device (4in1) Wireless Keyboard/Bluetooth Keyboard | One Click Device Switching and AI Access for Windows, MacOs, Android and iOS, Dual OS Layout (Blue)" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "4 ratings":
+      - /url: /Amkette-Optimus-Bluetooth-Switching-Blue/dp/B0F2HRQSSK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-6#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹899 M.R.P: ₹1,799 M.R.P: ₹1,799"':
+      - /url: /Amkette-Optimus-Bluetooth-Switching-Blue/dp/B0F2HRQSSK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-6
+    - text: (50% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Logitech-MK215-Wireless-Keyboard-Mouse/dp/B012MQS060/ref=sr_1_7?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-7
+    - link "Logitech MK215 Wireless Keyboard and Mouse Set, 2.4 GHz Wireless, USB Compact Design, (Keyboard),5 Month Battery Life(Mouse) PC/Laptop- Black":
+      - /url: /Logitech-MK215-Wireless-Keyboard-Mouse/dp/B012MQS060/ref=sr_1_7?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-7
+      - heading "Logitech MK215 Wireless Keyboard and Mouse Set, 2.4 GHz Wireless, USB Compact Design, (Keyboard),5 Month Battery Life(Mouse) PC/Laptop- Black" [level=2]
+    - text: Top Reviewed for Functionality
+    - button "4.1 out of 5 stars, rating details"
+    - link "29,846 ratings":
+      - /url: /Logitech-MK215-Wireless-Keyboard-Mouse/dp/B012MQS060/ref=sr_1_7?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-7#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,145 M.R.P: ₹1,945 M.R.P: ₹1,945"':
+      - /url: /Logitech-MK215-Wireless-Keyboard-Mouse/dp/B012MQS060/ref=sr_1_7?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-7
+    - text: (41% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /HP-AB3D4AA-K270-Wireless-Keyboard/dp/B0DXPHFMLX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-8
+    - link "HP K270 Wireless Keyboard":
+      - /url: /HP-AB3D4AA-K270-Wireless-Keyboard/dp/B0DXPHFMLX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-8
+      - heading "HP K270 Wireless Keyboard" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "4 ratings":
+      - /url: /HP-AB3D4AA-K270-Wireless-Keyboard/dp/B0DXPHFMLX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-8#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹712 M.R.P: ₹1,699 M.R.P: ₹1,699"':
+      - /url: /HP-AB3D4AA-K270-Wireless-Keyboard/dp/B0DXPHFMLX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-8
+    - text: (58% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Bluetooth-Connectivity-Multimedia-Smartphone/dp/B0D2LB7X1L/ref=sr_1_9?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-9
+    - link "Portronics Bubble Square Wireless Keyboard with Bluetooth + 2.4 GHz USB Receiver (Dual Connectivity), Pair 3 Devices Max, Multimedia Hotkeys, for Laptop, PC, Smartphone, Tablet (Green)":
+      - /url: /Portronics-Bluetooth-Connectivity-Multimedia-Smartphone/dp/B0D2LB7X1L/ref=sr_1_9?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-9
+      - heading "Portronics Bubble Square Wireless Keyboard with Bluetooth + 2.4 GHz USB Receiver (Dual Connectivity), Pair 3 Devices Max, Multimedia Hotkeys, for Laptop, PC, Smartphone, Tablet (Green)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "167 ratings":
+      - /url: /Portronics-Bluetooth-Connectivity-Multimedia-Smartphone/dp/B0D2LB7X1L/ref=sr_1_9?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-9#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹710 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /Portronics-Bluetooth-Connectivity-Multimedia-Smartphone/dp/B0D2LB7X1L/ref=sr_1_9?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-9
+    - text: (72% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Logitech-MK240-NANO-Mouse-Keyboard/dp/B01N4EV2TL/ref=sr_1_10?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-10
+    - link "Logitech MK240 Nano Wireless USB Keyboard and Mouse Set, 12 Function Keys 2.4GHz Wireless, 1000DPI, Spill-Resistant Design, PC/Mac, Black/Chartreuse Yellow":
+      - /url: /Logitech-MK240-NANO-Mouse-Keyboard/dp/B01N4EV2TL/ref=sr_1_10?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-10
+      - heading "Logitech MK240 Nano Wireless USB Keyboard and Mouse Set, 12 Function Keys 2.4GHz Wireless, 1000DPI, Spill-Resistant Design, PC/Mac, Black/Chartreuse Yellow" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "10,924 ratings":
+      - /url: /Logitech-MK240-NANO-Mouse-Keyboard/dp/B01N4EV2TL/ref=sr_1_10?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-10#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,495 M.R.P: ₹2,095 M.R.P: ₹2,095"':
+      - /url: /Logitech-MK240-NANO-Mouse-Keyboard/dp/B01N4EV2TL/ref=sr_1_10?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-10
+    - text: (29% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Amazon Basics Wireless Keyboard and Mouse Combo | 12 Months* Battery (Cells Included) | Silent Keys 800/1200/1600 DPI | Chiclet Keys Spill Resistant Keyboard for PC/Laptop (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - Amazon Basics Wireless Keyboard and Mouse Combo | 12 Months* Battery (Cells Included) | Silent Keys 800/1200/1600 DPI | Chiclet Keys Spill Resistant Keyboard for PC/Laptop (Black)" [level=2]: Amazon Basics Wireless Keyboard and Mouse Combo | 12 Months* Battery (Cells Included) | Silent Keys 800/1200/1600 DPI | Chiclet Keys Spill Resistant Keyboard for PC/Laptop (Black)
+    - button "4.1 out of 5 stars, rating details"
+    - link "108 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹849 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDIzMjIyNTY4OTIzMjo6MDo6&url=%2FAmazonBasicsWireless-Keyboard-Included-Receiver-Resistant%2Fdp%2FB0CJ4XQ3XK%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (66% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Fri, 23 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDM3ODkxNzc1NDQzMjo6MDo6&url=%2Famazon-basics-Bluetooth-Compatible-Noiseless%2Fdp%2FB0CX226DLQ%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - amazon basics Wireless Bluetooth Keyboard | Easy Switch for Up to 3 Devices | Ideal for Tablets & Mobiles | iOS, Windows, Android Compatible | Type C Port | Noiseless Keys | 78 Keys (Black and Grey)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDM3ODkxNzc1NDQzMjo6MDo6&url=%2Famazon-basics-Bluetooth-Compatible-Noiseless%2Fdp%2FB0CX226DLQ%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - amazon basics Wireless Bluetooth Keyboard | Easy Switch for Up to 3 Devices | Ideal for Tablets & Mobiles | iOS, Windows, Android Compatible | Type C Port | Noiseless Keys | 78 Keys (Black and Grey)" [level=2]: amazon basics Wireless Bluetooth Keyboard | Easy Switch for Up to 3 Devices | Ideal for Tablets & Mobiles | iOS, Windows, Android Compatible | Type C Port | Noiseless Keys | 78 Keys (Black and Grey)
+    - button "3.4 out of 5 stars, rating details"
+    - link "187 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDM3ODkxNzc1NDQzMjo6MDo6&url=%2Famazon-basics-Bluetooth-Compatible-Noiseless%2Fdp%2FB0CX226DLQ%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 300+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹949 M.R.P: ₹3,999 M.R.P: ₹3,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfbXRmOjMwMDM3ODkxNzc1NDQzMjo6MDo6&url=%2Famazon-basics-Bluetooth-Compatible-Noiseless%2Fdp%2FB0CX226DLQ%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (76% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JMhjMClLlVkW3catdoIIqpQAAAGW6HmBmAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICBSbpfS/https://www.amazon.in/dp/B08KZXLTM6?pd_rd_i=B08KZXLTM6&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=e02Ka&pd_rd_w=B3wO7&pd_rd_r=e2245fd7-2c73-40f9-bb56-b03d9fe02359
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JMhjMClLlVkW3catdoIIqpQAAAGW6HmBmAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICBSbpfS/https://www.amazon.in/iClever-Bluetooth-Keyboard-Rechargeable-Dual-Mode/dp/B08KZXLTM6/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B08KZXLTM6&pd_rd_r=e2245fd7-2c73-40f9-bb56-b03d9fe02359&pd_rd_w=B3wO7&pd_rd_wg=e02Ka&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Sponsored
+- link "iClever Wireless Keyboard and Mouse DK03, Rechargeable Dual-Mode (Bluetooth+2.4G) Bluetooth Keyboard and Mouse Set, Ultra-Slim Multi-Device Keyboard for Mac, iPad, Apple, Android, Windows, Grey":
+  - /url: https://aax-eu.amazon.in/x/c/JMhjMClLlVkW3catdoIIqpQAAAGW6HmBmAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICBSbpfS/https://www.amazon.in/iClever-Bluetooth-Keyboard-Rechargeable-Dual-Mode/dp/B08KZXLTM6/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B08KZXLTM6&pd_rd_r=e2245fd7-2c73-40f9-bb56-b03d9fe02359&pd_rd_w=B3wO7&pd_rd_wg=e02Ka&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+  - heading "iClever Wireless Keyboard and Mouse DK03, Rechargeable Dual-Mode (Bluetooth+2.4G) Bluetooth Keyboard and Mouse Set, Ultra-Slim Multi-Device Keyboard for Mac, iPad, Apple, Android, Windows, Grey" [level=2]
+- button "3.8 out of 5 stars, rating details"
+- link "1,581 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JMhjMClLlVkW3catdoIIqpQAAAGW6HmBmAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICBSbpfS/https://www.amazon.in/iClever-Bluetooth-Keyboard-Rechargeable-Dual-Mode/dp/B08KZXLTM6/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B08KZXLTM6&pd_rd_r=e2245fd7-2c73-40f9-bb56-b03d9fe02359&pd_rd_w=B3wO7&pd_rd_wg=e02Ka&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+- text: 100+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹3,599 M.R.P: ₹3,999 M.R.P: ₹3,999"':
+  - /url: https://aax-eu.amazon.in/x/c/JMhjMClLlVkW3catdoIIqpQAAAGW6HmBmAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICBSbpfS/https://www.amazon.in/iClever-Bluetooth-Keyboard-Rechargeable-Dual-Mode/dp/B08KZXLTM6/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B08KZXLTM6&pd_rd_r=e2245fd7-2c73-40f9-bb56-b03d9fe02359&pd_rd_w=B3wO7&pd_rd_wg=e02Ka&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: (10% off)
+- img "Amazon Prime"
+- text: Get it by Wednesday, 21 May FREE Delivery by Amazon
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Ant-Esports-MK801-V2-Mechanical/dp/B0DX1MF624/ref=sr_1_13?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-13
+    - link "Ant Esports MK801 V2 Pro Wireless Mechanical Membrane Backlit Gaming Keyboard 94 Keys 2.4G/Bluetooth Mode Compact Numeric Pad RGB Keyboard for Home Internet Cafe Game Room Office_ Grey, Beige, Orange":
+      - /url: /Ant-Esports-MK801-V2-Mechanical/dp/B0DX1MF624/ref=sr_1_13?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-13
+      - heading "Ant Esports MK801 V2 Pro Wireless Mechanical Membrane Backlit Gaming Keyboard 94 Keys 2.4G/Bluetooth Mode Compact Numeric Pad RGB Keyboard for Home Internet Cafe Game Room Office_ Grey, Beige, Orange" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "44 ratings":
+      - /url: /Ant-Esports-MK801-V2-Mechanical/dp/B0DX1MF624/ref=sr_1_13?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-13#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,699 M.R.P: ₹4,499 M.R.P: ₹4,499"':
+      - /url: /Ant-Esports-MK801-V2-Mechanical/dp/B0DX1MF624/ref=sr_1_13?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-13
+    - text: (62% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Fri, 23 May Or fastest delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Multimedia-Bluetooth-Connectivity-Experience/dp/B0BC1JPSDR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-14
+    - link "Portronics Bubble Multimedia Wireless Keyboard 2.4 GHz & Bluetooth 5.0 Connectivity, Noiseless Experience, Compact Size for iOS iPad Air, Pro, Mini, Android, Windows Tablets PC Smartphone(Black)":
+      - /url: /Portronics-Multimedia-Bluetooth-Connectivity-Experience/dp/B0BC1JPSDR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-14
+      - heading "Portronics Bubble Multimedia Wireless Keyboard 2.4 GHz & Bluetooth 5.0 Connectivity, Noiseless Experience, Compact Size for iOS iPad Air, Pro, Mini, Android, Windows Tablets PC Smartphone(Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,085 ratings":
+      - /url: /Portronics-Multimedia-Bluetooth-Connectivity-Experience/dp/B0BC1JPSDR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-14#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹888 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+      - /url: /Portronics-Multimedia-Bluetooth-Connectivity-Experience/dp/B0BC1JPSDR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-14
+    - text: (56% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Fri, 23 May Or fastest delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /ZEBRONICS-TRANSFORMER-Wireless-Keyboard-MultiColor/dp/B0CSN6N2L2/ref=sr_1_15?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-15
+    - link "ZEBRONICS Transformer PRO Gaming Wireless Keyboard & Mouse Combo with 2.4GHz, Aluminum Body, Built in Battery, Multicolor LED Modes, Type C, Double Shot Keycaps, up to 4000 DPI":
+      - /url: /ZEBRONICS-TRANSFORMER-Wireless-Keyboard-MultiColor/dp/B0CSN6N2L2/ref=sr_1_15?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-15
+      - heading "ZEBRONICS Transformer PRO Gaming Wireless Keyboard & Mouse Combo with 2.4GHz, Aluminum Body, Built in Battery, Multicolor LED Modes, Type C, Double Shot Keycaps, up to 4000 DPI" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "34,013 ratings":
+      - /url: /ZEBRONICS-TRANSFORMER-Wireless-Keyboard-MultiColor/dp/B0CSN6N2L2/ref=sr_1_15?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-15#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹1,799 M.R.P: ₹3,999 M.R.P: ₹3,999"':
+      - /url: /ZEBRONICS-TRANSFORMER-Wireless-Keyboard-MultiColor/dp/B0CSN6N2L2/ref=sr_1_15?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-15
+    - text: (55% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /HP-Wireless-Keyboard-Accurate-Indicators/dp/B0D3VGTJ6T/ref=sr_1_16?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-16
+    - link "HP K260 Wireless Keyboard/Quick/Comfy/Accurate/Plug and Play/Led Indicators,Black":
+      - /url: /HP-Wireless-Keyboard-Accurate-Indicators/dp/B0D3VGTJ6T/ref=sr_1_16?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-16
+      - heading "HP K260 Wireless Keyboard/Quick/Comfy/Accurate/Plug and Play/Led Indicators,Black" [level=2]
+    - button "3.8 out of 5 stars, rating details"
+    - link "127 ratings":
+      - /url: /HP-Wireless-Keyboard-Accurate-Indicators/dp/B0D3VGTJ6T/ref=sr_1_16?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-16#customerReviews
+    - text: 300+ bought in past month Price, product page
+    - 'link "₹980 M.R.P: ₹1,700 M.R.P: ₹1,700"':
+      - /url: /HP-Wireless-Keyboard-Accurate-Indicators/dp/B0D3VGTJ6T/ref=sr_1_16?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-16
+    - text: (42% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Logitech-Multi-Device-Bluetooth-Customisable-Easy-Switch/dp/B0CGCZTYH2/ref=sr_1_17?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-17
+    - link "Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite":
+      - /url: /Logitech-Multi-Device-Bluetooth-Customisable-Easy-Switch/dp/B0CGCZTYH2/ref=sr_1_17?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-17
+      - heading "Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "664 ratings":
+      - /url: /Logitech-Multi-Device-Bluetooth-Customisable-Easy-Switch/dp/B0CGCZTYH2/ref=sr_1_17?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-17#customerReviews
+    - text: 400+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,995 M.R.P: ₹4,195 M.R.P: ₹4,195"':
+      - /url: /Logitech-Multi-Device-Bluetooth-Customisable-Easy-Switch/dp/B0CGCZTYH2/ref=sr_1_17?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-17
+    - text: (29% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /HP-Wireless-Keyboard-accurate-Shortcut/dp/B0827J6TFC/ref=sr_1_18?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-18
+    - link "HP K160 Wireless Keyboard/Quick Comfy accurate/12 Fn Shortcut Keys/Plug and Play USB/ 3 Years Warranty, Black":
+      - /url: /HP-Wireless-Keyboard-accurate-Shortcut/dp/B0827J6TFC/ref=sr_1_18?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-18
+      - heading "HP K160 Wireless Keyboard/Quick Comfy accurate/12 Fn Shortcut Keys/Plug and Play USB/ 3 Years Warranty, Black" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "1,316 ratings":
+      - /url: /HP-Wireless-Keyboard-accurate-Shortcut/dp/B0827J6TFC/ref=sr_1_18?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-18#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹1,155 M.R.P: ₹1,700 M.R.P: ₹1,700"':
+      - /url: /HP-Wireless-Keyboard-accurate-Shortcut/dp/B0827J6TFC/ref=sr_1_18?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-18
+    - text: (32% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Logitech-Wireless-mk270r-Keyboard-Mouse/dp/B00CEQEGPI/ref=sr_1_19?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-19
+    - link "Logitech MK270r Wireless Keyboard and Mouse Combo for Windows, 2.4 GHz Wireless, Spill-resistant Design, 8 Multimedia & Shortcut Keys, 2-Year Battery Life, PC/Laptop- Black":
+      - /url: /Logitech-Wireless-mk270r-Keyboard-Mouse/dp/B00CEQEGPI/ref=sr_1_19?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-19
+      - heading "Logitech MK270r Wireless Keyboard and Mouse Combo for Windows, 2.4 GHz Wireless, Spill-resistant Design, 8 Multimedia & Shortcut Keys, 2-Year Battery Life, PC/Laptop- Black" [level=2]
+    - text: Top Reviewed for Functionality
+    - button "4.1 out of 5 stars, rating details"
+    - link "19,415 ratings":
+      - /url: /Logitech-Wireless-mk270r-Keyboard-Mouse/dp/B00CEQEGPI/ref=sr_1_19?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-19#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,495 M.R.P: ₹2,495 M.R.P: ₹2,495"':
+      - /url: /Logitech-Wireless-mk270r-Keyboard-Mouse/dp/B00CEQEGPI/ref=sr_1_19?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-19
+    - text: (40% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Mechanical-Bluetooth-Multi-Device-Multi-Colour/dp/B0D2V26XLR/ref=sr_1_20?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-20
+    - link "Portronics Hydra 10 Wireless Mechanical Gaming Keyboard with Bluetooth & 2.4 GHz Wireless, Red Switches, Multi-Device Pairing, TKL Compact Size, Multi-Colour Backlight, for Laptop & PC (Black)":
+      - /url: /Portronics-Mechanical-Bluetooth-Multi-Device-Multi-Colour/dp/B0D2V26XLR/ref=sr_1_20?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-20
+      - heading "Portronics Hydra 10 Wireless Mechanical Gaming Keyboard with Bluetooth & 2.4 GHz Wireless, Red Switches, Multi-Device Pairing, TKL Compact Size, Multi-Colour Backlight, for Laptop & PC (Black)" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "818 ratings":
+      - /url: /Portronics-Mechanical-Bluetooth-Multi-Device-Multi-Colour/dp/B0D2V26XLR/ref=sr_1_20?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-20#customerReviews
+    - text: 300+ bought in past month Price, product page
+    - 'link "₹2,499 M.R.P: ₹9,999 M.R.P: ₹9,999"':
+      - /url: /Portronics-Mechanical-Bluetooth-Multi-Device-Multi-Colour/dp/B0D2V26XLR/ref=sr_1_20?dib=eyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg&dib_tag=se&keywords=wireless+keyboard&qid=1747656999&sr=8-20
+    - text: (75% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDMzNDYxNzIyNDYzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Receiver-Adjustable%2Fdp%2FB0CN2ZWYNV%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Portronics Key7 Combo Wireless Keyboard & Mouse Set with Copilot AI, 2.4 GHz USB Receiver, 10m Range, 12 Shortcut Keys, Adjustable DPI (Up to 1600), 10M Key Life for PC, Laptop, Mac(Grey+Orange)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDMzNDYxNzIyNDYzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Receiver-Adjustable%2Fdp%2FB0CN2ZWYNV%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Portronics Key7 Combo Wireless Keyboard & Mouse Set with Copilot AI, 2.4 GHz USB Receiver, 10m Range, 12 Shortcut Keys, Adjustable DPI (Up to 1600), 10M Key Life for PC, Laptop, Mac(Grey+Orange)" [level=2]: Portronics Key7 Combo Wireless Keyboard & Mouse Set with Copilot AI, 2.4 GHz USB Receiver, 10m Range, 12 Shortcut Keys, Adjustable DPI (Up to 1600), 10M Key Life for PC, Laptop, Mac(Grey+Orange)
+    - button "3.7 out of 5 stars, rating details"
+    - link "1,332 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDMzNDYxNzIyNDYzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Receiver-Adjustable%2Fdp%2FB0CN2ZWYNV%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹757 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDMzNDYxNzIyNDYzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Receiver-Adjustable%2Fdp%2FB0CN2ZWYNV%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (62% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Or fastest delivery Tomorrow, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDM1NDc5MTc2MzIzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Bluetooth-Smartphone%2Fdp%2FB0CR4B9PLL%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Portronics Bubble 2.0 Wireless Keyboard with Bluetooth + 2.4 GHz Receiver, Connect 3 Devices, Compact TKL Size, 10m Working Range, Function Shortcut Keys, for Laptop, PC, Smartphone, Tablet (Grey)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDM1NDc5MTc2MzIzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Bluetooth-Smartphone%2Fdp%2FB0CR4B9PLL%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Portronics Bubble 2.0 Wireless Keyboard with Bluetooth + 2.4 GHz Receiver, Connect 3 Devices, Compact TKL Size, 10m Working Range, Function Shortcut Keys, for Laptop, PC, Smartphone, Tablet (Grey)" [level=2]: Portronics Bubble 2.0 Wireless Keyboard with Bluetooth + 2.4 GHz Receiver, Connect 3 Devices, Compact TKL Size, 10m Working Range, Function Shortcut Keys, for Laptop, PC, Smartphone, Tablet (Grey)
+    - button "4.1 out of 5 stars, rating details"
+    - link "217 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDM1NDc5MTc2MzIzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Bluetooth-Smartphone%2Fdp%2FB0CR4B9PLL%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 400+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,099 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4NzYwMzM4Nzk2MzYzMjg1OjE3NDc2NTY5OTk6c3BfYnRmOjMwMDM1NDc5MTc2MzIzMjo6MDo6&url=%2FPortronics-Wireless-Keyboard-Bluetooth-Smartphone%2Fdp%2FB0CR4B9PLL%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.wdnGB0oBR4bcT1SXsRZ50f5zTbMuY2_wU2IU0FubALxefEtJ6Rh8vlq7PekaOVDKmpliNM_UXTjcoNItSQMJsyKFLyO68ARy6PFXDZ-4_1o3_r7ithRj17LMRNrnu9ZXrsl0E17wNxilnRpkPN_CGxPu4lmKUP1OTxC_U-S_rraI0c0EjMT7wQY8Rpr4VlMPn-N2_VxzSFZy4oXFWfScXl0QpQf_JlUE-6MQUzj-yww.tdXqJ50tH0Pp0enOIpEgBMpW-YWnDxC5EP7P1IYVJMg%26dib_tag%3Dse%26keywords%3Dwireless%2Bkeyboard%26qid%3D1747656999%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (56% off)
+    - img "Amazon Prime"
+    - text: FREE delivery 21 May - 11 Jun
+    - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JKg1OxkHVUEIz9ljcbwohBcAAAGW6HmBlgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD35ZSZ/https://www.amazon.in/dp/B0BVDLJCGQ?pd_rd_i=B0BVDLJCGQ&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_w=7Fvsr&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JKg1OxkHVUEIz9ljcbwohBcAAAGW6HmBlgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD35ZSZ/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B0BVDLJCGQ&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&pd_rd_w=7Fvsr&pd_rd_wg=IpBUP&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: Sponsored
+- link "Verilux® USB C HUB 4 in 1 USB C to HDMI Adapter with 4K@30Hz HDMI, 2.0/3.0 USB Adapter Multiple Port, PD 100W & USB C Data Port USB Type C Hub for Laptop, MacBook Pro Air 20CM USB Hub Long Cable":
+  - /url: https://aax-eu.amazon.in/x/c/JKg1OxkHVUEIz9ljcbwohBcAAAGW6HmBlgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD35ZSZ/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B0BVDLJCGQ&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&pd_rd_w=7Fvsr&pd_rd_wg=IpBUP&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+  - heading "Verilux® USB C HUB 4 in 1 USB C to HDMI Adapter with 4K@30Hz HDMI, 2.0/3.0 USB Adapter Multiple Port, PD 100W & USB C Data Port USB Type C Hub for Laptop, MacBook Pro Air 20CM USB Hub Long Cable" [level=2]
+- button "4.0 out of 5 stars, rating details"
+- link "763 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JKg1OxkHVUEIz9ljcbwohBcAAAGW6HmBlgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD35ZSZ/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B0BVDLJCGQ&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&pd_rd_w=7Fvsr&pd_rd_wg=IpBUP&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+- text: 100+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹917 M.R.P: ₹1,949 M.R.P: ₹1,949"':
+  - /url: https://aax-eu.amazon.in/x/c/JKg1OxkHVUEIz9ljcbwohBcAAAGW6HmBlgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD35ZSZ/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&cv_ct_cx=wireless+keyboard&keywords=wireless+keyboard&pd_rd_i=B0BVDLJCGQ&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&pd_rd_w=7Fvsr&pd_rd_wg=IpBUP&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&qid=1747656999&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: (53% off) Save ₹50 with coupon
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 20 May FREE Delivery by Amazon
+- heading "Related searches" [level=2]
+- list:
+  - link "wireless keyboard and mouse":
+    - /url: /s?k=wireless+keyboard+and+mouse&ref=rsl_sug_0_0&pd_rd_w=m52kI&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&qid=1747656999
+    - listitem: wireless keyboard and mouse
+  - link "wireless mechanical keyboard":
+    - /url: /s?k=wireless+mechanical+keyboard&ref=rsl_sug_0_3&pd_rd_w=m52kI&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&qid=1747656999
+    - listitem: wireless mechanical keyboard
+  - link "wireless mouse":
+    - /url: /s?k=wireless+mouse&ref=rsl_sug_0_1&pd_rd_w=m52kI&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&qid=1747656999
+    - listitem: wireless mouse
+  - link "wireless gaming keyboard":
+    - /url: /s?k=wireless+gaming+keyboard&ref=rsl_sug_0_4&pd_rd_w=m52kI&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&qid=1747656999
+    - listitem: wireless gaming keyboard
+  - link "keyboard":
+    - /url: /s?k=keyboard&ref=rsl_sug_0_2&pd_rd_w=m52kI&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&qid=1747656999
+    - listitem: keyboard
+  - link "wireless keyboard logitech":
+    - /url: /s?k=wireless+keyboard+logitech&ref=rsl_sug_0_5&pd_rd_w=m52kI&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=IpBUP&pd_rd_r=d323e5d7-4ecb-42e9-ab24-a35b62a5a8ca&qid=1747656999
+    - listitem: wireless keyboard logitech
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from HP":
+  - /url: https://aax-eu.amazon.in/x/c/JNyI4zUK9qiKKeWZYGR3c7IAAAGW6HmCSAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD63rf6/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+  - img "Branded image from HP"
+- link "HP":
+  - /url: https://aax-eu.amazon.in/x/c/JNyI4zUK9qiKKeWZYGR3c7IAAAGW6HmCSAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD63rf6/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+  - img "HP"
+- link "HP compact keyboards for comfortable typing":
+  - /url: https://aax-eu.amazon.in/x/c/JNyI4zUK9qiKKeWZYGR3c7IAAAGW6HmCSAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICD63rf6/https://www.amazon.in/stores/page/0B25A4AF-7932-46CE-9474-02C7523FC653/?_encoding=UTF8&store_ref=SB_A05704932WJVU2ZLUUPK9-A06412323G7G5A52YPBFB&pd_rd_plhdr=t&aaxitk=009405a0da0a364d9a2daed9475c9f7b&hsa_cr_id=0&lp_asins=B0BR3YKQQ1%2CB09GBC1H4Z%2CB08498D67S&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+- link "Branded image from BenQ India":
+  - /url: https://aax-eu.amazon.in/x/c/JJFSNDcyF28RTEDCgWi6BvUAAAGW6HmCSQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCQD-9H/https://www.amazon.in/stores/page/EA31E674-4584-4CA8-BD7B-855AF7C07BDD/?_encoding=UTF8&store_ref=SB_A09976453A7M1CRJS5DVP-A039496212KEVMD12IEQQ&pd_rd_plhdr=t&aaxitk=9cfa0dd2bdef2a03319f5469e459977a&hsa_cr_id=0&lp_asins=B0CJRSTPVC%2CB0D2KVY1FG%2CB0D4V78VBZ&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+  - img "Branded image from BenQ India"
+- link "BenQ India":
+  - /url: https://aax-eu.amazon.in/x/c/JJFSNDcyF28RTEDCgWi6BvUAAAGW6HmCSQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCQD-9H/https://www.amazon.in/stores/page/EA31E674-4584-4CA8-BD7B-855AF7C07BDD/?_encoding=UTF8&store_ref=SB_A09976453A7M1CRJS5DVP-A039496212KEVMD12IEQQ&pd_rd_plhdr=t&aaxitk=9cfa0dd2bdef2a03319f5469e459977a&hsa_cr_id=0&lp_asins=B0CJRSTPVC%2CB0D2KVY1FG%2CB0D4V78VBZ&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+  - img "BenQ India"
+- link "Code like Pro with BenQ":
+  - /url: https://aax-eu.amazon.in/x/c/JJFSNDcyF28RTEDCgWi6BvUAAAGW6HmCSQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCQD-9H/https://www.amazon.in/stores/page/EA31E674-4584-4CA8-BD7B-855AF7C07BDD/?_encoding=UTF8&store_ref=SB_A09976453A7M1CRJS5DVP-A039496212KEVMD12IEQQ&pd_rd_plhdr=t&aaxitk=9cfa0dd2bdef2a03319f5469e459977a&hsa_cr_id=0&lp_asins=B0CJRSTPVC%2CB0D2KVY1FG%2CB0D4V78VBZ&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+- link "Branded image from Design to meet U satisfaction":
+  - /url: https://aax-eu.amazon.in/x/c/JIXKc_XavHv0IxUGvPnYBrQAAAGW6HmCSQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBiV4Po/https://www.amazon.in/stores/page/517031C7-8D3B-4B6D-9099-A5E82C59FBF0/?_encoding=UTF8&store_ref=SB_A03875993LG64A78ZG0VJ-A0716135QDX3R81KEP2Z&pd_rd_plhdr=t&aaxitk=ea492ad37da63f3132f646ce3286e78e&hsa_cr_id=9734342620102&lp_asins=B07TS6R1SF%2CB07VPMTWMC&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+  - img "Branded image from Design to meet U satisfaction"
+- link "Design to meet U satisfaction":
+  - /url: https://aax-eu.amazon.in/x/c/JIXKc_XavHv0IxUGvPnYBrQAAAGW6HmCSQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBiV4Po/https://www.amazon.in/stores/page/517031C7-8D3B-4B6D-9099-A5E82C59FBF0/?_encoding=UTF8&store_ref=SB_A03875993LG64A78ZG0VJ-A0716135QDX3R81KEP2Z&pd_rd_plhdr=t&aaxitk=ea492ad37da63f3132f646ce3286e78e&hsa_cr_id=9734342620102&lp_asins=B07TS6R1SF%2CB07VPMTWMC&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+  - img "Design to meet U satisfaction"
+- link "iClever Wireless Keyboard and Mouse":
+  - /url: https://aax-eu.amazon.in/x/c/JIXKc_XavHv0IxUGvPnYBrQAAAGW6HmCSQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBiV4Po/https://www.amazon.in/stores/page/517031C7-8D3B-4B6D-9099-A5E82C59FBF0/?_encoding=UTF8&store_ref=SB_A03875993LG64A78ZG0VJ-A0716135QDX3R81KEP2Z&pd_rd_plhdr=t&aaxitk=ea492ad37da63f3132f646ce3286e78e&hsa_cr_id=9734342620102&lp_asins=B07TS6R1SF%2CB07VPMTWMC&lp_query=wireless%20keyboard&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=Y6fED&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=DTHVGB70S5H6ZTE7AA7C&pd_rd_wg=FArMd&pd_rd_r=82dda875-e565-4475-afdf-146e12f5fc2d
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It by Tomorrow to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=p_90%3A6741118031&dc&qid=1747656999&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3AlLv3O1lVgLEKLhkjl8IadWMHJ6kmi%2BIt119Qjf86mfU
+        - text: Get It by Tomorrow
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=p_90%3A20912642031&dc&qid=1747656999&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3AP3R5ue%2B6h9GbglxdgC7xptu%2B9aZhUBm5vJmvozmvx%2Fo
+        - text: Get It in 2 Days
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=p_72%3A1318476031&dc&qid=1747656999&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AuagFg94cPc4sCfNJFrptmHltZhboZ7z0431p%2B%2FTbnm8
+        - text: 4 Stars & Up
+- group:
+  - text: Price ₹94 ₹102,000+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "189"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=wireless+keyboard&rh=p_n_deal_type%3A26921226031&dc&qid=1747656999&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AMBY13EuBelo%2FBtVb1vxmTpK%2BbOot%2BhEwvgjwND3OL%2F8
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=wireless+keyboard&rh=p_n_deal_type%3A26921224031&dc&qid=1747656999&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3A0SqZW5Q6TMk%2FwGcBoQv1YCzMb6PzSmUpYYHfdhyVk%2Bk
+- group "Connectivity":
+  - heading "Connectivity" [level=2]
+  - list "Connectivity":
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A29840852031&dc&qid=1747656999&rnid=29840834031&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3AqktYq7ZrPdYcbbldXv6W7GXzcrnbST9e6zuPvkbrGaE
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter Radio Frequency to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A29840855031&dc&qid=1747656999&rnid=29840834031&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3AzzY1a%2FCcV9ghI8rgiNhMrslEojW9EUwObSJFVdS5GjE
+        - text: Radio Frequency
+    - listitem:
+      - link "Apply the filter Usb to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A29840856031&dc&qid=1747656999&rnid=29840834031&ref=sr_nr_p_n_feature_eight_browse-bin_3&ds=v1%3A1BTkRWMzncN%2FtPnkJJtxS1CI9rKThI%2BVxAYuZn2Ajc0
+        - text: Usb
+    - listitem:
+      - link "Apply the filter Wi Fi to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A29840853031&dc&qid=1747656999&rnid=29840834031&ref=sr_nr_p_n_feature_eight_browse-bin_4&ds=v1%3AifHHAZDjq3QEV18ovWE0Jtx66041nHw1DQDlorQ54pg
+        - text: Wi Fi
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter Portronics to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A415162&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AbHyK5Ga1v5%2B3NHOdPjcLNMo2jLHmQwRkyC4SoEZXbvs
+        - text: Portronics
+    - listitem:
+      - link "Apply the filter Logitech to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A213704&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3AhMUntfuANdI1A%2B5FlQLPPgI468qTJU0hHWjvx4ti7sc
+        - text: Logitech
+    - listitem:
+      - link "Apply the filter HP to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A308445&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3Ap7TqJNP6vMU9Iv1yq8%2FLaOV3ye%2BYbeLqhOCQOo2YVd8
+        - text: HP
+    - listitem:
+      - link "Apply the filter ZEBRONICS to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A396324&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_4&ds=v1%3A9qsrgLDzX2C7s3hGf2F03nHpMCBz%2BUy%2BomNcZX%2BUaso
+        - text: ZEBRONICS
+    - listitem:
+      - link "Apply the filter Dell to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A241862&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_5&ds=v1%3ApAA%2BXIW%2FHAM6vRV8sz0l43yMCKYPRt6%2F%2BPCyFy7uCac
+        - text: Dell
+    - listitem:
+      - link "Apply the filter Amkette to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A334593&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_6&ds=v1%3ACLNmbEPsXOb7rdjEOALUlkVDbfotYWVGwwXcfEo6vRE
+        - text: Amkette
+    - listitem:
+      - link "Apply the filter Ant Esports to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_123%3A613594&dc&qid=1747656999&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3AzhDoAf5yNokoYB3lSIchPkUoR5Nl%2BkIH05Gtij9jGJQ
+        - text: Ant Esports
+    - listitem:
+      - button "See more, Brands": See more
+- group "Computers & Accessories Brands":
+  - heading "Computers & Accessories Brands" [level=2]
+  - list "Computers & Accessories Brands":
+    - listitem:
+      - link "Apply the filter Made for Amazon to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_format_browse-bin%3A30678577031&dc&qid=1747656999&rnid=30678571031&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3A%2BYh7KbsIlNdqc5GXnuDJrXlwqc6oo0hwZykBo1zhLrQ
+        - text: Made for Amazon
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_format_browse-bin%3A30678576031&dc&qid=1747656999&rnid=30678571031&ref=sr_nr_p_n_format_browse-bin_2&ds=v1%3Aytto5UVfVQGoIRZrSjMdaYMcJ1%2BZDAMAxy%2BilcRE1pk
+        - text: Top Brands
+- group "Features":
+  - heading "Features" [level=2]
+  - list "Features":
+    - listitem:
+      - link "Apply the filter Backlit to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A100091063031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3Aqego4hsTRTxb3irJyTwWlUgdFm%2FQVoCA%2BRcrDnAt8vI
+        - text: Backlit
+    - listitem:
+      - link "Apply the filter Ergonomic to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A29840994031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_2&ds=v1%3AN5AI0NNmtISzy9CEHvQrBaxffXaNM3EGmCcBoQryjt4
+        - text: Ergonomic
+    - listitem:
+      - link "Apply the filter Lightweight to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A100091061031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_3&ds=v1%3AdkiR8hB2%2B8iaothTbDGEUzU7mjzWcAVt0Fmeac895G0
+        - text: Lightweight
+    - listitem:
+      - link "Apply the filter Portable to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A29840993031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_4&ds=v1%3A9v9pGRg5p%2F%2BVBam6jGfk07a0grDee7MYX1Vg3wgMrI4
+        - text: Portable
+    - listitem:
+      - link "Apply the filter Rechargeable to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A29840996031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_5&ds=v1%3AgvtHPzcycIc6gLkfjWTsm9RS2b0BNyVBjxzIDvAqKgQ
+        - text: Rechargeable
+    - listitem:
+      - link "Apply the filter Round Key to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A29840990031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_6&ds=v1%3AzvnVz%2BhCUuuAm3%2Fpp2DXZyV35X8MrFx3u3fEHJNJRxY
+        - text: Round Key
+    - listitem:
+      - link "Apply the filter Touchpad to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A100091062031&dc&qid=1747656999&rnid=29840978031&ref=sr_nr_p_n_feature_nine_browse-bin_7&ds=v1%3AN%2BoH6xr7Mm7Nnx9aadvPKYgVJ3yP6lDGM0EnyamiHNM
+        - text: Touchpad
+    - listitem:
+      - button "See more, Features": See more
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1747656999&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3ACFxrAfOOI6pWTSGO7wpTW9o39lNX9MQsdrbTlpXXhGo
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1747656999&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3A6B1PHdAV%2FN7MbEDWm98ea1rY%2BFy6qwLUlV7NWL7%2BmQ8
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1747656999&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3AJyXKL96W83Ps%2Bqr7zbMS8Rno%2FTQGmExDeGS2TDHS2%2BU
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1747656999&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3A9P92lygJG5eXV2HlQp9owjCJhDne3Jh1pJROkCqsvHc
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1747656999&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3ATXHGnYwzmDbha6kheyo%2Fb78xxjCDjnFNReddozONRaw
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1747656999&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3AjAWXso%2Bu3sCwbuVMEkjf160%2BDMdmAqXyENmRa9WQbUg
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Keyboards, Mice & Input Devices":
+        - /url: /s?k=wireless+keyboard&rh=n%3A1375412031&dc&qid=1747656999&rnid=3576079031&ref=sr_nr_n_1&ds=v1%3AK%2Fo0Dhf2dTNm7fwa5Zqj1ntX2tFCNr2%2BmoIGHykNFc4
+    - listitem:
+      - link "Keyboard & Mouse Sets":
+        - /url: /s?k=wireless+keyboard&rh=n%3A1375412031%2Cn%3A1375418031&dc&qid=1747656999&rnid=3576079031&ref=sr_nr_n_2&ds=v1%3ARPvIHbHLLaSsq1jSW5OGkIZ7vRpKY9CNRbqbHUIXP3Q
+    - listitem:
+      - link "Keyboards":
+        - /url: /s?k=wireless+keyboard&rh=n%3A1375412031%2Cn%3A1375419031&dc&qid=1747656999&rnid=3576079031&ref=sr_nr_n_3&ds=v1%3ARAG4HaNvyrpEOxS6E8BhJbxUJkQZoCFt36Zm9P3qNOY
+    - listitem:
+      - link "PC Gaming Peripherals":
+        - /url: /s?k=wireless+keyboard&rh=n%3A10462251031&dc&qid=1747656999&rnid=3576079031&ref=sr_nr_n_4&ds=v1%3Atb0UN5bjceY6nSCVCw9wMRbsce47%2F9NHQkq0FyVQJ2E
+    - listitem:
+      - link "Gaming Keyboards":
+        - /url: /s?k=wireless+keyboard&rh=n%3A10462251031%2Cn%3A1375414031&dc&qid=1747656999&rnid=3576079031&ref=sr_nr_n_5&ds=v1%3AaBGEg48w7OYK8HtyMYd5PQ%2BG9%2Fpp317l6IPrTUUjVcE
+- group "Backlighting Color Support":
+  - heading "Backlighting Color Support" [level=2]
+  - list "Backlighting Color Support":
+    - listitem:
+      - link "Apply the filter RGB to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A29248122031&dc&qid=1747656999&rnid=29247894031&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3ATZshwIUWXCYxoAvGTEU%2BHT%2FmzoIHuDERlh%2BSA8vPx4I
+        - text: RGB
+    - listitem:
+      - link "Apply the filter Single Color to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A29248121031&dc&qid=1747656999&rnid=29247894031&ref=sr_nr_p_n_feature_six_browse-bin_2&ds=v1%3AilrMHKJh7kg7vcBnnOafzIPZL0bgRm2vJ%2B3kKuJsIgE
+        - text: Single Color
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1747656999&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3ASu0oBvHF22%2FBSglqUvpafGC%2F9Vj3Ac00Mk%2FjF5yWHvE
+        - text: Eligible for Pay On Delivery
+- group "Compatibility":
+  - heading "Compatibility" [level=2]
+  - list "Compatibility":
+    - listitem:
+      - link "Apply the filter Gaming Console to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616093031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_1&ds=v1%3AQF5kpvgxRIS3jAa63q%2FpVTxc5vPj8theTdkzMkF5mFM
+        - text: Gaming Console
+    - listitem:
+      - link "Apply the filter Laptop to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616096031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_2&ds=v1%3AtGA1KUvqXVEsgCXHlS79MmajDqW8fKyKWT0%2FHlihjJg
+        - text: Laptop
+    - listitem:
+      - link "Apply the filter Personal Computer to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616094031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_3&ds=v1%3AjJGT1hI9T4ibOHdJakQJip06ddJ5zybACiJAe7LFc3s
+        - text: Personal Computer
+    - listitem:
+      - link "Apply the filter Projector to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616095031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_4&ds=v1%3A94bQ5lkh2EjZqMOz8rTUMvFzBNFfnC%2BaPNNyX26YfnY
+        - text: Projector
+    - listitem:
+      - link "Apply the filter Smartphone to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616091031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_5&ds=v1%3Ajtq%2ByqHGTRyIdoU88de1PdPSVtOk23WJnSj7I3dwetA
+        - text: Smartphone
+    - listitem:
+      - link "Apply the filter Tablet to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616092031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_6&ds=v1%3Au%2FBTssgIxgTUiAhEkeIKZzJ7Icff2C3fnlVSGlTD4qw
+        - text: Tablet
+    - listitem:
+      - link "Apply the filter Television to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_seven_browse-bin%3A29616090031&dc&qid=1747656999&rnid=29615949031&ref=sr_nr_p_n_feature_seven_browse-bin_7&ds=v1%3A8KFRy5zNn9gQNNaWPDV8w2%2B3OrpX%2BZJsV903ua8o%2FWU
+        - text: Television
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1747656999&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3ASmj25PhoAs5J90EKy7G0DIbWAFIV3%2BNzOP600c%2B6A70
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1747656999&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3A1JEOAOhFMstuV%2BhjKde0Oa0KE0tlqxT0joNFIXrAuSs
+- group "Hand Orientation":
+  - heading "Hand Orientation" [level=2]
+  - list "Hand Orientation":
+    - listitem:
+      - link "Apply the filter Ambidextrous to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A29248117031&dc&qid=1747656999&rnid=29247892031&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3AIwZJCp702GxvzdAJQqyXDUy%2F3PFRCBEdrwLEyYDgxmA
+        - text: Ambidextrous
+    - listitem:
+      - link "Apply the filter Right to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A29248115031&dc&qid=1747656999&rnid=29247892031&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3AHn2bPkTYqqjvYfb4ZayAfSeqEML9avjXTpUv9k%2B1Tc0
+        - text: Right
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter Clicktech Retail Private Ltd to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_6%3AAJ6SIZC8YQDZX&dc&qid=1747656999&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3Avi6jwIywTP%2FjZGmz2zhDdq8ByEN%2B1y2fa%2B4P4kECeKs
+        - text: Clicktech Retail Private Ltd
+    - listitem:
+      - link "Apply the filter PoshACE-Tech to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=n%3A976392031%2Cp_6%3AA1ZVZ1VUZC3X1A&dc&qid=1747656999&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AzI722mDu0cgID97827IpSqm2KygM1MmjC1HGHsH%2BrMU
+        - text: PoshACE-Tech
+    - listitem:
+      - button "See more, Seller": See more
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=wireless+keyboard&rh=p_n_availability%3A1318485031&dc&qid=1747656999&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3ALFeUR2J96HZ855a5okMme3woIyFsQCt2ocAivxLOfmk
+        - text: Include Out of Stock
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dwireless%2Bkeyboard%26ref%3Dnb_sb_noss&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('Check delivery for a pincode', async ({ page }) => {
+   4 |   const pinCode = '600001';
+   5 |   const productName = 'wireless keyboard';
+   6 |
+   7 |   await page.goto('https://www.amazon.in');
+   8 |
+   9 |   // Search product
+  10 |   await page.fill('#twotabsearchtextbox', productName);
+  11 |   await page.keyboard.press('Enter');
+  12 |
+  13 |   // Wait for products
+  14 |   await page.waitForSelector('div.s-main-slot a.a-link-normal.s-no-outline');
+  15 |
+  16 |   const links = await page.$$('div.s-main-slot a.a-link-normal.s-no-outline');
+  17 |
+  18 |   let clicked = false;
+  19 |   for (const link of links) {
+  20 |     const href = await link.getAttribute('href');
+  21 |     if (href && href.includes('/dp/')) {
+  22 |       await link.click(); // Just click, no waitForNavigation
+  23 |       clicked = true;
+  24 |       break;
+  25 |     }
+  26 |   }
+  27 |
+  28 |   if (!clicked) {
+  29 |     throw new Error('❌ No valid product link found');
+  30 |   }
+> 31 |   await page.getByRole('button', { name: 'Add both to Cart' }).click();
+     |                                                                ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  32 |   await page.locator('#sw-gtc').getByRole('link', { name: 'Go to Cart' }).click();
+  33 |   await page.getByRole('button', { name: 'Delete ZEBRONICS Zeb-Fame' }).first().click();
+  34 |
+  35 |
+  36 |   // Pause here to inspect the page manually in headed mode
+  37 |   await page.pause();
+  38 |
+  39 |   // Now you can check selectors in the browser manually and adjust next steps accordingly
+  40 | });
+  41 |
+```

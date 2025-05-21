@@ -1,0 +1,41 @@
+# Test info
+
+- Name: Open product detail page
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/openProductDetail.spec.js:4:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for locator('.s-main-slot div[data-index="1"] h2 a')
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/openProductDetail.spec.js:14:22
+```
+
+# Test source
+
+```ts
+   1 | // tests/openProductDetail.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Open product detail page', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('https://www.amazon.in');
+   7 |
+   8 |   console.log('✅ Searching for "Bluetooth Speakers"...');
+   9 |   await page.fill('#twotabsearchtextbox', 'Bluetooth Speakers');
+  10 |   await page.press('#twotabsearchtextbox', 'Enter');
+  11 |
+  12 |   console.log('✅ Clicking on first product...');
+  13 |   const firstProduct = page.locator('.s-main-slot div[data-index="1"] h2 a');
+> 14 |   await firstProduct.click();
+     |                      ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  15 |
+  16 |   console.log('✅ Checking for Add to Cart button...');
+  17 |   await expect(page.getByRole('button', { name: 'Add to Cart' })).toBeVisible();
+  18 |
+  19 |   console.log('🎯 Opened product detail successfully!');
+  20 | });
+  21 |
+```

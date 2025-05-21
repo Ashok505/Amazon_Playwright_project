@@ -1,0 +1,1476 @@
+# Test info
+
+- Name: Add a product in the cart
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/addToCart.spec.js:3:5
+
+# Error details
+
+```
+Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('span.a-size-medium.a-color-base.a-text-normal').first()
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for locator('span.a-size-medium.a-color-base.a-text-normal').first()
+    - waiting for navigation to finish...
+    - navigated to "https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=mouse"
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/addToCart.spec.js:12:32
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": mouse
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dmouse%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ
+      - img "Big Savings, More Happiness"
+    - dialog
+- 'heading "1-16 of over 50,000 results for \"mouse\" Sort by: Featured" [level=1]':
+  - heading "1-16 of over 50,000 results for \"mouse\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "Sponsored video from cimetech, click to learn more about offerings from cimetech on Amazon.":
+  - /url: https://aax-eu.amazon.in/x/c/JBOm13CZjOnH0a2fv0vn3z8AAAGWgG5tCgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBQAQ-T/https://www.amazon.in/dp/B0D4LYF1QP/?_encoding=UTF8&_encoding=UTF8&pd_rd_i=B0D4LYF1QP&ref_=sxts_sparkle_sbv&ref_=sbx_be_s_sparkle_ssd_vid&qid=1745911442&pd_rd_w=HKntz&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=iyDNw&pd_rd_r=9fccd5af-449b-4525-945a-03c8523f9949
+- button "Play Sponsored Video":
+  - img
+- link "cimetech Dual Mode (BT 5.1+2.4G) Wireless Mouse for Laptop, 1200 DPI Portable Lightweight Rechargeable Mouse with LED Lights, Compatible with Mac OS/Windows/Chrome OS - Black":
+  - /url: https://aax-eu.amazon.in/x/c/JBOm13CZjOnH0a2fv0vn3z8AAAGWgG5tCgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBQAQ-T/https://amazon.in/stores/page/EFB124A7-47BE-4E5E-BB40-F483FB951306/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D4LYF1QP&ref_=sbx_be_s_sparkle_ssd_asin&store_ref=SBV_A0742573FXE3060HQ0PB-A098068135YNXW9P5EH5E&lp_asins=B0D4LYF1QP&pd_rd_w=HKntz&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=iyDNw&pd_rd_r=9fccd5af-449b-4525-945a-03c8523f9949
+  - img "cimetech Dual Mode (BT 5.1+2.4G) Wireless Mouse for Laptop, 1200 DPI Portable Lightweight Rechargeable Mouse with LED Lights, Compatible with Mac OS/Windows/Chrome OS - Black"
+- link "Shop the cimetech Store on Amazon":
+  - /url: https://aax-eu.amazon.in/x/c/JBOm13CZjOnH0a2fv0vn3z8AAAGWgG5tCgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBQAQ-T/https://amazon.in/stores/page/EFB124A7-47BE-4E5E-BB40-F483FB951306/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D4LYF1QP&ref_=sbx_be_s_sparkle_ssd_logo&store_ref=SBV_A0742573FXE3060HQ0PB-A098068135YNXW9P5EH5E&lp_asins=B0D4LYF1QP&pd_rd_w=HKntz&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=iyDNw&pd_rd_r=9fccd5af-449b-4525-945a-03c8523f9949
+  - img "Shop the cimetech Store on Amazon"
+- link "Shop cimetech":
+  - /url: https://aax-eu.amazon.in/x/c/JBOm13CZjOnH0a2fv0vn3z8AAAGWgG5tCgMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBQAQ-T/https://amazon.in/stores/page/EFB124A7-47BE-4E5E-BB40-F483FB951306/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D4LYF1QP&ref_=sbx_be_s_sparkle_ssd_cta&store_ref=SBV_A0742573FXE3060HQ0PB-A098068135YNXW9P5EH5E&lp_asins=B0D4LYF1QP&pd_rd_w=HKntz&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=iyDNw&pd_rd_r=9fccd5af-449b-4525-945a-03c8523f9949
+- button "Leave feedback on Sponsored ad": Sponsored
+- text: Showing products with fast delivery
+- link "See all products, across price ranges.":
+  - /url: /s?k=mouse&nsdOptOutParam=true&ref=nb_sb_noss
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDE2NDYxOTM0MTkzMjo6MDo6&url=%2FDELL-WM118-Wireless-Optical-Mouse%2Fdp%2FB07JPX9CR7%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Dell WM118 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and Play, Ambidextrous - Black":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDE2NDYxOTM0MTkzMjo6MDo6&url=%2FDELL-WM118-Wireless-Optical-Mouse%2Fdp%2FB07JPX9CR7%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Dell WM118 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and Play, Ambidextrous - Black" [level=2]: Dell WM118 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and Play, Ambidextrous - Black
+    - button "4.1 out of 5 stars, rating details"
+    - link "20,206 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDE2NDYxOTM0MTkzMjo6MDo6&url=%2FDELL-WM118-Wireless-Optical-Mouse%2Fdp%2FB07JPX9CR7%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹598 M.R.P: ₹1,299 M.R.P: ₹1,299"':
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDE2NDYxOTM0MTkzMjo6MDo6&url=%2FDELL-WM118-Wireless-Optical-Mouse%2Fdp%2FB07JPX9CR7%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (54% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDQ1NTU4NTE0ODYzMjo6MDo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Logitech Pebble Mouse 2 M350s Slim Bluetooth Wireless Mouse, Portable, Lightweight, Customisable Button, Quiet Clicks, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDQ1NTU4NTE0ODYzMjo6MDo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Logitech Pebble Mouse 2 M350s Slim Bluetooth Wireless Mouse, Portable, Lightweight, Customisable Button, Quiet Clicks, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite" [level=2]: Logitech Pebble Mouse 2 M350s Slim Bluetooth Wireless Mouse, Portable, Lightweight, Customisable Button, Quiet Clicks, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite
+    - button "4.2 out of 5 stars, rating details"
+    - link "995 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDQ1NTU4NTE0ODYzMjo6MDo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹1,495 M.R.P: ₹2,295 M.R.P: ₹2,295"':
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYXRmOjMwMDQ1NTU4NTE0ODYzMjo6MDo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (35% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Optical-Hi-Optical-Tracking-Million/dp/B0BRKSQ7Z2/ref=sr_1_3?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-3
+    - link "Portronics Toad 101 Wired Optical Mouse with 1200 DPI, Plug & Play, Hi-Optical Tracking, 1.25M Cable Length, 30 Million Click Life(Black)":
+      - /url: /Portronics-Optical-Hi-Optical-Tracking-Million/dp/B0BRKSQ7Z2/ref=sr_1_3?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-3
+      - heading "Portronics Toad 101 Wired Optical Mouse with 1200 DPI, Plug & Play, Hi-Optical Tracking, 1.25M Cable Length, 30 Million Click Life(Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,057 ratings":
+      - /url: /Portronics-Optical-Hi-Optical-Tracking-Million/dp/B0BRKSQ7Z2/ref=sr_1_3?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-3#customerReviews
+    - text: 3K+ bought in past month
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹118 M.R.P: ₹499 M.R.P: ₹499"':
+      - /url: /Portronics-Optical-Hi-Optical-Tracking-Million/dp/B0BRKSQ7Z2/ref=sr_1_3?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-3
+    - text: (76% off) FREE delivery 1 - 4 May on first order
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Zebronics-Zeb-Power-Wired-Mouse-Black/dp/B07L9FW9GF/ref=sr_1_4?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-4
+    - link "Zebronics Zeb-Power Wired USB Mouse, 3-Button, 1200 DPI Optical Sensor, Plug & Play, for Windows/Mac":
+      - /url: /Zebronics-Zeb-Power-Wired-Mouse-Black/dp/B07L9FW9GF/ref=sr_1_4?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-4
+      - heading "Zebronics Zeb-Power Wired USB Mouse, 3-Button, 1200 DPI Optical Sensor, Plug & Play, for Windows/Mac" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "11,407 ratings":
+      - /url: /Zebronics-Zeb-Power-Wired-Mouse-Black/dp/B07L9FW9GF/ref=sr_1_4?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-4#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹149 M.R.P: ₹249 M.R.P: ₹249"':
+      - /url: /Zebronics-Zeb-Power-Wired-Mouse-Black/dp/B07L9FW9GF/ref=sr_1_4?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-4
+    - text: (40% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /ZEBRONICS-Gaming-Rainbow-Precision-Buttons/dp/B0CG13FJ5M/ref=sr_1_5?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-5
+    - link "ZEBRONICS PHERO Wired Gaming Mouse with up to 1600 DPI, Rainbow LED Lights, DPI Switch, High Precision, Plug & Play, 4 Buttons":
+      - /url: /ZEBRONICS-Gaming-Rainbow-Precision-Buttons/dp/B0CG13FJ5M/ref=sr_1_5?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-5
+      - heading "ZEBRONICS PHERO Wired Gaming Mouse with up to 1600 DPI, Rainbow LED Lights, DPI Switch, High Precision, Plug & Play, 4 Buttons" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "1,934 ratings":
+      - /url: /ZEBRONICS-Gaming-Rainbow-Precision-Buttons/dp/B0CG13FJ5M/ref=sr_1_5?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-5#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹199 M.R.P: ₹649 M.R.P: ₹649"':
+      - /url: /ZEBRONICS-Gaming-Rainbow-Precision-Buttons/dp/B0CG13FJ5M/ref=sr_1_5?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-5
+    - text: (69% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+- heading "Trending now" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- group "Trending now":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUzNzQwMzkwOTUzMjo6MDo6&url=%2FAmkette-Epic-Rechargeable-Connectivity-Black%2Fdp%2FB0DZHFLNWG%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0DZHFLNWG%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Amkette Hush Pro Epic M Rechargeable Wireless Mouse/Bluetooth Mouse | 3 Device Connectivity with Bluetooth and USB 2.4 GHz with Easy Switching, Silent Switches, Ergonomic Design, Upto 3200 DPI (Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUzNzQwMzkwOTUzMjo6MDo6&url=%2FAmkette-Epic-Rechargeable-Connectivity-Black%2Fdp%2FB0DZHFLNWG%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0DZHFLNWG%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Amkette Hush Pro Epic M Rechargeable Wireless Mouse/Bluetooth Mouse | 3 Device Connectivity with Bluetooth and USB 2.4 GHz with Easy Switching, Silent Switches, Ergonomic Design, Upto 3200 DPI (Black)" [level=2]: Amkette Hush Pro Epic M Rechargeable Wireless Mouse/Bluetooth Mouse | 3 Device Connectivity with Bluetooth and USB 2.4 GHz with Easy Switching, Silent Switches, Ergonomic Design, Upto 3200 DPI (Black)
+        - button "4.2 out of 5 stars, rating details"
+        - link "264 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUzNzQwMzkwOTUzMjo6MDo6&url=%2FAmkette-Epic-Rechargeable-Connectivity-Black%2Fdp%2FB0DZHFLNWG%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0DZHFLNWG%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - link "Limited time deal":
+          - /url: /deals
+        - text: Price, product page
+        - 'link "₹699 M.R.P: ₹1,199 M.R.P: ₹1,199"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUzNzQwMzkwOTUzMjo6MDo6&url=%2FAmkette-Epic-Rechargeable-Connectivity-Black%2Fdp%2FB0DZHFLNWG%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0DZHFLNWG%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (42% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1NTU4NTE0ODYzMjo6MTo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0CGCZHGW1%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Logitech Pebble Mouse 2 M350s Slim Bluetooth Wireless Mouse, Portable, Lightweight, Customisable Button, Quiet Clicks, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1NTU4NTE0ODYzMjo6MTo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0CGCZHGW1%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Logitech Pebble Mouse 2 M350s Slim Bluetooth Wireless Mouse, Portable, Lightweight, Customisable Button, Quiet Clicks, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite" [level=2]: Logitech Pebble Mouse 2 M350s Slim Bluetooth Wireless Mouse, Portable, Lightweight, Customisable Button, Quiet Clicks, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite
+        - button "4.2 out of 5 stars, rating details"
+        - link "995 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1NTU4NTE0ODYzMjo6MTo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0CGCZHGW1%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 500+ bought in past month Price, product page
+        - 'link "₹1,495 M.R.P: ₹2,295 M.R.P: ₹2,295"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1NTU4NTE0ODYzMjo6MTo6&url=%2FLogitech-Bluetooth-Lightweight-Customisable-Easy-Switch%2Fdp%2FB0CGCZHGW1%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0CGCZHGW1%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (35% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NTkzMjo6Mjo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYDYJLZR%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYDYJLZR%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - HP Z3700 Dual Silver Mouse/2.4 GHz Wireless connection/1600 dpi/3 Buttons/Silent clicks; Multi-Device; Cross Operating Systems/3 Years Warranty":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NTkzMjo6Mjo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYDYJLZR%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYDYJLZR%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - HP Z3700 Dual Silver Mouse/2.4 GHz Wireless connection/1600 dpi/3 Buttons/Silent clicks; Multi-Device; Cross Operating Systems/3 Years Warranty" [level=2]: HP Z3700 Dual Silver Mouse/2.4 GHz Wireless connection/1600 dpi/3 Buttons/Silent clicks; Multi-Device; Cross Operating Systems/3 Years Warranty
+        - button "4.0 out of 5 stars, rating details"
+        - link "416 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NTkzMjo6Mjo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYDYJLZR%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYDYJLZR%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹1,199 M.R.P: ₹1,998 M.R.P: ₹1,998"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NTkzMjo6Mjo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYDYJLZR%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYDYJLZR%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (40% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDE2NDU3MTg5MTMzMjo6Mzo6&url=%2FDell-Wm126-Black-Ambidextrous-Universal-Technology%2Fdp%2FB01ALB3BW6%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB01ALB3BW6%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Dell WM126 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and Play, Ambidextrous, Connect Up To 6 Compatible Devices With One Receiver - Black":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDE2NDU3MTg5MTMzMjo6Mzo6&url=%2FDell-Wm126-Black-Ambidextrous-Universal-Technology%2Fdp%2FB01ALB3BW6%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB01ALB3BW6%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Dell WM126 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and Play, Ambidextrous, Connect Up To 6 Compatible Devices With One Receiver - Black" [level=2]: Dell WM126 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and Play, Ambidextrous, Connect Up To 6 Compatible Devices With One Receiver - Black
+        - button "4.1 out of 5 stars, rating details"
+        - link "20,206 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDE2NDU3MTg5MTMzMjo6Mzo6&url=%2FDell-Wm126-Black-Ambidextrous-Universal-Technology%2Fdp%2FB01ALB3BW6%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB01ALB3BW6%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 500+ bought in past month Price, product page
+        - 'link "₹899 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDE2NDU3MTg5MTMzMjo6Mzo6&url=%2FDell-Wm126-Black-Ambidextrous-Universal-Technology%2Fdp%2FB01ALB3BW6%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB01ALB3BW6%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (40% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NjEzMjo6NDo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYF2VLDF%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYF2VLDF%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - HP Z3700 Dual Black Mouse, Bluetooth 5.0, USB-A dongle, 2.4 GHz Wireless Connection, Multi-Surface Tracking, Silent clicks, Up to 1600 dpi, 16-Month Battery Life, 3-Year Warranty, 50g, Black, 758A8AA":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NjEzMjo6NDo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYF2VLDF%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYF2VLDF%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - HP Z3700 Dual Black Mouse, Bluetooth 5.0, USB-A dongle, 2.4 GHz Wireless Connection, Multi-Surface Tracking, Silent clicks, Up to 1600 dpi, 16-Month Battery Life, 3-Year Warranty, 50g, Black, 758A8AA" [level=2]: HP Z3700 Dual Black Mouse, Bluetooth 5.0, USB-A dongle, 2.4 GHz Wireless Connection, Multi-Surface Tracking, Silent clicks, Up to 1600 dpi, 16-Month Battery Life, 3-Year Warranty, 50g, Black, 758A8AA
+        - button "4.0 out of 5 stars, rating details"
+        - link "2,788 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NjEzMjo6NDo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYF2VLDF%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYF2VLDF%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹1,439 M.R.P: ₹1,998 M.R.P: ₹1,998"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0NjAyOTQ5NzI2MTA1NzMzOjE3NDU5MTE0NDI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDEzMjcwMDc2NjEzMjo6NDo6&url=%2FHP-Wireless-connection-Multi-Device-Operating%2Fdp%2FB0BYF2VLDF%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dmouse%26keywords%3Dmouse%26pd_rd_i%3DB0BYF2VLDF%26pd_rd_r%3Dd7011613-c2cc-4380-a5d5-c8a0f7520d23%26pd_rd_w%3DWsKVP%26pd_rd_wg%3D27uH5%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D6NQ1WQ9Y95YNW2XAE1ZQ%26qid%3D1745911442%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (28% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Zebronics-Zeb-Jaguar-Light-Blue-Grey/dp/B098K1439N/ref=sr_1_6?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-6
+    - link "ZEBRONICS Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & Play, Ambidextrous, for PC/Mac/Laptop (Light Blue+Grey)":
+      - /url: /Zebronics-Zeb-Jaguar-Light-Blue-Grey/dp/B098K1439N/ref=sr_1_6?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-6
+      - heading "ZEBRONICS Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & Play, Ambidextrous, for PC/Mac/Laptop (Light Blue+Grey)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "11,380 ratings":
+      - /url: /Zebronics-Zeb-Jaguar-Light-Blue-Grey/dp/B098K1439N/ref=sr_1_6?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-6#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹299 M.R.P: ₹1,190 M.R.P: ₹1,190"':
+      - /url: /Zebronics-Zeb-Jaguar-Light-Blue-Grey/dp/B098K1439N/ref=sr_1_6?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-6
+    - text: (75% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Dell-MS116-1000DPI-Wired-Optical/dp/B01HJI0FS2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-7
+    - link "Dell MS116 Wired Optical Mouse, 1000DPI, LED Tracking, Scrolling Wheel, Plug and Play":
+      - /url: /Dell-MS116-1000DPI-Wired-Optical/dp/B01HJI0FS2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-7
+      - heading "Dell MS116 Wired Optical Mouse, 1000DPI, LED Tracking, Scrolling Wheel, Plug and Play" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "43,164 ratings":
+      - /url: /Dell-MS116-1000DPI-Wired-Optical/dp/B01HJI0FS2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-7#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹309 M.R.P: ₹650 M.R.P: ₹650"':
+      - /url: /Dell-MS116-1000DPI-Wired-Optical/dp/B01HJI0FS2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-7
+    - text: (52% off) FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+    - text: More Buying Choices ₹299
+    - link "(15 new offers)":
+      - /url: /gp/offer-listing/B01HJI0FS2/ref=sr_1_7_olp?keywords=mouse&dib_tag=se&dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&qid=1745911442&sr=8-7
+  - listitem:
+    - link:
+      - /url: /Lenovo-GX30M39704-300-USB-Mouse/dp/B073BRXPZX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-8
+    - link "Lenovo 300 Wired Plug & Play USB Mouse, High Resolution 1600 DPI Optical Sensor, 3-Button Design with clickable Scroll Wheel, Ambidextrous, Ergonomic Mouse for Comfortable All-Day Grip (GX30M39704)":
+      - /url: /Lenovo-GX30M39704-300-USB-Mouse/dp/B073BRXPZX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-8
+      - heading "Lenovo 300 Wired Plug & Play USB Mouse, High Resolution 1600 DPI Optical Sensor, 3-Button Design with clickable Scroll Wheel, Ambidextrous, Ergonomic Mouse for Comfortable All-Day Grip (GX30M39704)" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "30,410 ratings":
+      - /url: /Lenovo-GX30M39704-300-USB-Mouse/dp/B073BRXPZX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-8#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹269 M.R.P: ₹507 M.R.P: ₹507"':
+      - /url: /Lenovo-GX30M39704-300-USB-Mouse/dp/B073BRXPZX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-8
+    - text: (47% off) FREE delivery Thu, 1 May on first order
+    - button "Add to cart"
+  - listitem:
+    - group "Best seller in Gaming Mice"
+    - link:
+      - /url: /ZEBRONICS-Launched-Rechargeable-Operation-Multicolor/dp/B0CQRNWJM2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-9
+    - link "ZEBRONICS Blanc Slim Wireless Mouse with Rechargeable Battery, BT + 2.4GHz, 4 Buttons, 800/1200/1600 DPI, Silent Operation, Multicolor LED Lights":
+      - /url: /ZEBRONICS-Launched-Rechargeable-Operation-Multicolor/dp/B0CQRNWJM2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-9
+      - heading "ZEBRONICS Blanc Slim Wireless Mouse with Rechargeable Battery, BT + 2.4GHz, 4 Buttons, 800/1200/1600 DPI, Silent Operation, Multicolor LED Lights" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,685 ratings":
+      - /url: /ZEBRONICS-Launched-Rechargeable-Operation-Multicolor/dp/B0CQRNWJM2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-9#customerReviews
+    - text: 4K+ bought in past month Price, product page
+    - 'link "₹415 M.R.P: ₹799 M.R.P: ₹799"':
+      - /url: /ZEBRONICS-Launched-Rechargeable-Operation-Multicolor/dp/B0CQRNWJM2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-9
+    - text: (48% off) FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - group "Best seller in Mice"
+    - link:
+      - /url: /Logitech-Wireless-Receiver-Ambidextrous-Compatible/dp/B0D18192T2/ref=sr_1_10?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-10
+    - link "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextrous, Compatible with PC, Mac, Laptop":
+      - /url: /Logitech-Wireless-Receiver-Ambidextrous-Compatible/dp/B0D18192T2/ref=sr_1_10?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-10
+      - heading "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextrous, Compatible with PC, Mac, Laptop" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "77,755 ratings":
+      - /url: /Logitech-Wireless-Receiver-Ambidextrous-Compatible/dp/B0D18192T2/ref=sr_1_10?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-10#customerReviews
+    - text: 5K+ bought in past month
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹545 M.R.P: ₹1,195 M.R.P: ₹1,195"':
+      - /url: /Logitech-Wireless-Receiver-Ambidextrous-Compatible/dp/B0D18192T2/ref=sr_1_10?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-10
+    - text: (54% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDA5NjIyMDkwNTgzMjo6MDo6&url=%2FEvoFox-Programmable-Ultra-Responsive-Sensitive-Software%2Fdp%2FB0CLS6F44T%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - EvoFox Ultra Value Series Blaze Programmable Gaming Mouse | 8 Fully Programmable Buttons | Ultra-Responsive 7000fps | Gaming Grade DPI Upto 12800 | RGB Lights with Music sync Mode | Windows Software":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDA5NjIyMDkwNTgzMjo6MDo6&url=%2FEvoFox-Programmable-Ultra-Responsive-Sensitive-Software%2Fdp%2FB0CLS6F44T%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - EvoFox Ultra Value Series Blaze Programmable Gaming Mouse | 8 Fully Programmable Buttons | Ultra-Responsive 7000fps | Gaming Grade DPI Upto 12800 | RGB Lights with Music sync Mode | Windows Software" [level=2]: EvoFox Ultra Value Series Blaze Programmable Gaming Mouse | 8 Fully Programmable Buttons | Ultra-Responsive 7000fps | Gaming Grade DPI Upto 12800 | RGB Lights with Music sync Mode | Windows Software
+    - button "4.4 out of 5 stars, rating details"
+    - link "2,543 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDA5NjIyMDkwNTgzMjo6MDo6&url=%2FEvoFox-Programmable-Ultra-Responsive-Sensitive-Software%2Fdp%2FB0CLS6F44T%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 700+ bought in past month
+    - link "Linux":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDA5NjIyMDkwNTgzMjo6MDo6&url=%2FEvoFox-Programmable-Ultra-Responsive-Sensitive-Software%2Fdp%2FB0CLS6F44T%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: Price, product page
+    - 'link "₹649 M.R.P: ₹1,299 M.R.P: ₹1,299"':
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDA5NjIyMDkwNTgzMjo6MDo6&url=%2FEvoFox-Programmable-Ultra-Responsive-Sensitive-Software%2Fdp%2FB0CLS6F44T%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (50% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDI1NTE3ODkxMjYzMjo6MDo6&url=%2FHyperX-Pulsefire-Haste-Gaming-HMSH1%2Fdp%2FB08NSJFNSS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - HyperX Pulsefire Haste USB Ultra Lightweight, 59g, Hex Design, Honeycomb Shell, Hyperflex Cable, Up to 16000 DPI, 6 Programmable Buttons Gaming Mouse":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDI1NTE3ODkxMjYzMjo6MDo6&url=%2FHyperX-Pulsefire-Haste-Gaming-HMSH1%2Fdp%2FB08NSJFNSS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - HyperX Pulsefire Haste USB Ultra Lightweight, 59g, Hex Design, Honeycomb Shell, Hyperflex Cable, Up to 16000 DPI, 6 Programmable Buttons Gaming Mouse" [level=2]: HyperX Pulsefire Haste USB Ultra Lightweight, 59g, Hex Design, Honeycomb Shell, Hyperflex Cable, Up to 16000 DPI, 6 Programmable Buttons Gaming Mouse
+    - button "4.4 out of 5 stars, rating details"
+    - link "10,087 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDI1NTE3ODkxMjYzMjo6MDo6&url=%2FHyperX-Pulsefire-Haste-Gaming-HMSH1%2Fdp%2FB08NSJFNSS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹3,499 M.R.P: ₹5,057 M.R.P: ₹5,057"':
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfbXRmOjMwMDI1NTE3ODkxMjYzMjo6MDo6&url=%2FHyperX-Pulsefire-Haste-Gaming-HMSH1%2Fdp%2FB08NSJFNSS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (31% off) FREE delivery 4 - 7 May
+    - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JAPDHGhxIb-M18GPgfgQlNIAAAGWgG5s7wMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC-yWUj/https://www.amazon.in/dp/B0CB1FYVJZ?pd_rd_i=B0CB1FYVJZ&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=27uH5&pd_rd_w=MtLzQ&pd_rd_r=d7011613-c2cc-4380-a5d5-c8a0f7520d23
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JAPDHGhxIb-M18GPgfgQlNIAAAGWgG5s7wMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC-yWUj/https://www.amazon.in/Offbeat-Bluetooth-Wireless-Rechargeable-connectivity/dp/B0CB1FYVJZ/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0CB1FYVJZ&pd_rd_r=d7011613-c2cc-4380-a5d5-c8a0f7520d23&pd_rd_w=MtLzQ&pd_rd_wg=27uH5&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Sponsored
+- link "Offbeat - Atom Dual Bluetooth 5.1+5.1 & 2.4Ghz Wireless, Type-C Rechargeable Silent Click Mouse, Triple Device connectivity Windows, Mac, iOS, Android":
+  - /url: https://aax-eu.amazon.in/x/c/JAPDHGhxIb-M18GPgfgQlNIAAAGWgG5s7wMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC-yWUj/https://www.amazon.in/Offbeat-Bluetooth-Wireless-Rechargeable-connectivity/dp/B0CB1FYVJZ/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0CB1FYVJZ&pd_rd_r=d7011613-c2cc-4380-a5d5-c8a0f7520d23&pd_rd_w=MtLzQ&pd_rd_wg=27uH5&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+  - heading "Offbeat - Atom Dual Bluetooth 5.1+5.1 & 2.4Ghz Wireless, Type-C Rechargeable Silent Click Mouse, Triple Device connectivity Windows, Mac, iOS, Android" [level=2]
+- button "4.0 out of 5 stars, rating details"
+- link "671 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JAPDHGhxIb-M18GPgfgQlNIAAAGWgG5s7wMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC-yWUj/https://www.amazon.in/Offbeat-Bluetooth-Wireless-Rechargeable-connectivity/dp/B0CB1FYVJZ/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0CB1FYVJZ&pd_rd_r=d7011613-c2cc-4380-a5d5-c8a0f7520d23&pd_rd_w=MtLzQ&pd_rd_wg=27uH5&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+- text: 200+ bought in past month Price, product page
+- link "₹1,490":
+  - /url: https://aax-eu.amazon.in/x/c/JAPDHGhxIb-M18GPgfgQlNIAAAGWgG5s7wMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC-yWUj/https://www.amazon.in/Offbeat-Bluetooth-Wireless-Rechargeable-connectivity/dp/B0CB1FYVJZ/ref=sxin_23_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0CB1FYVJZ&pd_rd_r=d7011613-c2cc-4380-a5d5-c8a0f7520d23&pd_rd_w=MtLzQ&pd_rd_wg=27uH5&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Up to 5% back with Amazon Pay ICICI card
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 30 April FREE Delivery by Amazon
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Zebronics-Zeb-Jaguar-Wireless-Precision-Ambidextrous/dp/B098JYT4SY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-13
+    - link "ZEBRONICS Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & Play, Ambidextrous, for PC/Mac/Laptop (Black+Grey)":
+      - /url: /Zebronics-Zeb-Jaguar-Wireless-Precision-Ambidextrous/dp/B098JYT4SY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-13
+      - heading "ZEBRONICS Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & Play, Ambidextrous, for PC/Mac/Laptop (Black+Grey)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "11,380 ratings":
+      - /url: /Zebronics-Zeb-Jaguar-Wireless-Precision-Ambidextrous/dp/B098JYT4SY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-13#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹299 M.R.P: ₹1,190 M.R.P: ₹1,190"':
+      - /url: /Zebronics-Zeb-Jaguar-Wireless-Precision-Ambidextrous/dp/B098JYT4SY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-13
+    - text: (75% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /amazon-basics-Wireless-Orientation-Adjustable/dp/B0DWSTJG8G/ref=sr_1_14?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-14
+    - link "amazon basics Wireless Optical Mouse with 2.4GHz, USB Nano Dongle, Optical Orientation, Click Wheel, Adjustable DPI":
+      - /url: /amazon-basics-Wireless-Orientation-Adjustable/dp/B0DWSTJG8G/ref=sr_1_14?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-14
+      - heading "amazon basics Wireless Optical Mouse with 2.4GHz, USB Nano Dongle, Optical Orientation, Click Wheel, Adjustable DPI" [level=2]
+    - button "3.0 out of 5 stars, rating details"
+    - link "16 ratings":
+      - /url: /amazon-basics-Wireless-Orientation-Adjustable/dp/B0DWSTJG8G/ref=sr_1_14?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-14#customerReviews
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹279 M.R.P: ₹1,199 M.R.P: ₹1,199"':
+      - /url: /amazon-basics-Wireless-Orientation-Adjustable/dp/B0DWSTJG8G/ref=sr_1_14?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-14
+    - text: (77% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Wireless-Optical-Orientation-Adjustable/dp/B0B296NTFV/ref=sr_1_15?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-15
+    - link "Portronics Toad 23 Wireless Optical Mouse with 2.4GHz, USB Nano Dongle, Optical Orientation, Click Wheel, Adjustable DPI(Black)":
+      - /url: /Portronics-Wireless-Optical-Orientation-Adjustable/dp/B0B296NTFV/ref=sr_1_15?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-15
+      - heading "Portronics Toad 23 Wireless Optical Mouse with 2.4GHz, USB Nano Dongle, Optical Orientation, Click Wheel, Adjustable DPI(Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "11,551 ratings":
+      - /url: /Portronics-Wireless-Optical-Orientation-Adjustable/dp/B0B296NTFV/ref=sr_1_15?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-15#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹298 M.R.P: ₹599 M.R.P: ₹599"':
+      - /url: /Portronics-Wireless-Optical-Orientation-Adjustable/dp/B0B296NTFV/ref=sr_1_15?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-15
+    - text: (50% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Wireless-Adjustable-Sensitivity-Ergonomic/dp/B0DGGWC9BV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-16
+    - link "Portronics Toad 35 Wireless Mouse with 2.4 GHz Wireless, Adjustable Sensitivity, USB Receiver, Ergonomic Design, for Laptops, Desktops PC, Mac (White)":
+      - /url: /Portronics-Wireless-Adjustable-Sensitivity-Ergonomic/dp/B0DGGWC9BV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-16
+      - heading "Portronics Toad 35 Wireless Mouse with 2.4 GHz Wireless, Adjustable Sensitivity, USB Receiver, Ergonomic Design, for Laptops, Desktops PC, Mac (White)" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "205 ratings":
+      - /url: /Portronics-Wireless-Adjustable-Sensitivity-Ergonomic/dp/B0DGGWC9BV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-16#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹294 M.R.P: ₹699 M.R.P: ₹699"':
+      - /url: /Portronics-Wireless-Adjustable-Sensitivity-Ergonomic/dp/B0DGGWC9BV/ref=sr_1_16?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-16
+    - text: (58% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Arctic-Fox-Transparent-Bluetooth-Rechargeable/dp/B0CP9NSXYJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-17
+    - link "Arctic Fox Pureview Transparent Wireless and Bluetooth Rechargeable Mouse, USB Receiver,LED Battery Magic Silm for Office/PC/Mac/Laptop/Apple/ipad(Space Gray)":
+      - /url: /Arctic-Fox-Transparent-Bluetooth-Rechargeable/dp/B0CP9NSXYJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-17
+      - heading "Arctic Fox Pureview Transparent Wireless and Bluetooth Rechargeable Mouse, USB Receiver,LED Battery Magic Silm for Office/PC/Mac/Laptop/Apple/ipad(Space Gray)" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "3,585 ratings":
+      - /url: /Arctic-Fox-Transparent-Bluetooth-Rechargeable/dp/B0CP9NSXYJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-17#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹649 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+      - /url: /Arctic-Fox-Transparent-Bluetooth-Rechargeable/dp/B0CP9NSXYJ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-17
+    - text: (68% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Wireless-Bluetooth-Connectivity-Rechargeable/dp/B0BG8LZNYL/ref=sr_1_18?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-18
+    - link "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 Devices, Ergonomic Design for Laptop, Smartphone, Tablet (Black)":
+      - /url: /Portronics-Wireless-Bluetooth-Connectivity-Rechargeable/dp/B0BG8LZNYL/ref=sr_1_18?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-18
+      - heading "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 Devices, Ergonomic Design for Laptop, Smartphone, Tablet (Black)" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "4,039 ratings":
+      - /url: /Portronics-Wireless-Bluetooth-Connectivity-Rechargeable/dp/B0BG8LZNYL/ref=sr_1_18?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-18#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹549 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+      - /url: /Portronics-Wireless-Bluetooth-Connectivity-Rechargeable/dp/B0BG8LZNYL/ref=sr_1_18?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-18
+    - text: (63% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /HP-M080-Wired-Mouse-AB3C5AA/dp/B0DXPPBVPP/ref=sr_1_19?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-19
+    - link "HP M080 Wired Mouse (AB3C5AA)":
+      - /url: /HP-M080-Wired-Mouse-AB3C5AA/dp/B0DXPPBVPP/ref=sr_1_19?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-19
+      - heading "HP M080 Wired Mouse (AB3C5AA)" [level=2]
+    - button "3.8 out of 5 stars, rating details"
+    - link "1,116 ratings":
+      - /url: /HP-M080-Wired-Mouse-AB3C5AA/dp/B0DXPPBVPP/ref=sr_1_19?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-19#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹299 M.R.P: ₹699 M.R.P: ₹699"':
+      - /url: /HP-M080-Wired-Mouse-AB3C5AA/dp/B0DXPPBVPP/ref=sr_1_19?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-19
+    - text: (57% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Zebronics-Zeb-Transformer-M-Optical-Gaming-Effect/dp/B0819HZPXL/ref=sr_1_20?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-20
+    - 'link "ZEBRONICS-Transformer-M with a High-Performance Gold-Plated USB Mouse: 6 Buttons, Multi-Color LED Lights,High-Resolution Sensor with max 3600 DPI, and DPI Switch(Black)"':
+      - /url: /Zebronics-Zeb-Transformer-M-Optical-Gaming-Effect/dp/B0819HZPXL/ref=sr_1_20?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-20
+      - 'heading "ZEBRONICS-Transformer-M with a High-Performance Gold-Plated USB Mouse: 6 Buttons, Multi-Color LED Lights,High-Resolution Sensor with max 3600 DPI, and DPI Switch(Black)" [level=2]'
+    - button "4.2 out of 5 stars, rating details"
+    - link "27,382 ratings":
+      - /url: /Zebronics-Zeb-Transformer-M-Optical-Gaming-Effect/dp/B0819HZPXL/ref=sr_1_20?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-20#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹399 M.R.P: ₹549 M.R.P: ₹549"':
+      - /url: /Zebronics-Zeb-Transformer-M-Optical-Gaming-Effect/dp/B0819HZPXL/ref=sr_1_20?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI&dib_tag=se&keywords=mouse&qid=1745911442&sr=8-20
+    - text: (27% off) Up to 5% back with Amazon Pay ICICI card FREE delivery Thu, 1 May on first order Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDMyMDU2NDk1MDUzMjo6MDo6&url=%2FAmkette-Rechargeable-Connectivity-Bluetooth-Ergonomic%2Fdp%2FB0DF2W7XXF%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Amkette Hush Pro Epic Rechargeable Wireless Mouse/Bluetooth Mouse | 3 Device Connectivity with Bluetooth and USB 2.4 GHz | 2400 DPI | Silent Switches | Ergonomic Design | Type C Charging | Black":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDMyMDU2NDk1MDUzMjo6MDo6&url=%2FAmkette-Rechargeable-Connectivity-Bluetooth-Ergonomic%2Fdp%2FB0DF2W7XXF%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Amkette Hush Pro Epic Rechargeable Wireless Mouse/Bluetooth Mouse | 3 Device Connectivity with Bluetooth and USB 2.4 GHz | 2400 DPI | Silent Switches | Ergonomic Design | Type C Charging | Black" [level=2]: Amkette Hush Pro Epic Rechargeable Wireless Mouse/Bluetooth Mouse | 3 Device Connectivity with Bluetooth and USB 2.4 GHz | 2400 DPI | Silent Switches | Ergonomic Design | Type C Charging | Black
+    - button "4.2 out of 5 stars, rating details"
+    - link "264 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDMyMDU2NDk1MDUzMjo6MDo6&url=%2FAmkette-Rechargeable-Connectivity-Bluetooth-Ergonomic%2Fdp%2FB0DF2W7XXF%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /deals
+    - text: Price, product page
+    - 'link "₹699 M.R.P: ₹1,299 M.R.P: ₹1,299"':
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDMyMDU2NDk1MDUzMjo6MDo6&url=%2FAmkette-Rechargeable-Connectivity-Bluetooth-Ergonomic%2Fdp%2FB0DF2W7XXF%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (46% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDQ1NTU4NTE0ODQzMjo6MDo6&url=%2FLogitech-Bluetooth-Wireless-Portable-Compatible%2Fdp%2FB0C52ZF43S%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Logitech M240 Silent Bluetooth Mouse, Wireless, Compact, Portable, Smooth Tracking, 18-Month Battery, for Windows, macOS, ChromeOS, Compatible with PC, Mac, Laptop, Tablets - Graphite":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDQ1NTU4NTE0ODQzMjo6MDo6&url=%2FLogitech-Bluetooth-Wireless-Portable-Compatible%2Fdp%2FB0C52ZF43S%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Logitech M240 Silent Bluetooth Mouse, Wireless, Compact, Portable, Smooth Tracking, 18-Month Battery, for Windows, macOS, ChromeOS, Compatible with PC, Mac, Laptop, Tablets - Graphite" [level=2]: Logitech M240 Silent Bluetooth Mouse, Wireless, Compact, Portable, Smooth Tracking, 18-Month Battery, for Windows, macOS, ChromeOS, Compatible with PC, Mac, Laptop, Tablets - Graphite
+    - button "4.4 out of 5 stars, rating details"
+    - link "996 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDQ1NTU4NTE0ODQzMjo6MDo6&url=%2FLogitech-Bluetooth-Wireless-Portable-Compatible%2Fdp%2FB0C52ZF43S%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹1,095 M.R.P: ₹1,595 M.R.P: ₹1,595"':
+      - /url: /sspa/click?ie=UTF8&spc=MTozNjA4NDE4ODY0NTEyNDAxOjE3NDU5MTE0NDI6c3BfYnRmOjMwMDQ1NTU4NTE0ODQzMjo6MDo6&url=%2FLogitech-Bluetooth-Wireless-Portable-Compatible%2Fdp%2FB0C52ZF43S%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFDUAuHaDIAm_KYWRhW2ar7ndOet4peo8YOwgBC1KgZI3r1c6rK8ZISc4ETSoKGky-26GrBid5-Vrp07-IfddDn4.C7k91kumTW3Aawii8iBI166ZaHYt1xIsJ21jlLZmCzI%26dib_tag%3Dse%26keywords%3Dmouse%26qid%3D1745911442%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (31% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May Or fastest delivery Tomorrow, 30 Apr
+    - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JMBIxiG0RME6j9sBQQrgDpAAAAGWgG5s9gMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICD2mGdE/https://www.amazon.in/dp/B0BVDLJCGQ?pd_rd_i=B0BVDLJCGQ&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_w=DaPvT&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JMBIxiG0RME6j9sBQQrgDpAAAAGWgG5s9gMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICD2mGdE/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0BVDLJCGQ&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&pd_rd_w=DaPvT&pd_rd_wg=62Til&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: Sponsored
+- link "Verilux® USB C HUB 4 in 1 USB C to HDMI Adapter with 4K@30Hz HDMI, 2.0/3.0 USB Adapter Multiple Port, PD 100W & USB C Data Port USB Type C Hub for Laptop, MacBook Pro Air 20CM USB Hub Long Cable":
+  - /url: https://aax-eu.amazon.in/x/c/JMBIxiG0RME6j9sBQQrgDpAAAAGWgG5s9gMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICD2mGdE/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0BVDLJCGQ&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&pd_rd_w=DaPvT&pd_rd_wg=62Til&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+  - heading "Verilux® USB C HUB 4 in 1 USB C to HDMI Adapter with 4K@30Hz HDMI, 2.0/3.0 USB Adapter Multiple Port, PD 100W & USB C Data Port USB Type C Hub for Laptop, MacBook Pro Air 20CM USB Hub Long Cable" [level=2]
+- button "4.0 out of 5 stars, rating details"
+- link "748 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JMBIxiG0RME6j9sBQQrgDpAAAAGWgG5s9gMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICD2mGdE/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0BVDLJCGQ&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&pd_rd_w=DaPvT&pd_rd_wg=62Til&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+- text: 100+ bought in past month
+- link "Limited time deal":
+  - /url: /deals
+- text: Price, product page
+- 'link "₹917 M.R.P: ₹1,949 M.R.P: ₹1,949"':
+  - /url: https://aax-eu.amazon.in/x/c/JMBIxiG0RME6j9sBQQrgDpAAAAGWgG5s9gMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICD2mGdE/https://www.amazon.in/Verilux%C2%AE-Adapter-Compatible-MacBook-Braided/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=mouse&keywords=mouse&pd_rd_i=B0BVDLJCGQ&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&pd_rd_w=DaPvT&pd_rd_wg=62Til&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&qid=1745911442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: (53% off) Save ₹50 with coupon
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 30 April FREE Delivery by Amazon
+- heading "Related searches" [level=2]
+- list:
+  - listitem:
+    - link "mouse wireless":
+      - /url: /s?k=mouse+wireless&ref=rsl_sug_0_0&pd_rd_w=SoIAR&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&qid=1745911442
+  - listitem:
+    - link "gaming mouse":
+      - /url: /s?k=gaming+mouse&ref=rsl_sug_0_3&pd_rd_w=SoIAR&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&qid=1745911442
+  - listitem:
+    - link "keyboard":
+      - /url: /s?k=keyboard&ref=rsl_sug_0_1&pd_rd_w=SoIAR&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&qid=1745911442
+  - listitem:
+    - link "logitech mouse":
+      - /url: /s?k=logitech+mouse&ref=rsl_sug_0_4&pd_rd_w=SoIAR&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&qid=1745911442
+  - listitem:
+    - link "mouse pad":
+      - /url: /s?k=mouse+pad&ref=rsl_sug_0_2&pd_rd_w=SoIAR&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&qid=1745911442
+  - listitem:
+    - link "keyboard mouse combo":
+      - /url: /s?k=keyboard+mouse+combo&ref=rsl_sug_0_5&pd_rd_w=SoIAR&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=62Til&pd_rd_r=bd4eb7d0-2755-44b3-91b0-cb0375d1d60f&qid=1745911442
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from HP":
+  - /url: https://aax-eu.amazon.in/x/c/JM_YHiL6NcK_nxPkCeWJYCcAAAGWgG5tvgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC9KRom/https://www.amazon.in/stores/page/54FE2411-D45E-4209-86AD-FE0725C35BB5/?_encoding=UTF8&store_ref=SB_A0687284GVGK2IVOXB6F-A0069277SSCNMTRVQD5X&pd_rd_plhdr=t&aaxitk=4f1b5eb56294ff90c18c88d04051cf53&hsa_cr_id=0&lp_asins=B0BYDYJLZR%2CB0B2PGJHMT%2CB09H7DST73&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+  - img "Branded image from HP"
+- link "HP":
+  - /url: https://aax-eu.amazon.in/x/c/JM_YHiL6NcK_nxPkCeWJYCcAAAGWgG5tvgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC9KRom/https://www.amazon.in/stores/page/54FE2411-D45E-4209-86AD-FE0725C35BB5/?_encoding=UTF8&store_ref=SB_A0687284GVGK2IVOXB6F-A0069277SSCNMTRVQD5X&pd_rd_plhdr=t&aaxitk=4f1b5eb56294ff90c18c88d04051cf53&hsa_cr_id=0&lp_asins=B0BYDYJLZR%2CB0B2PGJHMT%2CB09H7DST73&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+  - img "HP"
+- link "Range of wireless mouse from HP":
+  - /url: https://aax-eu.amazon.in/x/c/JM_YHiL6NcK_nxPkCeWJYCcAAAGWgG5tvgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC9KRom/https://www.amazon.in/stores/page/54FE2411-D45E-4209-86AD-FE0725C35BB5/?_encoding=UTF8&store_ref=SB_A0687284GVGK2IVOXB6F-A0069277SSCNMTRVQD5X&pd_rd_plhdr=t&aaxitk=4f1b5eb56294ff90c18c88d04051cf53&hsa_cr_id=0&lp_asins=B0BYDYJLZR%2CB0B2PGJHMT%2CB09H7DST73&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+- link "Branded image from Portronics":
+  - /url: https://aax-eu.amazon.in/x/c/JIWsKsAH5Il-2qjL9Tg0U14AAAGWgG5txQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCU0DDH/https://www.amazon.in/stores/page/BDA5D9A4-B5F8-492E-8D9B-CD170C0141FA/?_encoding=UTF8&store_ref=SB_A0792254T5W2184J7HY7-A07657911GZ8NVDUKLLTB&pd_rd_plhdr=t&aaxitk=11632ad4c566406a37de2013f0dc1cb1&hsa_cr_id=0&lp_asins=B0DGPZ3R5P%2CB0BG8LZNYL%2CB0CR15MT7L&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+  - img "Branded image from Portronics"
+- link "Portronics":
+  - /url: https://aax-eu.amazon.in/x/c/JIWsKsAH5Il-2qjL9Tg0U14AAAGWgG5txQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCU0DDH/https://www.amazon.in/stores/page/BDA5D9A4-B5F8-492E-8D9B-CD170C0141FA/?_encoding=UTF8&store_ref=SB_A0792254T5W2184J7HY7-A07657911GZ8NVDUKLLTB&pd_rd_plhdr=t&aaxitk=11632ad4c566406a37de2013f0dc1cb1&hsa_cr_id=0&lp_asins=B0DGPZ3R5P%2CB0BG8LZNYL%2CB0CR15MT7L&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+  - img "Portronics"
+- link "Effortlessly Navigate Your Digital World":
+  - /url: https://aax-eu.amazon.in/x/c/JIWsKsAH5Il-2qjL9Tg0U14AAAGWgG5txQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCU0DDH/https://www.amazon.in/stores/page/BDA5D9A4-B5F8-492E-8D9B-CD170C0141FA/?_encoding=UTF8&store_ref=SB_A0792254T5W2184J7HY7-A07657911GZ8NVDUKLLTB&pd_rd_plhdr=t&aaxitk=11632ad4c566406a37de2013f0dc1cb1&hsa_cr_id=0&lp_asins=B0DGPZ3R5P%2CB0BG8LZNYL%2CB0CR15MT7L&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+- link "Branded image from Offbeat":
+  - /url: https://aax-eu.amazon.in/x/c/JBhB0YISFkdVRD9yqwQn_cYAAAGWgG5txQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCJUJ2f/https://www.amazon.in/stores/page/2C6933CF-3F1A-48FF-83C1-793159766136/?_encoding=UTF8&store_ref=SB_A00853306O7AA831AQTS-A047173734L09ZQ26Y2TP&pd_rd_plhdr=t&aaxitk=64931d09d3f958157926770011ab360d&hsa_cr_id=0&lp_asins=B0CQJSW9DG%2CB0CB1FYVJZ%2CB0CQJTBRJW&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+  - img "Branded image from Offbeat"
+- link "Offbeat":
+  - /url: https://aax-eu.amazon.in/x/c/JBhB0YISFkdVRD9yqwQn_cYAAAGWgG5txQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCJUJ2f/https://www.amazon.in/stores/page/2C6933CF-3F1A-48FF-83C1-793159766136/?_encoding=UTF8&store_ref=SB_A00853306O7AA831AQTS-A047173734L09ZQ26Y2TP&pd_rd_plhdr=t&aaxitk=64931d09d3f958157926770011ab360d&hsa_cr_id=0&lp_asins=B0CQJSW9DG%2CB0CB1FYVJZ%2CB0CQJTBRJW&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+  - img "Offbeat"
+- link "Triple device Bluetooth mouse":
+  - /url: https://aax-eu.amazon.in/x/c/JBhB0YISFkdVRD9yqwQn_cYAAAGWgG5txQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCJUJ2f/https://www.amazon.in/stores/page/2C6933CF-3F1A-48FF-83C1-793159766136/?_encoding=UTF8&store_ref=SB_A00853306O7AA831AQTS-A047173734L09ZQ26Y2TP&pd_rd_plhdr=t&aaxitk=64931d09d3f958157926770011ab360d&hsa_cr_id=0&lp_asins=B0CQJSW9DG%2CB0CB1FYVJZ%2CB0CQJTBRJW&lp_query=mouse&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=HMhZV&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=6NQ1WQ9Y95YNW2XAE1ZQ&pd_rd_wg=LYeD5&pd_rd_r=f5839069-2efa-4c0d-a4e6-d0515a4a370b
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=mouse&rh=p_90%3A20912642031&dc&qid=1745911442&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3AXovCMse5v6CDG5Z9ki39zvpWkqBHQO63%2FBjeyTKq%2Blw
+        - checkbox
+        - text: Get It in 2 Days
+- group "Connectivity":
+  - heading "Connectivity" [level=2]
+  - list "Connectivity":
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_ten_browse-bin%3A27264558031&dc&qid=1745911442&rnid=27264555031&ref=sr_nr_p_n_feature_ten_browse-bin_1&ds=v1%3AsS7W8UbFlpi7VdyObwKfnG%2BkQ1Aa7SDMD7Zkvg2JBy0
+        - checkbox
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter PS/2 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_ten_browse-bin%3A56613382031&dc&qid=1745911442&rnid=27264555031&ref=sr_nr_p_n_feature_ten_browse-bin_2&ds=v1%3AnJPoT%2F3eq0V5PrwO1iIy1NNO5VCfIb9ssd722N4Z9Dw
+        - checkbox
+        - text: PS/2
+    - listitem:
+      - link "Apply the filter Radio Frequency to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_ten_browse-bin%3A27264557031&dc&qid=1745911442&rnid=27264555031&ref=sr_nr_p_n_feature_ten_browse-bin_3&ds=v1%3AuwkgW93XNNgazUK2SB04hCOfsm5HkRwmwWkE1MbGePs
+        - checkbox
+        - text: Radio Frequency
+    - listitem:
+      - link "Apply the filter USB to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_ten_browse-bin%3A27264560031&dc&qid=1745911442&rnid=27264555031&ref=sr_nr_p_n_feature_ten_browse-bin_4&ds=v1%3AfqqpMtbg%2FqTnIlYarMyCIQbKEbUdmPAd1SoJU0WU%2BuY
+        - checkbox
+        - text: USB
+    - listitem:
+      - link "Apply the filter Wi-Fi to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_ten_browse-bin%3A56613383031&dc&qid=1745911442&rnid=27264555031&ref=sr_nr_p_n_feature_ten_browse-bin_5&ds=v1%3AxfwiwAg%2F24ukEI2VL6WlFG9gJM8xpYDMlt2%2FtLf3AOo
+        - checkbox
+        - text: Wi-Fi
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=mouse&rh=p_72%3A1318476031&dc&qid=1745911442&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AXf53ABob%2F8nkNCvYGTo%2F72BfU%2B33OAl0%2Bap0zcfriLI
+        - text: 4 Stars & Up & Up
+- group:
+  - text: Price ₹58 ₹211,100+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "189"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=mouse&rh=p_n_deal_type%3A26921226031&dc&qid=1745911442&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AIz5Aqg%2FE3PHdtYJ02DZwjO6Nz2Za6QxjCv85Z13ecxo
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=mouse&rh=p_n_deal_type%3A26921224031&dc&qid=1745911442&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3AHi5OABY0MPX9oMRx1uNdkFGxrgbYp8jFGccRCCggjUs
+- group "Features":
+  - heading "Features" [level=2]
+  - list "Features":
+    - listitem:
+      - link "Apply the filter Ergonomic Design to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991196031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3A1bG1sMDOM3i8lg3VETs2lu4anXdR%2BjQp0yuBkMtg1lg
+        - checkbox
+        - text: Ergonomic Design
+    - listitem:
+      - link "Apply the filter LED Lights to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991198031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_2&ds=v1%3A%2B5UlOAz4hpHPU5M0tHsLhz29nMUjXcyoivy3cNqgA7k
+        - checkbox
+        - text: LED Lights
+    - listitem:
+      - link "Apply the filter Portable to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991205031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_3&ds=v1%3AquddXZId4GRtuw5XMUSHr34%2F8BqJNF9LQxqszpsDWdg
+        - checkbox
+        - text: Portable
+    - listitem:
+      - link "Apply the filter Rechargeable to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991202031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_4&ds=v1%3AaSzKAfZbJD281aiBio9e4NBXJ8Lqw77zwUGncV6ztG4
+        - checkbox
+        - text: Rechargeable
+    - listitem:
+      - link "Apply the filter Soundless to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991197031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_5&ds=v1%3A%2FYF1WKe9kHk%2Br2yQyiRGvSuTVFeKXms7WEWN3QbyBMw
+        - checkbox
+        - text: Soundless
+    - listitem:
+      - link "Apply the filter Wireless to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991193031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_6&ds=v1%3AAOdffE54JJ3%2BSOMQ4p9K3mIp26hs0Rmix1%2F2H7Y0OlM
+        - checkbox
+        - text: Wireless
+    - listitem:
+      - link "Apply the filter 4 Way Scrolling to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fourteen_browse-bin%3A65991199031&dc&qid=1745911442&rnid=65991190031&ref=sr_nr_p_n_feature_fourteen_browse-bin_7&ds=v1%3A45EpT8%2BYo%2FtI6W8q0%2FkjKGa%2BkxkskOX1%2FqNO0VKlK1M
+        - checkbox
+        - text: 4 Way Scrolling
+    - listitem:
+      - button "See more, Features": See more
+- group "Computers & Accessories Brands":
+  - heading "Computers & Accessories Brands" [level=2]
+  - list "Computers & Accessories Brands":
+    - listitem:
+      - link "Apply the filter Made for Amazon to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_format_browse-bin%3A30678577031&dc&qid=1745911442&rnid=30678571031&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3A4vMUPvDzcgf%2FhWL6A37Y25bq92SH0Onn0Mb8K5fx3YU
+        - checkbox
+        - text: Made for Amazon
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_format_browse-bin%3A30678576031&dc&qid=1745911442&rnid=30678571031&ref=sr_nr_p_n_format_browse-bin_2&ds=v1%3AMbtioYjEE24aLfDCUHPS7fgUks%2BrUt3l%2BdJ%2BAkZaaO4
+        - checkbox
+        - text: Top Brands
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1745911442&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3Aiko2aghNnfNCiFF1XQo0PpJxMXD%2BemQeG3EGXEnmLBU
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1745911442&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3A8UAaaBZYm6Tzvsa6cdDnux6uhAVYP1cI1xpIiaKdGno
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1745911442&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3AvPwLR90Z08zEUaDi6mWcY0KHAhHzEOo1hGvXmsaoUgs
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1745911442&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3Aektt3i58qy0OBQLmOpv7HIkfJ4MoBQW8luBMUvcExkU
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1745911442&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3AU38duOvDW7i3ECAbO6CNmq8KSrC1sFSowcoeUnyUizA
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1745911442&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3A3LoRK8uMekP1LPhvQqFad%2FtUObhcyUZ%2BLqCHOZ%2B3GVk
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter ZEBRONICS to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A396324&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AC2UayY2WyRfwoM%2Fh8pJtLeKyduezSZGCoNaIk8feVNk
+        - checkbox
+        - text: ZEBRONICS
+    - listitem:
+      - link "Apply the filter Portronics to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A415162&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3A%2F2kCtZLmUwmxtrhoHAiFDyAe8AGxiJjLd6Jba7a6IX0
+        - checkbox
+        - text: Portronics
+    - listitem:
+      - link "Apply the filter Logitech to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A213704&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3A56mD06MawikjPYKtwi66qyP4Ni6xrTUW%2FV3OHZ7vsbI
+        - checkbox
+        - text: Logitech
+    - listitem:
+      - link "Apply the filter amazon basics to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A234478&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_4&ds=v1%3Awj7BRIfUL0EWBHvhW%2BAF3dqXKtLJR8M8AFU19yBOydc
+        - checkbox
+        - text: amazon basics
+    - listitem:
+      - link "Apply the filter EvoFox to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A1850345&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_5&ds=v1%3ARTeoa0cxM%2F3PswK6nl9aK72ZzTn0BF4z2ltx9sHc0UA
+        - checkbox
+        - text: EvoFox
+    - listitem:
+      - link "Apply the filter Dell to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A241862&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_6&ds=v1%3Ae5se%2F0FgXtW4IhAv0uNEcoi4BAom4NoxdeOyxir7L8g
+        - checkbox
+        - text: Dell
+    - listitem:
+      - link "Apply the filter HP to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_123%3A308445&dc&qid=1745911442&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3Ai%2FscAHI%2Bb%2Bk9%2FR1tNaAUEUsSwwI%2FjfKddiGfCrgqTnI
+        - checkbox
+        - text: HP
+    - listitem:
+      - button "See more, Brands": See more
+- group "Button Quantity":
+  - heading "Button Quantity" [level=2]
+  - list "Button Quantity":
+    - listitem:
+      - link "Apply the filter 1 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198939031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3AouvQ1963NwD4nkh4Tlgw87WtC5s5YFSSMoUXhZuvxF4
+        - button "1"
+    - listitem:
+      - link "Apply the filter 2 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198941031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3A7Te06tPHMvm8RdIqlaHxMoheeRRKRJYzC%2F%2BRCwDyKDI
+        - button "2"
+    - listitem:
+      - link "Apply the filter 3 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198951031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_3&ds=v1%3AOjlCq3N3ysG1Jv2twVUYrm27sbCfKk8HqcMTpQPzG%2FY
+        - button "3"
+    - listitem:
+      - link "Apply the filter 4 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198955031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_4&ds=v1%3Ag0I3NpsI%2BrPsc6cfmG6ktGU1r6TuY%2B%2FOW4ien8b2ODo
+        - button "4"
+    - listitem:
+      - link "Apply the filter 5 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198956031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_5&ds=v1%3AFAOluQFRlnV029Qzmyf8fHwbttQLgzhcWEJ7WUWxAyQ
+        - button "5"
+    - listitem:
+      - link "Apply the filter 6 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198948031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_6&ds=v1%3APLCj5pIZdCqaUugvwDLycNe96Mokt%2FtvZrKnGw204rs
+        - button "6"
+    - listitem:
+      - link "Apply the filter 7 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198949031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_7&ds=v1%3AtpXOjNDbVTaTDfXxV1FGi0ZYnldD3SoNUPQ542AZunM
+        - button "7"
+    - listitem:
+      - link "Apply the filter 8 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198946031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_8&ds=v1%3AYRFKwmtezmfC68uYKlmvpWFOF63jGfweRXo2w4kTBpE
+        - button "8"
+    - listitem:
+      - link "Apply the filter 9 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198944031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_9&ds=v1%3AUgiyh3LwfVEeXU5f0ngv2o%2BOFW%2Bvr2t4xRmvPNbIRB4
+        - button "9"
+    - listitem:
+      - link "Apply the filter 10 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198945031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_10&ds=v1%3AVEK1VAejMG0Xx%2F0rsyRxXp3EZwdE0MT3BULNNJL2UMM
+        - button "10"
+    - listitem:
+      - link "Apply the filter 11 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198957031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_11&ds=v1%3AzPLZrUPltGEWmHmF2%2BeSsWcX8ShA5QFQWK0nO%2FXhyd0
+        - button "11"
+    - listitem:
+      - link "Apply the filter 12 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198954031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_12&ds=v1%3A2T0Cg4QqjtY%2BcldUleVu3J5P64HW1J0K%2FWmX2PDB6Eo
+        - button "12"
+    - listitem:
+      - link "Apply the filter 17 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198938031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_13&ds=v1%3A7UdJOe2AVOrl%2B9uIOOZIABd62rGhXQa1KDRZixxqEss
+        - button "17"
+    - listitem:
+      - link "Apply the filter 19 to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eight_browse-bin%3A27198942031&dc&qid=1745911442&rnid=27198931031&ref=sr_nr_p_n_feature_eight_browse-bin_14&ds=v1%3AduGnEJaeB3mtX1FLoD7sL%2B4E3h2j6sFfzgK%2BKgWVusw
+        - button "19"
+- group "Uses":
+  - heading "Uses" [level=2]
+  - list "Uses":
+    - listitem:
+      - link "Apply the filter Gaming to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eleven_browse-bin%3A27264723031&dc&qid=1745911442&rnid=27264721031&ref=sr_nr_p_n_feature_eleven_browse-bin_1&ds=v1%3AQ1sJQx2n832OzX%2FSK%2FqCVLh8WOJO5bGL24wzlqYitQU
+        - checkbox
+        - text: Gaming
+    - listitem:
+      - link "Apply the filter Office to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_eleven_browse-bin%3A27264722031&dc&qid=1745911442&rnid=27264721031&ref=sr_nr_p_n_feature_eleven_browse-bin_2&ds=v1%3A525HA%2FcQYK2qGJSEyqpKmRRfoyDRK4Omu%2B8rjPIEa5w
+        - checkbox
+        - text: Office
+- group "Power Source":
+  - heading "Power Source" [level=2]
+  - list "Power Source":
+    - listitem:
+      - link "Apply the filter Battery Powered to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A27179576031&dc&qid=1745911442&rnid=27179531031&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3A87oaU6e4CBIC72ma2sHHBV2fLgYzb%2BZ%2BkMVikzCP4Nc
+        - checkbox
+        - text: Battery Powered
+    - listitem:
+      - link "Apply the filter Corded Electric to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_two_browse-bin%3A27179575031&dc&qid=1745911442&rnid=27179531031&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3A4Se%2BKarXPDtm%2FEIngFXi39hr48qPb8XewXCJRT0J1D4
+        - checkbox
+        - text: Corded Electric
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Keyboards, Mice & Input Devices":
+        - /url: /s?k=mouse&rh=n%3A1375412031&dc&qid=1745911442&rnid=3576079031&ref=sr_nr_n_1&ds=v1%3A4jS606SE1rDM9B0bI6pJy%2BWHAM%2F8FfRsY9FtxOSZirI
+    - listitem:
+      - link "Mice":
+        - /url: /s?k=mouse&rh=n%3A1375412031%2Cn%3A1375420031&dc&qid=1745911442&rnid=3576079031&ref=sr_nr_n_2&ds=v1%3ACvp7QmOsbKIppXMieI5OcY7pzxBoLA%2BvFeXRbfWt%2BtY
+    - listitem:
+      - link "PC Gaming Peripherals":
+        - /url: /s?k=mouse&rh=n%3A10462251031&dc&qid=1745911442&rnid=3576079031&ref=sr_nr_n_3&ds=v1%3AjokQIAF585C63KvsnYKY814O4m3WCyYsEfruXvucgww
+    - listitem:
+      - link "Gaming Mice":
+        - /url: /s?k=mouse&rh=n%3A10462251031%2Cn%3A1375415031&dc&qid=1745911442&rnid=3576079031&ref=sr_nr_n_4&ds=v1%3AzvLMKyM60ScoOVhhbhEMR6Txgmbs2oJCpjZV%2FTigKK8
+- group "Input Mouse Operating Systems":
+  - heading "Input Mouse Operating Systems" [level=2]
+  - list "Input Mouse Operating Systems":
+    - listitem:
+      - link "Apply the filter Chrome OS to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27181609031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3ASS8O%2BfxBAnZGg8PgYDC0rAadFoUttCM5pTCxW8%2BZ1ns
+        - checkbox
+        - text: Chrome OS
+    - listitem:
+      - link "Apply the filter Linux to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27181606031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_2&ds=v1%3AwoW%2BlhvHSa5XdCS4BgIGOb6g%2Ba15N0UBO4X7XBvA5a4
+        - checkbox
+        - text: Linux
+    - listitem:
+      - link "Apply the filter Mac to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27181607031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_3&ds=v1%3Ae9wXXFTKQSY1vjaqy30UmWOmEQILPkVVuBjwLIraXjc
+        - checkbox
+        - text: Mac
+    - listitem:
+      - link "Apply the filter Mac OS 10.13 High Sierra to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A100854203031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_4&ds=v1%3AGkzY8HnQCBTqnoOQdl6lanMKB3hAr5or0duZGpyLWdc
+        - checkbox
+        - text: Mac OS 10.13 High Sierra
+    - listitem:
+      - link "Apply the filter OS X 10.10 Yosemite to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A100854206031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_5&ds=v1%3AWwM7ilHxFrbIwfEEeQn9CY%2BDPhuVvpS1LWldXIn7YBc
+        - checkbox
+        - text: OS X 10.10 Yosemite
+    - listitem:
+      - link "Apply the filter Unix to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27181610031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_6&ds=v1%3Ao09NuBgWLIClKThQAgmCQKxNbSLDa2Q6nFQaLckPDDc
+        - checkbox
+        - text: Unix
+    - listitem:
+      - link "Apply the filter Windows to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_six_browse-bin%3A27181608031&dc&qid=1745911442&rnid=27181598031&ref=sr_nr_p_n_feature_six_browse-bin_7&ds=v1%3A7M%2FnVZhUkeEW7TORrpgv91BRTt2Jyv%2FO9MtZdB6gcB0
+        - checkbox
+        - text: Windows
+    - listitem:
+      - button "See more, Input Mouse Operating Systems": See more
+- group "Material":
+  - heading "Material" [level=2]
+  - list "Material":
+    - listitem:
+      - link "Apply the filter Metal to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A27274384031&dc&qid=1745911442&rnid=27274380031&ref=sr_nr_p_n_feature_twelve_browse-bin_1&ds=v1%3AQqM5igqiE%2BzaRZCSJMKAnzDCIaf1KeBSKrQ4fFe9EYM
+        - checkbox
+        - text: Metal
+    - listitem:
+      - link "Apply the filter Plastic to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A27274382031&dc&qid=1745911442&rnid=27274380031&ref=sr_nr_p_n_feature_twelve_browse-bin_2&ds=v1%3AHXM9wecH8E2UqNzFbdoleJQTnqrsBjdhpA3%2BfVkLc6A
+        - checkbox
+        - text: Plastic
+    - listitem:
+      - link "Apply the filter Wood to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_twelve_browse-bin%3A27274383031&dc&qid=1745911442&rnid=27274380031&ref=sr_nr_p_n_feature_twelve_browse-bin_3&ds=v1%3AcjczkjclHqAhM%2Bb0jcZRzjGmdfudyxUr5XDmwYuV%2Fg8
+        - checkbox
+        - text: Wood
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=mouse&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1745911442&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AhUgRNVU27P07lJmje1ESZnjftFA5kVNaLi9oQ4q9W1s
+        - checkbox
+        - text: Eligible for Pay On Delivery
+- group "Motion Sensor":
+  - heading "Motion Sensor" [level=2]
+  - list "Motion Sensor":
+    - listitem:
+      - link "Apply the filter Gyroscopic to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A96601607031&dc&qid=1745911442&rnid=27201081031&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3AxXAnjDgX%2B5BtzW2T2xFguUdws88PgzTC99PxgPPDhsQ
+        - checkbox
+        - text: Gyroscopic
+    - listitem:
+      - link "Apply the filter Laser to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A27201088031&dc&qid=1745911442&rnid=27201081031&ref=sr_nr_p_n_feature_nine_browse-bin_2&ds=v1%3AhPYcTiyMdES0rK6lJFNbkH0rEeehJrdY4QB7DC6DpD0
+        - checkbox
+        - text: Laser
+    - listitem:
+      - link "Apply the filter Optical to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A27201086031&dc&qid=1745911442&rnid=27201081031&ref=sr_nr_p_n_feature_nine_browse-bin_3&ds=v1%3A22QDspHWt1Wiyi0xIXuZ6TD6bgb%2F9TQ%2BHkY%2FBvZkZpg
+        - checkbox
+        - text: Optical
+    - listitem:
+      - link "Apply the filter Trackball to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_nine_browse-bin%3A27201087031&dc&qid=1745911442&rnid=27201081031&ref=sr_nr_p_n_feature_nine_browse-bin_4&ds=v1%3Ao%2FbAuoXU1xlaUsKhKQzmbhZXK%2Bigvfm6YQ%2FHBY7tcgg
+        - checkbox
+        - text: Trackball
+- group "Length":
+  - heading "Length" [level=2]
+  - list "Length":
+    - listitem:
+      - link "Apply the filter Up to 7.9 cm to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A89390531031&dc&qid=1745911442&rnid=89390489031&ref=sr_nr_p_n_feature_seventeen_browse-bin_1&ds=v1%3AtCpo1m72FOgAArhfI9Ct6WE9Z7UqTQAV%2Fd1yv9L5LCg
+        - checkbox
+        - text: Up to 7.9 cm
+    - listitem:
+      - link "Apply the filter 8 to 9.9 cm to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A89390530031&dc&qid=1745911442&rnid=89390489031&ref=sr_nr_p_n_feature_seventeen_browse-bin_2&ds=v1%3AnriudLhNBvTwGVOTlb7GVU93x896F%2BdhDHxUuZwOKaQ
+        - checkbox
+        - text: 8 to 9.9 cm
+    - listitem:
+      - link "Apply the filter 10 to 12.9 cm to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A89390533031&dc&qid=1745911442&rnid=89390489031&ref=sr_nr_p_n_feature_seventeen_browse-bin_3&ds=v1%3AMkrJp5ouLliBAHokRNKE4aPlhB03KLRaXmCt2YR2vD4
+        - checkbox
+        - text: 10 to 12.9 cm
+    - listitem:
+      - link "Apply the filter 13 cm & above to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_seventeen_browse-bin%3A89390532031&dc&qid=1745911442&rnid=89390489031&ref=sr_nr_p_n_feature_seventeen_browse-bin_4&ds=v1%3A4BSFxLJtyQ1hdFHWhGnMH8KrFj7vFYzNu08Hb3hR1i4
+        - checkbox
+        - text: 13 cm & above
+- group "Hand Orientation":
+  - heading "Hand Orientation" [level=2]
+  - list "Hand Orientation":
+    - listitem:
+      - link "Apply the filter Ambidextrous to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_browse-bin%3A28503470031&dc&qid=1745911442&rnid=28503466031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3AfXbdzNjfOnyIQNzH4bodI5uqTjGlaAtBmzF5Kdhq7WI
+        - checkbox
+        - text: Ambidextrous
+    - listitem:
+      - link "Apply the filter Left to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_browse-bin%3A28503468031&dc&qid=1745911442&rnid=28503466031&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3A62QfX9dbaXXGyVTsnYLMK%2BX4Dfeb8MAlU1zKu50ku4M
+        - checkbox
+        - text: Left
+    - listitem:
+      - link "Apply the filter Right to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_browse-bin%3A28503469031&dc&qid=1745911442&rnid=28503466031&ref=sr_nr_p_n_feature_browse-bin_3&ds=v1%3AnJeZOOrL457RUD0nqwBcQ%2BNJ37y5ZgarfXyuxCKuZgA
+        - checkbox
+        - text: Right
+- group "Style":
+  - heading "Style" [level=2]
+  - list "Style":
+    - listitem:
+      - link "Apply the filter Classic to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_five_browse-bin%3A49916603031&dc&qid=1745911442&rnid=49916542031&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3A19LwPqnFKIbjZeQPCS%2Bcw901Dj8yF3QQkYqKtOm8Tyw
+        - checkbox
+        - text: Classic
+    - listitem:
+      - link "Apply the filter Modern to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_five_browse-bin%3A49916602031&dc&qid=1745911442&rnid=49916542031&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3AdjML%2Bv1UsyuqWJDWioxdoV3%2FB5WWUa49lLDzSV%2FvYbc
+        - checkbox
+        - text: Modern
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1745911442&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3AD9lMkcMAVHz6zi7zFTgjtvpaZDcmWTsG%2BF3cMlP%2FFHM
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1745911442&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3AA4uvK%2FrxSohJ8xLraXVPFrKMmfQOKbffDtpy%2FsXbvOM
+- group "Width":
+  - heading "Width" [level=2]
+  - list "Width":
+    - listitem:
+      - link "Apply the filter Up to 2.9 cm to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_sixteen_browse-bin%3A89390527031&dc&qid=1745911442&rnid=89390488031&ref=sr_nr_p_n_feature_sixteen_browse-bin_1&ds=v1%3A0KM5uz7p8tJ4egeeLe6Y83U1kWHGtNOnTU8cjTVHE%2BA
+        - checkbox
+        - text: Up to 2.9 cm
+    - listitem:
+      - link "Apply the filter 3 to 4.9 cm to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_sixteen_browse-bin%3A89390526031&dc&qid=1745911442&rnid=89390488031&ref=sr_nr_p_n_feature_sixteen_browse-bin_2&ds=v1%3AiF5P8%2F1njc5WGQWZtUMezKc%2B1iFHxXdrjD%2FAQMoTkP4
+        - checkbox
+        - text: 3 to 4.9 cm
+    - listitem:
+      - link "Apply the filter 5 to 7.9 cm to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_sixteen_browse-bin%3A89390529031&dc&qid=1745911442&rnid=89390488031&ref=sr_nr_p_n_feature_sixteen_browse-bin_3&ds=v1%3AfXws%2Fuje6A%2B46jfTdugoqqxmerGPVM5EyiaO8zOAi%2FA
+        - checkbox
+        - text: 5 to 7.9 cm
+    - listitem:
+      - link "Apply the filter 8 cm & above to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_sixteen_browse-bin%3A89390528031&dc&qid=1745911442&rnid=89390488031&ref=sr_nr_p_n_feature_sixteen_browse-bin_4&ds=v1%3APuT%2FAveZKzzKEKcowfKWNYyshMCEkESSKsl%2BgWmc3nE
+        - checkbox
+        - text: 8 cm & above
+- group "Embellishments":
+  - heading "Embellishments" [level=2]
+  - list "Embellishments":
+    - listitem:
+      - link "Apply the filter Crystal to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A27297046031&dc&qid=1745911442&rnid=27297020031&ref=sr_nr_p_n_feature_thirteen_browse-bin_1&ds=v1%3Ajy9U6tJxFbNLhfUFfKvfBYCwNi3AyzF%2BWZxmSjUnZFw
+        - checkbox
+        - text: Crystal
+    - listitem:
+      - link "Apply the filter Glitter to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A27297043031&dc&qid=1745911442&rnid=27297020031&ref=sr_nr_p_n_feature_thirteen_browse-bin_2&ds=v1%3AOTkYD5ATQ5VI3Ynrnu0W3nQrKZEv0fmv36zau3AuA2c
+        - checkbox
+        - text: Glitter
+    - listitem:
+      - link "Apply the filter LED to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A27297045031&dc&qid=1745911442&rnid=27297020031&ref=sr_nr_p_n_feature_thirteen_browse-bin_3&ds=v1%3AQCo78PSnJsQfyyQ89K0prPaMw2fTAmJoYJVV8wHHJng
+        - checkbox
+        - text: LED
+    - listitem:
+      - link "Apply the filter Logo to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_thirteen_browse-bin%3A27297044031&dc&qid=1745911442&rnid=27297020031&ref=sr_nr_p_n_feature_thirteen_browse-bin_4&ds=v1%3AqXdmRFlGiwSJZMcjZya4iwfS5M6yCD17%2BMLKRhMYYUk
+        - checkbox
+        - text: Logo
+- group "Finish":
+  - heading "Finish" [level=2]
+  - list "Finish":
+    - listitem:
+      - link "Apply the filter Glossy to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A85895728031&dc&qid=1745911442&rnid=85895721031&ref=sr_nr_p_n_feature_fifteen_browse-bin_1&ds=v1%3Anfu3IlPW2AM5VGYqed%2FUkLnHHfBe%2F04HmVVj3s8BtZc
+        - checkbox
+        - text: Glossy
+    - listitem:
+      - link "Apply the filter Glowing to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A85895729031&dc&qid=1745911442&rnid=85895721031&ref=sr_nr_p_n_feature_fifteen_browse-bin_2&ds=v1%3ABDo3e9CCNHtPMlB0%2F8RIGhlTaeaJAw3n9kMzCx76950
+        - checkbox
+        - text: Glowing
+    - listitem:
+      - link "Apply the filter Matte to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_n_feature_fifteen_browse-bin%3A85895727031&dc&qid=1745911442&rnid=85895721031&ref=sr_nr_p_n_feature_fifteen_browse-bin_3&ds=v1%3A4Wlu5kbl%2Biduk9thZaK6xKT5KlKjCGvEm1yb2hPNejw
+        - checkbox
+        - text: Matte
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter UDCreation to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_6%3AA177RRYMTMMPCA&dc&qid=1745911442&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3AnppA3i7H2JPNFzPEa2Z7ZZo3EXt4N9EDT63phfSz4VU
+        - checkbox
+        - text: UDCreation
+    - listitem:
+      - link "Apply the filter CERO CARE PRODUCTS LLP to narrow results":
+        - /url: /s?k=mouse&rh=n%3A976392031%2Cp_6%3AA3GJIXX4BHDZFY&dc&qid=1745911442&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3A2jiuQWW2NsIuGSOVUcb8on%2Fio69rtK20SYlHec49LaM
+        - checkbox
+        - text: CERO CARE PRODUCTS LLP
+    - listitem:
+      - button "See more, Seller": See more
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=mouse&rh=p_n_availability%3A1318485031&dc&qid=1745911442&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3AQsu1tCTQCBjLzNokqPtJs83uwb7eKi9i%2B0eNYyOW37s
+        - checkbox
+        - text: Include Out of Stock
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dmouse%26ref%3Dnb_sb_noss&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import {test ,expect} from "@playwright/test"
+   2 |
+   3 | test('Add a product in the cart', async({page})=>{
+   4 |     await page.goto('https://www.amazon.in/');
+   5 |     console.log('Navigating to amazon homepage ....');
+   6 |
+   7 |     await page.locator('#twotabsearchtextbox').fill('mouse');
+   8 |     await page.keyboard.press('Enter');
+   9 |     console.log('searching for mouse....');
+  10 |
+  11 |     const firstProduct = page.locator('span.a-size-medium.a-color-base.a-text-normal').first();
+> 12 |     await expect(firstProduct).toBeVisible({ timeout : 20000});
+     |                                ^ Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+  13 |     await firstProduct.click();
+  14 |     console.log('CLicking the first product ....');
+  15 |
+  16 |     const addToCartButton = page.locator('#add-to-cart-button');
+  17 |     await expect(addToCartButton).toBeVisible({timeout : 15000});
+  18 |     await addToCartButton.click();
+  19 |     console.log('Product added to cart!');
+  20 |
+  21 |
+  22 | });
+```

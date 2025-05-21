@@ -1,0 +1,1131 @@
+# Test info
+
+- Name: Navigate to Mobiles category and verify
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/navigateToMobileSection.spec.js:4:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('h1 span:has-text("Mobiles & Accessories")')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('h1 span:has-text("Mobiles & Accessories")')
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/navigateToMobileSection.spec.js:12:75
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: Mobiles & Accessories
+      - combobox "Select the department you want to search in":
+        - option "Mobiles & Accessories" [selected]
+        - option "All Categories"
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fmobile-phones%2Fb%2F%3Fie%3DUTF8%26node%3D1389401031%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+      - img "Big Savings, More Happiness"
+    - link "Electronics":
+      - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=topnav_storetab_top_elec_mega
+      - img "Electronics"
+    - link "Mobiles & Accessories, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=1389401031&ref_=sv_top_elec_mega_1
+      - text: Mobiles & Accessories
+    - link "Laptops & Accessories, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=976392031&ref_=sv_top_elec_mega_2
+      - text: Laptops & Accessories
+    - link "TV & Home Entertainment, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=1389375031&ref_=sv_top_elec_mega_3
+      - text: TV & Home Entertainment
+    - link "Audio, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=1389335031&ref_=sv_top_elec_mega_4
+      - text: Audio
+    - link "Cameras, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=1388977031&ref_=sv_top_elec_mega_5
+      - text: Cameras
+    - link "Computer Peripherals, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=1375248031&ref_=sv_top_elec_mega_6
+      - text: Computer Peripherals
+    - link "Smart Technology, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=13773797031&ref_=sv_top_elec_mega_7
+      - text: Smart Technology
+    - link "Musical Instruments, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=3677697031&ref_=sv_top_elec_mega_8
+      - text: Musical Instruments
+    - link "Office & Stationery, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=2454172031&ref_=sv_top_elec_mega_9
+      - text: Office & Stationery
+    - dialog
+- link "Accessories":
+  - /url: /b/?_encoding=UTF8&node=1389402031&ref_=cct_cg_Budget_1a1&pf_rd_p=e4be61b9-06ca-4718-ab0b-7741f2ed58dc&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "Accessories"
+- link "Z10":
+  - /url: /dp/B0F2HCGXTB/?_encoding=UTF8&ref_=cct_cg_Budget_1b1&pf_rd_p=e4be61b9-06ca-4718-ab0b-7741f2ed58dc&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "Z10"
+- link "blank":
+  - /url: /b/?_encoding=UTF8&node=1389402031&ref_=cct_cg_Budget_1c1&pf_rd_p=e4be61b9-06ca-4718-ab0b-7741f2ed58dc&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "blank"
+- link "Z10":
+  - /url: /dp/B0F2HCGXTB/?_encoding=UTF8&ref_=cct_cg_Budget_1d1&pf_rd_p=e4be61b9-06ca-4718-ab0b-7741f2ed58dc&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "Z10"
+- link "h":
+  - /url: /b/?_encoding=UTF8&node=206639856031&ref_=cct_cg_Budget_2a1&pf_rd_p=e4be61b9-06ca-4718-ab0b-7741f2ed58dc&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "h"
+- group:
+  - heading "Category" [level=1]
+  - list "Category":
+    - listitem:
+      - link "Electronics":
+        - /url: /s?rh=n%3A976419031&dc&qid=1745833514&rnid=1389401031&ref=sr_nr_n_0
+    - listitem:
+      - heading "Mobiles & Accessories" [level=2]
+    - listitem:
+      - link "Mobile Accessories":
+        - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389402031&dc&qid=1745833514&rnid=1389401031&ref=sr_nr_n_2
+    - listitem:
+      - link "Mobile Broadband Devices":
+        - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1375430031&dc&qid=1745833514&rnid=1389401031&ref=sr_nr_n_3
+    - listitem:
+      - link "Smartphones & Basic Mobiles":
+        - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389432031&dc&qid=1745833514&rnid=1389401031&ref=sr_nr_n_4
+    - listitem:
+      - link "Smartwatches":
+        - /url: /s?rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A5605728031&dc&qid=1745833514&rnid=1389401031&ref=sr_nr_n_5
+- group:
+  - text: Amazon Prime
+  - list "Amazon Prime":
+    - listitem:
+      - link "Prime Eligible Prime Eligible":
+        - /url: /s?rh=n%3A1389401031%2Cp_85%3A10440599031&dc&qid=1745833514&rnid=10440598031&ref=sr_nr_p_85_1
+        - checkbox "Prime Eligible"
+        - text: Prime Eligible
+        - img "Prime Eligible"
+- group:
+  - text: Brands
+  - list "Brands":
+    - listitem:
+      - link "Apple Apple":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A110955&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_0
+        - checkbox "Apple"
+        - text: Apple Apple
+    - listitem:
+      - link "Samsung Samsung":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A46655&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_1
+        - checkbox "Samsung"
+        - text: Samsung Samsung
+    - listitem:
+      - link "OnePlus OnePlus":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A253649&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_2
+        - checkbox "OnePlus"
+        - text: OnePlus OnePlus
+    - listitem:
+      - link "iQOO iQOO":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A646111&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_3
+        - checkbox "iQOO"
+        - text: iQOO iQOO
+    - listitem:
+      - link "boAt boAt":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A214020&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_4
+        - checkbox "boAt"
+        - text: boAt boAt
+    - listitem:
+      - link "Redmi Redmi":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A339703&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_5
+        - checkbox "Redmi"
+        - text: Redmi Redmi
+    - listitem:
+      - link "realme realme":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A568349&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_6
+        - checkbox "realme"
+        - text: realme realme
+    - listitem:
+      - link "VIVO VIVO":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A13145&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_7
+        - checkbox "VIVO"
+        - text: VIVO VIVO
+    - listitem:
+      - link "Nokia Nokia":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A329744&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_8
+        - checkbox "Nokia"
+        - text: Nokia Nokia
+    - listitem:
+      - link "Oppo Oppo":
+        - /url: /s?rh=n%3A1389401031%2Cp_123%3A559198&dc&qid=1745833514&rnid=91049095031&ref=sr_nr_p_123_9
+        - checkbox "Oppo"
+        - text: Oppo Oppo
+- group:
+  - text: Customer Reviews
+  - list "Customer Reviews":
+    - listitem:
+      - link "4 Stars & Up & Up":
+        - /url: /s?rh=n%3A1389401031%2Cp_72%3A1318476031&dc&qid=1745833514&rnid=1318475031&ref=sr_nr_p_72_0
+- group:
+  - text: Item Condition
+  - list "Item Condition":
+    - listitem:
+      - link "New":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_condition-type%3A8609960031&dc&qid=1745833514&rnid=8609959031&ref=sr_nr_p_n_condition-type_0
+    - listitem:
+      - link "Renewed":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_condition-type%3A13736826031&dc&qid=1745833514&rnid=8609959031&ref=sr_nr_p_n_condition-type_1
+- group:
+  - text: Price
+  - list "Price":
+    - listitem:
+      - link "Under ₹1,000":
+        - /url: /s?rh=n%3A1389401031%2Cp_36%3A1318503031&dc&qid=1745833514&rnid=1318502031&ref=sr_nr_p_36_0
+    - listitem:
+      - link "₹1,000 - ₹5,000":
+        - /url: /s?rh=n%3A1389401031%2Cp_36%3A1318504031&dc&qid=1745833514&rnid=1318502031&ref=sr_nr_p_36_1
+    - listitem:
+      - link "₹5,000 - ₹10,000":
+        - /url: /s?rh=n%3A1389401031%2Cp_36%3A1318505031&dc&qid=1745833514&rnid=1318502031&ref=sr_nr_p_36_2
+    - listitem:
+      - link "₹10,000 - ₹20,000":
+        - /url: /s?rh=n%3A1389401031%2Cp_36%3A1318506031&dc&qid=1745833514&rnid=1318502031&ref=sr_nr_p_36_3
+    - listitem:
+      - link "Over ₹20,000":
+        - /url: /s?rh=n%3A1389401031%2Cp_36%3A1318507031&dc&qid=1745833514&rnid=1318502031&ref=sr_nr_p_36_4
+- group:
+  - text: Deals & Discounts
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_deal_type%3A26921226031&dc&qid=1745833514&rnid=26921223031&ref=sr_nr_p_n_deal_type_0
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_deal_type%3A26921224031&dc&qid=1745833514&rnid=26921223031&ref=sr_nr_p_n_deal_type_1
+- group:
+  - text: Made for Amazon Brands
+  - list "Made for Amazon Brands":
+    - listitem:
+      - link "Made for Amazon Made for Amazon":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_is_private_label%3A16184648031&dc&qid=1745833514&rnid=16184647031&ref=sr_nr_p_n_is_private_label_0
+        - checkbox "Made for Amazon"
+        - text: Made for Amazon Made for Amazon
+- group:
+  - text: Pay On Delivery
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Eligible for Pay On Delivery Eligible for Pay On Delivery":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_is_cod_eligible%3A4931671031&dc&qid=1745833514&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_0
+        - checkbox "Eligible for Pay On Delivery"
+        - text: Eligible for Pay On Delivery Eligible for Pay On Delivery
+- group:
+  - text: New Arrivals
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1745833514&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_0
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1745833514&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1
+- group:
+  - text: Discount
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1745833514&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_0
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1745833514&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1745833514&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1745833514&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1745833514&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1745833514&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5
+- group:
+  - text: Seller
+  - list "Seller":
+    - listitem:
+      - link "Cocoblu Retail Cocoblu Retail":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AA1WYWER0W24N8S&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_0
+        - checkbox "Cocoblu Retail"
+        - text: Cocoblu Retail Cocoblu Retail
+    - listitem:
+      - link "Clicktech Retail Private Ltd Clicktech Retail Private Ltd":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AAJ6SIZC8YQDZX&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_1
+        - checkbox "Clicktech Retail Private Ltd"
+        - text: Clicktech Retail Private Ltd Clicktech Retail Private Ltd
+    - listitem:
+      - link "TheGiftKart TheGiftKart":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AA3RU4MEDJKV1YX&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_2
+        - checkbox "TheGiftKart"
+        - text: TheGiftKart TheGiftKart
+    - listitem:
+      - link "Clicktech Business Clicktech Business":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AA34RBS7MAVZ4G4&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_3
+        - checkbox "Clicktech Business"
+        - text: Clicktech Business Clicktech Business
+    - listitem:
+      - link "GlassVerse GlassVerse":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AANVCTQ7K82P8U&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_4
+        - checkbox "GlassVerse"
+        - text: GlassVerse GlassVerse
+    - listitem:
+      - link "Spigen India Spigen India":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AA21X0IZWUD6LOQ&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_5
+        - checkbox "Spigen India"
+        - text: Spigen India Spigen India
+    - listitem:
+      - link "VONZEE® VONZEE®":
+        - /url: /s?rh=n%3A1389401031%2Cp_6%3AAOZGX6V4986EX&dc&qid=1745833514&rnid=1318474031&ref=sr_nr_p_6_6
+        - checkbox "VONZEE®"
+        - text: VONZEE® VONZEE®
+- group:
+  - text: Availability
+  - list "Availability":
+    - listitem:
+      - link "Include Out of Stock Include Out of Stock":
+        - /url: /s?rh=n%3A1389401031%2Cp_n_availability%3A1318485031&dc&qid=1745833514&rnid=1318483031&ref=sr_nr_p_n_availability_1
+        - checkbox "Include Out of Stock"
+        - text: Include Out of Stock Include Out of Stock
+- img "header"
+- link "s24 ultra":
+  - /url: /dp/B0CS5Z3T4M/?_encoding=UTF8&ref_=cct_cg_Budget_2a1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "s24 ultra"
+- link "iphone15":
+  - /url: /dp/B0CHX6NQMD/?_encoding=UTF8&ref_=cct_cg_Budget_3a1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "iphone15"
+- link "iqoo neo 10r":
+  - /url: /dp/B0DW47XR3X/?_encoding=UTF8&ref_=cct_cg_Budget_3b1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "iqoo neo 10r"
+- link "nord ce4 lite":
+  - /url: /dp/B0D5YCYS1G/?_encoding=UTF8&ref_=cct_cg_Budget_3c1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "nord ce4 lite"
+- link "redmi a4":
+  - /url: /dp/B0DLW1L5PR/?_encoding=UTF8&ref_=cct_cg_Budget_3d1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "redmi a4"
+- link "op13r":
+  - /url: /dp/B0DPS62DYH/?_encoding=UTF8&ref_=cct_cg_Budget_4a1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "op13r"
+- link "80x":
+  - /url: /dp/B0F1XMGQSP/?_encoding=UTF8&ref_=cct_cg_Budget_5a1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "80x"
+- link "iqoo z10x":
+  - /url: /dp/B0F2T7B9TM/?_encoding=UTF8&ref_=cct_cg_Budget_5b1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "iqoo z10x"
+- link "TECNO POP 9":
+  - /url: /dp/B0DKP72YJ3/?_encoding=UTF8&ref_=cct_cg_Budget_5c1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "TECNO POP 9"
+- link "xiaomi 14":
+  - /url: /dp/B0D81JPDKX/?_encoding=UTF8&ref_=cct_cg_Budget_5d1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "xiaomi 14"
+- link "m35":
+  - /url: /dp/B0D7Z8CJP8/?_encoding=UTF8&ref_=cct_cg_Budget_6a1&pf_rd_p=b5c45e0b-5035-49c6-acd3-3cd325c9cc79&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "m35"
+- img "H"
+- link "a36":
+  - /url: /dp/B0DYDQRZ64/?_encoding=UTF8&ref_=cct_cg_Budget_2a1&pf_rd_p=c04bd8ce-9b14-430c-96f0-ca240086026b&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "a36"
+- link "A56":
+  - /url: /dp/B0DYDPBM8K/?_encoding=UTF8&ref_=cct_cg_Budget_3a1&pf_rd_p=c04bd8ce-9b14-430c-96f0-ca240086026b&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "A56"
+- heading "Summer Deals on Latest Launches" [level=2]
+- list:
+  - listitem:
+    - link "#":
+      - /url: /b/ref=QAHzEditorial_en_IN_1?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031&node=206845240031
+      - img "#"
+  - listitem:
+    - link "#":
+      - /url: /b/ref=QAHzEditorial_en_IN_2?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031&node=206848589031
+      - img "#"
+  - listitem:
+    - link "#":
+      - /url: /dp/B0F43WXC8K/ref=QAHzEditorial_en_IN_3?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+      - img "#"
+  - listitem:
+    - link "#":
+      - /url: /dp/B0F2HCGXTB/ref=QAHzEditorial_en_IN_4?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+      - img "#"
+  - listitem:
+    - link "#":
+      - /url: /dp/B0F1DBWL8D/ref=QAHzEditorial_en_IN_6?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+      - img "#"
+  - listitem:
+    - link "#":
+      - /url: /dp/B0F18Y9YMX/ref=QAHzEditorial_en_IN_7?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031
+      - img "#"
+  - listitem:
+    - link "#":
+      - /url: /dp/B0DW95XJTN/ref=QAHzEditorial_en_IN_12?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=866322bf-5635-4266-97a2-afcb6cd06f3b&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-15&pf_rd_t=&pf_rd_i=1389401031&ie=UTF8&ref_=MiviX7
+      - img "#"
+- heading "Top smartphone deals for you" [level=3]
+- group:
+  - group:
+    - list:
+      - listitem:
+        - 'link "Nothing Phone (2a) Plus (Grey, 8GB RAM, 256GB Storage) | Up to 16GB RAM | Dimensity 7350 Pro 5G Processor | 50MP + 50MP | 5… Nothing Phone (2a) Plus (Grey, 8GB RAM, 256GB Storage) | Up to 16GB RAM | Dimensity 7350 Pro 5G Processor | 50MP + 50MP | 50MP Front Camera | 6.7\" AMOLED Display | 56 Minutes Charge of 100% ₹20,891.00 M.R.P: ₹29,999.00"':
+          - /url: /Nothing-Storage-Dimensity-Processor-Display/dp/B0DC8F2X6T?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DC8F2X6T
+          - img "Nothing Phone (2a) Plus (Grey, 8GB RAM, 256GB Storage) | Up to 16GB RAM | Dimensity 7350 Pro 5G Processor | 50MP + 50MP | 5…"
+          - text: "Nothing Phone (2a) Plus (Grey, 8GB RAM, 256GB Storage) | Up to 16GB RAM | Dimensity 7350 Pro 5G Processor | 50MP + 50MP | 50MP Front Camera | 6.7\" AMOLED Display | 56 Minutes Charge of 100% ₹20,891.00 M.R.P: ₹29,999.00"
+      - listitem:
+        - 'link "realme 13 Pro 5G (Monet Gold,8GB+128GB) realme 13 Pro 5G (Monet Gold,8GB+128GB) ₹19,785.00 M.R.P: ₹28,999.00"':
+          - /url: /realme-Pro-Monet-Gold-128GB/dp/B0DBM2XQYF?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DBM2XQYF
+          - img "realme 13 Pro 5G (Monet Gold,8GB+128GB)"
+          - text: "realme 13 Pro 5G (Monet Gold,8GB+128GB) ₹19,785.00 M.R.P: ₹28,999.00"
+      - listitem:
+        - 'link "Nothing Phone (3A) 5G (Black, 8GB RAM, 256GB Storage) Nothing Phone (3A) 5G (Black, 8GB RAM, 256GB Storage) ₹26,799.00 M.R.P: ₹29,999.00"':
+          - /url: /Nothing-Phone-Black-256GB-Storage/dp/B0DZNP6L5B?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DZNP6L5B
+          - img "Nothing Phone (3A) 5G (Black, 8GB RAM, 256GB Storage)"
+          - text: "Nothing Phone (3A) 5G (Black, 8GB RAM, 256GB Storage) ₹26,799.00 M.R.P: ₹29,999.00"
+      - listitem:
+        - 'link "Nothing Phone (3A) 5G (Blue, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 120… Nothing Phone (3A) 5G (Blue, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 120Hz AMOLED | 5000mAh Battery | 50W Fast Charging | Up to 16GB RAM Expansion ₹24,814.00 M.R.P: ₹27,999.00"':
+          - /url: /Nothing-Storage-Snapdragon-Charging-Expansion/dp/B0DZTMZL4X?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DZTMZL4X
+          - img "Nothing Phone (3A) 5G (Blue, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 120…"
+          - text: "Nothing Phone (3A) 5G (Blue, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 120Hz AMOLED | 5000mAh Battery | 50W Fast Charging | Up to 16GB RAM Expansion ₹24,814.00 M.R.P: ₹27,999.00"
+      - listitem:
+        - 'link "Motorola Edge 50 Fusion 5G (Forest Blue, 12GB RAM, 256GB Storage) Motorola Edge 50 Fusion 5G (Forest Blue, 12GB RAM, 256GB Storage) ₹24,690.00 M.R.P: ₹27,999.00"':
+          - /url: /Motorola-Fusion-Forest-256GB-Storage/dp/B0D4JM8B2Q?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0D4JM8B2Q
+          - img "Motorola Edge 50 Fusion 5G (Forest Blue, 12GB RAM, 256GB Storage)"
+          - text: "Motorola Edge 50 Fusion 5G (Forest Blue, 12GB RAM, 256GB Storage) ₹24,690.00 M.R.P: ₹27,999.00"
+      - listitem:
+        - 'link "Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage) Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage) ₹12,095.00 M.R.P: ₹14,999.00"':
+          - /url: /Motorola-Brilliant-Blue-128GB-Storage/dp/B0DDY9HMJG?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DDY9HMJG
+          - img "Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage)"
+          - text: "Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage) ₹12,095.00 M.R.P: ₹14,999.00"
+      - listitem:
+        - 'link "Oppo K12x 5G with 45W SUPERVOOC Charger in-The-Box (Breeze Blue, 128 GB) (6 GB RAM) Oppo K12x 5G with 45W SUPERVOOC Charger in-The-Box (Breeze Blue, 128 GB) (6 GB RAM) ₹12,494.00 M.R.P: ₹16,999.00"':
+          - /url: /Oppo-K12x-SUPERVOOC-Charger-Breeze/dp/B0DHCXDHWQ?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DHCXDHWQ
+          - img "Oppo K12x 5G with 45W SUPERVOOC Charger in-The-Box (Breeze Blue, 128 GB) (6 GB RAM)"
+          - text: "Oppo K12x 5G with 45W SUPERVOOC Charger in-The-Box (Breeze Blue, 128 GB) (6 GB RAM) ₹12,494.00 M.R.P: ₹16,999.00"
+      - listitem:
+        - 'link "Moto G85 5G 8GB 128GB, Olive Green, New Moto G85 5G 8GB 128GB, Olive Green, New ₹17,319.00 M.R.P: ₹20,999.00"':
+          - /url: /Moto-G85-128GB-Olive-Green/dp/B0D9GM15RC?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0D9GM15RC
+          - img "Moto G85 5G 8GB 128GB, Olive Green, New"
+          - text: "Moto G85 5G 8GB 128GB, Olive Green, New ₹17,319.00 M.R.P: ₹20,999.00"
+      - listitem:
+        - 'link "Vivo V40e 5G (Royal Bronze, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers Vivo V40e 5G (Royal Bronze, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers ₹28,999.00 M.R.P: ₹35,999.00"':
+          - /url: /V40e-Bronze-Storage-Additional-Exchange/dp/B07WHRR7TV?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B07WHRR7TV
+          - img "Vivo V40e 5G (Royal Bronze, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers"
+          - text: "Vivo V40e 5G (Royal Bronze, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers ₹28,999.00 M.R.P: ₹35,999.00"
+      - listitem:
+        - 'link "Redmi A3X (Olive Green, 64 GB) (4 GB RAM) Redmi A3X (Olive Green, 64 GB) (4 GB RAM) ₹6,573.00 M.R.P: ₹10,499.00"':
+          - /url: /Redmi-A3X-Olive-Green-RAM/dp/B0DN1VXP5R?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DN1VXP5R
+          - img "Redmi A3X (Olive Green, 64 GB) (4 GB RAM)"
+          - text: "Redmi A3X (Olive Green, 64 GB) (4 GB RAM) ₹6,573.00 M.R.P: ₹10,499.00"
+      - listitem:
+        - 'link "realme 13+ 5G (Speed Green, 8GB RAM, 128GB Storage) 6.67\" AMOLED Display | 80W Ultra Charging DAK | Dimensity 7300E Process… realme 13+ 5G (Speed Green, 8GB RAM, 128GB Storage) 6.67\" AMOLED Display | 80W Ultra Charging DAK | Dimensity 7300E Processor ₹16,303.00 M.R.P: ₹25,999.00"':
+          - /url: /realme-Storage-Charging-Dimensity-Processor/dp/B0DFN5FYW7?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DFN5FYW7
+          - img "realme 13+ 5G (Speed Green, 8GB RAM, 128GB Storage) 6.67\" AMOLED Display | 80W Ultra Charging DAK | Dimensity 7300E Process…"
+          - text: "realme 13+ 5G (Speed Green, 8GB RAM, 128GB Storage) 6.67\" AMOLED Display | 80W Ultra Charging DAK | Dimensity 7300E Processor ₹16,303.00 M.R.P: ₹25,999.00"
+      - listitem:
+        - 'link "Vivo V40 5G (Ganges Blue, 8GB RAM, 256GB Storage) Vivo V40 5G (Ganges Blue, 8GB RAM, 256GB Storage) ₹35,990.00 M.R.P: ₹42,999.00"':
+          - /url: /Vivo-Ganges-Blue-256GB-Storage/dp/B0DP4DCNZ7?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DP4DCNZ7
+          - img "Vivo V40 5G (Ganges Blue, 8GB RAM, 256GB Storage)"
+          - text: "Vivo V40 5G (Ganges Blue, 8GB RAM, 256GB Storage) ₹35,990.00 M.R.P: ₹42,999.00"
+      - listitem:
+        - 'link "Motorola Edge 50 Pro 5G with 125W Charger (Luxe Lavender, 256 GB) (12 GB RAM) Motorola Edge 50 Pro 5G with 125W Charger (Luxe Lavender, 256 GB) (12 GB RAM) ₹34,399.01 M.R.P: ₹41,999.00"':
+          - /url: /Motorola-Edge-125W-Charger-Lavender/dp/B0D37WRCP1?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0D37WRCP1
+          - img "Motorola Edge 50 Pro 5G with 125W Charger (Luxe Lavender, 256 GB) (12 GB RAM)"
+          - text: "Motorola Edge 50 Pro 5G with 125W Charger (Luxe Lavender, 256 GB) (12 GB RAM) ₹34,399.01 M.R.P: ₹41,999.00"
+      - listitem:
+        - 'link "Vivo T3 Lite 5G Smartphone (Vibrant Green, 6GB Ram 128GB Storage) Vivo T3 Lite 5G Smartphone (Vibrant Green, 6GB Ram 128GB Storage) ₹11,349.00 M.R.P: ₹15,499.00"':
+          - /url: /Vivo-Smartphone-Vibrant-Green-Storage/dp/B0D93HRDD3?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0D93HRDD3
+          - img "Vivo T3 Lite 5G Smartphone (Vibrant Green, 6GB Ram 128GB Storage)"
+          - text: "Vivo T3 Lite 5G Smartphone (Vibrant Green, 6GB Ram 128GB Storage) ₹11,349.00 M.R.P: ₹15,499.00"
+      - listitem:
+        - 'link "realme 14x 5G (Crystal Black, 8GB RAM, 128GB Storage) realme 14x 5G (Crystal Black, 8GB RAM, 128GB Storage) ₹16,999.00 M.R.P: ₹17,999.00"':
+          - /url: /realme-Crystal-Black-128GB-Storage/dp/B0DQ4VVTPC?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DQ4VVTPC
+          - img "realme 14x 5G (Crystal Black, 8GB RAM, 128GB Storage)"
+          - text: "realme 14x 5G (Crystal Black, 8GB RAM, 128GB Storage) ₹16,999.00 M.R.P: ₹17,999.00"
+      - listitem:
+        - 'link "Vivo V40e 5G (Mint Green, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers Vivo V40e 5G (Mint Green, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers ₹28,999.00 M.R.P: ₹35,999.00"':
+          - /url: /Green-Storage-Additional-Exchange-Offers/dp/B07WHRM3DY?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B07WHRM3DY
+          - img "Vivo V40e 5G (Mint Green, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers"
+          - text: "Vivo V40e 5G (Mint Green, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers ₹28,999.00 M.R.P: ₹35,999.00"
+      - listitem:
+        - 'link "Vivo T3 5G (Cosmic Blue, 128 GB) (8 GB RAM) Vivo T3 5G (Cosmic Blue, 128 GB) (8 GB RAM) ₹16,418.00 M.R.P: ₹22,999.00"':
+          - /url: /Vivo-Cosmic-Blue-128-RAM/dp/B07WMQ7GH3?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B07WMQ7GH3
+          - img "Vivo T3 5G (Cosmic Blue, 128 GB) (8 GB RAM)"
+          - text: "Vivo T3 5G (Cosmic Blue, 128 GB) (8 GB RAM) ₹16,418.00 M.R.P: ₹22,999.00"
+      - listitem:
+        - 'link "Nothing Phone (3a) 5G (8GB RAM + 128GB Storage) (White) Nothing Phone (3a) 5G (8GB RAM + 128GB Storage) (White) ₹23,246.99 M.R.P: ₹27,999.00"':
+          - /url: /Nothing-Phone-128GB-Storage-White/dp/B0DZTMFWDB?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DZTMFWDB
+          - img "Nothing Phone (3a) 5G (8GB RAM + 128GB Storage) (White)"
+          - text: "Nothing Phone (3a) 5G (8GB RAM + 128GB Storage) (White) ₹23,246.99 M.R.P: ₹27,999.00"
+      - listitem:
+        - 'link "Nothing Phone (3A) 5G (Black, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 12… Nothing Phone (3A) 5G (Black, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 120Hz AMOLED | 5000mAh Battery | 50W Fast Charging | Up to 16GB RAM Expansion ₹23,440.00 M.R.P: ₹27,999.00"':
+          - /url: /Nothing-Storage-Snapdragon-Charging-Expansion/dp/B0DZTNWWDH?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DZTNWWDH
+          - img "Nothing Phone (3A) 5G (Black, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 12…"
+          - text: "Nothing Phone (3A) 5G (Black, 8GB RAM, 128GB Storage) | Snapdragon 7s Gen 3 | 50MP+50MP+8MP Cameras | 32MP Front | 6.77” 120Hz AMOLED | 5000mAh Battery | 50W Fast Charging | Up to 16GB RAM Expansion ₹23,440.00 M.R.P: ₹27,999.00"
+      - listitem:
+        - 'link "Nothing Phone (3A) 5G (White, 8GB RAM, 256GB Storage) Nothing Phone (3A) 5G (White, 8GB RAM, 256GB Storage) ₹25,458.00 M.R.P: ₹29,999.00"':
+          - /url: /Nothing-Phone-White-256GB-Storage/dp/B0DZNP1MN3?pf_rd_p=9e799e62-6571-4edf-aaa5-f01863954702&pf_rd_r=46NSM0MA7WBM8T8E3RSS&ref_=Smartphones-S3P_B0DZNP1MN3
+          - img "Nothing Phone (3A) 5G (White, 8GB RAM, 256GB Storage)"
+          - text: "Nothing Phone (3A) 5G (White, 8GB RAM, 256GB Storage) ₹25,458.00 M.R.P: ₹29,999.00"
+- heading "Trending now" [level=2]
+- list:
+  - listitem:
+    - link ".":
+      - /url: /b/ref=QAHzEditorial_en_IN_1?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&node=205675408031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /b/ref=QAHzEditorial_en_IN_2?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&node=205675417031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /s/ref=QAHzEditorial_en_IN_3?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&hidden-keywords=B0DRD8MT8N+%7C+B0DRD8LB6N+%7C+B0DRDJTX9R+%7C+B0DRDBVVFH+%7C+B0DRDBPKJ7
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /s/ref=QAHzEditorial_en_IN_4?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&hidden-keywords=B0DRDGQX7X+%7C+B0DRD8NGTX+%7C+B0DRD9W2K7+%7C+B0DRD9QG7J+%7C+B0DRDDMRKZ
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0F1YBRRMR/ref=QAHzEditorial_en_IN_5?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&ie=UTF8&ref_=cryataldyno
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /s/ref=QAHzEditorial_en_IN_6?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&hidden-keywords=B0DV91GJYC%7C+B0DSC6RF1P%7C+B0DSC594T4%7C+B0DV98GTF2%7C+B0DSC6PBV8%7C+B0DQY81CLX%7C+B0DV92F7LP%7C+B0DQY8P32D%7C+B0DV98JK3S%7C+B0DQY8HPVX%7C+B0DV99Z7DJ%7C+B0DWSMBSPZ%7C+B0DSC4YJRD%7C+B0DSC4FYKJ%7C+B0DV9MW9NH%7C+B0DV97G1H2%7C+B0DPKZ2K3K%7C+B0DS4Y8VB5%7C+B0DQY9DJF7%7C+B0DV9BJJJL%7C+B0DJRPZ4MK%7C+B0DWSSFB7Z%7C+B0DWSQQB5S%7C+B0DV99LZ7R%7C+B0DWSS3Q5K%7C+B0DWSQRM5B%7C+B0DWSQBX9K%7C+B0DZHS3FH1%7C+B0F18R6YCN%7C+B0DZHJT3JB%7C+B0DZHGWLBG%7C+B0DZHF6N9Q
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /s/ref=QAHzEditorial_en_IN_7?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&hidden-keywords=B0BTDHFXYG+%7C+B0BTDGPXXX+%7C+B0BTDHL883+%7C+B0DQ4G46YT+%7C+B0DQ4GJ4F1+%7C+B0DPCJ9T6K+%7C+B0D1VKD5TK+%7C+B0D1VLDGMN+%7C+B0D1VKZ7PT+%7C+B0D72YL2WB+%7C+B0D72YVD2F+%7C+B0CTY7F26J+%7C+B0D4ZB8CB6+%7C+B0D4ZCNZJ3+%7C+B0D4Z95GQX+%7C+B0D4ZD8RTT
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DXD1YTBC/ref=QAHzEditorial_en_IN_8?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /b/ref=QAHzEditorial_en_IN_9?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&node=206196637031&ref_=pTronMultiproducts
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DZCRYG7R/ref=QAHzEditorial_en_IN_10?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DX2CZC2L/ref=QAHzEditorial_en_IN_11?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /s/ref=QAHzEditorial_en_IN_12?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&hidden-keywords=B0DFM73BMK+%7C+B0DFM9PH81+%7C+B0DFMD224N+%7C+B0DFMDMDT8+%7C+B0DFMJP3MJ+%7C+B0DFMHPL2N+%7C+B0DNZNWJWF+%7C+B0DP99YN88+%7C+B0DP9WJR3S+%7C+B0DP9WJR3S+%7C+B0DPB1F883+%7C+B0DPB3GGKS
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DVLKX1Q6/ref=QAHzEditorial_en_IN_13?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&ie=UTF8&ref_=cryatalbass
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DCFNK6TL/ref=QAHzEditorial_en_IN_14?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&ie=UTF8&ref_=MiviConcerto
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DRD7G7F5/ref=QAHzEditorial_en_IN_15?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DW95XJTN/ref=QAHzEditorial_en_IN_16?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DVLQBLVH/ref=QAHzEditorial_en_IN_17?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0D4MF7WYF/ref=QAHzEditorial_en_IN_18?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /b/ref=QAHzEditorial_en_IN_19?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031&ie=UTF8&node=206765160031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DK3W2XK3/ref=QAHzEditorial_en_IN_20?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DZXX6SKP/ref=QAHzEditorial_en_IN_21?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+  - listitem:
+    - link ".":
+      - /url: /dp/B0DHH818Q2/ref=QAHzEditorial_en_IN_22?pf_rd_r=46NSM0MA7WBM8T8E3RSS&pf_rd_p=35bdf975-1fd5-4c47-a92b-931bfd94ca46&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-29&pf_rd_t=&pf_rd_i=1389401031
+      - img "."
+      - text: .
+- link "reverse ingress":
+  - /url: /b/?_encoding=UTF8&node=206639856031&ref_=cct_cg_HSSCR_1a1&pf_rd_p=b5a8c9af-3146-46ae-afaa-c5284cee2e62&pf_rd_r=46NSM0MA7WBM8T8E3RSS
+  - img "reverse ingress"
+- text: 1-12 of over 80,000 results for Mobiles & Accessories
+- link:
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE3OTMyOjowOjo&url=%2FTygot-Portable-Dimmable-Photo-Shoot-Compatible%2Fdp%2FB08JTXG9J8%2Fref%3Dlp_1389401031_1_1_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1
+- button "View Sponsored information or leave ad feedback": Sponsored
+- link "Sponsored Ad - Tygot 10\" Portable LED Ring Light with 3 Color Modes Dimmable Lighting | for YouTube | Photo-Shoot | Video Shoot | Live Stream | Makeup & Vlogging | Compatible with iPhone/Android Phones & Cameras":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE3OTMyOjowOjo&url=%2FTygot-Portable-Dimmable-Photo-Shoot-Compatible%2Fdp%2FB08JTXG9J8%2Fref%3Dlp_1389401031_1_1_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1
+  - heading "Sponsored Ad - Tygot 10\" Portable LED Ring Light with 3 Color Modes Dimmable Lighting | for YouTube | Photo-Shoot | Video Shoot | Live Stream | Makeup & Vlogging | Compatible with iPhone/Android Phones & Cameras" [level=2]: Tygot 10" Portable LED Ring Light with 3 Color Modes Dimmable Lighting | for YouTube | Photo-Shoot | Video Shoot | Live Stream | Makeup & Vlogging | Compatible with iPhone/Android Phones & Cameras
+- button "3.7 out of 5 stars, rating details"
+- link "16,172 ratings":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE3OTMyOjowOjo&url=%2FTygot-Portable-Dimmable-Photo-Shoot-Compatible%2Fdp%2FB08JTXG9J8%2Fref%3Dlp_1389401031_1_1_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1#customerReviews
+- text: 400+ bought in past month Price, product page
+- 'link "₹299 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE3OTMyOjowOjo&url=%2FTygot-Portable-Dimmable-Photo-Shoot-Compatible%2Fdp%2FB08JTXG9J8%2Fref%3Dlp_1389401031_1_1_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1
+- text: (85% off) FREE delivery Wed, 30 Apr on first order Or fastest delivery Tomorrow, 29 Apr
+- link:
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE4OTMyOjowOjo&url=%2FTygot-TSS-10-Rechargeable-Bluetooth-Rotating%2Fdp%2FB0DKJYKT1D%2Fref%3Dlp_1389401031_1_2_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1
+- button "View Sponsored information or leave ad feedback": Sponsored
+- link "Sponsored Ad - Tygot TSS-10 79 Inch (200CM) Selfie Stick Tripod, Rechargeable Bluetooth, 360° Rotating Mobile & DSLR Camera Stand, Foldable Vlog Stand with Ring Light Holder – YouTube, Travel, Photography":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE4OTMyOjowOjo&url=%2FTygot-TSS-10-Rechargeable-Bluetooth-Rotating%2Fdp%2FB0DKJYKT1D%2Fref%3Dlp_1389401031_1_2_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1
+  - heading "Sponsored Ad - Tygot TSS-10 79 Inch (200CM) Selfie Stick Tripod, Rechargeable Bluetooth, 360° Rotating Mobile & DSLR Camera Stand, Foldable Vlog Stand with Ring Light Holder – YouTube, Travel, Photography" [level=2]: Tygot TSS-10 79 Inch (200CM) Selfie Stick Tripod, Rechargeable Bluetooth, 360° Rotating Mobile & DSLR Camera Stand, Foldable Vlog Stand with Ring Light Holder – YouTube, Travel, Photography
+- button "3.9 out of 5 stars, rating details"
+- link "5,978 ratings":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE4OTMyOjowOjo&url=%2FTygot-TSS-10-Rechargeable-Bluetooth-Rotating%2Fdp%2FB0DKJYKT1D%2Fref%3Dlp_1389401031_1_2_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1#customerReviews
+- text: 200+ bought in past month Price, product page
+- 'link "₹799 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9hdGY6MzAwNTIzNzY3MzE4OTMyOjowOjo&url=%2FTygot-TSS-10-Rechargeable-Bluetooth-Rotating%2Fdp%2FB0DKJYKT1D%2Fref%3Dlp_1389401031_1_2_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2F0Zg%26psc%3D1
+- text: (60% off)
+- img "Amazon Prime"
+- text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+- group "Best seller in Electronics"
+- link:
+  - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=lp_1389401031_1_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- link "Samsung Galaxy M05 (Mint Green, 4GB RAM, 64 GB Storage) | 50MP Dual Camera | Bigger 6.7\" HD+ Display | 5000mAh Battery | 25W Fast Charging | 2 Gen OS Upgrade & 4 Year Security Update | Without Charger":
+  - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=lp_1389401031_1_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+  - heading "Samsung Galaxy M05 (Mint Green, 4GB RAM, 64 GB Storage) | 50MP Dual Camera | Bigger 6.7\" HD+ Display | 5000mAh Battery | 25W Fast Charging | 2 Gen OS Upgrade & 4 Year Security Update | Without Charger" [level=2]
+- button "4.0 out of 5 stars, rating details"
+- link "2,927 ratings":
+  - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=lp_1389401031_1_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+- text: 5K+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹6,498 M.R.P: ₹9,999 M.R.P: ₹9,999"':
+  - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=lp_1389401031_1_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- text: (35% off) Up to 5% back with Amazon Pay ICICI card
+- img "Amazon Prime"
+- text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+- link:
+  - /url: /iQOO-Storage-Ultra-Thin-Dimesity-Processor/dp/B07WFPL9PB/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- link "iQOO Z9s 5G (Onyx Green, 8GB RAM, 128GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light":
+  - /url: /iQOO-Storage-Ultra-Thin-Dimesity-Processor/dp/B07WFPL9PB/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+  - heading "iQOO Z9s 5G (Onyx Green, 8GB RAM, 128GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light" [level=2]
+- button "4.3 out of 5 stars, rating details"
+- link "4,245 ratings":
+  - /url: /iQOO-Storage-Ultra-Thin-Dimesity-Processor/dp/B07WFPL9PB/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+- text: 5K+ bought in past month Price, product page
+- 'link "₹19,999 M.R.P: ₹25,999 M.R.P: ₹25,999"':
+  - /url: /iQOO-Storage-Ultra-Thin-Dimesity-Processor/dp/B07WFPL9PB/ref=lp_1389401031_1_4?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- text: (23% off) Save extra with No Cost EMI
+- img "Amazon Prime"
+- text: "FREE delivery Mon, 5 May Service: Installation"
+- link:
+  - /url: /iQOO-Ultramarine-Dimensity-Military-Grade-Durability/dp/B0F2T7B9TM/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- link "iQOO Z10x 5G (Ultramarine, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability":
+  - /url: /iQOO-Ultramarine-Dimensity-Military-Grade-Durability/dp/B0F2T7B9TM/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+  - heading "iQOO Z10x 5G (Ultramarine, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability" [level=2]
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹13,499 M.R.P: ₹17,499 M.R.P: ₹17,499"':
+  - /url: /iQOO-Ultramarine-Dimensity-Military-Grade-Durability/dp/B0F2T7B9TM/ref=lp_1389401031_1_5?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- text: (23% off) Up to 5% back with Amazon Pay ICICI card
+- img "Amazon Prime"
+- text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+- link:
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9tdGY6MzAwNTM4NDc1NzMzMjMyOjowOjo&url=%2FWeCool-Telescopic-extendable-Detachable-Photoshoot%2Fdp%2FB0DYYH391S%2Fref%3Dlp_1389401031_1_6_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX210Zg%26psc%3D1
+- button "View Sponsored information or leave ad feedback": Sponsored
+- link "Sponsored Ad - WeCool S2 Pro Selfie Stick Tripod,6sec Telescopic Pole with 42in/107cm extendable Selfie Stick, Detachable Mobile Holder with Wireless Remote for Photoshoot & Vlogging,Compatible with iPhone & Android":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9tdGY6MzAwNTM4NDc1NzMzMjMyOjowOjo&url=%2FWeCool-Telescopic-extendable-Detachable-Photoshoot%2Fdp%2FB0DYYH391S%2Fref%3Dlp_1389401031_1_6_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX210Zg%26psc%3D1
+  - heading "Sponsored Ad - WeCool S2 Pro Selfie Stick Tripod,6sec Telescopic Pole with 42in/107cm extendable Selfie Stick, Detachable Mobile Holder with Wireless Remote for Photoshoot & Vlogging,Compatible with iPhone & Android" [level=2]: WeCool S2 Pro Selfie Stick Tripod,6sec Telescopic Pole with 42in/107cm extendable Selfie Stick, Detachable Mobile Holder with Wireless Remote for Photoshoot & Vlogging,Compatible with iPhone & Android
+- button "4.0 out of 5 stars, rating details"
+- link "4,595 ratings":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9tdGY6MzAwNTM4NDc1NzMzMjMyOjowOjo&url=%2FWeCool-Telescopic-extendable-Detachable-Photoshoot%2Fdp%2FB0DYYH391S%2Fref%3Dlp_1389401031_1_6_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX210Zg%26psc%3D1#customerReviews
+- text: 100+ bought in past month Price, product page
+- 'link "₹799 ( ₹79,900 /100 g) M.R.P: ₹2,999 M.R.P: ₹2,999"':
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9tdGY6MzAwNTM4NDc1NzMzMjMyOjowOjo&url=%2FWeCool-Telescopic-extendable-Detachable-Photoshoot%2Fdp%2FB0DYYH391S%2Fref%3Dlp_1389401031_1_6_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX210Zg%26psc%3D1
+- text: (73% off) Save 2% with coupon
+- img "Amazon Prime"
+- text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+- link:
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwMjg4MzUzNjgxMDMyOjowOjo&url=%2FAmbrane-Wireless-10000mAh-Charging-Magnetic%2Fdp%2FB0D9S87H53%2Fref%3Dlp_1389401031_1_7_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+- button "View Sponsored information or leave ad feedback": Sponsored
+- link "Sponsored Ad - Ambrane Magsafe Wireless 10000Mah Fast Charging USB Type-C Input Power Bank, Strong Magnet, 22.5W Output For iPhone 12 & Above, Android & Other Qi Enabled Devices + Magnetic Ring (Aerosync Snap, Blue)":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwMjg4MzUzNjgxMDMyOjowOjo&url=%2FAmbrane-Wireless-10000mAh-Charging-Magnetic%2Fdp%2FB0D9S87H53%2Fref%3Dlp_1389401031_1_7_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+  - heading "Sponsored Ad - Ambrane Magsafe Wireless 10000Mah Fast Charging USB Type-C Input Power Bank, Strong Magnet, 22.5W Output For iPhone 12 & Above, Android & Other Qi Enabled Devices + Magnetic Ring (Aerosync Snap, Blue)" [level=2]: Ambrane Magsafe Wireless 10000Mah Fast Charging USB Type-C Input Power Bank, Strong Magnet, 22.5W Output For iPhone 12 & Above, Android & Other Qi Enabled Devices + Magnetic Ring (Aerosync Snap, Blue)
+- button "3.8 out of 5 stars, rating details"
+- link "1,985 ratings":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwMjg4MzUzNjgxMDMyOjowOjo&url=%2FAmbrane-Wireless-10000mAh-Charging-Magnetic%2Fdp%2FB0D9S87H53%2Fref%3Dlp_1389401031_1_7_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1#customerReviews
+- text: 5K+ bought in past month Price, product page
+- 'link "₹1,399 M.R.P: ₹2,999 M.R.P: ₹2,999"':
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwMjg4MzUzNjgxMDMyOjowOjo&url=%2FAmbrane-Wireless-10000mAh-Charging-Magnetic%2Fdp%2FB0D9S87H53%2Fref%3Dlp_1389401031_1_7_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+- text: (53% off)
+- img "Amazon Prime"
+- text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+- link:
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTE2MDkzMjgwNjMyOjowOjo&url=%2FIZI-Light-Multicolor-Photo-Shoot-Compatible%2Fdp%2FB0CNKF7FJ2%2Fref%3Dlp_1389401031_1_8_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+- button "View Sponsored information or leave ad feedback": Sponsored
+- link "Sponsored Ad - IZI Light 16\" RGB LED Ring Light with 7' Foldable Tripod - 28+ Multicolor, Professional Studio Kit for Photo/Video-Shoot, Live Stream, Makeup, Vlogging, YouTube, Instagram, Mobile & Camera Compatible":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTE2MDkzMjgwNjMyOjowOjo&url=%2FIZI-Light-Multicolor-Photo-Shoot-Compatible%2Fdp%2FB0CNKF7FJ2%2Fref%3Dlp_1389401031_1_8_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+  - heading "Sponsored Ad - IZI Light 16\" RGB LED Ring Light with 7' Foldable Tripod - 28+ Multicolor, Professional Studio Kit for Photo/Video-Shoot, Live Stream, Makeup, Vlogging, YouTube, Instagram, Mobile & Camera Compatible" [level=2]: IZI Light 16" RGB LED Ring Light with 7' Foldable Tripod - 28+ Multicolor, Professional Studio Kit for Photo/Video-Shoot, Live Stream, Makeup, Vlogging, YouTube, Instagram, Mobile & Camera Compatible
+- button "3.7 out of 5 stars, rating details"
+- link "83 ratings":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTE2MDkzMjgwNjMyOjowOjo&url=%2FIZI-Light-Multicolor-Photo-Shoot-Compatible%2Fdp%2FB0CNKF7FJ2%2Fref%3Dlp_1389401031_1_8_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1#customerReviews
+- text: Price, product page
+- 'link "₹1,798 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTE2MDkzMjgwNjMyOjowOjo&url=%2FIZI-Light-Multicolor-Photo-Shoot-Compatible%2Fdp%2FB0CNKF7FJ2%2Fref%3Dlp_1389401031_1_8_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+- text: (70% off)
+- img "Amazon Prime"
+- text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+- link:
+  - /url: /iQOO-Titanium-Ultra-Thin-Dimesity-Processor/dp/B07WHS99FG/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- link "iQOO Z9s 5G (Titanium Matte, 8GB RAM, 128GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light":
+  - /url: /iQOO-Titanium-Ultra-Thin-Dimesity-Processor/dp/B07WHS99FG/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+  - heading "iQOO Z9s 5G (Titanium Matte, 8GB RAM, 128GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light" [level=2]
+- button "4.3 out of 5 stars, rating details"
+- link "4,245 ratings":
+  - /url: /iQOO-Titanium-Ultra-Thin-Dimesity-Processor/dp/B07WHS99FG/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+- text: 5K+ bought in past month Price, product page
+- 'link "₹19,999 M.R.P: ₹25,999 M.R.P: ₹25,999"':
+  - /url: /iQOO-Titanium-Ultra-Thin-Dimesity-Processor/dp/B07WHS99FG/ref=lp_1389401031_1_9?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- text: (23% off) Save extra with No Cost EMI
+- img "Amazon Prime"
+- text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+- link:
+  - /url: /iQOO-Dimensity-Processor-Military-Grade-Durability/dp/B0F2T674FJ/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- link "iQOO Z10x 5G (Titanium, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability":
+  - /url: /iQOO-Dimensity-Processor-Military-Grade-Durability/dp/B0F2T674FJ/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+  - heading "iQOO Z10x 5G (Titanium, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability" [level=2]
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹13,499 M.R.P: ₹17,499 M.R.P: ₹17,499"':
+  - /url: /iQOO-Dimensity-Processor-Military-Grade-Durability/dp/B0F2T674FJ/ref=lp_1389401031_1_10?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- text: (23% off) Up to 5% back with Amazon Pay ICICI card
+- img "Amazon Prime"
+- text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+- group "Best seller in Mobile OTG Adapters"
+- link:
+  - /url: /Portronics-Transfer-Thunderbolt-Compatible-Smartphone/dp/B0DH3J6LB9/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- link "Portronics Bridge Y USB 3.0 to Type C OTG Adaptor, 10Gbps High Speed Data Transfer, Thunderbolt to USB Adapter, Compatible for All Type C Devices, Smartphone, Laptops, Tablets, Chargers, MacBook":
+  - /url: /Portronics-Transfer-Thunderbolt-Compatible-Smartphone/dp/B0DH3J6LB9/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+  - heading "Portronics Bridge Y USB 3.0 to Type C OTG Adaptor, 10Gbps High Speed Data Transfer, Thunderbolt to USB Adapter, Compatible for All Type C Devices, Smartphone, Laptops, Tablets, Chargers, MacBook" [level=2]
+- button "4.3 out of 5 stars, rating details"
+- link "1,705 ratings":
+  - /url: /Portronics-Transfer-Thunderbolt-Compatible-Smartphone/dp/B0DH3J6LB9/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D#customerReviews
+- text: 10K+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹109 M.R.P: ₹599 M.R.P: ₹599"':
+  - /url: /Portronics-Transfer-Thunderbolt-Compatible-Smartphone/dp/B0DH3J6LB9/ref=lp_1389401031_1_11?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=46NSM0MA7WBM8T8E3RSS&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+- text: (82% off) FREE delivery Wed, 30 Apr on first order Or fastest delivery Tomorrow, 29 Apr
+- link:
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTM0NDAzOTMzMDMyOjowOjo&url=%2FTARAVEE-Rechargeable-Extendable-Brightness-Photoshoots%2Fdp%2FB0D2LYSC5N%2Fref%3Dlp_1389401031_1_12_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+- button "View Sponsored information or leave ad feedback": Sponsored
+- link "Sponsored Ad - TARAVEE 3-in-1 Bluetooth Selfie Stick Tripod with Rechargeable LED Light & Wireless Remote, Extendable Phone Stand with Dual Brightness for Makeup, Photoshoots & Vlogging,for iPhone & Android":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTM0NDAzOTMzMDMyOjowOjo&url=%2FTARAVEE-Rechargeable-Extendable-Brightness-Photoshoots%2Fdp%2FB0D2LYSC5N%2Fref%3Dlp_1389401031_1_12_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1
+  - heading "Sponsored Ad - TARAVEE 3-in-1 Bluetooth Selfie Stick Tripod with Rechargeable LED Light & Wireless Remote, Extendable Phone Stand with Dual Brightness for Makeup, Photoshoots & Vlogging,for iPhone & Android" [level=2]: TARAVEE 3-in-1 Bluetooth Selfie Stick Tripod with Rechargeable LED Light & Wireless Remote, Extendable Phone Stand with Dual Brightness for Makeup, Photoshoots & Vlogging,for iPhone & Android
+- button "4.2 out of 5 stars, rating details"
+- link "86 ratings":
+  - /url: /sspa/click?ie=UTF8&spc=MToxNDM5MjA5ODMxNzM3ODczOjE3NDU4MzM1MTM6c3BfYXBiX2Rlc2t0b3BfYnJvd3NlX2lubGluZV9idGY6MzAwNTM0NDAzOTMzMDMyOjowOjo&url=%2FTARAVEE-Rechargeable-Extendable-Brightness-Photoshoots%2Fdp%2FB0D2LYSC5N%2Fref%3Dlp_1389401031_1_12_sspa%3Fkeywords%3DMobiles%2B%2526%2BAccessories%26pf_rd_p%3D9e034799-55e2-4ab2-b0d0-eb42f95b2d05%26pf_rd_r%3D46NSM0MA7WBM8T8E3RSS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hcGJfZGVza3RvcF9icm93c2VfaW5saW5lX2J0Zg%26psc%3D1#customerReviews
+- link "See all results":
+  - /url: /s?i=electronics&rh=n%3A1389401031&s=popularity-rank&fs=true&ref=lp_1389401031_sar
+- heading "Buy mobile phones online at the best prices in India from Amazon.in." [level=2]
+- paragraph: Welcome to Amazon. in, your electronics store for essentially just mobile phones and the newest additions at discounted rates. Whether you want the newest innovation, an affordable gadget, or the best mobile phones contract, Amazon. in has you covered. Being one of the prominent markets that deals with the mobile phones of various brands, you get the best model which fits your pocket and requirements.
+- heading "Choosing A Smartphone as Per Operating System" [level=2]
+- paragraph: "When it comes to selecting a smartphone, the operating system that your phone is running, can be extremely important when it comes to its outcome. At Amazon. in, you can find a wide range of mobile phones equipped with the most popular operating systems: in, you can find a wide range of mobile phones equipped with the most popular operating systems:"
+- heading "Android Mobile Phones" [level=2]
+- paragraph: Android is very flexible, and customizable and has a chance to choose the desired applications. Companies such as Samsung, Xiaomi, OnePlus, etc., have Android phones with quality and the best new specs in the market.
+- heading "Explore Our Top Mobile Phone Brands" [level=2]
+- paragraph: At Amazon. In this context, we encompass the largest stock of mobile phones from the globally renowned manufacturing companies.
+- paragraph: "Here are some of the top brands you can find:"
+- heading "Samsung Mobile" [level=3]
+- paragraph: Dealing exclusively in innovation and possessing some of the most advanced technologies, Samsung mobile phones are preferred by people who are into technology. Samsung has devices ranging from a basic smartphone to its highest class, the most recent series of the Galaxy series.
+- heading "Xiaomi Mobile" [level=3]
+- paragraph: Xiaomi has been producing good quality cell phones that are pocket friendly. Sometimes it is seen that these mobile phones have catchy specifications and have excellent build quality and if you are highly particular about price then Xiaomi mobile phones can be a perfect choice.
+- heading "OnePlus Mobile" [level=3]
+- paragraph: This has made OnePlus popular since it is used to selling phones with all the features of high-end phones for mid-range prices. Controlling the architecture of design and performance, OnePlus mobile has been going with the model better suited for those, who want to have the premium opportunity with the economical price mark.
+- heading "Realme Mobile" [level=3]
+- paragraph: Although, Realme is another brand that also offers most of its products at an affordable price. Realme has various devices for every category; there is a device from the basic level to the advanced one.
+- heading "Compare and Choose the Best Mobile Phones Online" [level=2]
+- paragraph: "This is so because there is an approximate of the outcome market of mobile phones, and thus picking the right one can be quite challenging. Here are some tips to help you make an informed decision:"
+- paragraph: "Here are some tips to help you make an informed decision:"
+- heading "Determine Your Budget" [level=2]
+- paragraph: Again, you are advised to set a budget before you begin to search. Amazon. in also deals in mobile phones and has a variety of phones in different classes; entry level phones and gadgets that are considered as the high-end. Mobile phones are categorized by their prices and if you are looking for the mobile phone that is under 20000, you will be spoilt for choices.
+- heading "Identify Your Needs" [level=2]
+- paragraph: Jointly, think about what hand features are going to be the most useful to you. Do you prefer a resolution of camera, long lasting battery or humongous space for storage for your phone? Eliminate choices to make them manageable by focusing on your requirements.
+- heading "Check for Deals" [level=2]
+- paragraph: Do not forget about the best offer for mobile phones on sale at Amazon. in. Also, check for the promotional prices, coupons, and attractive packages that can be useful in reducing cost.
+- heading "FAQs - Mobile Phones" [level=2]
+- heading "Which are the best mobile phone brands available in India?" [level=3]
+- paragraph: The list of the top mobile Phone brands found in India is comprised of Samsung, Apple, Xiaomi, OnePlus, and Realme. Every brand is represented by a set of models that may differ in features and prices to correspond with the customers’ requirements and capacities.
+- heading "What is the minimum RAM capacity needed for a Mobile phone?" [level=3]
+- paragraph: However, for a smooth run in terms of efficiency of the mobile phone when being used by the end user, it is advisable to go for a mobile phone with RAM of not less than 4GB. RAM size of at least 6GB or 8GB is recommended for those who often use many programs and processes at the same time.
+- heading "What are the different display options available on Mobile phone?" [level=3]
+- paragraph: Regarding the outer screen protection, mobile phones come in different kinds of screens like LCD, OLED, and AMOLED displays. In most cases OLED and AMOLED displays are found to be superior in terms of color reproduction and contrast than the LCD display devices.
+- heading "What are the best display resolutions available on Mobile phone?" [level=3]
+- paragraph: The display resolutions that are best suited for the mobile phones are the Full HD or 1080p, Quad HD or 1440p, as well as the 4k Ultra HD. HD displays yield clearer pictures, and this means that your overall experience in viewing is going to be much better.
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | // tests/navigateToMobileSection.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Navigate to Mobiles category and verify', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('https://www.amazon.in');
+   7 |
+   8 |   console.log('✅ Clicking on Mobiles link from navbar...');
+   9 |   await page.getByRole('link', { name: 'Mobiles' }).click();
+  10 |
+  11 |   console.log('✅ Verifying Mobile category loaded...');
+> 12 |   await expect(page.locator('h1 span:has-text("Mobiles & Accessories")')).toBeVisible();
+     |                                                                           ^ Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+  13 |
+  14 |   console.log('🎯 Mobiles category page opened!');
+  15 | });
+  16 |
+```

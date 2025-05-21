@@ -1,0 +1,419 @@
+# Test info
+
+- Name: Download, edit, and upload Excel file from TeamLease
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/downloadEditUpload.spec.js:6:5
+
+# Error details
+
+```
+Error: locator.setInputFiles: Error: Node is not an HTMLInputElement
+Call log:
+  - waiting for getByRole('dialog', { name: 'Client MOL Edit Upload' })
+    - locator resolved to <section role="dialog" tabindex="-1" aria-modal="true" data-modal-content="true" aria-describedby="mantine-ve8j6tiqd-body" aria-labelledby="mantine-ve8j6tiqd-title" class="m_fd1ab0aa m_54c44539 mantine-Modal-content m_1b7284a3 mantine-Paper-root">…</section>
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/downloadEditUpload.spec.js:51:3
+```
+
+# Page snapshot
+
+```yaml
+- button "expand":
+  - img "expand"
+- img "Logo"
+- list:
+  - listitem:
+    - img "menu"
+  - listitem:
+    - img "menu"
+  - listitem:
+    - img "menu"
+  - listitem:
+    - img "menu"
+- text: Associate Onboarding
+- img "search"
+- textbox "Search"
+- img "menu"
+- img "menu"
+- img "menu"
+- img "menu"
+- text: T
+- paragraph: Hiring
+- img "right-arrow"
+- paragraph: Associate Onboarding
+- button "open user manual User Manual":
+  - img "open user manual"
+  - text: User Manual
+- button "Download Master data"
+- button "Preview OL Template"
+- button "+ Add Candidate"
+- paragraph: AAM AADMI PARTY / A2FDL
+- text: "10"
+- button "OLStandardTemplateEDIT_A2FDL__4__edit_1747116964463"
+- img "open"
+- text: Pending 0 Success 1 Failed 0
+- button "refresh summary":
+  - img "refresh summary"
+- button "delete sheet":
+  - img "delete sheet"
+- tablist:
+  - tab "Active" [selected]
+  - tab "Cancelled"
+- img "Download master data"
+- img "Bulk Upload"
+- img "search"
+- img "filter"
+- table:
+  - rowgroup:
+    - row "Select all rows S.no. E-Code/RFID Employee Name Email ID Aadhar Number Type Expected DOJ Onboarding Status Offer Letter Action":
+      - cell "Select all rows":
+        - checkbox "Select all rows"
+      - cell "S.no.":
+        - paragraph: S.no.
+      - cell "E-Code/RFID":
+        - paragraph: E-Code/RFID
+      - cell "Employee Name":
+        - paragraph: Employee Name
+      - cell "Email ID":
+        - paragraph: Email ID
+      - cell "Aadhar Number":
+        - paragraph: Aadhar Number
+      - cell "Type":
+        - paragraph: Type
+      - cell "Expected DOJ":
+        - paragraph: Expected DOJ
+      - cell "Onboarding Status":
+        - paragraph: Onboarding Status
+      - cell "Offer Letter":
+        - paragraph: Offer Letter
+      - cell "Action":
+        - paragraph: Action
+  - rowgroup:
+    - row "Select row 1 - Flatley Camron27@hotmail.com ********0645 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "1":
+        - paragraph: "1"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Flatley":
+        - paragraph: Flatley
+      - cell "Camron27@hotmail.com":
+        - paragraph: Camron27@hotmail.com
+      - cell "********0645":
+        - paragraph: "********0645"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 2 - OConner Ervin_West@hotmail.com ********4617 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "2":
+        - paragraph: "2"
+      - cell "-":
+        - paragraph: "-"
+      - cell "OConner":
+        - paragraph: OConner
+      - cell "Ervin_West@hotmail.com":
+        - paragraph: Ervin_West@hotmail.com
+      - cell "********4617":
+        - paragraph: "********4617"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 3 - Breitenberg Zack_Koepp@yahoo.com ********9219 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "3":
+        - paragraph: "3"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Breitenberg":
+        - paragraph: Breitenberg
+      - cell "Zack_Koepp@yahoo.com":
+        - paragraph: Zack_Koepp@yahoo.com
+      - cell "********9219":
+        - paragraph: "********9219"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 4 - Bahringer Casimer_Hamill@hotmail.com ********1100 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "4":
+        - paragraph: "4"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Bahringer":
+        - paragraph: Bahringer
+      - cell "Casimer_Hamill@hotmail.com":
+        - paragraph: Casimer_Hamill@hotmail.com
+      - cell "********1100":
+        - paragraph: "********1100"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 5 - Hansen Bulah.Kunze83@gmail.com ********2172 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "5":
+        - paragraph: "5"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Hansen":
+        - paragraph: Hansen
+      - cell "Bulah.Kunze83@gmail.com":
+        - paragraph: Bulah.Kunze83@gmail.com
+      - cell "********2172":
+        - paragraph: "********2172"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 6 - Buckridge Gussie.Trantow@yahoo.com ********2602 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "6":
+        - paragraph: "6"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Buckridge":
+        - paragraph: Buckridge
+      - cell "Gussie.Trantow@yahoo.com":
+        - paragraph: Gussie.Trantow@yahoo.com
+      - cell "********2602":
+        - paragraph: "********2602"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 7 - Jacobson - ********5903 manual - Contact Information Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "7":
+        - paragraph: "7"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Jacobson":
+        - paragraph: Jacobson
+      - cell "-":
+        - paragraph: "-"
+      - cell "********5903":
+        - paragraph: "********5903"
+      - cell "manual":
+        - paragraph: manual
+      - cell "-":
+        - paragraph: "-"
+      - cell "Contact Information Pending":
+        - paragraph: Contact Information Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 8 - Williamson - ********4956 manual - Contact Information Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "8":
+        - paragraph: "8"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Williamson":
+        - paragraph: Williamson
+      - cell "-":
+        - paragraph: "-"
+      - cell "********4956":
+        - paragraph: "********4956"
+      - cell "manual":
+        - paragraph: manual
+      - cell "-":
+        - paragraph: "-"
+      - cell "Contact Information Pending":
+        - paragraph: Contact Information Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 9 - Lockman Helen_Harvey85@gmail.com ********2236 manual 10 May 2025 Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "9":
+        - paragraph: "9"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Lockman":
+        - paragraph: Lockman
+      - cell "Helen_Harvey85@gmail.com":
+        - paragraph: Helen_Harvey85@gmail.com
+      - cell "********2236":
+        - paragraph: "********2236"
+      - cell "manual":
+        - paragraph: manual
+      - cell "10 May 2025":
+        - paragraph: 10 May 2025
+      - cell "Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending":
+        - paragraph: Aadhar Card Front, Aadhar Card Back, PAN Card Documents, Bank Documents, Educational Documents Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+    - row "Select row 10 - Cummerata - ********3252 manual - Contact Information Pending":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "10":
+        - paragraph: "10"
+      - cell "-":
+        - paragraph: "-"
+      - cell "Cummerata":
+        - paragraph: Cummerata
+      - cell "-":
+        - paragraph: "-"
+      - cell "********3252":
+        - paragraph: "********3252"
+      - cell "manual":
+        - paragraph: manual
+      - cell "-":
+        - paragraph: "-"
+      - cell "Contact Information Pending":
+        - paragraph: Contact Information Pending
+      - cell:
+        - button [disabled]:
+          - img
+      - cell:
+        - img
+- button [disabled]:
+  - img
+- button [disabled]:
+  - img
+- button "1"
+- button "2"
+- button "3"
+- button:
+  - img
+- button:
+  - img
+- paragraph: "Show:"
+- textbox "Pick value": 10 rows
+- img
+- dialog "Client MOL Edit Upload":
+  - banner:
+    - heading "Client MOL Edit Upload" [level=2]
+    - button:
+      - img
+  - img
+  - paragraph: Drag and drop files to Upload
+  - text: Select files
+  - list
+  - button "Cancel"
+  - button "Upload" [disabled]
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | import * as fs from 'fs';
+   3 | import * as path from 'path';
+   4 | import * as xlsx from 'xlsx';
+   5 |
+   6 | test('Download, edit, and upload Excel file from TeamLease', async ({ page, context }) => {
+   7 |   const downloadPath = '/home/ashok/downloads'; // real Downloads folder
+   8 |
+   9 |   // Step 1: Login and navigate
+  10 |   await page.goto('https://hcm-consumer-ui-qa.teamlease.com/associateOnboarding?mode=Clients_mode&client_id=A2FDL');
+  11 |   await page.locator('#username').fill('T10533');
+  12 |   await page.getByRole('button', { name: 'Continue' }).click();
+  13 |   await page.locator('#password').fill('12345');
+  14 |   await page.getByRole('button', { name: 'Login' }).click();
+  15 |
+  16 |   // Step 2: Navigate to download section and initiate download
+  17 |   // await page.locator('//button//span[text()="Select Client"]').click();
+  18 |   // await page.getByRole('button', { name: 'Client' }).click();
+  19 |   // await page.getByRole('textbox', { name: 'Search Client / ID' }).fill('afbch');
+  20 |   // await page.getByRole('option', { name: 'AGS CINEMAS PRIVATE LIMITED -' }).click();
+  21 |   await page.getByRole('img', { name: 'Download master data' }).click();
+  22 |   await page.getByText('Download Client MOL Edit Data').click();
+  23 |   await page.getByRole('checkbox', { name: 'Name as Aadhar' }).check();
+  24 |   await page.getByRole('checkbox', { name: 'Aadhar No' }).check();
+  25 |
+  26 |   // Capture the download
+  27 |   const download = await Promise.all([
+  28 |     page.waitForEvent('download'),
+  29 |     page.getByRole('button', { name: 'Download XLSX' }).click(),
+  30 |   ]).then(([download]) => download);
+  31 |
+  32 |   // Save the downloaded file to /home/ashok/downloads with known name
+  33 |   const downloadedFilePath = path.join(downloadPath, download.suggestedFilename());
+  34 |   await download.saveAs(downloadedFilePath);
+  35 |
+  36 |   // Step 3: Edit the Excel file (change C2 and E2)
+  37 |   const workbook = xlsx.readFile(downloadedFilePath);
+  38 |   const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+  39 |
+  40 |   // Modify cells
+  41 |   worksheet['C2'].v = 'New Name';
+  42 |   worksheet['E2'].v = 'Y';
+  43 |
+  44 |   // Save it (overwrite same file or use new one)
+  45 |   xlsx.writeFile(workbook, downloadedFilePath); // save back to same path
+  46 |
+  47 |   // Step 4: Upload the edited file
+  48 |   await page.getByRole('img', { name: 'Bulk Upload' }).click();
+  49 |   await page.getByText('Client MOL Edit Data').click();
+  50 |   const fileUploadDialog = await page.getByRole('dialog', { name: 'Client MOL Edit Upload' });
+> 51 |   await fileUploadDialog.setInputFiles(downloadedFilePath);
+     |   ^ Error: locator.setInputFiles: Error: Node is not an HTMLInputElement
+  52 |   await page.getByTestId('upload-button').click();
+  53 |
+  54 |   // Step 5: Clean up file (optional)
+  55 |   fs.unlinkSync(downloadedFilePath); // delete the file after upload
+  56 | });
+  57 |
+```

@@ -1,0 +1,695 @@
+# Test info
+
+- Name: Open Today's Deals and verify deals are listed
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/checkTodaysDeals.spec.js:4:5
+
+# Error details
+
+```
+Error: page.waitForSelector: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for locator('.DealContent-module__truncate_sWbxETx42ZPStTc9jwySW') to be visible
+    - waiting for" https://www.amazon.in/deals?ref_=nav_cs_gb" navigation to finish...
+    - navigated to "https://www.amazon.in/deals?ref_=nav_cs_gb"
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/checkTodaysDeals.spec.js:12:14
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 560095 Update location"
+    - search:
+      - text: Deals
+      - combobox "Select the department you want to search in":
+        - option "Deals" [selected]
+        - option "All Categories"
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Fresh Meat"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdeals%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_grocery
+        - button "Fresh Details"
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=5GSHPBPGP5JNQGB222HA
+      - img "Big Savings, More Happiness"
+    - link "Today's Deals":
+      - /url: /gp/goldbox/?ie=UTF8&ref_=topnav_storetab_gb
+    - link "All Deals":
+      - /url: /gp/goldbox/all-deals/?ie=UTF8&ref_=sv_gb_1
+    - link "Watched Deals":
+      - /url: /gp/goldbox/watching/?ie=UTF8&ref_=sv_gb_2
+    - link "Subscribe & Save":
+      - /url: /subscribe-save-products/b/?ie=UTF8&node=5728645031&ref_=sv_gb_3
+    - link "Coupons":
+      - /url: /coupons/?_encoding=UTF8&ref_=sv_gb_4
+    - link "Clearance":
+      - /url: /b/?ie=UTF8&node=14284467031&ref_=sv_gb_5
+    - link "Refurbished & Open Box":
+      - /url: /b/?ie=UTF8&node=14639407031&ref_=sv_gb_6
+    - dialog
+- heading "Today's Deals" [level=1]
+- link "header":
+  - /url: /amazonprime/?_encoding=UTF8&ref_=cct_cg_Budget_1a1&pd_rd_w=ypsh9&content-id=amzn1.sym.0b44977e-1490-4c00-90b4-a19b1f011918&pf_rd_p=0b44977e-1490-4c00-90b4-a19b1f011918&pf_rd_r=5GSHPBPGP5JNQGB222HA&pd_rd_wg=dQyUD&pd_rd_r=b6870b83-e1cb-4d92-aa9a-875d57835563
+  - img "header"
+- img "Can't wait for sale | Shop now"
+- status:
+  - paragraph: Loaded new deals
+- list:
+  - listitem:
+    - button "Trending"
+  - listitem:
+    - button "Coupons"
+  - listitem:
+    - button "Lightning Deals"
+  - listitem:
+    - button "Mobiles"
+  - listitem:
+    - button "Electronics"
+  - listitem:
+    - button "Mobiles & computer accessories"
+  - listitem:
+    - button "Large Appliances"
+  - listitem:
+    - button "Home & Kitchen"
+  - listitem:
+    - button "Furniture"
+  - listitem:
+    - button "Grooming & Wellness"
+  - listitem:
+    - button "Health & Household"
+  - listitem:
+    - button "Clothing"
+  - listitem:
+    - button "Footwear"
+  - listitem:
+    - button "Beauty & Makeup"
+  - listitem:
+    - button "Jewellery, Luggage, Watches"
+  - listitem:
+    - button "Kids & Baby"
+  - listitem:
+    - button "Amazon Brands & more"
+  - listitem:
+    - button "Grocery"
+  - listitem:
+    - button "Sports & Fitness"
+  - listitem:
+    - button "Books & Stationery"
+  - listitem:
+    - button "Car & motorbike accessories"
+  - listitem:
+    - button "Pet Supplies"
+  - listitem:
+    - button "Video games & Software"
+  - listitem:
+    - button "Musical Instruments"
+  - listitem:
+    - button "Deal of the Day"
+  - listitem:
+    - link "Amazon Business"
+- heading "Discount grid" [level=2]
+- text: Department
+- radiogroup "Department":
+  - radio "All" [checked]
+  - text: All
+  - radio "Amazon Devices & Accessories"
+  - text: Amazon Devices & Accessories
+  - radio "Baby"
+  - text: Baby
+  - radio "Bags, Wallets and Luggage"
+  - text: Bags, Wallets and Luggage
+  - radio "Beauty"
+  - text: Beauty
+- button "See more filter options":
+  - link "See more filter options":
+    - /url: javascript:void(0)
+    - text: See more
+- text: Brands
+- group "Brands":
+  - checkbox "iQOO"
+  - text: iQOO
+  - checkbox "Samsung"
+  - text: Samsung
+  - checkbox "Whirlpool"
+  - text: Whirlpool
+  - checkbox "OnePlus"
+  - text: OnePlus
+- button "See more filter options":
+  - link "See more filter options":
+    - /url: javascript:void(0)
+    - text: See more
+- text: Customer Reviews
+- radiogroup "Customer Reviews":
+  - radio "All" [checked]
+  - text: All
+  - radio "Average review star rating of 4 and up"
+  - radio "Average review star rating of 3 and up"
+  - radio "Average review star rating of 2 and up"
+  - radio "Average review star rating of 1 and up"
+- text: Price
+- radiogroup "Price":
+  - radio "All" [checked]
+  - text: All
+  - radio "Under ₹500"
+  - text: Under ₹500
+  - radio "Under ₹1,000"
+  - text: Under ₹1,000
+  - radio "Under ₹2,000"
+  - text: Under ₹2,000
+  - radio "Under ₹5,000"
+  - text: Under ₹5,000
+  - radio "₹5,000 and Above"
+  - text: ₹5,000 and Above
+- text: Discount
+- radiogroup "Discount":
+  - radio "All" [checked]
+  - text: All
+  - radio "10% off or more"
+  - text: 10% off or more
+  - radio "25% off or more"
+  - text: 25% off or more
+  - radio "50% off or more"
+  - text: 50% off or more
+  - radio "70% off or more"
+  - text: 70% off or more
+- text: Prime Programmes
+- group "Prime Programmes":
+  - checkbox "Prime Exclusive"
+  - text: Prime Exclusive
+- group:
+  - link "iQOO Neo 10R 5G (Moonknight Titanium, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours":
+    - /url: https://www.amazon.in/iQOO-Moonknight-Snapdragon-Processor-Smartphone/dp/B0DW47CJBW?ref=dlx_deals_dg_dcl_B0DW47CJBW_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "iQOO Neo 10R 5G (Moonknight Titanium, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours"
+  - link "14% off Limited time deal iQOO Neo 10R 5G (Moonknight Titanium, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours":
+    - /url: https://www.amazon.in/iQOO-Moonknight-Snapdragon-Processor-Smartphone/dp/B0DW47CJBW?ref=dlx_deals_dg_dcl_B0DW47CJBW_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 14% off Limited time deal
+    - paragraph: iQOO Neo 10R 5G (Moonknight Titanium, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours
+  - list:
+    - listitem:
+      - button "Moonknight Titanium"
+    - listitem:
+      - button "Raging Blue"
+- group:
+  - link "iQOO Z10x 5G (Ultramarine, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability":
+    - /url: https://www.amazon.in/iQOO-Ultramarine-Dimensity-Military-Grade-Durability/dp/B0F2T7B9TM?ref=dlx_deals_dg_dcl_B0F2T7B9TM_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "iQOO Z10x 5G (Ultramarine, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability"
+  - link "23% off Limited time deal iQOO Z10x 5G (Ultramarine, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability":
+    - /url: https://www.amazon.in/iQOO-Ultramarine-Dimensity-Military-Grade-Durability/dp/B0F2T7B9TM?ref=dlx_deals_dg_dcl_B0F2T7B9TM_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 23% off Limited time deal
+    - paragraph: iQOO Z10x 5G (Ultramarine, 6GB RAM, 128GB Storage) | 6500 mAh Large Capacity Battery | Dimensity 7300 Processor | Military-Grade Certified Durability
+  - link "+1 colours/patterns":
+    - /url: https://www.amazon.in/iQOO-Ultramarine-Dimensity-Military-Grade-Durability/dp/B0F2T7B9TM?ref=dlx_deals_dg_dcl_B0F2T7B9TM_dt_sl10_61_csml&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+- group:
+  - link "iQOO Z10 5G (Glacier Silver, 8GB RAM, 128GB Stroage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment":
+    - /url: https://www.amazon.in/iQOO-Glacier-Snapdragon-Processor-Brightest/dp/B0F2HCGXTB?ref=dlx_deals_dg_dcl_B0F2HCGXTB_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "iQOO Z10 5G (Glacier Silver, 8GB RAM, 128GB Stroage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment"
+  - link "15% off Limited time deal iQOO Z10 5G (Glacier Silver, 8GB RAM, 128GB Stroage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment":
+    - /url: https://www.amazon.in/iQOO-Glacier-Snapdragon-Processor-Brightest/dp/B0F2HCGXTB?ref=dlx_deals_dg_dcl_B0F2HCGXTB_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 15% off Limited time deal
+    - paragraph: iQOO Z10 5G (Glacier Silver, 8GB RAM, 128GB Stroage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment
+  - link "+1 colours/patterns":
+    - /url: https://www.amazon.in/iQOO-Glacier-Snapdragon-Processor-Brightest/dp/B0F2HCGXTB?ref=dlx_deals_dg_dcl_B0F2HCGXTB_dt_sl10_61_csml&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+- group:
+  - link "Samsung Galaxy A55 5G (Awesome Iceblue, 8GB RAM, 256GB Storage) | Metal Frame | 50 MP Main Camera (OIS) | Nightography | IP67 | Corning Gorilla Glass Victus+ | sAMOLED with Vision Booster":
+    - /url: https://www.amazon.in/Samsung-Awesome-Iceblue-Storage-Nightography/dp/B0CWPCFSM3?ref=dlx_deals_dg_dcl_B0CWPCFSM3_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Samsung Galaxy A55 5G (Awesome Iceblue, 8GB RAM, 256GB Storage) | Metal Frame | 50 MP Main Camera (OIS) | Nightography | IP67 | Corning Gorilla Glass Victus+ | sAMOLED with Vision Booster"
+  - link "35% off Limited time deal Samsung Galaxy A55 5G (Awesome Iceblue, 8GB RAM, 256GB Storage) | Metal Frame | 50 MP Main Camera (OIS) | Nightography | IP67 | Corning Gorilla Glass Victus+ | sAMOLED with Vision Booster":
+    - /url: https://www.amazon.in/Samsung-Awesome-Iceblue-Storage-Nightography/dp/B0CWPCFSM3?ref=dlx_deals_dg_dcl_B0CWPCFSM3_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 35% off Limited time deal
+    - paragraph: Samsung Galaxy A55 5G (Awesome Iceblue, 8GB RAM, 256GB Storage) | Metal Frame | 50 MP Main Camera (OIS) | Nightography | IP67 | Corning Gorilla Glass Victus+ | sAMOLED with Vision Booster
+  - link "+1 colours/patterns":
+    - /url: https://www.amazon.in/Samsung-Awesome-Iceblue-Storage-Nightography/dp/B0CWPCFSM3?ref=dlx_deals_dg_dcl_B0CWPCFSM3_dt_sl10_61_csml&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+  - text: Save ₹1,000.00 with coupon
+- group:
+  - link "Whirlpool 1.5 Ton 3 Star, Magicool Inverter Split AC (MAGICOOL 15T 3S INV CNV S5K2PP0, Copper, Convertible 4-in-1 Cooling Mode, HD Filter White)":
+    - /url: https://www.amazon.in/Whirlpool-Magicool-Inverter-MAGICOOL-Convertible/dp/B0DSJ9FQLD?ref=dlx_deals_dg_dcl_B0DSJ9FQLD_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Whirlpool 1.5 Ton 3 Star, Magicool Inverter Split AC (MAGICOOL 15T 3S INV CNV S5K2PP0, Copper, Convertible 4-in-1 Cooling Mode, HD Filter White)"
+  - link "51% off Limited time deal Whirlpool 1.5 Ton 3 Star, Magicool Inverter Split AC (MAGICOOL 15T 3S INV CNV S5K2PP0, Copper, Convertible 4-in-1 Cooling Mode, HD Filter White)":
+    - /url: https://www.amazon.in/Whirlpool-Magicool-Inverter-MAGICOOL-Convertible/dp/B0DSJ9FQLD?ref=dlx_deals_dg_dcl_B0DSJ9FQLD_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 51% off Limited time deal
+    - paragraph: Whirlpool 1.5 Ton 3 Star, Magicool Inverter Split AC (MAGICOOL 15T 3S INV CNV S5K2PP0, Copper, Convertible 4-in-1 Cooling Mode, HD Filter White)
+- group:
+  - link "iQOO 13 5G (Legend, 16GB RAM, 512GB Storage)":
+    - /url: https://www.amazon.in/iQOO-Legend-16GB-512GB-Storage/dp/B07WDKLXFR?ref=dlx_deals_dg_dcl_B07WDKLXFR_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "iQOO 13 5G (Legend, 16GB RAM, 512GB Storage)"
+  - link "10% off Limited time deal iQOO 13 5G (Legend, 16GB RAM, 512GB Storage)":
+    - /url: https://www.amazon.in/iQOO-Legend-16GB-512GB-Storage/dp/B07WDKLXFR?ref=dlx_deals_dg_dcl_B07WDKLXFR_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 10% off Limited time deal
+    - paragraph: iQOO 13 5G (Legend, 16GB RAM, 512GB Storage)
+  - list:
+    - listitem:
+      - button "Legend"
+    - listitem:
+      - button "Nardo Grey"
+- group:
+  - link "Samsung Galaxy M35 5G (Daybreak Blue,8GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger":
+    - /url: https://www.amazon.in/Samsung-Daybreak-Storage-Corning-Gorilla/dp/B0D7Z8FJZ9?ref=dlx_deals_dg_dcl_B0D7Z8FJZ9_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Samsung Galaxy M35 5G (Daybreak Blue,8GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger"
+  - link "37% off Limited time deal Samsung Galaxy M35 5G (Daybreak Blue,8GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger":
+    - /url: https://www.amazon.in/Samsung-Daybreak-Storage-Corning-Gorilla/dp/B0D7Z8FJZ9?ref=dlx_deals_dg_dcl_B0D7Z8FJZ9_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 37% off Limited time deal
+    - paragraph: Samsung Galaxy M35 5G (Daybreak Blue,8GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger
+  - list:
+    - listitem:
+      - button "DayBreak Blue"
+    - listitem:
+      - button "Moonlight Blue"
+    - listitem:
+      - button "Thunder Grey"
+- group:
+  - link "OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)":
+    - /url: https://www.amazon.in/OnePlus-Super-Silver-128GB-Storage/dp/B0D5YCYS1G?ref=dlx_deals_dg_dcl_B0D5YCYS1G_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)"
+  - link "14% off Limited time deal OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)":
+    - /url: https://www.amazon.in/OnePlus-Super-Silver-128GB-Storage/dp/B0D5YCYS1G?ref=dlx_deals_dg_dcl_B0D5YCYS1G_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 14% off Limited time deal
+    - paragraph: OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)
+  - list:
+    - listitem:
+      - button "Super Silver"
+    - listitem:
+      - button "Mega Blue"
+    - listitem:
+      - button "Ultra Orange"
+- group:
+  - link "Samsung Galaxy M56 5G (Light Green, 8 GB RAM, 256 GB Storage) | Slimmest Phone in the Segment | Gorilla Glass Victus+ | 10 Bit HDR Video | Enhanced Nightography | 4nm Processor | Vapor Cooling Chamber":
+    - /url: https://www.amazon.in/Samsung-Slimmest-Enhanced-Nightography-Processor/dp/B0F43W6V6J?ref=dlx_deals_dg_dcl_B0F43W6V6J_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Samsung Galaxy M56 5G (Light Green, 8 GB RAM, 256 GB Storage) | Slimmest Phone in the Segment | Gorilla Glass Victus+ | 10 Bit HDR Video | Enhanced Nightography | 4nm Processor | Vapor Cooling Chamber"
+  - link "9% off Limited time deal Samsung Galaxy M56 5G (Light Green, 8 GB RAM, 256 GB Storage) | Slimmest Phone in the Segment | Gorilla Glass Victus+ | 10 Bit HDR Video | Enhanced Nightography | 4nm Processor | Vapor Cooling Chamber":
+    - /url: https://www.amazon.in/Samsung-Slimmest-Enhanced-Nightography-Processor/dp/B0F43W6V6J?ref=dlx_deals_dg_dcl_B0F43W6V6J_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 9% off Limited time deal
+    - paragraph: Samsung Galaxy M56 5G (Light Green, 8 GB RAM, 256 GB Storage) | Slimmest Phone in the Segment | Gorilla Glass Victus+ | 10 Bit HDR Video | Enhanced Nightography | 4nm Processor | Vapor Cooling Chamber
+  - link "+1 colours/patterns":
+    - /url: https://www.amazon.in/Samsung-Slimmest-Enhanced-Nightography-Processor/dp/B0F43W6V6J?ref=dlx_deals_dg_dcl_B0F43W6V6J_dt_sl10_61_csml&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+- group:
+  - link "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Silverblue, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life":
+    - /url: https://www.amazon.in/Samsung-Smartphone-Titanium-Silverblue-Included/dp/B0DSKNKCYX?ref=dlx_deals_dg_dcl_B0DSKNKCYX_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Silverblue, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life"
+  - link "5% off Limited time deal Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Silverblue, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life":
+    - /url: https://www.amazon.in/Samsung-Smartphone-Titanium-Silverblue-Included/dp/B0DSKNKCYX?ref=dlx_deals_dg_dcl_B0DSKNKCYX_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 5% off Limited time deal
+    - paragraph: Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Silverblue, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life
+  - list:
+    - listitem:
+      - button "Titanium Blue"
+    - listitem:
+      - button "Titanium Black"
+    - listitem:
+      - button "Titanium Gray"
+    - listitem:
+      - button "Titanium Silver"
+  - text: Save ₹6,000.00 with coupon
+- group:
+  - link "Redmi Note 14 5G (Titan Black, 8GB RAM 128GB Storage) | Global Debut MTK Dimensity 7025 Ultra | 2100 nits Segment Brightest 120Hz AMOLED | 50MP Sony LYT 600 OIS+EIS Triple Camera":
+    - /url: https://www.amazon.in/Redmi-Note-14-5G-Dimensity/dp/B0DPFTHDBX?ref=dlx_deals_dg_dcl_B0DPFTHDBX_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Redmi Note 14 5G (Titan Black, 8GB RAM 128GB Storage) | Global Debut MTK Dimensity 7025 Ultra | 2100 nits Segment Brightest 120Hz AMOLED | 50MP Sony LYT 600 OIS+EIS Triple Camera"
+  - link "17% off Limited time deal Redmi Note 14 5G (Titan Black, 8GB RAM 128GB Storage) | Global Debut MTK Dimensity 7025 Ultra | 2100 nits Segment Brightest 120Hz AMOLED | 50MP Sony LYT 600 OIS+EIS Triple Camera":
+    - /url: https://www.amazon.in/Redmi-Note-14-5G-Dimensity/dp/B0DPFTHDBX?ref=dlx_deals_dg_dcl_B0DPFTHDBX_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 17% off Limited time deal
+    - paragraph: Redmi Note 14 5G (Titan Black, 8GB RAM 128GB Storage) | Global Debut MTK Dimensity 7025 Ultra | 2100 nits Segment Brightest 120Hz AMOLED | 50MP Sony LYT 600 OIS+EIS Triple Camera
+  - list:
+    - listitem:
+      - button "Titan Black"
+    - listitem:
+      - button "Mystique White"
+    - listitem:
+      - button "Phantom Purple"
+- group:
+  - link "LG 1.5 Ton 5 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Faster Cooling & Energy Saving, 4 Way Swing, HD Filter with Anti-Virus Protection, US-Q19YNZE, White)":
+    - /url: https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-US-Q19YNZE/dp/B0DRG7M72Z?ref=dlx_deals_dg_dcl_B0DRG7M72Z_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "LG 1.5 Ton 5 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Faster Cooling & Energy Saving, 4 Way Swing, HD Filter with Anti-Virus Protection, US-Q19YNZE, White)"
+  - link "47% off Limited time deal LG 1.5 Ton 5 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Faster Cooling & Energy Saving, 4 Way Swing, HD Filter with Anti-Virus Protection, US-Q19YNZE, White)":
+    - /url: https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-US-Q19YNZE/dp/B0DRG7M72Z?ref=dlx_deals_dg_dcl_B0DRG7M72Z_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 47% off Limited time deal
+    - paragraph: LG 1.5 Ton 5 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Faster Cooling & Energy Saving, 4 Way Swing, HD Filter with Anti-Virus Protection, US-Q19YNZE, White)
+- group:
+  - link "Lloyd 1.5 Ton 3 Star Inverter Split AC (5 in 1 Convertible, Copper, Anti-Viral + PM 2.5 Filter, 2023 Model, White with Chrome Deco Strip, GLS18I3FWAGC)":
+    - /url: https://www.amazon.in/Lloyd-Inverter-Convertible-Anti-Viral-GLS18I3FWAGC/dp/B0CCY3HLCV?ref=dlx_deals_dg_dcl_B0CCY3HLCV_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "Lloyd 1.5 Ton 3 Star Inverter Split AC (5 in 1 Convertible, Copper, Anti-Viral + PM 2.5 Filter, 2023 Model, White with Chrome Deco Strip, GLS18I3FWAGC)"
+  - link "42% off Limited time deal Lloyd 1.5 Ton 3 Star Inverter Split AC (5 in 1 Convertible, Copper, Anti-Viral + PM 2.5 Filter, 2023 Model, White with Chrome Deco Strip, GLS18I3FWAGC)":
+    - /url: https://www.amazon.in/Lloyd-Inverter-Convertible-Anti-Viral-GLS18I3FWAGC/dp/B0CCY3HLCV?ref=dlx_deals_dg_dcl_B0CCY3HLCV_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 42% off Limited time deal
+    - paragraph: Lloyd 1.5 Ton 3 Star Inverter Split AC (5 in 1 Convertible, Copper, Anti-Viral + PM 2.5 Filter, 2023 Model, White with Chrome Deco Strip, GLS18I3FWAGC)
+  - text: Save ₹1,250.00 with coupon
+- group:
+  - link "LG 1.5 Ton 3 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Diet Mode+, Faster Cooling & Energy Saving, HD Filter with Anti-Virus Protection, US-Q18JNXE, White)":
+    - /url: https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-US-Q18JNXE/dp/B0DQQ4XDBB?ref=dlx_deals_dg_dcl_B0DQQ4XDBB_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "LG 1.5 Ton 3 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Diet Mode+, Faster Cooling & Energy Saving, HD Filter with Anti-Virus Protection, US-Q18JNXE, White)"
+  - link "54% off Limited time deal LG 1.5 Ton 3 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Diet Mode+, Faster Cooling & Energy Saving, HD Filter with Anti-Virus Protection, US-Q18JNXE, White)":
+    - /url: https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-US-Q18JNXE/dp/B0DQQ4XDBB?ref=dlx_deals_dg_dcl_B0DQQ4XDBB_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 54% off Limited time deal
+    - paragraph: LG 1.5 Ton 3 Star DUAL Inverter Split AC (Copper, AI Convertible 6-in-1, VIRAAT Mode, Diet Mode+, Faster Cooling & Energy Saving, HD Filter with Anti-Virus Protection, US-Q18JNXE, White)
+- group:
+  - link "realme GT 6T 5G (Fluid Silver,8GB RAM+256GB Storage) | India's 1st 7+ Gen 3 Flagship Chipset | 1.5M + AnTuTu Score | 5500mAh+120W | The World's Brightest Flagship Display":
+    - /url: https://www.amazon.in/realme-Storage-Flagship-Chipset-Brightest/dp/B0D3J9FN5C?ref=dlx_deals_dg_dcl_B0D3J9FN5C_dt_sl10_61_pi&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - img "realme GT 6T 5G (Fluid Silver,8GB RAM+256GB Storage) | India's 1st 7+ Gen 3 Flagship Chipset | 1.5M + AnTuTu Score | 5500mAh+120W | The World's Brightest Flagship Display"
+  - link "31% off Limited time deal realme GT 6T 5G (Fluid Silver,8GB RAM+256GB Storage) | India's 1st 7+ Gen 3 Flagship Chipset | 1.5M + AnTuTu Score | 5500mAh+120W | The World's Brightest Flagship Display":
+    - /url: https://www.amazon.in/realme-Storage-Flagship-Chipset-Brightest/dp/B0D3J9FN5C?ref=dlx_deals_dg_dcl_B0D3J9FN5C_dt_sl10_61&pf_rd_r=5GSHPBPGP5JNQGB222HA&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61
+    - text: 31% off Limited time deal
+    - paragraph: realme GT 6T 5G (Fluid Silver,8GB RAM+256GB Storage) | India's 1st 7+ Gen 3 Flagship Chipset | 1.5M + AnTuTu Score | 5500mAh+120W | The World's Brightest Flagship Display
+  - list:
+    - listitem:
+      - button "Fluid Silver"
+    - listitem:
+      - button "Miracle Purple"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fdeals%3Fref_%3Dnav_cs_gb&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | // tests/checkTodaysDeals.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Open Today\'s Deals and verify deals are listed', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('/');
+   7 |
+   8 |   console.log('✅ Clicking on "Today\'s Deals" link...');
+   9 |   await page.getByRole('link', { name: "Today's Deals" }).click();
+  10 |
+  11 |   console.log('✅ Waiting for deals to load...');
+> 12 |   await page.waitForSelector('.DealContent-module__truncate_sWbxETx42ZPStTc9jwySW');
+     |              ^ Error: page.waitForSelector: Test timeout of 60000ms exceeded.
+  13 |
+  14 |   console.log('✅ Verifying at least one deal is visible...');
+  15 |   const dealItems = await page.locator('.DealContent-module__truncate_sWbxETx42ZPStTc9jwySW').count();
+  16 |   expect(dealItems).toBeGreaterThan(0);
+  17 |
+  18 |   console.log('🎯 Today\'s Deals page verified!');
+  19 | });
+  20 |
+```

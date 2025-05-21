@@ -1,0 +1,121 @@
+# Test info
+
+- Name: Download, edit, and upload Excel file from TeamLease
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/downloadEditUpload.spec.js:6:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Client' })
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/downloadEditUpload.spec.js:17:54
+```
+
+# Page snapshot
+
+```yaml
+- button "expand":
+  - img "expand"
+- img "Logo"
+- list:
+  - listitem:
+    - img "menu"
+  - listitem:
+    - img "menu"
+  - listitem:
+    - img "menu"
+  - listitem:
+    - img "menu"
+- text: Associate Onboarding
+- img "search"
+- textbox "Search"
+- img "menu"
+- img "menu"
+- img "menu"
+- img "menu"
+- text: T
+- paragraph: Hiring
+- img "right-arrow"
+- paragraph: Associate Onboarding
+- button "open user manual User Manual":
+  - img "open user manual"
+  - text: User Manual
+- button "Download Master data"
+- button "Preview OL Template" [disabled]
+- button "+ Add Candidate" [disabled]
+- paragraph: Please Select Client
+- text: "0"
+- tablist:
+  - tab "Active" [selected]
+  - tab "Cancelled"
+- img "Download master data"
+- img "Bulk Upload"
+- img "search"
+- img "filter"
+- img
+- text: Please Select Client ID You havent selected Client ID.
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | import * as fs from 'fs';
+   3 | import * as path from 'path';
+   4 | import * as xlsx from 'xlsx';
+   5 |
+   6 | test('Download, edit, and upload Excel file from TeamLease', async ({ page, context }) => {
+   7 |   const downloadPath = '/home/ashok/downloads'; // real Downloads folder
+   8 |
+   9 |   // Step 1: Login and navigate
+  10 |   await page.goto('https://hcm-consumer-ui-qa.teamlease.com/associateOnboarding?mode=Clients_mode&client_id=A2FDL');
+  11 |   await page.locator('#username').fill('T10533');
+  12 |   await page.getByRole('button', { name: 'Continue' }).click();
+  13 |   await page.locator('#password').fill('12345');
+  14 |   await page.getByRole('button', { name: 'Login' }).click();
+  15 |
+  16 |   // Step 2: Navigate to download section and initiate download
+> 17 |   await page.getByRole('button', { name: 'Client' }).click();
+     |                                                      ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  18 |   await page.getByRole('textbox', { name: 'Search Client / ID' }).fill('afbch');
+  19 |   await page.getByRole('option', { name: 'AGS CINEMAS PRIVATE LIMITED -' }).click();
+  20 |   await page.getByRole('img', { name: 'Download master data' }).click();
+  21 |   await page.getByText('Download Client MOL Edit Data').click();
+  22 |   await page.getByRole('checkbox', { name: 'Name as Aadhar' }).check();
+  23 |   await page.getByRole('checkbox', { name: 'Aadhar No' }).check();
+  24 |
+  25 |   // Capture the download
+  26 |   const download = await Promise.all([
+  27 |     page.waitForEvent('download'),
+  28 |     page.getByRole('button', { name: 'Download XLSX' }).click(),
+  29 |   ]).then(([download]) => download);
+  30 |
+  31 |   // Save the downloaded file to /home/ashok/downloads with known name
+  32 |   const downloadedFilePath = path.join(downloadPath, download.suggestedFilename());
+  33 |   await download.saveAs(downloadedFilePath);
+  34 |
+  35 |   // Step 3: Edit the Excel file (change C2 and E2)
+  36 |   const workbook = xlsx.readFile(downloadedFilePath);
+  37 |   const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+  38 |
+  39 |   // Modify cells
+  40 |   worksheet['C2'].v = 'New Name';
+  41 |   worksheet['E2'].v = 'Y';
+  42 |
+  43 |   // Save it (overwrite same file or use new one)
+  44 |   xlsx.writeFile(workbook, downloadedFilePath); // save back to same path
+  45 |
+  46 |   // Step 4: Upload the edited file
+  47 |   await page.getByRole('img', { name: 'Bulk Upload' }).click();
+  48 |   await page.getByText('Client MOL Edit Data').click();
+  49 |   const fileUploadDialog = await page.getByRole('dialog', { name: 'Client MOL Edit Upload' });
+  50 |   await fileUploadDialog.setInputFiles(downloadedFilePath);
+  51 |   await page.getByTestId('upload-button').click();
+  52 |
+  53 |   // Step 5: Clean up file (optional)
+  54 |   fs.unlinkSync(downloadedFilePath); // delete the file after upload
+  55 | });
+  56 |
+```

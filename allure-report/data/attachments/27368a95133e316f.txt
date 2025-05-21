@@ -1,0 +1,4 @@
+✅ Navigated to Amazon homepage
+✅ Searched for "mouse"
+✅ Opened product page: https://www.amazon.in/HP-Wireless-Compatible-Chromebook-391R4AA/dp/B09H7DST73/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.e6JFwzVQ_hUveqUZrfKXbhhRBlZkXspYMNa0GG5R41FQzslHN03iwbr6DrNwib5bMe6gy6PuzCuHcIjFk2Si2f8rwQO8uTLxSucPRiZXiBAYISh5UEsbxsfZaFMCTxYqmSDbdwIVF0jSzC21lKGbFHhaP_FtFG_UmEP6PZJCEoNt9B1OQekCTh_FqZgJIk0d1yJSy7dCUzE2FJqI2ICmVOw0PRCPb5z-O3zSEhpq0gw.FA6_LeUrVANxRYd4cmP7AFCOgmdG3VXvz9Ksv2JLGJE&dib_tag=se&keywords=mouse&qid=1745912595&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+🛒 Product added to cart using main button

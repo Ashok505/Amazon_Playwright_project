@@ -1,0 +1,2064 @@
+# Test info
+
+- Name: Sort search results from Low to High
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/sortLowToHigh.spec.js:4:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for getByRole('option', { name: 'Price: Low to High' })
+    - locator resolved to <option value="price-asc-rank" data-url="/s?k=smartphones&s=price-asc-rank&qid=1745831794&ref=sr_st_price-asc-rank&ds=v1%3AWcI%2BT%2FBEXbcrmVCKZkSCV0cUDWPTpscbcpEhCiiI7NI">Price: Low to High</option>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    41 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/sortLowToHigh.spec.js:16:66
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, option, forward slash"
+    - listitem:
+      - link "Cart, shift, option, c"
+    - listitem:
+      - link "Home, shift, option, h"
+    - listitem:
+      - link "Your orders, shift, option, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, option, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": smartphones
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dsmartphones%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=9HGQDGX09HF94MRY7ZDF
+      - img "Big Savings, More Happiness"
+    - dialog
+- 'heading "1-16 of over 50,000 results for \"smartphones\" Sort by: Featured" [level=1]':
+  - heading "1-16 of over 50,000 results for \"smartphones\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/stores/page/368EDEAA-121B-48F9-A9BC-DAA0C153023E/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A09219224J87QGYAKVL0&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&lp_asins=B0DXQJ1M7H&lp_query=smartphones&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_logo&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+  - img "Apple India"
+- link "Supersized battery life.":
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/stores/page/368EDEAA-121B-48F9-A9BC-DAA0C153023E/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A09219224J87QGYAKVL0&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&lp_asins=B0DXQJ1M7H&lp_query=smartphones&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_hl&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+- link "Shop Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/stores/page/368EDEAA-121B-48F9-A9BC-DAA0C153023E/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A09219224J87QGYAKVL0&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&lp_asins=B0DXQJ1M7H&lp_query=smartphones&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_cta&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+- link "Branded image from Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/stores/page/368EDEAA-121B-48F9-A9BC-DAA0C153023E/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A09219224J87QGYAKVL0&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&lp_asins=B0DXQJ1M7H&lp_query=smartphones&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_ls&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+  - img "Branded image from Apple India"
+- 'link "iPhone 16e 512 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black"':
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/gp/aw/d/B0DXQJ1M7H/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&qid=1745831794&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+  - 'img "iPhone 16e 512 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black"'
+- 'link "iPhone 16e 512 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black"':
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/gp/aw/d/B0DXQJ1M7H/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&qid=1745831794&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_title&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+- link "Rated 4.2 out of 5 stars by 96 reviews. Go to review section.":
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/gp/aw/d/B0DXQJ1M7H/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&qid=1745831794&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_rating&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24#customerReviews
+  - text: 4.2 out of 5 stars. 96
+- link "Eligible for Prime.":
+  - /url: https://aax-eu.amazon.in/x/c/JOt-2Gf71hhwiRnv30dchTAAAAGWe68YoAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICBapqBc/https://www.amazon.in/gp/aw/d/B0DXQJ1M7H/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=30deae4bb41f3876b21b231ea93b1b7a&hsa_cr_id=0&qid=1745831794&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_badge&pd_rd_w=nwK6f&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=Ubnr8&pd_rd_r=d86462d3-5021-4c8e-982a-8031e5d8ed24
+  - img "Eligible for Prime."
+- button "Leave feedback on Sponsored ad": Sponsored
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours" [level=2]: iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours
+    - button "4.4 out of 5 stars, rating details"
+    - link "462 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 3K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹26,998 M.R.P: ₹31,999 M.R.P: ₹31,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (16% off) Flat INR 1500 Off on SBICredit Cards
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+1 other color/pattern":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDE5MzUwNTg4ODUzMjo6MDo6&url=%2FiQOO-Tornado-Storage-Snapdragon-FlashCharge%2Fdp%2FB07WHQHNZC%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDE5MzUwNTg4ODUzMjo6MDo6&url=%2FiQOO-Tornado-Storage-Snapdragon-FlashCharge%2Fdp%2FB07WHQHNZC%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge" [level=2]: iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge
+    - button "4.2 out of 5 stars, rating details"
+    - link "7,679 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDE5MzUwNTg4ODUzMjo6MDo6&url=%2FiQOO-Tornado-Storage-Snapdragon-FlashCharge%2Fdp%2FB07WHQHNZC%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹11,999 M.R.P: ₹18,999 M.R.P: ₹18,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDE5MzUwNTg4ODUzMjo6MDo6&url=%2FiQOO-Tornado-Storage-Snapdragon-FlashCharge%2Fdp%2FB07WHQHNZC%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (37% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+1 other color/pattern":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYXRmOjMwMDE5MzUwNTg4ODUzMjo6MDo6&url=%2FiQOO-Tornado-Storage-Snapdragon-FlashCharge%2Fdp%2FB07WHQHNZC%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+  - listitem:
+    - group "Best seller in Electronics"
+    - link:
+      - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=sr_1_3?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-3
+    - link "Samsung Galaxy M05 (Mint Green, 4GB RAM, 64 GB Storage) | 50MP Dual Camera | Bigger 6.7\" HD+ Display | 5000mAh Battery | 25W Fast Charging | 2 Gen OS Upgrade & 4 Year Security Update | Without Charger":
+      - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=sr_1_3?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-3
+      - heading "Samsung Galaxy M05 (Mint Green, 4GB RAM, 64 GB Storage) | 50MP Dual Camera | Bigger 6.7\" HD+ Display | 5000mAh Battery | 25W Fast Charging | 2 Gen OS Upgrade & 4 Year Security Update | Without Charger" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,927 ratings":
+      - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=sr_1_3?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-3#customerReviews
+    - text: 5K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹6,498 M.R.P: ₹9,999 M.R.P: ₹9,999"':
+      - /url: /Samsung-Storage-Display-Charging-Security/dp/B0DFY3XCB6/ref=sr_1_3?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-3
+    - text: (35% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /POCO-C61-Mystical-Green-64GB/dp/B0CYBKWQ2V/ref=sr_1_4?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-4
+    - link "POCO C61 Mystical Green 4GB RAM 64GB ROM":
+      - /url: /POCO-C61-Mystical-Green-64GB/dp/B0CYBKWQ2V/ref=sr_1_4?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-4
+      - heading "POCO C61 Mystical Green 4GB RAM 64GB ROM" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "326 ratings":
+      - /url: /POCO-C61-Mystical-Green-64GB/dp/B0CYBKWQ2V/ref=sr_1_4?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-4#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹5,899 M.R.P: ₹8,999 M.R.P: ₹8,999"':
+      - /url: /POCO-C61-Mystical-Green-64GB/dp/B0CYBKWQ2V/ref=sr_1_4?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-4
+    - text: (34% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery 30 Apr - 5 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Motorola-Brilliant-Blue-128GB-Storage/dp/B0DDY9HMJG/ref=sr_1_5?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-5
+    - link "Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage)":
+      - /url: /Motorola-Brilliant-Blue-128GB-Storage/dp/B0DDY9HMJG/ref=sr_1_5?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-5
+      - heading "Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "409 ratings":
+      - /url: /Motorola-Brilliant-Blue-128GB-Storage/dp/B0DDY9HMJG/ref=sr_1_5?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-5#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹12,286 M.R.P: ₹14,999 M.R.P: ₹14,999"':
+      - /url: /Motorola-Brilliant-Blue-128GB-Storage/dp/B0DDY9HMJG/ref=sr_1_5?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-5
+    - text: (18% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Only 1 left in stock. Service: Installation"
+    - button "Add to cart"
+    - text: More Buying Choices ₹11,999
+    - link "(29 new offers)":
+      - /url: /gp/offer-listing/B0DDY9HMJG/ref=sr_1_5_olp?keywords=smartphones&dib_tag=se&dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&qid=1745831794&sr=8-5
+- heading "Trending now" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- group "Trending now":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DW47XR3X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+1 other color/pattern":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DW47XR3X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DW47XR3X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours" [level=2]: iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours
+        - button "4.4 out of 5 stars, rating details"
+        - link "462 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DW47XR3X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 3K+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹26,998 M.R.P: ₹31,999 M.R.P: ₹31,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUwMjU0MTQzNTEzMjo6MDo6&url=%2FiQOO-Snapdragon-Processor-Slimmest-Smartphone%2Fdp%2FB0DW47XR3X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DW47XR3X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (16% off) Flat INR 1500 Off on SBICredit Cards
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1ODAzMjo6MTo6&url=%2FiPhone-16-Pro-Max-TB%2Fdp%2FB0DGJ1BY5T%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ1BY5T%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+3 other colors/patterns":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1ODAzMjo6MTo6&url=%2FiPhone-16-Pro-Max-TB%2Fdp%2FB0DGJ1BY5T%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ1BY5T%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - 'link "Sponsored Ad - iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1ODAzMjo6MTo6&url=%2FiPhone-16-Pro-Max-TB%2Fdp%2FB0DGJ1BY5T%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ1BY5T%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - 'heading "Sponsored Ad - iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium" [level=2]': "iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium"
+        - button "4.4 out of 5 stars, rating details"
+        - link "187 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1ODAzMjo6MTo6&url=%2FiPhone-16-Pro-Max-TB%2Fdp%2FB0DGJ1BY5T%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ1BY5T%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹1,72,900 M.R.P: ₹1,84,900 M.R.P: ₹1,84,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1ODAzMjo6MTo6&url=%2FiPhone-16-Pro-Max-TB%2Fdp%2FB0DGJ1BY5T%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ1BY5T%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (6% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NzU5NDUzNzYzMjo6Mjo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX3TW6X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0CHX3TW6X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+4 other colors/patterns":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NzU5NDUzNzYzMjo6Mjo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX3TW6X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0CHX3TW6X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Apple iPhone 15 (128 GB) - Pink":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NzU5NDUzNzYzMjo6Mjo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX3TW6X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0CHX3TW6X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Apple iPhone 15 (128 GB) - Pink" [level=2]: Apple iPhone 15 (128 GB) - Pink
+        - button "4.5 out of 5 stars, rating details"
+        - link "3,427 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NzU5NDUzNzYzMjo6Mjo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX3TW6X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0CHX3TW6X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 5K+ bought in past month Price, product page
+        - 'link "₹61,390 M.R.P: ₹69,900 M.R.P: ₹69,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NzU5NDUzNzYzMjo6Mjo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX3TW6X%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0CHX3TW6X%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (12% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MTQ4MTk4MDQzMjo6Mzo6&url=%2FiPhone-16-128-GB-Control%2Fdp%2FB0DGJH8RYG%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJH8RYG%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+4 other colors/patterns":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MTQ4MTk4MDQzMjo6Mzo6&url=%2FiPhone-16-128-GB-Control%2Fdp%2FB0DGJH8RYG%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJH8RYG%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - 'link "Sponsored Ad - iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MTQ4MTk4MDQzMjo6Mzo6&url=%2FiPhone-16-128-GB-Control%2Fdp%2FB0DGJH8RYG%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJH8RYG%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - 'heading "Sponsored Ad - iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal" [level=2]': "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal"
+        - button "4.4 out of 5 stars, rating details"
+        - link "533 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MTQ4MTk4MDQzMjo6Mzo6&url=%2FiPhone-16-128-GB-Control%2Fdp%2FB0DGJH8RYG%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJH8RYG%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 500+ bought in past month Price, product page
+        - 'link "₹72,900 M.R.P: ₹89,900 M.R.P: ₹89,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MTQ4MTk4MDQzMjo6Mzo6&url=%2FiPhone-16-128-GB-Control%2Fdp%2FB0DGJH8RYG%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJH8RYG%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (19% off) Flat INR 4000 Off on ICICI Credit CBCCCard
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1NjczMjo6NDo6&url=%2FiPhone-16-Pro-256-GB%2Fdp%2FB0DGJ6151N%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ6151N%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "+3 other colors/patterns":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1NjczMjo6NDo6&url=%2FiPhone-16-Pro-256-GB%2Fdp%2FB0DGJ6151N%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ6151N%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - 'link "Sponsored Ad - iPhone 16 Pro 256 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1NjczMjo6NDo6&url=%2FiPhone-16-Pro-256-GB%2Fdp%2FB0DGJ6151N%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ6151N%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - 'heading "Sponsored Ad - iPhone 16 Pro 256 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium" [level=2]': "iPhone 16 Pro 256 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium"
+        - button "4.3 out of 5 stars, rating details"
+        - link "224 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1NjczMjo6NDo6&url=%2FiPhone-16-Pro-256-GB%2Fdp%2FB0DGJ6151N%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ6151N%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 200+ bought in past month Price, product page
+        - 'link "₹1,22,900 M.R.P: ₹1,29,900 M.R.P: ₹1,29,900"':
+          - /url: /sspa/click?ie=UTF8&spc=MToyNzgyNjc2NzM5NjI4MDM1OjE3NDU4MzE3OTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1NTM0ODg1NjczMjo6NDo6&url=%2FiPhone-16-Pro-256-GB%2Fdp%2FB0DGJ6151N%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3Dsmartphones%26keywords%3Dsmartphones%26pd_rd_i%3DB0DGJ6151N%26pd_rd_r%3D7ece3152-2b50-4923-9b69-3c150ab6d982%26pd_rd_w%3DZhb87%26pd_rd_wg%3DPIkYM%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9HGQDGX09HF94MRY7ZDF%26qid%3D1745831794%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (5% off) Flat INR 2000 Off on ICICI Credit CBCCCard
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JGu_LYdnz2rq2EMHHmYzxE0AAAGWe68YiQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDM8b2a/https://www.amazon.in/dp/B0DGJ3THPR?pd_rd_i=B0DGJ3THPR&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=PIkYM&pd_rd_w=Q5bkT&pd_rd_r=7ece3152-2b50-4923-9b69-3c150ab6d982
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JGu_LYdnz2rq2EMHHmYzxE0AAAGWe68YiQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDM8b2a/https://www.amazon.in/iPhone-16-Pro-128-GB/dp/B0DGJ3THPR/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0DGJ3THPR&pd_rd_r=7ece3152-2b50-4923-9b69-3c150ab6d982&pd_rd_w=Q5bkT&pd_rd_wg=PIkYM&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Sponsored
+- 'link "iPhone 16 Pro 128 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium"':
+  - /url: https://aax-eu.amazon.in/x/c/JGu_LYdnz2rq2EMHHmYzxE0AAAGWe68YiQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDM8b2a/https://www.amazon.in/iPhone-16-Pro-128-GB/dp/B0DGJ3THPR/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0DGJ3THPR&pd_rd_r=7ece3152-2b50-4923-9b69-3c150ab6d982&pd_rd_w=Q5bkT&pd_rd_wg=PIkYM&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+  - 'heading "iPhone 16 Pro 128 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium" [level=2]'
+- button "4.3 out of 5 stars, rating details"
+- link "224 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JGu_LYdnz2rq2EMHHmYzxE0AAAGWe68YiQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDM8b2a/https://www.amazon.in/iPhone-16-Pro-128-GB/dp/B0DGJ3THPR/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0DGJ3THPR&pd_rd_r=7ece3152-2b50-4923-9b69-3c150ab6d982&pd_rd_w=Q5bkT&pd_rd_wg=PIkYM&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+- text: 100+ bought in past month Price, product page
+- 'link "₹1,12,900 M.R.P: ₹1,19,900 M.R.P: ₹1,19,900"':
+  - /url: https://aax-eu.amazon.in/x/c/JGu_LYdnz2rq2EMHHmYzxE0AAAGWe68YiQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDM8b2a/https://www.amazon.in/iPhone-16-Pro-128-GB/dp/B0DGJ3THPR/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0DGJ3THPR&pd_rd_r=7ece3152-2b50-4923-9b69-3c150ab6d982&pd_rd_w=Q5bkT&pd_rd_wg=PIkYM&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: (6% off) Flat INR 2000 Off on ICICI Credit CBCCCard
+- img "Amazon Prime"
+- text: Get it by Saturday 3 May FREE Delivery by Amazon
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Redmi-Hawaiian-Largest-Display-Segment/dp/B0D78X544X/ref=sr_1_6?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-6
+    - link "Redmi 13 5G, Hawaiian Blue, 8GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera | 6.79in Largest Display in Segment":
+      - /url: /Redmi-Hawaiian-Largest-Display-Segment/dp/B0D78X544X/ref=sr_1_6?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-6
+      - heading "Redmi 13 5G, Hawaiian Blue, 8GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera | 6.79in Largest Display in Segment" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "3,921 ratings":
+      - /url: /Redmi-Hawaiian-Largest-Display-Segment/dp/B0D78X544X/ref=sr_1_6?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-6#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹13,998 M.R.P: ₹19,999 M.R.P: ₹19,999"':
+      - /url: /Redmi-Hawaiian-Largest-Display-Segment/dp/B0D78X544X/ref=sr_1_6?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-6
+    - text: (30% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - button "Hawaiian Blue"
+    - button "Black Diamond"
+    - button "Orchid Pink"
+  - listitem:
+    - link:
+      - /url: /POCO-Plus-Graphite-Black-128GB/dp/B0DF7HWHD2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-7
+    - link "POCO M6 Plus 5G Graphite Black 6GB RAM 128GB ROM":
+      - /url: /POCO-Plus-Graphite-Black-128GB/dp/B0DF7HWHD2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-7
+      - heading "POCO M6 Plus 5G Graphite Black 6GB RAM 128GB ROM" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "89 ratings":
+      - /url: /POCO-Plus-Graphite-Black-128GB/dp/B0DF7HWHD2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-7#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹9,999 ( ₹48.78 /Grams) M.R.P: ₹13,499 M.R.P: ₹13,499"':
+      - /url: /POCO-Plus-Graphite-Black-128GB/dp/B0DF7HWHD2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-7
+    - text: (26% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Fri, 2 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /realme-Storage-Chipset-Comfort-Display/dp/B0D3GX1VFM/ref=sr_1_8?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-8
+    - link "realme NARZO N65 5G (Deep Green 6GB RAM, 128GB Storage) India's 1st D6300 5G Chipset | Ultra Slim Design | 120Hz Eye Comfort Display | 50MP AI Camera| Charger in The Box":
+      - /url: /realme-Storage-Chipset-Comfort-Display/dp/B0D3GX1VFM/ref=sr_1_8?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-8
+      - heading "realme NARZO N65 5G (Deep Green 6GB RAM, 128GB Storage) India's 1st D6300 5G Chipset | Ultra Slim Design | 120Hz Eye Comfort Display | 50MP AI Camera| Charger in The Box" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "3,010 ratings":
+      - /url: /realme-Storage-Chipset-Comfort-Display/dp/B0D3GX1VFM/ref=sr_1_8?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-8#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹12,498 M.R.P: ₹14,999 M.R.P: ₹14,999"':
+      - /url: /realme-Storage-Chipset-Comfort-Display/dp/B0D3GX1VFM/ref=sr_1_8?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-8
+    - text: (17% off) Save ₹1,000 with coupon
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Service: Installation"
+    - button "Add to cart"
+    - button "Deep Green"
+    - button "Amber Gold"
+  - listitem:
+    - link:
+      - /url: /Vivo-Smartphone-Vibrant-Green-Storage/dp/B0D93HRDD3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-9
+    - link "Vivo T3 Lite 5G Smartphone (Vibrant Green, 6GB Ram 128GB Storage)":
+      - /url: /Vivo-Smartphone-Vibrant-Green-Storage/dp/B0D93HRDD3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-9
+      - heading "Vivo T3 Lite 5G Smartphone (Vibrant Green, 6GB Ram 128GB Storage)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "231 ratings":
+      - /url: /Vivo-Smartphone-Vibrant-Green-Storage/dp/B0D93HRDD3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-9#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹11,998 M.R.P: ₹18,999 M.R.P: ₹18,999"':
+      - /url: /Vivo-Smartphone-Vibrant-Green-Storage/dp/B0D93HRDD3/ref=sr_1_9?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-9
+    - text: (37% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - text: More Buying Choices ₹11,400
+    - link "(6 new offers)":
+      - /url: /gp/offer-listing/B0D93HRDD3/ref=sr_1_9_olp?keywords=smartphones&dib_tag=se&dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&qid=1745831794&sr=8-9
+  - listitem:
+    - link:
+      - /url: /realme-Storage-Comfort-Resistance-48-Month/dp/B0D947DTLT/ref=sr_1_10?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-10
+    - link "realme NARZO N61 (Voyage Blue,6GB RAM+128GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box":
+      - /url: /realme-Storage-Comfort-Resistance-48-Month/dp/B0D947DTLT/ref=sr_1_10?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-10
+      - heading "realme NARZO N61 (Voyage Blue,6GB RAM+128GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,748 ratings":
+      - /url: /realme-Storage-Comfort-Resistance-48-Month/dp/B0D947DTLT/ref=sr_1_10?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-10#customerReviews
+    - text: 3K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹8,498 M.R.P: ₹10,999 M.R.P: ₹10,999"':
+      - /url: /realme-Storage-Comfort-Resistance-48-Month/dp/B0D947DTLT/ref=sr_1_10?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-10
+    - text: (23% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - button "Voyage Blue"
+    - button "Marble Black"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDM0NjYzNTMzMjkzMjo6MDo6&url=%2FiQOO-Storage-Ultra-Thin-Dimesity-Processor%2Fdp%2FB07WHS35V6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - iQOO Z9s 5G (Onyx Green, 8GB RAM, 256GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDM0NjYzNTMzMjkzMjo6MDo6&url=%2FiQOO-Storage-Ultra-Thin-Dimesity-Processor%2Fdp%2FB07WHS35V6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - iQOO Z9s 5G (Onyx Green, 8GB RAM, 256GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light" [level=2]: iQOO Z9s 5G (Onyx Green, 8GB RAM, 256GB Storage) | 120 Hz 3D Curved AMOLED Display | 5500 mAh Ultra-Thin Battery | Dimesity 7300 5G Processor | Sony IMX882 OIS Camera with Aura Light
+    - button "4.3 out of 5 stars, rating details"
+    - link "4,245 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDM0NjYzNTMzMjkzMjo6MDo6&url=%2FiQOO-Storage-Ultra-Thin-Dimesity-Processor%2Fdp%2FB07WHS35V6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹21,999 M.R.P: ₹27,999 M.R.P: ₹27,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDM0NjYzNTMzMjkzMjo6MDo6&url=%2FiQOO-Storage-Ultra-Thin-Dimesity-Processor%2Fdp%2FB07WHS35V6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (21% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+1 other color/pattern":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDM0NjYzNTMzMjkzMjo6MDo6&url=%2FiQOO-Storage-Ultra-Thin-Dimesity-Processor%2Fdp%2FB07WHS35V6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDQ5OTMzMjE0NjczMjo6MDo6&url=%2FSamsung-MediaTek-Dimensity-Charging-Upgrades%2Fdp%2FB0DX5R87P8%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Samsung Galaxy M06 5G (Blazing Black, 6GB RAM, 128 GB Storage) | MediaTek Dimensity 6300 | AnTuTu Score 422K+ | 12 5G Bands | 25W Fast Charging | 4 Gen. of OS Upgrades | Without Charger":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDQ5OTMzMjE0NjczMjo6MDo6&url=%2FSamsung-MediaTek-Dimensity-Charging-Upgrades%2Fdp%2FB0DX5R87P8%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - Samsung Galaxy M06 5G (Blazing Black, 6GB RAM, 128 GB Storage) | MediaTek Dimensity 6300 | AnTuTu Score 422K+ | 12 5G Bands | 25W Fast Charging | 4 Gen. of OS Upgrades | Without Charger" [level=2]: Samsung Galaxy M06 5G (Blazing Black, 6GB RAM, 128 GB Storage) | MediaTek Dimensity 6300 | AnTuTu Score 422K+ | 12 5G Bands | 25W Fast Charging | 4 Gen. of OS Upgrades | Without Charger
+    - button "3.7 out of 5 stars, rating details"
+    - link "232 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDQ5OTMzMjE0NjczMjo6MDo6&url=%2FSamsung-MediaTek-Dimensity-Charging-Upgrades%2Fdp%2FB0DX5R87P8%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 2K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹10,498 M.R.P: ₹15,499 M.R.P: ₹15,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDQ5OTMzMjE0NjczMjo6MDo6&url=%2FSamsung-MediaTek-Dimensity-Charging-Upgrades%2Fdp%2FB0DX5R87P8%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (32% off) Save ₹200 with coupon
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+1 other color/pattern":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfbXRmOjMwMDQ5OTMzMjE0NjczMjo6MDo6&url=%2FSamsung-MediaTek-Dimensity-Charging-Upgrades%2Fdp%2FB0DX5R87P8%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+  - listitem:
+    - link:
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WHRHBLH/ref=sr_1_13?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-13
+    - link "iQOO Z9x 5G (Storm Grey, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge":
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WHRHBLH/ref=sr_1_13?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-13
+      - heading "iQOO Z9x 5G (Storm Grey, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "7,679 ratings":
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WHRHBLH/ref=sr_1_13?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-13#customerReviews
+    - text: 4K+ bought in past month Price, product page
+    - 'link "₹11,999 M.R.P: ₹18,999 M.R.P: ₹18,999"':
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WHRHBLH/ref=sr_1_13?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-13
+    - text: (37% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - button "Storm Grey"
+    - button "Tornado Green"
+  - listitem:
+    - link:
+      - /url: /Motorola-Storage-Ultra-Fast-Smartphone-5000mAh/dp/B0DPW2M4JR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-14
+    - link "Motorola G35 5G (Leaf Green, 4GB RAM, 128GB Storage) | Ultra-Fast 5G Smartphone | 50MP AI Camera | 5000mAh Battery":
+      - /url: /Motorola-Storage-Ultra-Fast-Smartphone-5000mAh/dp/B0DPW2M4JR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-14
+      - heading "Motorola G35 5G (Leaf Green, 4GB RAM, 128GB Storage) | Ultra-Fast 5G Smartphone | 50MP AI Camera | 5000mAh Battery" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "68 ratings":
+      - /url: /Motorola-Storage-Ultra-Fast-Smartphone-5000mAh/dp/B0DPW2M4JR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-14#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹10,584 M.R.P: ₹12,499 M.R.P: ₹12,499"':
+      - /url: /Motorola-Storage-Ultra-Fast-Smartphone-5000mAh/dp/B0DPW2M4JR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-14
+    - text: (15% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - text: More Buying Choices ₹10,548
+    - link "(15 new offers)":
+      - /url: /gp/offer-listing/B0DPW2M4JR/ref=sr_1_14_olp?keywords=smartphones&dib_tag=se&dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&qid=1745831794&sr=8-14
+  - listitem:
+    - link:
+      - /url: /Redmi-A4-5G-Storage-Charging/dp/B0DLW4QD72/ref=sr_1_15?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-15
+    - link "Redmi A4 5G (Starry Black, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | 18W Fast Charging":
+      - /url: /Redmi-A4-5G-Storage-Charging/dp/B0DLW4QD72/ref=sr_1_15?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-15
+      - heading "Redmi A4 5G (Starry Black, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | 18W Fast Charging" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,668 ratings":
+      - /url: /Redmi-A4-5G-Storage-Charging/dp/B0DLW4QD72/ref=sr_1_15?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-15#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹9,499 M.R.P: ₹11,999 M.R.P: ₹11,999"':
+      - /url: /Redmi-A4-5G-Storage-Charging/dp/B0DLW4QD72/ref=sr_1_15?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-15
+    - text: (21% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+1 other color/pattern":
+      - /url: /Redmi-A4-5G-Storage-Charging/dp/B0DLW4QD72/ref=cs_sr_dp?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-15
+  - listitem:
+    - link:
+      - /url: /Samsung-MediaTek-Dimensity-Charging-Upgrades/dp/B0DX655V11/ref=sr_1_16?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-16
+    - link "Samsung Galaxy M06 5G (Sage Green, 6GB RAM, 128 GB Storage) | MediaTek Dimensity 6300 | AnTuTu Score 422K+ | 12 5G Bands| 25W Fast Charging | 4 Gen. of OS Upgrades | Without Charger":
+      - /url: /Samsung-MediaTek-Dimensity-Charging-Upgrades/dp/B0DX655V11/ref=sr_1_16?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-16
+      - heading "Samsung Galaxy M06 5G (Sage Green, 6GB RAM, 128 GB Storage) | MediaTek Dimensity 6300 | AnTuTu Score 422K+ | 12 5G Bands| 25W Fast Charging | 4 Gen. of OS Upgrades | Without Charger" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "232 ratings":
+      - /url: /Samsung-MediaTek-Dimensity-Charging-Upgrades/dp/B0DX655V11/ref=sr_1_16?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-16#customerReviews
+    - text: 4K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹10,498 M.R.P: ₹15,499 M.R.P: ₹15,499"':
+      - /url: /Samsung-MediaTek-Dimensity-Charging-Upgrades/dp/B0DX655V11/ref=sr_1_16?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-16
+    - text: (32% off) Save ₹200 with coupon
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - button "Sage Green"
+    - button "Blazing Black"
+  - listitem:
+    - link:
+      - /url: /POCO-Diamond-Dust-Black-64GB/dp/B0CYBBB82G/ref=sr_1_17?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-17
+    - link "POCO C61 Diamond Dust Black 4GB RAM 64GB ROM":
+      - /url: /POCO-Diamond-Dust-Black-64GB/dp/B0CYBBB82G/ref=sr_1_17?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-17
+      - heading "POCO C61 Diamond Dust Black 4GB RAM 64GB ROM" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "409 ratings":
+      - /url: /POCO-Diamond-Dust-Black-64GB/dp/B0CYBBB82G/ref=sr_1_17?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-17#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹5,899 M.R.P: ₹8,999 M.R.P: ₹8,999"':
+      - /url: /POCO-Diamond-Dust-Black-64GB/dp/B0CYBBB82G/ref=sr_1_17?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-17
+    - text: (34% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 1 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WFPMJBH/ref=sr_1_18?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-18
+    - link "iQOO Z9x 5G (Storm Grey, 4GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge":
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WFPMJBH/ref=sr_1_18?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-18
+      - heading "iQOO Z9x 5G (Storm Grey, 4GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "7,679 ratings":
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WFPMJBH/ref=sr_1_18?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-18#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹10,499 M.R.P: ₹17,999 M.R.P: ₹17,999"':
+      - /url: /iQOO-Storage-Snapdragon-6000mAh-FlashCharge/dp/B07WFPMJBH/ref=sr_1_18?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-18
+    - text: (42% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - button "Storm Grey"
+    - button "Tornado Green"
+  - listitem:
+    - link:
+      - /url: /Samsung-Daybreak-Storage-Corning-Gorilla/dp/B0D7Z8FJZ9/ref=sr_1_19?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-19
+    - link "Samsung Galaxy M35 5G (Daybreak Blue,8GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger":
+      - /url: /Samsung-Daybreak-Storage-Corning-Gorilla/dp/B0D7Z8FJZ9/ref=sr_1_19?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-19
+      - heading "Samsung Galaxy M35 5G (Daybreak Blue,8GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "8,780 ratings":
+      - /url: /Samsung-Daybreak-Storage-Corning-Gorilla/dp/B0D7Z8FJZ9/ref=sr_1_19?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-19#customerReviews
+    - text: 4K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹16,498 M.R.P: ₹25,999 M.R.P: ₹25,999"':
+      - /url: /Samsung-Daybreak-Storage-Corning-Gorilla/dp/B0D7Z8FJZ9/ref=sr_1_19?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-19
+    - text: (37% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Fri, 2 May Service: Installation"
+    - button "Add to cart"
+    - button "DayBreak Blue"
+    - button "Moonlight Blue"
+    - button "Thunder Grey"
+  - listitem:
+    - link:
+      - /url: /Motorola-Viva-Magenta-128GB-Storage/dp/B0DDY9XDJS/ref=sr_1_20?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-20
+    - link "Motorola G45 5G (Viva Magenta, 8GB RAM, 128GB Storage)":
+      - /url: /Motorola-Viva-Magenta-128GB-Storage/dp/B0DDY9XDJS/ref=sr_1_20?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-20
+      - heading "Motorola G45 5G (Viva Magenta, 8GB RAM, 128GB Storage)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "198 ratings":
+      - /url: /Motorola-Viva-Magenta-128GB-Storage/dp/B0DDY9XDJS/ref=sr_1_20?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-20#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹12,232 M.R.P: ₹14,999 M.R.P: ₹14,999"':
+      - /url: /Motorola-Viva-Magenta-128GB-Storage/dp/B0DDY9XDJS/ref=sr_1_20?dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&dib_tag=se&keywords=smartphones&qid=1745831794&sr=8-20
+    - text: (18% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - text: More Buying Choices ₹12,226
+    - link "(16 new offers)":
+      - /url: /gp/offer-listing/B0DDY9XDJS/ref=sr_1_20_olp?keywords=smartphones&dib_tag=se&dib=eyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY&qid=1745831794&sr=8-20
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDUyMzU1Njg2OTczMjo6MDo6&url=%2FXiaomi-Triple-Camera-CrystalRes-Dynamic%2Fdp%2FB0DY7JX8V2%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Xiaomi 15 (Black, 12GB/512GB)| 50 MP Leica Triple Camera | SD 8 Elite | 1.5K CrystalRes Dynamic 1-120 Hz AMOLED | Hyper AI":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDUyMzU1Njg2OTczMjo6MDo6&url=%2FXiaomi-Triple-Camera-CrystalRes-Dynamic%2Fdp%2FB0DY7JX8V2%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Xiaomi 15 (Black, 12GB/512GB)| 50 MP Leica Triple Camera | SD 8 Elite | 1.5K CrystalRes Dynamic 1-120 Hz AMOLED | Hyper AI" [level=2]: Xiaomi 15 (Black, 12GB/512GB)| 50 MP Leica Triple Camera | SD 8 Elite | 1.5K CrystalRes Dynamic 1-120 Hz AMOLED | Hyper AI
+    - text: 400+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹64,999 M.R.P: ₹79,999 M.R.P: ₹79,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDUyMzU1Njg2OTczMjo6MDo6&url=%2FXiaomi-Triple-Camera-CrystalRes-Dynamic%2Fdp%2FB0DY7JX8V2%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (19% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+2 other colors/patterns":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDUyMzU1Njg2OTczMjo6MDo6&url=%2FXiaomi-Triple-Camera-CrystalRes-Dynamic%2Fdp%2FB0DY7JX8V2%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDA1NzU5NDUzNzczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Apple iPhone 15 (128 GB) - Black":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDA1NzU5NDUzNzczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Apple iPhone 15 (128 GB) - Black" [level=2]: Apple iPhone 15 (128 GB) - Black
+    - button "4.5 out of 5 stars, rating details"
+    - link "3,427 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDA1NzU5NDUzNzczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹61,390 M.R.P: ₹79,900 M.R.P: ₹79,900"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDA1NzU5NDUzNzczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (23% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr Service: Installation"
+    - button "Add to cart"
+    - link "+4 other colors/patterns":
+      - /url: /sspa/click?ie=UTF8&spc=MTo0ODI1NjQwMTg0NDI2NTA0OjE3NDU4MzE3OTQ6c3BfYnRmOjMwMDA1NzU5NDUzNzczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.74RaObufa8w7J1x2GW0aCem2qg2g4tHyyh5CDcxLgLwJ-97bFGESe6FfvzXSnGADFueyLEVcPuP4aXt9xaCHSiAr8GJT0dQCyoFCJ7HyR2qwwCzSZeRFIgqlHzl6maAhml6-G_dk_6SpZuecw8PxBeV1Z8TvHbh0-25cfhD_H6y-TqlER7cefSPFHt-FpuKxMnkokX7b09hpFfub4lAp3yku0xH8mQJCHCutAXtrtHY.8jYZx-RLRmQw41hkinh6TvA6CU-Q2B_JuWYwChNTnUY%26dib_tag%3Dse%26keywords%3Dsmartphones%26qid%3D1745831794%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JPM4vjTwDobrxmhy_Jm6lk0AAAGWe68YigMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAuBFAw/https://www.amazon.in/dp/B0D8PMP5QS?pd_rd_i=B0D8PMP5QS&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_w=3hhAe&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JPM4vjTwDobrxmhy_Jm6lk0AAAGWe68YigMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAuBFAw/https://www.amazon.in/Shifu-ZeeZee-Smart-Storyteller-Unlimited/dp/B0D8PMP5QS/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0D8PMP5QS&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&pd_rd_w=3hhAe&pd_rd_wg=WDqQM&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: Sponsored
+- link "Shifu ZeeZee The Smart Storyteller - Singing & Talking Unicorn Friend Soft Toys for Kids Unlimited Content on The App Rhymes Stories Pretend Play Birthday Gifts for Boys and Girls Ages 3, 4, 5, 6":
+  - /url: https://aax-eu.amazon.in/x/c/JPM4vjTwDobrxmhy_Jm6lk0AAAGWe68YigMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAuBFAw/https://www.amazon.in/Shifu-ZeeZee-Smart-Storyteller-Unlimited/dp/B0D8PMP5QS/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0D8PMP5QS&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&pd_rd_w=3hhAe&pd_rd_wg=WDqQM&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+  - heading "Shifu ZeeZee The Smart Storyteller - Singing & Talking Unicorn Friend Soft Toys for Kids Unlimited Content on The App Rhymes Stories Pretend Play Birthday Gifts for Boys and Girls Ages 3, 4, 5, 6" [level=2]
+- button "4.6 out of 5 stars, rating details"
+- link "48 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JPM4vjTwDobrxmhy_Jm6lk0AAAGWe68YigMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAuBFAw/https://www.amazon.in/Shifu-ZeeZee-Smart-Storyteller-Unlimited/dp/B0D8PMP5QS/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0D8PMP5QS&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&pd_rd_w=3hhAe&pd_rd_wg=WDqQM&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+- text: 100+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹2,696 M.R.P: ₹2,999 M.R.P: ₹2,999"':
+  - /url: https://aax-eu.amazon.in/x/c/JPM4vjTwDobrxmhy_Jm6lk0AAAGWe68YigMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAuBFAw/https://www.amazon.in/Shifu-ZeeZee-Smart-Storyteller-Unlimited/dp/B0D8PMP5QS/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d%3Aamzn1.sym.3353ca56-2043-45f1-9c2e-99dccef31d9d&cv_ct_cx=smartphones&keywords=smartphones&pd_rd_i=B0D8PMP5QS&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&pd_rd_w=3hhAe&pd_rd_wg=WDqQM&pf_rd_p=3353ca56-2043-45f1-9c2e-99dccef31d9d&pf_rd_r=9HGQDGX09HF94MRY7ZDF&qid=1745831794&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: (10% off)
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 29 April FREE Delivery by Amazon
+- heading "Related searches" [level=2]
+- list:
+  - listitem:
+    - link "smartphones samsung":
+      - /url: /s?k=smartphones+samsung&ref=rsl_st_0_0&pd_rd_w=V1oUn&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&qid=1745831794
+  - listitem:
+    - link "smartphones unlocked":
+      - /url: /s?k=smartphones+unlocked&ref=rsl_st_0_0&pd_rd_w=V1oUn&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&qid=1745831794
+  - listitem:
+    - link "samsung smartphones":
+      - /url: /s?k=samsung+smartphones&ref=rsl_st_0_0&pd_rd_w=V1oUn&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&qid=1745831794
+  - listitem:
+    - link "smartphones android":
+      - /url: /s?k=smartphones+android&ref=rsl_st_0_0&pd_rd_w=V1oUn&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&qid=1745831794
+  - listitem:
+    - link "smartphones motorola":
+      - /url: /s?k=smartphones+motorola&ref=rsl_st_0_0&pd_rd_w=V1oUn&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&qid=1745831794
+  - listitem:
+    - link "smartphones iphone":
+      - /url: /s?k=smartphones+iphone&ref=rsl_st_0_0&pd_rd_w=V1oUn&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=WDqQM&pd_rd_r=ee50f8cc-42c6-4e42-816d-8bdc4a9cd62b&qid=1745831794
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JJ_T0EjiMFrlK4a_RUi1R_UAAAGWe68ZRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCq5LB1/https://www.amazon.in/stores/page/4F1CFFDA-292D-4D74-B9FA-53C8A5778F28/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A0516320283VELVNT8T6I&pd_rd_plhdr=t&aaxitk=a945c770ceff805a4b90ee62cb5ae580&hsa_cr_id=0&lp_asins=B0DGJ3THPR%2CB0DGHZWBYB%2CB0DGJGRDDS&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+  - img "Branded image from Apple India"
+- link "Apple India":
+  - /url: https://aax-eu.amazon.in/x/c/JJ_T0EjiMFrlK4a_RUi1R_UAAAGWe68ZRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCq5LB1/https://www.amazon.in/stores/page/4F1CFFDA-292D-4D74-B9FA-53C8A5778F28/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A0516320283VELVNT8T6I&pd_rd_plhdr=t&aaxitk=a945c770ceff805a4b90ee62cb5ae580&hsa_cr_id=0&lp_asins=B0DGJ3THPR%2CB0DGHZWBYB%2CB0DGJGRDDS&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+  - img "Apple India"
+- link "iPhone 16. Built for Apple Intelligence.":
+  - /url: https://aax-eu.amazon.in/x/c/JJ_T0EjiMFrlK4a_RUi1R_UAAAGWe68ZRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCq5LB1/https://www.amazon.in/stores/page/4F1CFFDA-292D-4D74-B9FA-53C8A5778F28/?_encoding=UTF8&store_ref=SB_A09113514VIFRZUBNVR7-A0516320283VELVNT8T6I&pd_rd_plhdr=t&aaxitk=a945c770ceff805a4b90ee62cb5ae580&hsa_cr_id=0&lp_asins=B0DGJ3THPR%2CB0DGHZWBYB%2CB0DGJGRDDS&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+- link "Branded image from Beetel":
+  - /url: https://aax-eu.amazon.in/x/c/JF_mwEXNBfc4vXSTcy2IsFMAAAGWe68ZRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJBf1_/https://www.amazon.in/stores/page/E6D39DB7-7C62-424E-8A1F-AF4CCE22EF45/?_encoding=UTF8&store_ref=SB_A0889963QDYU7ZQ5LY7I-A07977921KQNPY5GVIITW&pd_rd_plhdr=t&aaxitk=5e80c35df5dfebfe96e49598d668e11b&hsa_cr_id=0&lp_asins=B0CCJSB1V7%2CB09MQ7QZMN%2CB0C1VJFG78&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+  - img "Branded image from Beetel"
+- link "Beetel":
+  - /url: https://aax-eu.amazon.in/x/c/JF_mwEXNBfc4vXSTcy2IsFMAAAGWe68ZRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJBf1_/https://www.amazon.in/stores/page/E6D39DB7-7C62-424E-8A1F-AF4CCE22EF45/?_encoding=UTF8&store_ref=SB_A0889963QDYU7ZQ5LY7I-A07977921KQNPY5GVIITW&pd_rd_plhdr=t&aaxitk=5e80c35df5dfebfe96e49598d668e11b&hsa_cr_id=0&lp_asins=B0CCJSB1V7%2CB09MQ7QZMN%2CB0C1VJFG78&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+  - img "Beetel"
+- link "Your Voice, Your Vision, Your Security":
+  - /url: https://aax-eu.amazon.in/x/c/JF_mwEXNBfc4vXSTcy2IsFMAAAGWe68ZRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJBf1_/https://www.amazon.in/stores/page/E6D39DB7-7C62-424E-8A1F-AF4CCE22EF45/?_encoding=UTF8&store_ref=SB_A0889963QDYU7ZQ5LY7I-A07977921KQNPY5GVIITW&pd_rd_plhdr=t&aaxitk=5e80c35df5dfebfe96e49598d668e11b&hsa_cr_id=0&lp_asins=B0CCJSB1V7%2CB09MQ7QZMN%2CB0C1VJFG78&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+- link "Branded image from SOOPII":
+  - /url: https://aax-eu.amazon.in/x/c/JMxN21b_yC2jnu60Kl9DFsQAAAGWe68ZRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDtiPbS/https://www.amazon.in/stores/page/4596E32D-4B5B-45B6-9FAF-927F6FE08BC7/?_encoding=UTF8&store_ref=SB_A000014329S52EI1OQOZP-A05520793IG229EXY1VTT&pd_rd_plhdr=t&aaxitk=d1b91b624429124d6d27ad324dc8d0cb&hsa_cr_id=1305952140102&lp_asins=B0B6Q1KCH7%2CB09W9TB4YR%2CB09W9S7QTS&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+  - img "Branded image from SOOPII"
+- link "SOOPII":
+  - /url: https://aax-eu.amazon.in/x/c/JMxN21b_yC2jnu60Kl9DFsQAAAGWe68ZRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDtiPbS/https://www.amazon.in/stores/page/4596E32D-4B5B-45B6-9FAF-927F6FE08BC7/?_encoding=UTF8&store_ref=SB_A000014329S52EI1OQOZP-A05520793IG229EXY1VTT&pd_rd_plhdr=t&aaxitk=d1b91b624429124d6d27ad324dc8d0cb&hsa_cr_id=1305952140102&lp_asins=B0B6Q1KCH7%2CB09W9TB4YR%2CB09W9S7QTS&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+  - img "SOOPII"
+- link "Premium Mobile, iPads and Tablet Stands by Soopii":
+  - /url: https://aax-eu.amazon.in/x/c/JMxN21b_yC2jnu60Kl9DFsQAAAGWe68ZRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDtiPbS/https://www.amazon.in/stores/page/4596E32D-4B5B-45B6-9FAF-927F6FE08BC7/?_encoding=UTF8&store_ref=SB_A000014329S52EI1OQOZP-A05520793IG229EXY1VTT&pd_rd_plhdr=t&aaxitk=d1b91b624429124d6d27ad324dc8d0cb&hsa_cr_id=1305952140102&lp_asins=B0B6Q1KCH7%2CB09W9TB4YR%2CB09W9S7QTS&lp_query=smartphones&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=a9gli&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9HGQDGX09HF94MRY7ZDF&pd_rd_wg=tyxOT&pd_rd_r=2ad06f83-9a15-4046-8590-737bec20ad74
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It by Tomorrow to narrow results":
+        - /url: /s?k=smartphones&rh=p_90%3A6741118031&dc&qid=1745831794&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3ANygvfOZYzQMqVV%2FzWD3JzRgIRAkmwcRPsIvDl%2BAILG8
+        - checkbox
+        - text: Get It by Tomorrow
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=smartphones&rh=p_90%3A20912642031&dc&qid=1745831794&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3ABPmZ2HDI5VTwjONSTiBW23lZd%2B%2BXiUpJBiNiYsfJkPU
+        - checkbox
+        - text: Get It in 2 Days
+- group "RAM Size":
+  - heading "RAM Size" [level=2]
+  - list "RAM Size":
+    - listitem:
+      - link "Apply the filter Up to 1.9 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty_browse-bin%3A44897294031&dc&qid=1745831794&rnid=44897277031&ref=sr_nr_p_n_feature_thirty_browse-bin_1&ds=v1%3AzcwgQZvp%2Bec08lmNMAF%2F3HStbvYBA%2FAYUQaD8BmNXE0
+        - checkbox
+        - text: Up to 1.9 GB
+    - listitem:
+      - link "Apply the filter 2 to 3.9 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty_browse-bin%3A44897290031&dc&qid=1745831794&rnid=44897277031&ref=sr_nr_p_n_feature_thirty_browse-bin_2&ds=v1%3APMKwi6%2FJHXL5vLFxfTCKgZtLmC6qQ55iLCdo47P6D60
+        - checkbox
+        - text: 2 to 3.9 GB
+    - listitem:
+      - link "Apply the filter 4 to 5.9 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty_browse-bin%3A44897296031&dc&qid=1745831794&rnid=44897277031&ref=sr_nr_p_n_feature_thirty_browse-bin_3&ds=v1%3AeaVx7V5Kn0s%2Bol7J9R55HAftkhcDiyZboCcP0yYk4qc
+        - checkbox
+        - text: 4 to 5.9 GB
+    - listitem:
+      - link "Apply the filter 6 to 7.9 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty_browse-bin%3A44897287031&dc&qid=1745831794&rnid=44897277031&ref=sr_nr_p_n_feature_thirty_browse-bin_4&ds=v1%3AK8KYaxslzpPZoFPtVo6WKrbYEBvYV4eD9X05hTKFxuE
+        - checkbox
+        - text: 6 to 7.9 GB
+    - listitem:
+      - link "Apply the filter 8 to 9.9 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty_browse-bin%3A44897288031&dc&qid=1745831794&rnid=44897277031&ref=sr_nr_p_n_feature_thirty_browse-bin_5&ds=v1%3AoAJSQGCRc8fmme7LmuH4vlG4YPvuMG%2FhvQjVn6mOF1E
+        - checkbox
+        - text: 8 to 9.9 GB
+    - listitem:
+      - link "Apply the filter 10 GB & Above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty_browse-bin%3A44897292031&dc&qid=1745831794&rnid=44897277031&ref=sr_nr_p_n_feature_thirty_browse-bin_6&ds=v1%3APs0%2F8BQUqkW71yDS3RBPiEubhqTnmOAIrM2DMUajcn8
+        - checkbox
+        - text: 10 GB & Above
+- group:
+  - text: Price ₹37 ₹131,900+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "189"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=smartphones&rh=p_n_deal_type%3A26921226031&dc&qid=1745831794&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AxCAMrpVzCmU3I3d%2Bz0vVveTIoGeAgo%2BXdj5DoBQY8cc
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=smartphones&rh=p_n_deal_type%3A26921224031&dc&qid=1745831794&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3A2R0Nvbkw%2BgMPk1KV3XFWpQ9YD5%2BIzTe3zrHqsC81Zi8
+- group "Storage Capacity":
+  - heading "Storage Capacity" [level=2]
+  - list "Storage Capacity":
+    - listitem:
+      - link "Apply the filter Up to 3.9 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A44349049031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_1&ds=v1%3Ags0eysy4DAvLNLZjTL6xN6dgJ8fFwDT38xP2%2BETi3kI
+        - checkbox
+        - text: Up to 3.9 GB
+    - listitem:
+      - link "Apply the filter 4 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A44349050031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_2&ds=v1%3AiiPiEiN%2Bg1jf8QFGsokZlLjC1doe89BqKiveyuhbYVo
+        - checkbox
+        - text: 4 GB
+    - listitem:
+      - link "Apply the filter 8 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A44349047031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_3&ds=v1%3AopAzWp02gQG%2F2KB3YqFxLlXxwV%2BsQ%2FVZoOR%2F588iJWI
+        - checkbox
+        - text: 8 GB
+    - listitem:
+      - link "Apply the filter 32 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A81332992031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_4&ds=v1%3ALIJkNrD%2BQDZsUep8B12WDax0Orb0GW%2BGfKJRXrblRk8
+        - checkbox
+        - text: 32 GB
+    - listitem:
+      - link "Apply the filter 64 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A81332998031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_5&ds=v1%3AyR7Niv348djLDW57Ab8B2n1GI5ZUc9drAQxBTCDsadI
+        - checkbox
+        - text: 64 GB
+    - listitem:
+      - link "Apply the filter 128 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A81332994031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_6&ds=v1%3A%2FnDJUj7crxTYAlRTwDK1n%2FW807t1hniewNEIKJxBOPg
+        - checkbox
+        - text: 128 GB
+    - listitem:
+      - link "Apply the filter 256 GB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A81332996031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_7&ds=v1%3ArwXpTqoWr2uVp4LluzKrLmgD%2FoEmQtToHHsd6XogIH8
+        - checkbox
+        - text: 256 GB
+    - listitem:
+      - link "Apply the filter 512 GB & above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-nine_browse-bin%3A92070749031&dc&qid=1745831794&rnid=44349045031&ref=sr_nr_p_n_feature_twenty-nine_browse-bin_8&ds=v1%3A9NI89AZpAA09Tz8HVrN0j%2FdxFNgCEy%2BGHvaQ5tuv%2Bgg
+        - checkbox
+        - text: 512 GB & above
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter Samsung to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A46655&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AaxM1Snq4UwhmJ55%2Bcb5OT7haG1Rk8IlpgPZ78yiWpjA
+        - checkbox
+        - text: Samsung
+    - listitem:
+      - link "Apply the filter realme to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A568349&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3AS9Zxuz88xnsqLW1UlZt8PQOIrkZjyxxsdon8QQlHVh8
+        - checkbox
+        - text: realme
+    - listitem:
+      - link "Apply the filter iQOO to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A646111&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3A3SCzBSepRbzp9RMV7Lgu4d2mIxqtVu3NFkeYjnjeLhA
+        - checkbox
+        - text: iQOO
+    - listitem:
+      - link "Apply the filter Apple to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A110955&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_4&ds=v1%3AjzSsoN0wzMQrpMpff3Nadp7W7Mhzo3l4ju2J2%2BaKWCc
+        - checkbox
+        - text: Apple
+    - listitem:
+      - link "Apply the filter Redmi to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A339703&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_5&ds=v1%3ATQe3pJ%2Bkfd4ADgYpzXvQ%2FYxvVuKKp0TVPv%2BnEakSb78
+        - checkbox
+        - text: Redmi
+    - listitem:
+      - link "Apply the filter OnePlus to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A253649&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_6&ds=v1%3AnqJy4UVoVdBIEY6TBe0qI6J6HMN4TQ3VsKvw8e9bsng
+        - checkbox
+        - text: OnePlus
+    - listitem:
+      - link "Apply the filter Motorola to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_123%3A146762&dc&qid=1745831794&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3AzpLVoFezQ55APA7natt%2FAYdeNbiZN48z%2Bulv9%2FBC9cw
+        - checkbox
+        - text: Motorola
+    - listitem:
+      - button "See more, Brands": See more
+- group "Cellular Technology":
+  - heading "Cellular Technology" [level=2]
+  - list "Cellular Technology":
+    - listitem:
+      - link "Apply the filter 2G to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A33962380031&dc&qid=1745831794&rnid=33962288031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_1&ds=v1%3AB2PlhvZdLn51OqlXQ9j0pkKLuP%2FYsQZqgZjBuxlZzHo
+        - checkbox
+        - text: 2G
+    - listitem:
+      - link "Apply the filter 3G to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A33962381031&dc&qid=1745831794&rnid=33962288031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_2&ds=v1%3AvjCy6S7igWSONz2Q4b1OmyAAfabKcLLHKO%2FK931TRoE
+        - checkbox
+        - text: 3G
+    - listitem:
+      - link "Apply the filter 4G to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A33962379031&dc&qid=1745831794&rnid=33962288031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_3&ds=v1%3AnzqNg1unGcfOcQ7N%2BTCP0T8z6gzOKAU3xgsOeWwk8YQ
+        - checkbox
+        - text: 4G
+    - listitem:
+      - link "Apply the filter 5G to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A33962382031&dc&qid=1745831794&rnid=33962288031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_4&ds=v1%3A76OMQa4Pc6D1%2BgOp8hyoFa6xKYFxa0opdg7cdGo4ZDc
+        - checkbox
+        - text: 5G
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=smartphones&rh=p_72%3A1318476031&dc&qid=1745831794&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AYtY9BB%2FViD4DlNUHaOzZTQqLQVP3X1OluVeE6quVuN8
+        - text: 4 Stars & Up & Up
+- group "Battery Capacity":
+  - heading "Battery Capacity" [level=2]
+  - list "Battery Capacity":
+    - listitem:
+      - link "Apply the filter Up to 2,999 mAh to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-five_browse-bin%3A91805328031&dc&qid=1745831794&rnid=91805324031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_1&ds=v1%3A9SLlozeZMpH9DkXKwiFdZfQM10L0H9mwsP6xJfPOjRI
+        - checkbox
+        - text: Up to 2,999 mAh
+    - listitem:
+      - link "Apply the filter 3,000 to 3,999 mAh to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-five_browse-bin%3A91805327031&dc&qid=1745831794&rnid=91805324031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_2&ds=v1%3A4WcHB1HaZwVsIoePy2eGqiZDnRvh6MLqhoraU7OMAbQ
+        - checkbox
+        - text: 3,000 to 3,999 mAh
+    - listitem:
+      - link "Apply the filter 4,000 to 4,999 mAh to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-five_browse-bin%3A91805325031&dc&qid=1745831794&rnid=91805324031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_3&ds=v1%3AREYtJujA8MJjnaKGiLzSkUEr3zrG%2FZnhCPKkuJZ24io
+        - checkbox
+        - text: 4,000 to 4,999 mAh
+    - listitem:
+      - link "Apply the filter 5,000 to 5,999 mAh to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-five_browse-bin%3A91805326031&dc&qid=1745831794&rnid=91805324031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_4&ds=v1%3Aj8vb%2FKwtUvMmBxikLvTR8ECRbDHSvrFvw1MClkM27uM
+        - checkbox
+        - text: 5,000 to 5,999 mAh
+    - listitem:
+      - link "Apply the filter 6,000 mAh & Above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-five_browse-bin%3A92071917031&dc&qid=1745831794&rnid=91805324031&ref=sr_nr_p_n_feature_thirty-five_browse-bin_5&ds=v1%3AjuwFfMWhdjeGZeMtub40IhaWIiL3s7%2BJ5l1Lmavlckg
+        - checkbox
+        - text: 6,000 mAh & Above
+- group "Item Condition":
+  - heading "Item Condition" [level=2]
+  - list "Item Condition":
+    - listitem:
+      - link "New":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_condition-type%3A8609960031&dc&qid=1745831794&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3A0qQWvAzi02UkDmTHgRJwaMy1c5rhXzmxZxA6EBrcZv8
+    - listitem:
+      - link "Renewed":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_condition-type%3A13736826031&dc&qid=1745831794&rnid=8609959031&ref=sr_nr_p_n_condition-type_2&ds=v1%3AvehfFy8oDY4rtjy9m5nJJXRsdGF1eWiIgUmIvOtxr80
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1745831794&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3APMlRol%2BIONHb7xhMcsrRdGEHH5pZ%2FyaditA8ycH8iyQ
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1745831794&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3ALuOoQhw1grlFTsuoceN69%2FWEkNpZQNgMLV8VF8YjvZA
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1745831794&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3A%2FsZQlSq9ZzIBjYxeZwgveyWPPxgGa3%2FX37%2Bk5%2Bnz9lA
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1745831794&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3AGo49ociFsNJuVv3gA3J%2FGnMsbNfEtOEXnXvfIt6xLjk
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1745831794&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3AF45GW1PYXTkDN%2BwQK2QtAPudPxUijg0efai4PImLt%2Bo
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1745831794&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3AglG86GDvpNDeZnzrCQjqaG8WlJrsiS7BtfIMuizkHpA
+- group "Display Size":
+  - heading "Display Size" [level=2]
+  - list "Display Size":
+    - listitem:
+      - link "Apply the filter Up to 3.9 in to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A6631752031&dc&qid=1745831794&rnid=6631751031&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3AQ1Y5ImQcXpcSNoVVPjHe6bsABsJG2jUARNPktHRBxBo
+        - checkbox
+        - text: Up to 3.9 in
+    - listitem:
+      - link "Apply the filter 4.5 to 4.9 in to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A6631754031&dc&qid=1745831794&rnid=6631751031&ref=sr_nr_p_n_feature_six_browse-bin_2&ds=v1%3AniVvyJWk1m8Mj74ePaFajPnYuApqpvUfTiKL4IkZowU
+        - checkbox
+        - text: 4.5 to 4.9 in
+    - listitem:
+      - link "Apply the filter 5 to 5.4 in to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A6631755031&dc&qid=1745831794&rnid=6631751031&ref=sr_nr_p_n_feature_six_browse-bin_3&ds=v1%3Avxz5R%2BvyPFrN%2FqtL1Hxc39MjmEjZHKwaT9eNkMUq1cs
+        - checkbox
+        - text: 5 to 5.4 in
+    - listitem:
+      - link "Apply the filter 5.5 in & above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A6631756031&dc&qid=1745831794&rnid=6631751031&ref=sr_nr_p_n_feature_six_browse-bin_4&ds=v1%3AG6%2FGZS9jjUySAO0T7lkdlCHD63N02W4SQ1AoEQ3lEnk
+        - checkbox
+        - text: 5.5 in & above
+- group "Display Type":
+  - heading "Display Type" [level=2]
+  - list "Display Type":
+    - listitem:
+      - link "Apply the filter AMOLED to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-four_browse-bin%3A66009619031&dc&qid=1745831794&rnid=66009617031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_1&ds=v1%3ALeBEVnPptStq0QMiFop7Hvxdj8Tulj38PjGpfIDOpqE
+        - checkbox
+        - text: AMOLED
+    - listitem:
+      - link "Apply the filter LCD to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-four_browse-bin%3A66009618031&dc&qid=1745831794&rnid=66009617031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_2&ds=v1%3AqkqukM%2BrVyIm44kLeD9w2sv9fWoeff%2F7PJna8LDd2%2FI
+        - checkbox
+        - text: LCD
+    - listitem:
+      - link "Apply the filter OLED to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-four_browse-bin%3A66009620031&dc&qid=1745831794&rnid=66009617031&ref=sr_nr_p_n_feature_thirty-four_browse-bin_3&ds=v1%3AHVv1NYSkTDXDrLAkPXuUrfYwbyIB9XKqbh4o7dC9YRA
+        - checkbox
+        - text: OLED
+- group "Processor Speed":
+  - heading "Processor Speed" [level=2]
+  - list "Processor Speed":
+    - listitem:
+      - link "Apply the filter Less Than 0.99 GHz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A8561128031&dc&qid=1745831794&rnid=8561123031&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3AmUKFNDP3UuLMsAJUlhWWYwxrOO9vuCz9eg6sjgRZFqk
+        - checkbox
+        - text: Less Than 0.99 GHz
+    - listitem:
+      - link "Apply the filter 1 - 1.49 GHz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A8561124031&dc&qid=1745831794&rnid=8561123031&ref=sr_nr_p_n_feature_nine_browse-bin_2&ds=v1%3AhCY9%2FpMnlkeWc3ikWtCoVS9ujgFXbUw1DezBrj5haus
+        - checkbox
+        - text: 1 - 1.49 GHz
+    - listitem:
+      - link "Apply the filter 1.5 - 1.99 GHz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A8561125031&dc&qid=1745831794&rnid=8561123031&ref=sr_nr_p_n_feature_nine_browse-bin_3&ds=v1%3AmXhyhJ%2F9lHC52fJ4RGw7yJ7q5PthVBcjH3%2F4sOucoqQ
+        - checkbox
+        - text: 1.5 - 1.99 GHz
+    - listitem:
+      - link "Apply the filter 2 - 2.4 GHz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A8561126031&dc&qid=1745831794&rnid=8561123031&ref=sr_nr_p_n_feature_nine_browse-bin_4&ds=v1%3AyuuFL8CIw7UvvHm4W%2F4GoSxWa%2FVlPmTOmQKyHD%2B3zf4
+        - checkbox
+        - text: 2 - 2.4 GHz
+    - listitem:
+      - link "Apply the filter 2.5 GHz & Above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A8561127031&dc&qid=1745831794&rnid=8561123031&ref=sr_nr_p_n_feature_nine_browse-bin_5&ds=v1%3AYW1nPnuTaZ%2BrDviCoQmt0sVfVegusQwNtp7MvQ8T31E
+        - checkbox
+        - text: 2.5 GHz & Above
+- group "Operating System Version":
+  - heading "Operating System Version" [level=2]
+  - list "Operating System Version":
+    - listitem:
+      - link "Apply the filter Android 10.0 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A51258730031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_1&ds=v1%3A8wE1qRGcvsveFMt0mMQ2qVPXx10fiRBHyFkPclcqZoE
+        - checkbox
+        - text: Android 10.0
+    - listitem:
+      - link "Apply the filter Android 11.0 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A51258744031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_2&ds=v1%3AaGXjS9kBDkZcrh0BYLsWYiSLDBgcWSORsPWNaE7%2B2CU
+        - checkbox
+        - text: Android 11.0
+    - listitem:
+      - link "Apply the filter Android 12.0 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A51258733031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_3&ds=v1%3AFaIcQdpY9ch8o3j%2Feaq65Td25vGQZn%2B%2F8mlfvxdNkGE
+        - checkbox
+        - text: Android 12.0
+    - listitem:
+      - link "Apply the filter Android 13.0 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A51258698031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_4&ds=v1%3AmAoKzy5bwxiOP3zcBslly8MC7cTw0M%2Bkxer1lG0hbh4
+        - checkbox
+        - text: Android 13.0
+    - listitem:
+      - link "Apply the filter Android 9.0 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A51258767031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_5&ds=v1%3AtUlVK7NUsyQ8YgXxLJY%2FqDMw%2BBMHo2AAdKBLQ5ZAgG0
+        - checkbox
+        - text: Android 9.0
+    - listitem:
+      - link "Apply the filter Android 14 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A206818075031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_6&ds=v1%3AlLOJPG8xghziNzL1YSl9rlKCq6LZRAIOgVT6QeJnMuQ
+        - checkbox
+        - text: Android 14
+    - listitem:
+      - link "Apply the filter Android 5.0 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-one_browse-bin%3A51258657031&dc&qid=1745831794&rnid=51258619031&ref=sr_nr_p_n_feature_thirty-one_browse-bin_7&ds=v1%3ALuhoOsENA6yt6kHydrqXRmFIdYCUXGyhdnbj4EolfZM
+        - checkbox
+        - text: Android 5.0
+    - listitem:
+      - button "See more, Operating System Version": See more
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Smartphones & Basic Mobiles":
+        - /url: /s?k=smartphones&rh=n%3A1389432031&dc&qid=1745831794&rnid=3576079031&ref=sr_nr_n_1&ds=v1%3AzgngF1JJAHtX4B3AvVKGBbO8EE8NeDY0h8c3TZh6GDk
+    - listitem:
+      - link "Smartphones":
+        - /url: /s?k=smartphones&rh=n%3A1389432031%2Cn%3A1805560031&dc&qid=1745831794&rnid=3576079031&ref=sr_nr_n_2&ds=v1%3A9rzuShpP994h5F4tL6nEWAIPiLXx4%2FuDYgherDF0rQA
+- group "Mobile Phone Primary Camera Resolution":
+  - heading "Mobile Phone Primary Camera Resolution" [level=2]
+  - list "Mobile Phone Primary Camera Resolution":
+    - listitem:
+      - link "Apply the filter Up to 3.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329551031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3A5Cvef8MFbrLr%2Bsm%2F92fy39c9WpO4LImQBafR6Qp9VuA
+        - checkbox
+        - text: Up to 3.9 MP
+    - listitem:
+      - link "Apply the filter 4 - 7.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329552031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_2&ds=v1%3A11cVWYYNGuyZdO8WDiVZSy8ZTmQUZGZY%2FTIjNqXF6oQ
+        - checkbox
+        - text: 4 - 7.9 MP
+    - listitem:
+      - link "Apply the filter 8 - 11.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329553031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_3&ds=v1%3As4g2vCD1QEhlI4hlceNugr4BVtM%2BIecSFI1jB47Ct0o
+        - checkbox
+        - text: 8 - 11.9 MP
+    - listitem:
+      - link "Apply the filter 12 - 15.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329554031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_4&ds=v1%3Ag%2ByVqc3a4aT9R7p%2FjItJNghDQ0UwitBpQC2kZKAk5RU
+        - checkbox
+        - text: 12 - 15.9 MP
+    - listitem:
+      - link "Apply the filter 16 - 19.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329555031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_5&ds=v1%3AN1eC9hE%2BhtczbMDhbEebQ3fz056UU3fnIC%2Fuf0WRu5Y
+        - checkbox
+        - text: 16 - 19.9 MP
+    - listitem:
+      - link "Apply the filter 24 - 27.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329557031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_6&ds=v1%3AaYQYqBYZg%2BvUGNQyXuSyF9pO0vXQjEzeFM%2BwHbQhphc
+        - checkbox
+        - text: 24 - 27.9 MP
+    - listitem:
+      - link "Apply the filter 32 MP & Above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A21329559031&dc&qid=1745831794&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_7&ds=v1%3A6jrkk1lRFGxPtsHGWlJqk%2BAkTat0zPHD1%2Fg%2Bupr7b9w
+        - checkbox
+        - text: 32 MP & Above
+- group "Cell Phone Brands":
+  - heading "Cell Phone Brands" [level=2]
+  - list "Cell Phone Brands":
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_format_browse-bin%3A30678580031&dc&qid=1745831794&rnid=30678573031&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3AetDp2OyBywMKujx8v%2B6tC7FnxEwBrRFBTIzVnkGAt9Q
+        - checkbox
+        - text: Top Brands
+- group "Display Refresh Rate":
+  - heading "Display Refresh Rate" [level=2]
+  - list "Display Refresh Rate":
+    - listitem:
+      - link "Apply the filter Up to 88 Hz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-eight_browse-bin%3A56163446031&dc&qid=1745831794&rnid=56162597031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_1&ds=v1%3ANMdHy0g0VlJaMTc%2Ft2PZhRzf2654gMwGxHkEE0rsT9I
+        - checkbox
+        - text: Up to 88 Hz
+    - listitem:
+      - link "Apply the filter 89 to 104 Hz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-eight_browse-bin%3A56163444031&dc&qid=1745831794&rnid=56162597031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_2&ds=v1%3AV8ebEKyskh1Li5mQ9jBPXwwKqsPXgw4fP9f9hPeWXqw
+        - checkbox
+        - text: 89 to 104 Hz
+    - listitem:
+      - link "Apply the filter 105 to 120 Hz to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-eight_browse-bin%3A56163447031&dc&qid=1745831794&rnid=56162597031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_3&ds=v1%3ASp5qOcGIuxe02D4FAvVBcF3qUAF3k1vIKESkwjDpPfU
+        - checkbox
+        - text: 105 to 120 Hz
+    - listitem:
+      - link "Apply the filter 121 Hz & above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-eight_browse-bin%3A56163445031&dc&qid=1745831794&rnid=56162597031&ref=sr_nr_p_n_feature_twenty-eight_browse-bin_4&ds=v1%3AH1GQaWkZ5OOtcpWiSlTnVVa9ui07IyrKFfru8T32ZG0
+        - checkbox
+        - text: 121 Hz & above
+- group "Front Camera Resolution":
+  - heading "Front Camera Resolution" [level=2]
+  - list "Front Camera Resolution":
+    - listitem:
+      - link "Apply the filter Up to 6.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-two_browse-bin%3A61505203031&dc&qid=1745831794&rnid=61505195031&ref=sr_nr_p_n_feature_thirty-two_browse-bin_1&ds=v1%3AHVKOGWduVTgSmo1PhNHv8IMlbbnw2MIdDFFw%2BL%2BBU6I
+        - checkbox
+        - text: Up to 6.9 MP
+    - listitem:
+      - link "Apply the filter 7.0 to 9.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-two_browse-bin%3A61505201031&dc&qid=1745831794&rnid=61505195031&ref=sr_nr_p_n_feature_thirty-two_browse-bin_2&ds=v1%3AZDBjqSMJyEU9LN1pcUVGcWlhePSNjeJ1wDcCu7Q%2BUdY
+        - checkbox
+        - text: 7.0 to 9.9 MP
+    - listitem:
+      - link "Apply the filter 10.0 to 12.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-two_browse-bin%3A61505199031&dc&qid=1745831794&rnid=61505195031&ref=sr_nr_p_n_feature_thirty-two_browse-bin_3&ds=v1%3Abb2czr9T%2F6hxjvU7kQu3yRjLfpHkyEmPDjVqQXaoaP4
+        - checkbox
+        - text: 10.0 to 12.9 MP
+    - listitem:
+      - link "Apply the filter 13.0 MP & above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-two_browse-bin%3A61505197031&dc&qid=1745831794&rnid=61505195031&ref=sr_nr_p_n_feature_thirty-two_browse-bin_4&ds=v1%3A8oLpYsx2XymwWYtb9AufSEs2cFRrojo7m%2B4d0fodLu0
+        - checkbox
+        - text: 13.0 MP & above
+- group "Connectivity":
+  - heading "Connectivity" [level=2]
+  - list "Connectivity":
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A27363277031&dc&qid=1745831794&rnid=27363274031&ref=sr_nr_p_n_feature_twenty_browse-bin_1&ds=v1%3ANcIiFWmuulz8qcYeqbFV02fpt2zJnHmj8uf7%2FGREcxg
+        - checkbox
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter Infrared to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A27363275031&dc&qid=1745831794&rnid=27363274031&ref=sr_nr_p_n_feature_twenty_browse-bin_2&ds=v1%3AgyI8xSRV1s3WJKd5ghh2jL5ksoprDGwDmBUtbh4F4Cs
+        - checkbox
+        - text: Infrared
+    - listitem:
+      - link "Apply the filter NFC to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A27363279031&dc&qid=1745831794&rnid=27363274031&ref=sr_nr_p_n_feature_twenty_browse-bin_3&ds=v1%3AWRUjcsRdsQ5XlJRETPFLxxJePwAMHObLZhD6IFVoFOQ
+        - checkbox
+        - text: NFC
+    - listitem:
+      - link "Apply the filter USB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A27363276031&dc&qid=1745831794&rnid=27363274031&ref=sr_nr_p_n_feature_twenty_browse-bin_4&ds=v1%3AXr2vP%2FqlC8PCYVRrr1sRCOvHxQhSTNLaDLsJ7noNOuk
+        - checkbox
+        - text: USB
+    - listitem:
+      - link "Apply the filter Wi-Fi to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A27363278031&dc&qid=1745831794&rnid=27363274031&ref=sr_nr_p_n_feature_twenty_browse-bin_5&ds=v1%3AouyNniRcJqkXX%2BeWnoXA6xJTDNLMBqviBdCBwxDGSIU
+        - checkbox
+        - text: Wi-Fi
+- group "Features":
+  - heading "Features" [level=2]
+  - list "Features":
+    - listitem:
+      - link "Apply the filter Dual SIM to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1897963031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_1&ds=v1%3A%2FAZ5wf8Vz0qRLsKKkyqIAK8UFlDf3QkFHW%2BojCeNNlU
+        - checkbox
+        - text: Dual SIM
+    - listitem:
+      - link "Apply the filter E-Mail to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1484944031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_2&ds=v1%3AF08wRWmioiLkgwbP%2FxI5ANsNRbQg4jx%2ByrGesnM6TZ8
+        - checkbox
+        - text: E-Mail
+    - listitem:
+      - link "Apply the filter GPS to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1484945031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_3&ds=v1%3AEe%2FTAEhO5SU2gz7q7GtNTj9q%2FbwVQ5VNeSS6S4aBmJk
+        - checkbox
+        - text: GPS
+    - listitem:
+      - link "Apply the filter Internet to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1484946031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_4&ds=v1%3ACzxBj48GT8wYbIFd7cpCghFbgUETgPx3qXZsO8zw%2Fno
+        - checkbox
+        - text: Internet
+    - listitem:
+      - link "Apply the filter MP3 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1484947031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_5&ds=v1%3AKP1ggR0j5MzyQdLoe1TnKYTutElWrTTfE6uVaTcH1rw
+        - checkbox
+        - text: MP3
+    - listitem:
+      - link "Apply the filter Music Player to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1897966031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_6&ds=v1%3AmLwo5CjOBcIyIz2gnbibT3LJJgDQv8HaQvkTNjLWVjQ
+        - checkbox
+        - text: Music Player
+    - listitem:
+      - link "Apply the filter Primary Camera to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A1484942031&dc&qid=1745831794&rnid=1484941031&ref=sr_nr_p_n_feature_three_browse-bin_7&ds=v1%3AuZlTA9sZdYUojszSAoNLoD7PtZiumKFDgKThGooDKHU
+        - checkbox
+        - text: Primary Camera
+    - listitem:
+      - button "See more, Features": See more
+- group "SIM Card Slot Count":
+  - heading "SIM Card Slot Count" [level=2]
+  - list "SIM Card Slot Count":
+    - listitem:
+      - link "Apply the filter Single SIM to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A27179458031&dc&qid=1745831794&rnid=27179439031&ref=sr_nr_p_n_feature_fifteen_browse-bin_1&ds=v1%3A4txWbb513OguqSrYQsqd74R9Haezg5GmQcjsYSKxY2o
+        - checkbox
+        - text: Single SIM
+    - listitem:
+      - link "Apply the filter Dual SIM to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A27179459031&dc&qid=1745831794&rnid=27179439031&ref=sr_nr_p_n_feature_fifteen_browse-bin_2&ds=v1%3AschVa79qdKTjIuVvZJXwXVhXgk%2B%2FEPn8r%2FIMFokGDqM
+        - checkbox
+        - text: Dual SIM
+- group "Video Capture Resolution":
+  - heading "Video Capture Resolution" [level=2]
+  - list "Video Capture Resolution":
+    - listitem:
+      - link "Apply the filter 1080p to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A28430295031&dc&qid=1745831794&rnid=28430291031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_1&ds=v1%3AJzkiaPvu3bxLtcYclyW3xToWLwjm3RjCry%2BFRDswDQA
+        - checkbox
+        - text: 1080p
+    - listitem:
+      - link "Apply the filter 2K to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A100139568031&dc&qid=1745831794&rnid=28430291031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_2&ds=v1%3A6UGciFYQY87YbBXj13ZkhAvWMvVTbpaegMeYjB0deUI
+        - checkbox
+        - text: 2K
+    - listitem:
+      - link "Apply the filter 4k to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A28430294031&dc&qid=1745831794&rnid=28430291031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_3&ds=v1%3AAYfLKbE9TmMk436S25WiKN8ql63ffJMmTXNiNpZH6aU
+        - checkbox
+        - text: 4k
+    - listitem:
+      - link "Apply the filter 720p to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A28430293031&dc&qid=1745831794&rnid=28430291031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_4&ds=v1%3At0u%2F0cQfu0EyHYGeqmUwWJ5wDPFcyic06%2FMuj%2F65hGk
+        - checkbox
+        - text: 720p
+    - listitem:
+      - link "Apply the filter 8k to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A28430296031&dc&qid=1745831794&rnid=28430291031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_5&ds=v1%3A%2F31rcHFLxOizf1vaiOjaWHTcVOdWWJYiYCj6ElqYn6A
+        - checkbox
+        - text: 8k
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=smartphones&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1745831794&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AjLqQxGDVk5D0cEmbfjO%2BIQQow8pka%2BIutin2uLqEcuA
+        - checkbox
+        - text: Eligible for Pay On Delivery
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1745831794&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3AwvAwodkXO0j2BXvSrDgbWGSxvoqLTJMVjFhB7RBACR8
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1745831794&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3Ad1%2FGkb3omHiQSWfRCkWlCEAaQYyULsEaxBsrSCPmZ6M
+- group "Colour":
+  - heading "Colour" [level=2]
+  - list "Colour":
+    - listitem:
+      - link "Apply the filter Black to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15563995031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_1&ds=v1%3AOfiF9GQD4CpdLy7AAu6xphqj3gbmIj5jVq9yAFL5lKA
+    - listitem:
+      - link "Apply the filter Grey to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15563996031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_2&ds=v1%3A8EZs3fTiBJHfqb%2FFuHJHKrQ6QnFUVd%2FiDUZ%2FVfjsLCY
+    - listitem:
+      - link "Apply the filter White to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15563997031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_3&ds=v1%3AjOyZGVZ7ng0bPjJO2AaQ6zqpwGANIvR84RtsOR%2BLMd0
+    - listitem:
+      - link "Apply the filter Brown to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15563998031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_4&ds=v1%3ANj5codQ2Dw59htmTsemyLj4%2FYNmtWnYqWNWp4lAiHJ0
+    - listitem:
+      - link "Apply the filter Beige to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15563999031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_5&ds=v1%3AYWh0ob%2Fhn6J9fapAR2Is6hcQQOVM4Hgl0pSmxZiSSP4
+    - listitem:
+      - link "Apply the filter Red to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564000031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_6&ds=v1%3Ax6lacXq8Bnfpts6aT1FMzoVxDXJCoaGK7Crlrkw2Qqs
+    - listitem:
+      - link "Apply the filter Pink to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564001031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_7&ds=v1%3A5n4Xp%2BVYPkaIclE7XT092IkOnNGuzAyPilYn1dJwFJA
+    - listitem:
+      - link "Apply the filter Orange to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564002031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_8&ds=v1%3A5kU%2BCvPQX%2F%2FZspFEOOtPg8%2BKRedPUSzogEj724CL%2BPg
+    - listitem:
+      - link "Apply the filter Yellow to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564003031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_9&ds=v1%3AfnMMCp1KgigEXtHPS3Qxxj1exzS7rTQSiok3sqxArVo
+    - listitem:
+      - link "Apply the filter Green to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564005031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_10&ds=v1%3AKDOYv17oN5o0STp%2BDulR7ivFDxFKJu4Yt9vo%2FNXt5Jo
+    - listitem:
+      - link "Apply the filter Blue to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564007031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_11&ds=v1%3Ap6TjDcL%2FT7zQz2C5o0KZMwiuZyXhDdubG8XIw9uCWwY
+    - listitem:
+      - link "Apply the filter Purple to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564008031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_12&ds=v1%3AUzosddkfXr8K6IxC6mKbcvQ2x4R6ly%2F%2BljjVb2IdjDY
+    - listitem:
+      - link "Apply the filter Gold to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564009031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_13&ds=v1%3AzwBwuArT6VrbAUZ6Tugf4i5iIXAOy8jB0qr9IjuV%2Bqk
+    - listitem:
+      - link "Apply the filter Silver to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564010031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_14&ds=v1%3AyLwWxlwNfpWATiNWFQHlvfVq5FhggTjvQC5TDHpFgO8
+    - listitem:
+      - link "Apply the filter Multicoloured to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564011031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_15&ds=v1%3AFHVbHF1ub6R%2B84PKtlojE8g18YkWlKMB0NJxJa%2BZd%2F0
+    - listitem:
+      - link "Apply the filter Transparent to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A15564012031&dc&qid=1745831794&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_16&ds=v1%3AEIQFnAAtzAdMqeLmCTyNE5MV5uCtqMqpMWLH5zga9GY
+- group "Connector Type":
+  - heading "Connector Type" [level=2]
+  - list "Connector Type":
+    - listitem:
+      - link "Apply the filter 3.5mm Jack to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A27403492031&dc&qid=1745831794&rnid=27403487031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_1&ds=v1%3AYL7E82MBq1RV7wsXqXxf%2BPW2DMXFqGQACTY1zDtxxOM
+        - checkbox
+        - text: 3.5mm Jack
+    - listitem:
+      - link "Apply the filter Micro USB to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A27403488031&dc&qid=1745831794&rnid=27403487031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_2&ds=v1%3AD54ur4mMdo%2FkBsTSdY62MdPiDpfphsUVbL4UxyMPx5E
+        - checkbox
+        - text: Micro USB
+    - listitem:
+      - link "Apply the filter USB Type C to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A27403491031&dc&qid=1745831794&rnid=27403487031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_3&ds=v1%3AafIjrKD%2F8yiatcYd8lza1wbxiE8qjrjj7lBwkmRAPbw
+        - checkbox
+        - text: USB Type C
+- group "Battery Life":
+  - heading "Battery Life" [level=2]
+  - list "Battery Life":
+    - listitem:
+      - link "Apply the filter 7 to 12.9 h to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A42062131031&dc&qid=1745831794&rnid=42062008031&ref=sr_nr_p_n_feature_four_browse-bin_1&ds=v1%3A9bxxD9ex%2Fw%2FR2FNsHLEMljYdxjFOkgMPpZ%2B65Xd5Hdk
+        - checkbox
+        - text: 7 to 12.9 h
+    - listitem:
+      - link "Apply the filter 13 to 18.9 h to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A42062132031&dc&qid=1745831794&rnid=42062008031&ref=sr_nr_p_n_feature_four_browse-bin_2&ds=v1%3AHcKMBuojKjrAmvy6o8zMTZSa28Fudg2e5uMru3FgudI
+        - checkbox
+        - text: 13 to 18.9 h
+    - listitem:
+      - link "Apply the filter 19 h & above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A42062130031&dc&qid=1745831794&rnid=42062008031&ref=sr_nr_p_n_feature_four_browse-bin_3&ds=v1%3A2N3TF%2B53sAe1RUbzKTzdxv9dKXkOCoQCnXLEm5COHLg
+        - checkbox
+        - text: 19 h & above
+- group "Security Feature":
+  - heading "Security Feature" [level=2]
+  - list "Security Feature":
+    - listitem:
+      - link "Apply the filter Face Recognition to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A27355807031&dc&qid=1745831794&rnid=27355796031&ref=sr_nr_p_n_feature_eighteen_browse-bin_1&ds=v1%3Aqw2pWUXXm%2BJqR821y8jAnau97pahLq2n6pglQAj8yyI
+        - checkbox
+        - text: Face Recognition
+    - listitem:
+      - link "Apply the filter Fingerprint Recognition to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A27355812031&dc&qid=1745831794&rnid=27355796031&ref=sr_nr_p_n_feature_eighteen_browse-bin_2&ds=v1%3ArkBzhhCuUi3mZalTpe7FlbPpMjX5JtDXZaQx1OiN%2BEs
+        - checkbox
+        - text: Fingerprint Recognition
+    - listitem:
+      - link "Apply the filter Voice Recognition to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A27355810031&dc&qid=1745831794&rnid=27355796031&ref=sr_nr_p_n_feature_eighteen_browse-bin_3&ds=v1%3ANgYF1opdauzH0cFtqZmaZbCpFUp%2B2Tf%2B0b6Jccbgq7o
+        - checkbox
+        - text: Voice Recognition
+- group "Display Resolution":
+  - heading "Display Resolution" [level=2]
+  - list "Display Resolution":
+    - listitem:
+      - link "Apply the filter 1080 x 1920 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A27345182031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_1&ds=v1%3ABNW%2B%2F9fhcpYnR%2FoM7k%2B7cgzey9FrvvEOoRXqLgoAfZo
+        - checkbox
+        - text: 1080 x 1920
+    - listitem:
+      - link "Apply the filter 1080 x 2340 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A27345227031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_2&ds=v1%3AV53cJAl5dC29IenEeANEr7cvi7Z%2FPvSGPmGqWuKu1v4
+        - checkbox
+        - text: 1080 x 2340
+    - listitem:
+      - link "Apply the filter 1080 x 2400 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A27345186031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_3&ds=v1%3AG6E0f2MGV%2FhhuhyZyiF3Qw2gAmmW89yzr3YUd1tLpTM
+        - checkbox
+        - text: 1080 x 2400
+    - listitem:
+      - link "Apply the filter 1280 x 720 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A27345189031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_4&ds=v1%3ABkLHYy2pKRmE0mzU78vQBhcWLmJhsbjr8qTYMbzTsIU
+        - checkbox
+        - text: 1280 x 720
+    - listitem:
+      - link "Apply the filter 1440 x 2880 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A27345184031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_5&ds=v1%3Apjpt5b31J%2BlU4U9wxA8cyp4E20N5AoBq7JkGdcO9Y%2Fg
+        - checkbox
+        - text: 1440 x 2880
+    - listitem:
+      - link "Apply the filter 1600 x 720 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A56611003031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_6&ds=v1%3AMDUUWAqVGCxLckYK3R1aa1H1DVkKtpeG8RB39UepS2k
+        - checkbox
+        - text: 1600 x 720
+    - listitem:
+      - link "Apply the filter 1920 x 1080 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A27345207031&dc&qid=1745831794&rnid=27345181031&ref=sr_nr_p_n_feature_seventeen_browse-bin_7&ds=v1%3A6kYYZ%2FHoa3yT7eRNvICk2x%2Bq0qX257bT8HJ3eqEVBfk
+        - checkbox
+        - text: 1920 x 1080
+    - listitem:
+      - button "See more, Display Resolution": See more
+- group "Rear Camera Photo Sensor Resolution":
+  - heading "Rear Camera Photo Sensor Resolution" [level=2]
+  - list "Rear Camera Photo Sensor Resolution":
+    - listitem:
+      - link "Apply the filter Up to 9.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A42253779031&dc&qid=1745831794&rnid=42253749031&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3AkQ9Ei25uqZJYWdJDN5RjIxu0RdcK7ys%2Bfte2PUS89mI
+        - checkbox
+        - text: Up to 9.9 MP
+    - listitem:
+      - link "Apply the filter 10 to 12.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A42253777031&dc&qid=1745831794&rnid=42253749031&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3AdlfzCPSDFoP7T0GAyQ2pYMwnfa2ToNBAvQ4XJJt9bmQ
+        - checkbox
+        - text: 10 to 12.9 MP
+    - listitem:
+      - link "Apply the filter 13 to 15.9 MP to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A42253776031&dc&qid=1745831794&rnid=42253749031&ref=sr_nr_p_n_feature_five_browse-bin_3&ds=v1%3As1efe1TF%2F04kcGLxNliybGgF%2BiXqgnAQAHRIL6ir1Qw
+        - checkbox
+        - text: 13 to 15.9 MP
+    - listitem:
+      - link "Apply the filter 16 MP & Above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A42253778031&dc&qid=1745831794&rnid=42253749031&ref=sr_nr_p_n_feature_five_browse-bin_4&ds=v1%3AbqS03fLNElQIrA6LCbfqVLLdA2aVP8os7e8kAvZ4YFM
+        - checkbox
+        - text: 16 MP & Above
+- group "Input":
+  - heading "Input" [level=2]
+  - list "Input":
+    - listitem:
+      - link "Apply the filter Buttons to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362063031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_1&ds=v1%3Ar5AN4J5NO4hmj7qJnkW5zakvX2REAEGh2huIpxR1pRw
+        - checkbox
+        - text: Buttons
+    - listitem:
+      - link "Apply the filter Dial to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362072031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_2&ds=v1%3AzTlPqybDuG24I03Cp7QtZrvsMKxcWS44Jth6vn9mTHM
+        - checkbox
+        - text: Dial
+    - listitem:
+      - link "Apply the filter OCR to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362071031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_3&ds=v1%3AD4lqF0YoIdYW5ZpDiRLTDzgmQWg4lSNXQivyI%2B4uhYk
+        - checkbox
+        - text: OCR
+    - listitem:
+      - link "Apply the filter Keyboard to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362069031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_4&ds=v1%3A4xLwA4PCRZ0haTiKqvKmCwFGk4vgo14EV%2BtRaT9CpPE
+        - checkbox
+        - text: Keyboard
+    - listitem:
+      - link "Apply the filter Keypad to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362068031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_5&ds=v1%3AA%2FKP1KRBFAE4kVIRe11Z7gqDw349UP0cHQOZMIrpMvY
+        - checkbox
+        - text: Keypad
+    - listitem:
+      - link "Apply the filter Microphone to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362066031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_6&ds=v1%3At3P5BP9mjNCKl05aTFHeWRy%2FBRpL5eA3gmvXfq%2BCwIc
+        - checkbox
+        - text: Microphone
+    - listitem:
+      - link "Apply the filter Touchscreen to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A27362061031&dc&qid=1745831794&rnid=27362059031&ref=sr_nr_p_n_feature_nineteen_browse-bin_7&ds=v1%3A94K8uzdPQ69Pjdkj43tYSM6hPpplnSGOHk9oqwIS1nY
+        - checkbox
+        - text: Touchscreen
+    - listitem:
+      - button "See more, Input": See more
+- group "Aspect Ratio":
+  - heading "Aspect Ratio" [level=2]
+  - list "Aspect Ratio":
+    - listitem:
+      - link "Apply the filter 16:9 to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A204879948031&dc&qid=1745831794&rnid=204879945031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3AkeQniS1ZHfXaw3WF%2FRayRRN5M6j7g5hkjIBFEKjSfMs
+        - checkbox
+        - text: 16:9
+- group "Headphones Jack":
+  - heading "Headphones Jack" [level=2]
+  - list "Headphones Jack":
+    - listitem:
+      - link "Apply the filter 3.5 mm to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_forty_browse-bin%3A100427563031&dc&qid=1745831794&rnid=100427546031&ref=sr_nr_p_n_feature_forty_browse-bin_1&ds=v1%3AG1VIfrLYqgBdstEiEh5is3%2BylBE2Jr6cRXwjlOHQxF4
+        - checkbox
+        - text: 3.5 mm
+- group "GPS Navigation":
+  - heading "GPS Navigation" [level=2]
+  - list "GPS Navigation":
+    - listitem:
+      - link "Apply the filter False to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-six_browse-bin%3A96329644031&dc&qid=1745831794&rnid=96329629031&ref=sr_nr_p_n_feature_thirty-six_browse-bin_1&ds=v1%3Aym5ozG40SNhsm%2BO%2FvbnGwGaR9URLDXjT6J5qm6Ql1xo
+        - checkbox
+        - text: "False"
+    - listitem:
+      - link "Apply the filter True to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-six_browse-bin%3A96329643031&dc&qid=1745831794&rnid=96329629031&ref=sr_nr_p_n_feature_thirty-six_browse-bin_2&ds=v1%3AE5G05Sp3kJnu3OU%2Bs5HceKvQIMV2%2F2YXPC%2BjtlpeneE
+        - checkbox
+        - text: "True"
+- group "Flash":
+  - heading "Flash" [level=2]
+  - list "Flash":
+    - listitem:
+      - link "Apply the filter LED to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-nine_browse-bin%3A100427321031&dc&qid=1745831794&rnid=100427311031&ref=sr_nr_p_n_feature_thirty-nine_browse-bin_1&ds=v1%3A4MYxGHH6h6heqAUNl7syGkEkCzHRmiDhlIjyE3Rf3ZI
+        - checkbox
+        - text: LED
+- group "Supported Satellite Navigation System":
+  - heading "Supported Satellite Navigation System" [level=2]
+  - list "Supported Satellite Navigation System":
+    - listitem:
+      - link "Apply the filter BeiDou to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100424900031&dc&qid=1745831794&rnid=100424895031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_1&ds=v1%3AdUjE8YP0gZqcPNkMzxcUMQCPW695s1HfFk%2BFDeoPwSg
+        - checkbox
+        - text: BeiDou
+    - listitem:
+      - link "Apply the filter Galileo to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100424904031&dc&qid=1745831794&rnid=100424895031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_2&ds=v1%3AZr5bGlP9xhzNDBZffz5o8OwzlhiVmUFc9AaFZmMSPXs
+        - checkbox
+        - text: Galileo
+    - listitem:
+      - link "Apply the filter GLONASS to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100424903031&dc&qid=1745831794&rnid=100424895031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_3&ds=v1%3A6ChCNIg7XLd8NvpaMNLL7QseNwCVaML40C7uRmbMBoU
+        - checkbox
+        - text: GLONASS
+    - listitem:
+      - link "Apply the filter GPS to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100424905031&dc&qid=1745831794&rnid=100424895031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_4&ds=v1%3A8YRIKUU19b94NbZGKxJjOSYBdqWvshbgdVnyhzvrr0c
+        - checkbox
+        - text: GPS
+- group "Battery Type":
+  - heading "Battery Type" [level=2]
+  - list "Battery Type":
+    - listitem:
+      - link "Apply the filter Lithium-Ion to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-eight_browse-bin%3A100427319031&dc&qid=1745831794&rnid=100427310031&ref=sr_nr_p_n_feature_thirty-eight_browse-bin_1&ds=v1%3AaH37xV7COq5yu%2Fy6WhC1H%2FgnS4vvhJ2zb1ULTBzuZXo
+        - checkbox
+        - text: Lithium-Ion
+    - listitem:
+      - link "Apply the filter Lithium-Polymer to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-eight_browse-bin%3A100427316031&dc&qid=1745831794&rnid=100427310031&ref=sr_nr_p_n_feature_thirty-eight_browse-bin_2&ds=v1%3A8p8MwKMLcQMfd%2BnV41GX4PdEKOz8jWG%2Bp%2F6MGWF7%2Bes
+        - checkbox
+        - text: Lithium-Polymer
+- group "Camera Modes":
+  - heading "Camera Modes" [level=2]
+  - list "Camera Modes":
+    - listitem:
+      - link "Apply the filter Aperture Priority to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316763031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_1&ds=v1%3ArDBoexDRLjfBgfd5OMVT57iaySiyuqzdEwLWUkrFcNQ
+        - checkbox
+        - text: Aperture Priority
+    - listitem:
+      - link "Apply the filter Automatic to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316764031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_2&ds=v1%3AlUV0gCL6vjo1lmj9nhB4shYewSrKE48MjSS1aR8RqZw
+        - checkbox
+        - text: Automatic
+    - listitem:
+      - link "Apply the filter Custom to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316768031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_3&ds=v1%3AfR%2BI0k9D%2BdhZSzbz1Ubzj0CR%2Buk2a%2BXPlTp3KuIAS4M
+        - checkbox
+        - text: Custom
+    - listitem:
+      - link "Apply the filter High Dynamic Range to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316767031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_4&ds=v1%3AH8TRKpCFt6N0YaY9mLNO7%2FxUbOn1p8B5yLtRdUD%2BPH4
+        - checkbox
+        - text: High Dynamic Range
+    - listitem:
+      - link "Apply the filter Macro to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316769031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_5&ds=v1%3AtOovMpHhW7pebtmjF07DdqXGU0TyuJPMn%2FjzcJemC0M
+        - checkbox
+        - text: Macro
+    - listitem:
+      - link "Apply the filter Night Mode to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316771031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_6&ds=v1%3AzprawuJ5xJzIHnNnNB0lljFx%2FX55zFEm1cq712%2BV%2Fms
+        - checkbox
+        - text: Night Mode
+    - listitem:
+      - link "Apply the filter Portrait to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27316773031&dc&qid=1745831794&rnid=27316761031&ref=sr_nr_p_n_feature_sixteen_browse-bin_7&ds=v1%3AsX3xqjGP0c2X%2FXlEWWywYt3O8CGOQR52D8%2BQ20pMap4
+        - checkbox
+        - text: Portrait
+    - listitem:
+      - button "See more, Camera Modes": See more
+- group "SIM Card Size":
+  - heading "SIM Card Size" [level=2]
+  - list "SIM Card Size":
+    - listitem:
+      - link "Apply the filter Micro to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A27179454031&dc&qid=1745831794&rnid=27179438031&ref=sr_nr_p_n_feature_twelve_browse-bin_1&ds=v1%3ArD3r%2FotWtF8e637tTC%2BI6CUPKL1UVQ3mwf%2F9IaZHT0E
+        - checkbox
+        - text: Micro
+    - listitem:
+      - link "Apply the filter Nano to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A27179455031&dc&qid=1745831794&rnid=27179438031&ref=sr_nr_p_n_feature_twelve_browse-bin_2&ds=v1%3A7X7NN5owpM9pFwA2iwMebKxIrC4u3w4Q3cvXr20l%2BSE
+        - checkbox
+        - text: Nano
+    - listitem:
+      - link "Apply the filter Standard to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A27179457031&dc&qid=1745831794&rnid=27179438031&ref=sr_nr_p_n_feature_twelve_browse-bin_3&ds=v1%3AvHTWCFDPI1LT8UnM8PcwOvbi9%2BSLbqCqpe2OTfrcOy0
+        - checkbox
+        - text: Standard
+- group "Inclusions":
+  - heading "Inclusions" [level=2]
+  - list "Inclusions":
+    - listitem:
+      - link "Apply the filter Phone Case to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008623031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_1&ds=v1%3AYs3mpFNvmlwrZLQWe3FHZU%2BjekoQ4w5q2ypoKb4RWUM
+        - checkbox
+        - text: Phone Case
+    - listitem:
+      - link "Apply the filter Power Adapter to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008624031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_2&ds=v1%3AOk4E3r7ls375l1yZNJJsFGU%2FQwTQAAFRjsXS93TtWPs
+        - checkbox
+        - text: Power Adapter
+    - listitem:
+      - link "Apply the filter SIM Tray Ejector to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008617031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_3&ds=v1%3Ah2d6Gqq%2FIEDwOfolTTCYWLWDEKkEnH7n4sB6eN%2F0ugg
+        - checkbox
+        - text: SIM Tray Ejector
+    - listitem:
+      - link "Apply the filter USB Cable to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008618031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_4&ds=v1%3Ax6EpdglsWTFEp54l4J1C8xmsDN1g8NTdAbdG4t7LKAA
+        - checkbox
+        - text: USB Cable
+    - listitem:
+      - link "Apply the filter Audio Adapter to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008625031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_5&ds=v1%3ANb6To%2Fn%2FZH9No%2FwGA7BG1azfEtVOzdaVNasWnKVlBdI
+        - checkbox
+        - text: Audio Adapter
+    - listitem:
+      - link "Apply the filter Headset to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008621031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_6&ds=v1%3AslmGt6E5yEYCXNYufJG%2BLVUM0TBwmbyvd2x13OYcGNA
+        - checkbox
+        - text: Headset
+    - listitem:
+      - link "Apply the filter Screen Protector to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_thirty-three_browse-bin%3A66008622031&dc&qid=1745831794&rnid=66008593031&ref=sr_nr_p_n_feature_thirty-three_browse-bin_7&ds=v1%3AkzQw15sjLNQtzMbg7IRPHCRiBKQPsXBfOGPommaoFQg
+        - checkbox
+        - text: Screen Protector
+- group "Wireless Network Technology":
+  - heading "Wireless Network Technology" [level=2]
+  - list "Wireless Network Technology":
+    - listitem:
+      - link "Apply the filter CDMA to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_forty-three_browse-bin%3A100436160031&dc&qid=1745831794&rnid=100436133031&ref=sr_nr_p_n_feature_forty-three_browse-bin_1&ds=v1%3AgH73ZmOIwmsv7M5pyS9ubxK6MLKrovdbVjygQkIDtko
+        - checkbox
+        - text: CDMA
+    - listitem:
+      - link "Apply the filter GSM to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_forty-three_browse-bin%3A100436155031&dc&qid=1745831794&rnid=100436133031&ref=sr_nr_p_n_feature_forty-three_browse-bin_2&ds=v1%3AwvepC5i0mt5ovgTYGbF%2BUs1MDwTXH4qbd5u5lYJgiy4
+        - checkbox
+        - text: GSM
+    - listitem:
+      - link "Apply the filter LTE to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_forty-three_browse-bin%3A100436153031&dc&qid=1745831794&rnid=100436133031&ref=sr_nr_p_n_feature_forty-three_browse-bin_3&ds=v1%3A4USLp%2BjGe5DrJewzLAUCSGgZ7%2Fshf5l%2Bbky%2BYPybgLI
+        - checkbox
+        - text: LTE
+    - listitem:
+      - link "Apply the filter Wi-Fi to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_forty-three_browse-bin%3A100436151031&dc&qid=1745831794&rnid=100436133031&ref=sr_nr_p_n_feature_forty-three_browse-bin_4&ds=v1%3AwtzKj64KG49mBO%2FNCndgejFM0UgMDMITgZ8xcqwSLDY
+        - checkbox
+        - text: Wi-Fi
+- group "Weight":
+  - heading "Weight" [level=2]
+  - list "Weight":
+    - listitem:
+      - link "Apply the filter Up to 141.9 g to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-seven_browse-bin%3A42659590031&dc&qid=1745831794&rnid=42659587031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_1&ds=v1%3AH3TPiW0LVbLmDsYYuAXpJM5YIZ9NZCifp9AEXhLomeg
+        - checkbox
+        - text: Up to 141.9 g
+    - listitem:
+      - link "Apply the filter 142 to 197.9 g to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-seven_browse-bin%3A42659588031&dc&qid=1745831794&rnid=42659587031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_2&ds=v1%3ALloK2Uuos0seEn7JBBgJbwleA1Bw9%2FPpot1utdZXHBg
+        - checkbox
+        - text: 142 to 197.9 g
+    - listitem:
+      - link "Apply the filter 198 to 254.9 g to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-seven_browse-bin%3A42659589031&dc&qid=1745831794&rnid=42659587031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_3&ds=v1%3Amc7jfLd2ox2f9FsYx9ldJ25DrwLcChOo9pCS31CzHW8
+        - checkbox
+        - text: 198 to 254.9 g
+    - listitem:
+      - link "Apply the filter 255 g & Above to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_n_feature_twenty-seven_browse-bin%3A42659591031&dc&qid=1745831794&rnid=42659587031&ref=sr_nr_p_n_feature_twenty-seven_browse-bin_4&ds=v1%3ATNLh4pz7BhwLWP%2FB%2BWnj%2FTDyt%2FszctGjvM5jrzszXTg
+        - checkbox
+        - text: 255 g & Above
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter Cocoblu Retail to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_6%3AA1WYWER0W24N8S&dc&qid=1745831794&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3ARt6JJoIilg9jgRb6UKI6hI8vfI6hVZbeomGOzdb0dlI
+        - checkbox
+        - text: Cocoblu Retail
+    - listitem:
+      - link "Apply the filter Clicktech Retail Private Ltd to narrow results":
+        - /url: /s?k=smartphones&rh=n%3A976419031%2Cp_6%3AAJ6SIZC8YQDZX&dc&qid=1745831794&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AqIYLm3ySkIw8sAwfiCkEzybXYROjQ%2FEy5p4i8WblKXA
+        - checkbox
+        - text: Clicktech Retail Private Ltd
+    - listitem:
+      - button "See more, Seller": See more
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=smartphones&rh=p_n_availability%3A1318485031&dc&qid=1745831794&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3ASSNkgTaRFScUarw15AfXL2HHygzqeTiJejvVb4xQ8co
+        - checkbox
+        - text: Include Out of Stock
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dsmartphones%26ref%3Dnb_sb_noss&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | // tests/sortLowToHigh.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Sort search results from Low to High', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('https://www.amazon.in');
+   7 |
+   8 |   console.log('✅ Searching for "smartphones"...');
+   9 |   await page.fill('#twotabsearchtextbox', 'smartphones');
+  10 |   await page.press('#twotabsearchtextbox', 'Enter');
+  11 |
+  12 |   console.log('✅ Opening sort dropdown...');
+  13 |   await page.locator('span.a-dropdown-label').click();
+  14 |
+  15 |   console.log('✅ Selecting "Price: Low to High"...');
+> 16 |   await page.getByRole('option', { name: 'Price: Low to High' }).click();
+     |                                                                  ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  17 |
+  18 |   console.log('✅ Waiting for sorted results...');
+  19 |   await page.waitForLoadState('networkidle');
+  20 |
+  21 |   console.log('🎯 Results sorted successfully!');
+  22 | });
+  23 |
+```

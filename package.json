@@ -1,0 +1,23 @@
+{
+  "name": "amazon-playwright-project",
+  "version": "1.0.0",
+  "description": "Professional Playwright Automation Project for Amazon.in ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test-headed": "npx playwright test --headed",
+    "test-chrome": "npx playwright test --project=chromium",
+    "test-firefox": "npx playwright test --project=firefox",
+    "test-webkit": "npx playwright test --project=webkit"
+  },
+  "author": "Ashokkumar",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-commandline": "^2.34.0",
+    "allure-playwright": "^3.2.1"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

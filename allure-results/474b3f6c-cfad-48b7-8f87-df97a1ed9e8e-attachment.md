@@ -1,0 +1,1137 @@
+# Test info
+
+- Name: Search for bags, filter for Men's Bags, and verify results
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/navigateToMobileSection.spec.js:3:5
+
+# Error details
+
+```
+Error: page.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for locator('span#nav-hamburger-menu')
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/navigateToMobileSection.spec.js:27:14
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "About this item":
+        - /url: "#productFactsDesktopExpander"
+    - listitem:
+      - link "Skip to buying options":
+        - /url: "#buybox"
+        - text: Buying options
+    - listitem:
+      - link "Reviews":
+        - /url: "#customerReviews"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Add to cart, shift, alt, K"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: Clothing & Accessories
+      - combobox "Select the department you want to search in":
+        - option "All Categories"
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories" [selected]
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB08912T17F%2F%3F_encoding%3DUTF8%26pd_rd_plhdr%3Dt%26aaxitk%3Dd0f1e439c4b9f1cc49c96a61692dc9fa%26hsa_cr_id%3D0%26qid%3D1746961293%26sr%3D1-1-e0fa1fdd-d857-4087-adda-5bd576b25987%26ref_%3Dnav_ya_signin%26pd_rd_w%3DWAT9W%26content-id%3Damzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%253Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%26pf_rd_p%3D5e94cbee-68a7-46b5-b2e9-bb5445edd00f%26pf_rd_r%3D9WMFGG2JQFKVFSEK883K%26pd_rd_wg%3DuvmQs%26pd_rd_r%3D10c814f5-f088-4aaa-b857-c24b2107827d&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+    - link "Amazon Fashion":
+      - /url: /b/?ie=UTF8&node=6648217031&ref_=topnav_storetab_top_ap_mega
+      - img "Amazon Fashion"
+    - link "Women, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=7459780031&ref_=sv_top_ap_mega_1
+      - text: Women
+    - link "Men, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=7459781031&ref_=sv_top_ap_mega_2
+      - text: Men
+    - link "Kids, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=9361420031&ref_=sv_top_ap_mega_3
+      - text: Kids
+    - link "Bags & Luggage, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=2454169031&ref_=sv_top_ap_mega_4
+      - text: Bags & Luggage
+    - link "Sportswear, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=12302882031&ref_=sv_top_ap_mega_5
+      - text: Sportswear
+    - link "Sales & Deals, You are currently on a drop-down. To open this drop-down, Press Enter.":
+      - /url: /b/?_encoding=UTF8&node=4188827031&ref_=sv_top_ap_mega_6
+      - text: Sales & Deals
+    - dialog
+- main:
+  - iframe
+  - button "Leave feedback on Sponsored advertisement"
+  - list:
+    - listitem:
+      - link "Bags, Wallets and Luggage":
+        - /url: /Luggage-Bags/b/ref=dp_bc_1?ie=UTF8&node=2454169031
+    - listitem: ›
+    - listitem:
+      - link "Bags & Backpacks":
+        - /url: /Bags-Briefcases/b/ref=dp_bc_2?ie=UTF8&node=2917431031
+    - listitem: ›
+    - listitem:
+      - link "Backpacks":
+        - /url: /Backpacks/b/ref=dp_bc_3?ie=UTF8&node=2917430031
+    - listitem: ›
+    - listitem:
+      - link "Casual Backpacks":
+        - /url: /Casual-Backpacks/b/ref=dp_bc_4?ie=UTF8&node=2917436031
+  - button "Share":
+    - button "Share"
+  - list
+  - link "Visit the Genie Store":
+    - /url: /stores/Genie/page/6336999E-B94E-488D-9773-D3084047FE3B?is_byline_deeplink=true&deeplink=828D3082-34B3-4C66-AC00-E6CCB9649930&redirect_store_id=6336999E-B94E-488D-9773-D3084047FE3B&lp_asin=B09ZLHF94J&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto
+  - heading "Genie Sunshine 19 ash Green Latest Collection" [level=1]
+  - button "4.3 out of 5 stars"
+  - link "497 Reviews":
+    - /url: "#averageCustomerReviewsAnchor"
+    - text: 497 ratings
+  - text: "|"
+  - link "Search this page":
+    - /url: "#Ask"
+  - text: Amazon's Choice 600+ bought in past month
+  - separator
+  - text: "Limited time deal ₹1,099.00 with 58 percent savings M.R.P.: ₹2,599.00 Inclusive of all taxes EMI starts at ₹100 per month."
+  - button "EMI options"
+  - table
+  - heading "Offers" [level=5]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - heading "Cashback" [level=6]
+          - text: Upto ₹32.00 cashback as Amazon Pay Balance when you pay with Amazon Pay ICICI Bank Credit Cards
+          - link "1 offer":
+            - /url: "#"
+        - listitem:
+          - heading "Bank Offer" [level=6]
+          - text: Upto ₹2,000.00 discount on select Credit Cards, HDFC Bank Debit Cards
+          - link "27 offers":
+            - /url: "#"
+        - listitem:
+          - heading "Partner Offers" [level=6]
+          - text: Get GST invoice and save up to 28% on business purchases.
+          - link "Sign up for free":
+            - /url: /gp/b/ref=apay_upi_sopp?node=16179244031
+          - link "1 offer":
+            - /url: "#"
+    - button "Next page"
+  - group:
+    - group:
+      - list:
+        - listitem: 12 Month Warranty
+        - listitem: 10 days Returnable
+        - listitem: Pay on Delivery
+        - listitem: Amazon Delivered
+        - listitem: Free Delivery
+    - button "Next page"
+  - text: "Colour: Ash Green"
+  - heading "About this item" [level=3]
+  - list:
+    - listitem: "Made with High Quality fabric. Outer material: Nylon Twill - Soft, Durable and Water Resistant. Capacity: 36 liters, Weight: 510 g, Dimensions: 48 x 33 x 23 cm Warranty: 12 months"
+    - listitem: "3 Spacious compartment: Store your Books, Stationary, Accessories, Lunch boxes, etc. It will store plenty of items. Organizer: Keep every single item separately in an arranged manner, with the help of our organizer. 2 side pocket: For holding water bottle, clipping pens or pencil or storing other items. 1 Front Pocket: Easily accessible. To keep all your essentials such as wallet, ticket, cosmetics. Happy Pouch: A detachable pouch to keep On-the-Go items such as lip gloss, change, or sanitizer"
+    - listitem: "Easy grab padded handle: For added comfort and convinience to hold the bag. Padded and Ergonomic Shoulder Straps: There is padded back mesh and ergonomic straps that gives extra spine and shoulder support and helps in minimizing the load after carrying the bag through a busy day at campus.This women's backpack can be carried to work, college, school, for a day out or even while you are travelling!"
+    - listitem: Light Weight yet Durable to resist the weight of textbooks, stationary, lunch boxes. Can store all your college or office stationary, without any hassle.
+    - listitem: "Stylish & Cute: This bag is designed for those Millennials and GenZ, who aren't afraid to compromise on Utility or Fashion! It is a perfect, small bag to carry all the daily essentials while using it as a trendy accessory, or a travel bag or as a college backpack."
+  - heading "Additional Information" [level=3]
+  - text: Country of Origin Bangladesh Manufacturer SAFARI INDUSTRIES (INDIA) LIMITED, 302-303, A Wing, The Qube CTS No.1498, A/2, Sir Mathuradas Vasanji Rd, Marol, Andheri East, Mumbai, Maharashtra 400059 Packer Safari Industires,302-303, A-Wing, The Qube, Marol, Andheri East, Mumbai - 400059 Importer Importer ltd. Contact information - 302 The qube, Marol, Andheri East, Mumbai - 400059 Item Weight 440 g Item Dimensions LxWxH 33 x 23 x 48 Centimeters Net Quantity 1 Piece Generic Name School backpack
+  - link "Report an issue with this product":
+    - /url: "#"
+  - text: Explore home, kitchen & more products from Solimo. Premium Quality. Great Value. Solimo offers a range of kitchenware, home furnishing, mobile accessories, appliances, home decor, backpacks, mattresses and much more.
+  - link "Solimo":
+    - /url: /b/ref=soli_hqp?_encoding=UTF8&node=8505267031&pf_rd_p=0cf3dfaa-f4fb-4057-8aa1-5e14f7714568&pf_rd_r=GTY9J83G0YKYB4AHHJCA
+    - text: Shop now
+  - heading "Similar item to consider" [level=4]
+  - link "amazon basics Women s Convertible PU Leather Backpack Handbag | Water-Resistant | Fits 13\" Laptop | Anti-Theft Pockets | Crossbody, Shoulder, Tot":
+    - /url: /dp/B0D6R1BGSF/ref=vp_d_pb_TIER3_trans_lp_B08912T17F_pd?_encoding=UTF8&pf_rd_p=c7ab5f1b-0d5b-4923-8aa5-57a9a2ad6d46&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=uF3YJ&pd_rd_i=B0D6R1BGSF&pd_rd_w=cab05&content-id=amzn1.sym.c7ab5f1b-0d5b-4923-8aa5-57a9a2ad6d46&pd_rd_r=0ea56567-d646-4213-8ede-fd4503975f49&psc=1
+  - text: 4.2 out of 5 stars
+  - link "18362 ratings":
+    - /url: /product-reviews/B0D6R1BGSF/ref=vp_d_pb_TIER3_trans_lp_B08912T17F_rv?_encoding=UTF8&pf_rd_p=c7ab5f1b-0d5b-4923-8aa5-57a9a2ad6d46&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=uF3YJ&pd_rd_i=B0D6R1BGSF&pd_rd_w=cab05&content-id=amzn1.sym.c7ab5f1b-0d5b-4923-8aa5-57a9a2ad6d46&pd_rd_r=0ea56567-d646-4213-8ede-fd4503975f49?showViewpoints=1
+    - text: (18362)
+  - text: "539.00"
+  - img "Amazon Prime"
+  - text: ₹1,099.00
+  - link "learn more about FREE delivery":
+    - /url: /gp/help/customer/display.html?nodeId=200904360
+    - text: FREE delivery
+  - text: Thursday, 15 May to
+  - link "562130":
+    - /url: "#"
+  - text: .
+  - link "Details about delivery costs and shipping methods":
+    - /url: /gp/help/customer/display.html/?nodeId=200534000
+    - text: Details
+  - text: In stock
+  - group "Seller, shipping, and buying option details":
+    - heading "Ships from" [level=4]
+    - text: Amazon
+    - heading "Sold by" [level=4]
+    - link "RetailEZ Pvt Ltd":
+      - /url: /gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=AXOGFIT0PZZ7G&asin=B08912T17F&ref_=dp_merchant_link&isAmazonFulfilled=1
+    - heading "Payment" [level=4]
+    - button "Secure transaction"
+  - text: "Quantity:"
+  - combobox "Quantity:":
+    - option "1" [selected]
+    - option "2"
+    - option "3"
+    - option "4"
+    - option "5"
+    - option "6"
+    - option "7"
+    - option "8"
+    - option "9"
+    - option "10"
+    - option "11"
+    - option "12"
+    - option "13"
+    - option "14"
+    - option "15"
+    - option "16"
+    - option "17"
+    - option "18"
+    - option "19"
+    - option "20"
+  - button "Add to Cart"
+  - button "Buy Now"
+  - checkbox "Add gift options"
+  - text: Add gift options
+  - link "Add to Wish List":
+    - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB08912T17F&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inamazon&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&
+  - heading "Genie products customers bought together" [level=2]
+  - checkbox [checked]
+  - img "Genie Sunshine 19 ash Green Latest Collection"
+  - text: 4.3 4.3 out of 5 stars
+  - link "497":
+    - /url: /product-reviews/B08912T17F/ref=sspa_dk_detail_d_sccl_2_cr/262-6730786-1080710?pd_rd_w=6b9js&content-id=amzn1.sym.4dc0d3d7-3efc-4031-9001-d2e6cd26c49a&pf_rd_p=4dc0d3d7-3efc-4031-9001-d2e6cd26c49a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pd_rd_i=B08912T17F
+  - text: "-58% ₹1,099.00 Limited time deal M.R.P: ₹2,599.00"
+  - checkbox [checked]
+  - text: +
+  - link "Genie Enigma Laptop Backpack for Women in Dark Green colour. 3 zips, Water Resistant and Lightweight Bags for Office, Travell":
+    - /url: /sspa/click?ie=UTF8&spc=MToxNjg4NTMwNjI5NDI5OTQ0OjE3NDY5NjEyOTY6c3BfZGV0YWlsX3RoZW1hdGljOjMwMDMzNDU4MzQ3ODczMjo6MTo6&url=%2FGenie-Backpack-Resistant-Lightweight-Travelling%2Fdp%2FB097JK6PC8%3Fpsc%3D1%26pd_rd_w%3D6b9js%26content-id%3Damzn1.sym.4dc0d3d7-3efc-4031-9001-d2e6cd26c49a%26pf_rd_p%3D4dc0d3d7-3efc-4031-9001-d2e6cd26c49a%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26ref_%3Dsspa_dk_detail_img_1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM%3D
+    - img "Genie Enigma Laptop Backpack for Women in Dark Green colour. 3 zips, Water Resistant and Lightweight Bags for Office, Travell"
+  - button "Leave feedback on Sponsored ad": Sponsored
+  - link:
+    - /url: /sspa/click?ie=UTF8&spc=MToxNjg4NTMwNjI5NDI5OTQ0OjE3NDY5NjEyOTY6c3BfZGV0YWlsX3RoZW1hdGljOjMwMDMzNDU4MzQ3ODczMjo6MTo6&url=%2FGenie-Backpack-Resistant-Lightweight-Travelling%2Fdp%2FB097JK6PC8%3Fpsc%3D1%26pd_rd_w%3D6b9js%26content-id%3Damzn1.sym.4dc0d3d7-3efc-4031-9001-d2e6cd26c49a%26pf_rd_p%3D4dc0d3d7-3efc-4031-9001-d2e6cd26c49a%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26ref_%3Dsspa_dk_detail_1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM%3D
+  - text: 4.1 4.1 out of 5 stars
+  - link "167":
+    - /url: /product-reviews/B097JK6PC8/ref=sspa_dk_detail_d_sccl_1_cr/262-6730786-1080710?pd_rd_w=6b9js&content-id=amzn1.sym.4dc0d3d7-3efc-4031-9001-d2e6cd26c49a&pf_rd_p=4dc0d3d7-3efc-4031-9001-d2e6cd26c49a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pd_rd_i=B097JK6PC8
+  - text: "-59% ₹1,149.00 M.R.P: ₹2,799.00"
+  - img "Amazon Prime"
+  - text: Total price:₹2,248.00
+  - button "Add both to Cart"
+  - heading "Top Brand Genie" [level=2]:
+    - paragraph: Top Brand
+    - paragraph: Genie
+  - list:
+    - listitem:
+      - paragraph: 90% positive ratings from 10K+ customers
+    - listitem:
+      - paragraph: 50K+ recent orders from this brand
+    - listitem:
+      - paragraph: 10+ years on Amazon
+  - separator
+  - heading "From the brand" [level=2]
+  - img "Genie - Casual Backpacks"
+  - group "Featured content carousel":
+    - group:
+      - list:
+        - listitem
+        - listitem:
+          - img "Genie - School Backpacks"
+        - listitem:
+          - img "Genie - School Backpacks"
+        - listitem:
+          - list:
+            - listitem:
+              - link "Genie Flamenco Backpacks for Women":
+                - /url: /dp/B07SRGQ2R4/ref=emc_bcc_2_i
+                - img "Genie Flamenco Backpacks for Women"
+            - listitem:
+              - link "Genie Unicorn Casual Backpack for Girls |14 In-13 Ltr with Three Compartments,Side Pockets and Li...":
+                - /url: /dp/B097JK8ZF9/ref=emc_bcc_2_i
+                - img "Genie Unicorn Casual Backpack for Girls |14 In-13 Ltr with Three Compartments,Side Pockets and Li..."
+            - listitem:
+              - link "Genie Miami Backpacks for Women, Tuition bag, Stylish and Trendy Casual College backpacks for gir...":
+                - /url: /dp/B097QNJL6V/ref=emc_bcc_2_i
+                - img "Genie Miami Backpacks for Women, Tuition bag, Stylish and Trendy Casual College backpacks for gir..."
+            - listitem:
+              - link "Genie Flamenco Backpacks for Women":
+                - /url: /dp/B08YF9VHTY/ref=emc_bcc_2_i
+                - img "Genie Flamenco Backpacks for Women"
+          - heading "Genie - Casual Daypack" [level=3]
+        - listitem:
+          - list:
+            - listitem:
+              - link "Genie School Backpack for Girls |19 In-36 Ltr with Three Compartments, Side Pockets and Light Wei...":
+                - /url: /dp/B0DT9SG2G9/ref=emc_bcc_2_i
+                - img "Genie School Backpack for Girls |19 In-36 Ltr with Three Compartments, Side Pockets and Light Wei..."
+            - listitem:
+              - link "Genie School Backpack For Girls |19 In-36 Ltr with Laptop Sleeve, Rain Cover and Three Compartmen...":
+                - /url: /dp/B0DT9SB26Y/ref=emc_bcc_2_i
+                - img "Genie School Backpack For Girls |19 In-36 Ltr with Laptop Sleeve, Rain Cover and Three Compartmen..."
+            - listitem:
+              - link "Genie School Backpack for Girls |19 In-36 Ltr with Three Compartments, Side Pockets and Light Wei...":
+                - /url: /dp/B0DT9SNDF9/ref=emc_bcc_2_i
+                - img "Genie School Backpack for Girls |19 In-36 Ltr with Three Compartments, Side Pockets and Light Wei..."
+            - listitem:
+              - link "Genie Esther School Backpack For Girls |19 In-40 Ltr with Laptop Sleeve, Rain Cover and Three Com...":
+                - /url: /dp/B0DT9RPFPB/ref=emc_bcc_2_i
+                - img "Genie Esther School Backpack For Girls |19 In-40 Ltr with Laptop Sleeve, Rain Cover and Three Com..."
+          - heading "Genie - school backpack" [level=3]
+        - listitem:
+          - list:
+            - listitem:
+              - link "Genie Essence Casual Backpack For Girls |18 In-27 Ltr with Laptop Sleeve, Rain Cover and Three Co...":
+                - /url: /dp/B0DT9QMHST/ref=emc_bcc_2_i
+                - img "Genie Essence Casual Backpack For Girls |18 In-27 Ltr with Laptop Sleeve, Rain Cover and Three Co..."
+            - listitem:
+              - link "Genie Ebony Casual Backpack for Girls |17 In-20 Ltr with Laptop Sleeve, Two Compartments and Trol...":
+                - /url: /dp/B0DT9SBYHF/ref=emc_bcc_2_i
+                - img "Genie Ebony Casual Backpack for Girls |17 In-20 Ltr with Laptop Sleeve, Two Compartments and Trol..."
+            - listitem:
+              - link "Genie Maple Casual Backpack for Girls |17 In-20 Ltr with Laptop Sleeve, Two Compartments and Trol...":
+                - /url: /dp/B0DT9SQKKQ/ref=emc_bcc_2_i
+                - img "Genie Maple Casual Backpack for Girls |17 In-20 Ltr with Laptop Sleeve, Two Compartments and Trol..."
+            - listitem:
+              - link "Genie Casual Backpack for Girls |17 In-22 Ltr with Laptop Sleeve, Two Compartments and Trolley Sl...":
+                - /url: /dp/B0DT9RM483/ref=emc_bcc_2_i
+                - img "Genie Casual Backpack for Girls |17 In-22 Ltr with Laptop Sleeve, Two Compartments and Trolley Sl..."
+          - heading "Genie - Teen backpacks" [level=3]
+        - listitem:
+          - img "Genie - Backpack our story"
+  - separator
+  - heading "From the manufacturer" [level=2]
+  - img "."
+  - img "."
+  - img "."
+  - img "."
+  - img "."
+  - heading "Product details" [level=2]
+  - list:
+    - listitem: "Product Dimensions ‏ : ‎ 33 x 23 x 48 cm; 440 g"
+    - listitem: "Date First Available ‏ : ‎ 21 May 2020"
+    - listitem: "Manufacturer ‏ : ‎ SAFARI INDUSTRIES (INDIA) LIMITED"
+    - listitem: "ASIN ‏ : ‎ B08912T17F"
+    - listitem: "Item model number ‏ : ‎ SUNSHINE19SBAGY"
+    - listitem: "Country of Origin ‏ : ‎ Bangladesh"
+    - listitem: "Department ‏ : ‎ girls"
+    - listitem: "Manufacturer ‏ : ‎ SAFARI INDUSTRIES (INDIA) LIMITED, 302-303, A Wing, The Qube CTS No.1498, A/2, Sir Mathuradas Vasanji Rd, Marol, Andheri East, Mumbai, Maharashtra 400059"
+    - listitem: "Packer ‏ : ‎ Safari Industires,302-303, A-Wing, The Qube, Marol, Andheri East, Mumbai - 400059"
+    - listitem: "Importer ‏ : ‎ Importer ltd. Contact information - 302 The qube, Marol, Andheri East, Mumbai - 400059"
+    - listitem: "Item Weight ‏ : ‎ 440 g"
+    - listitem: "Item Dimensions LxWxH ‏ : ‎ 33 x 23 x 48 Centimeters"
+    - listitem: "Net Quantity ‏ : ‎ 1 Piece"
+    - listitem: "Generic Name ‏ : ‎ School backpack"
+  - list:
+    - listitem:
+      - text: "Best Sellers Rank: #346 in Bags, Wallets and Luggage ("
+      - link "See Top 100 in Bags, Wallets and Luggage":
+        - /url: /gp/bestsellers/luggage/ref=pd_zg_ts_luggage
+      - text: )
+      - list:
+        - listitem:
+          - text: "#39 in"
+          - link "Casual Daypacks":
+            - /url: /gp/bestsellers/luggage/2917436031/ref=pd_zg_hrsr_luggage
+  - list:
+    - listitem:
+      - text: "Customer Reviews:"
+      - button "4.3 out of 5 stars"
+      - link "497 Reviews":
+        - /url: "#averageCustomerReviewsAnchor"
+        - text: 497 ratings
+  - 'link "Sponsored ad from StarAndDaisy. \"Stylish and Smart: Your Go-To Baby Diaper Bag!.\" Save up to 63% on StarAndDaisy."':
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/stores/page/87B0CBF6-9F92-4157-9ACE-90A11BAAD11C/?_encoding=UTF8&store_ref=SB_A03373473G94JYK7QJ1BE-A039520215H57K1BZFTUR&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&lp_asins=B0DTQ4NM9L%2CB0DRJHNBFQ%2CB0DG5S18YD&lp_slot=desktop-arbies&lp_page_asin=B08912T17F&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_lsi4d_bkgd&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - heading "Brand in this category on Amazon" [level=2]
+  - link "StarAndDaisy":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/stores/page/87B0CBF6-9F92-4157-9ACE-90A11BAAD11C/?_encoding=UTF8&store_ref=SB_A03373473G94JYK7QJ1BE-A039520215H57K1BZFTUR&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&lp_asins=B0DTQ4NM9L%2CB0DRJHNBFQ%2CB0DG5S18YD&lp_slot=desktop-arbies&lp_page_asin=B08912T17F&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_lsi4d_logo&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - img "StarAndDaisy"
+  - 'link "Stylish and Smart: Your Go-To Baby Diaper Bag!"':
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/stores/page/87B0CBF6-9F92-4157-9ACE-90A11BAAD11C/?_encoding=UTF8&store_ref=SB_A03373473G94JYK7QJ1BE-A039520215H57K1BZFTUR&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&lp_asins=B0DTQ4NM9L%2CB0DRJHNBFQ%2CB0DG5S18YD&lp_slot=desktop-arbies&lp_page_asin=B08912T17F&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_lsi4d_hl&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "Save up to 63% on StarAndDaisy":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/stores/page/87B0CBF6-9F92-4157-9ACE-90A11BAAD11C/?_encoding=UTF8&store_ref=SB_A03373473G94JYK7QJ1BE-A039520215H57K1BZFTUR&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&lp_asins=B0DTQ4NM9L%2CB0DRJHNBFQ%2CB0DG5S18YD&lp_slot=desktop-arbies&lp_page_asin=B08912T17F&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_lsi4d_cta&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "Branded image from StarAndDaisy":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/stores/page/87B0CBF6-9F92-4157-9ACE-90A11BAAD11C/?_encoding=UTF8&store_ref=SB_A03373473G94JYK7QJ1BE-A039520215H57K1BZFTUR&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&lp_asins=B0DTQ4NM9L%2CB0DRJHNBFQ%2CB0DG5S18YD&lp_slot=desktop-arbies&lp_page_asin=B08912T17F&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_lsi4d_ls&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - img "Branded image from StarAndDaisy"
+  - link "Go to detail page for \"StarAndDaisy Diaper Bag/Diaper Bags for Mom with Light Weight and Potable Design/Multi Compartments, Waterproof Baby Bag with Ultra soft fabric.\" Limited time Deal. Price was ₹2,399. Current price is ₹898 after 63% off. Eligible for Prime.":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DTQ4NM9L/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-1-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_0_bkgd&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "StarAndDaisy Diaper Bag/Diaper Bags for Mom with Light Weight and Potable Design/Multi Compartments, Waterproof Baby Bag with Ultra soft fabric.":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DTQ4NM9L/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-1-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_0_img&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - img "StarAndDaisy Diaper Bag/Diaper Bags for Mom with Light Weight and Potable Design/Multi Compartments, Waterproof Baby Bag with Ultra soft fabric."
+  - link "Limited time deal":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DTQ4NM9L/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-1-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_0_badge&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "₹898 Eligible for Prime. ₹2,399 (63% off)":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DTQ4NM9L/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-1-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_0_price&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - text: ₹898
+    - img "Eligible for Prime."
+    - text: ₹2,399 (63% off)
+  - link "Go to detail page for \"StarAndDaisy Baby Diaper Bag for Mother Travel/Diaper Bags for Mother for Travel with Laptop Pocket, Multi Compartments, Insulated Bottle Pockets, Waterproof, Ultra soft fabric - White.\" Limited time Deal. Price was ₹1,599. Current price is ₹949 after 41% off. Eligible for Prime.":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DRJHNBFQ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-2-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_1_bkgd&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "StarAndDaisy Baby Diaper Bag for Mother Travel/Diaper Bags for Mother for Travel with Laptop Pocket, Multi Compartments, Insulated Bottle Pockets, Waterproof, Ultra soft fabric - White":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DRJHNBFQ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-2-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_1_img&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - img "StarAndDaisy Baby Diaper Bag for Mother Travel/Diaper Bags for Mother for Travel with Laptop Pocket, Multi Compartments, Insulated Bottle Pockets, Waterproof, Ultra soft fabric - White"
+  - link "Limited time deal":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DRJHNBFQ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-2-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_1_badge&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "₹949 Eligible for Prime. ₹1,599 (41% off)":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DRJHNBFQ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-2-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_1_price&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - text: ₹949
+    - img "Eligible for Prime."
+    - text: ₹1,599 (41% off)
+  - link "Go to detail page for \"StarAndDaisy Baby Bag for Mother Travel/Diaper Bag with Insulated Baby Bottle Pocket/Diaper Bag for Mothers for Travel with Multi Compartments, Waterproof Diaper Bags for Mom, 24lt capacity.\" Limited time Deal. Price was ₹1,999. Current price is ₹1,398 after 30% off. Eligible for Prime.":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DG5S18YD/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-3-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_2_bkgd&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "StarAndDaisy Baby Bag for Mother Travel/Diaper Bag with Insulated Baby Bottle Pocket/Diaper Bag for Mothers for Travel with Multi Compartments, Waterproof Diaper Bags for Mom, 24lt capacity":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DG5S18YD/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-3-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_2_img&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - img "StarAndDaisy Baby Bag for Mother Travel/Diaper Bag with Insulated Baby Bottle Pocket/Diaper Bag for Mothers for Travel with Multi Compartments, Waterproof Diaper Bags for Mom, 24lt capacity"
+  - link "Limited time deal":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DG5S18YD/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-3-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_2_badge&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - link "₹1,398 Eligible for Prime. ₹1,999 (30% off)":
+    - /url: https://aax-eu.amazon.in/x/c/JAP7KdhVB20xHUSgUjQe5sMAAAGWvwHwPwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDvJxgH/https://www.amazon.in/gp/aw/d/B0DG5S18YD/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07d64bf68b4bcd95794ffd3d0197a8f1&hsa_cr_id=0&sr=1-3-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_2_price&pd_rd_w=M06pz&content-id=amzn1.sym.169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_p=169f68c0-01b4-45e0-a0d9-3a54d711fc9b&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+    - text: ₹1,398
+    - img "Eligible for Prime."
+    - text: ₹1,999 (30% off)
+  - button "Leave feedback on Sponsored ad": Sponsored
+  - group "Related products with free delivery on eligible orders":
+    - heading "Related products with free delivery on eligible orders" [level=2]
+    - link "Sponsored":
+      - /url: "#sp_detail2-prime_theme_for_non_prime_members_feedbackForm"
+    - group:
+      - list:
+        - listitem:
+          - heading [level=3]:
+            - link "Genie Twinkle School Backpack for Girls |19 In-36 Ltr with Three Compartments, Side Pockets and Light Weight with Padded Shoulders |Best for Books,Stationery,Lunch Box & Essentials - Black":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjg4MzI6Ojo6&url=%2Fdp%2FB0DT9TK9J3%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0DT9TK9J3%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "5.0 out of 5 stars 9 ratings":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjg4MzI6Ojo6&url=%2Fdp%2FB0DT9TK9J3%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0DT9TK9J3%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - link "Amazon's Choice":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjg4MzI6Ojo6&url=%2Fdp%2FB0DT9TK9J3%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0DT9TK9J3%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - 'link "-41% ₹1,680.00 M.R.P: ₹2,832.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjg4MzI6Ojo6&url=%2Fdp%2FB0DT9TK9J3%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0DT9TK9J3%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjg4MzI6Ojo6&url=%2Fdp%2FB0DT9TK9J3%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0DT9TK9J3%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+        - listitem:
+          - heading [level=3]:
+            - link "Genie Ariana School Backpack for Girls |19 In-36 Ltr with Laptop Sleeve, Three Compartments, Organize and Light weight with Padded Shoulders |Best for Books,Stationery,Lunch Box & Essentials - Grey":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjUzMzI6Ojo6&url=%2Fdp%2FB0DT9QRSMB%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB0DT9QRSMB%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "4.3 out of 5 stars 83 ratings":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjUzMzI6Ojo6&url=%2Fdp%2FB0DT9QRSMB%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB0DT9QRSMB%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - link "Amazon's Choice":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjUzMzI6Ojo6&url=%2Fdp%2FB0DT9QRSMB%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB0DT9QRSMB%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - 'link "-40% ₹1,899.00 M.R.P: ₹3,165.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjUzMzI6Ojo6&url=%2Fdp%2FB0DT9QRSMB%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB0DT9QRSMB%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NjgwNDYwMjUzMzI6Ojo6&url=%2Fdp%2FB0DT9QRSMB%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB0DT9QRSMB%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+        - listitem:
+          - heading [level=3]:
+            - link "Genie Angela School Backpack For Girls |19 In-36 Ltr with Laptop Sleeve, Rain Cover and Three Compartments with Padded Shoulders |Best for Books,Stationery,Lunch Box & Essentials - Navy Blue":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTE3MzI6Ojo6&url=%2Fdp%2FB0DT9V8B35%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0DT9V8B35%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "5.0 out of 5 stars 1 rating":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTE3MzI6Ojo6&url=%2Fdp%2FB0DT9V8B35%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0DT9V8B35%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - 'link "-34% ₹2,099.00 M.R.P: ₹3,165.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTE3MzI6Ojo6&url=%2Fdp%2FB0DT9V8B35%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0DT9V8B35%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTE3MzI6Ojo6&url=%2Fdp%2FB0DT9V8B35%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0DT9V8B35%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+        - listitem:
+          - heading [level=3]:
+            - link "Genie Magic School Backpack for Girls |19 In-36 Ltr with Three Compartments, Side Pockets and Light Weight with Padded Shoulders |Best for Books,Stationery,Lunch Box & Essentials - Black":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTYwMzI6Ojo6&url=%2Fdp%2FB0DT9W8TZX%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB0DT9W8TZX%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "4.5 out of 5 stars 120 ratings":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTYwMzI6Ojo6&url=%2Fdp%2FB0DT9W8TZX%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB0DT9W8TZX%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - 'link "-33% ₹1,899.00 M.R.P: ₹2,832.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTYwMzI6Ojo6&url=%2Fdp%2FB0DT9W8TZX%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB0DT9W8TZX%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0ODc2NDE2NTYwMzI6Ojo6&url=%2Fdp%2FB0DT9W8TZX%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB0DT9W8TZX%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+        - listitem:
+          - heading [level=3]:
+            - link "Genie Lush 36 litres Black School Backpack for Girls (19 inch, 3 Compartments, Water Resistant)":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NDI1NTc0NDEzMzI6Ojo6&url=%2Fdp%2FB07QHLBBPM%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB07QHLBBPM%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "4.1 out of 5 stars 2,021 ratings":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NDI1NTc0NDEzMzI6Ojo6&url=%2Fdp%2FB07QHLBBPM%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB07QHLBBPM%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - 'link "-58% ₹1,099.00 M.R.P: ₹2,599.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NDI1NTc0NDEzMzI6Ojo6&url=%2Fdp%2FB07QHLBBPM%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB07QHLBBPM%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDA0NDI1NTc0NDEzMzI6Ojo6&url=%2Fdp%2FB07QHLBBPM%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB07QHLBBPM%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+        - listitem:
+          - heading [level=3]:
+            - link "Genie LIT Beige Backpack for Women & Girls with 14\" laptop compartment| College bag for Women & Girls| 6 zips with Secret Pocket | Water Resistant Bags | Laptop Backpack for Women":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA0MzI6Ojo6&url=%2Fdp%2FB097JLP5R4%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB097JLP5R4%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "4.4 out of 5 stars 164 ratings":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA0MzI6Ojo6&url=%2Fdp%2FB097JLP5R4%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB097JLP5R4%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - link "Amazon's Choice":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA0MzI6Ojo6&url=%2Fdp%2FB097JLP5R4%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB097JLP5R4%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Limited time deal":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA0MzI6Ojo6&url=%2Fdp%2FB097JLP5R4%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB097JLP5R4%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - 'link "-55% ₹1,399.00 M.R.P: ₹3,100.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA0MzI6Ojo6&url=%2Fdp%2FB097JLP5R4%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB097JLP5R4%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA0MzI6Ojo6&url=%2Fdp%2FB097JLP5R4%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB097JLP5R4%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+        - listitem:
+          - heading [level=3]:
+            - link "Genie Edge Laptop Backpack for Women in Black colour. More Volume, 3 zips, Stylish & Trendy College Bags for Girls, Water Resistant, Lightweight Bags for Office, Travelling. 36 litres. 19\"":
+              - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA1MzI6Ojo6&url=%2Fdp%2FB097JJRN1R%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB097JJRN1R%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "3.9 out of 5 stars 130 ratings":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA1MzI6Ojo6&url=%2Fdp%2FB097JJRN1R%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB097JJRN1R%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy#customerReviews
+          - link "Limited time deal":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA1MzI6Ojo6&url=%2Fdp%2FB097JJRN1R%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB097JJRN1R%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - 'link "-59% ₹1,149.00 M.R.P: ₹2,799.00"':
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA1MzI6Ojo6&url=%2Fdp%2FB097JJRN1R%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB097JJRN1R%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+          - link "Amazon Prime":
+            - /url: /sspa/click?ie=UTF8&spc=MTo3MTQ3NDc0MzgwODMzMDgzOjE3NDY5NjEyOTY6c3BfZGV0YWlsMjozMDAzNzg0NDA4NzA1MzI6Ojo6&url=%2Fdp%2FB097JJRN1R%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB097JJRN1R%26pd_rd_w%3DGtIN1%26content-id%3Damzn1.sym.a67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_p%3Da67825cd-bf53-4190-b32f-f5084546a8c2%26pf_rd_r%3DGTY9J83G0YKYB4AHHJCA%26pd_rd_wg%3DSbrfI%26pd_rd_r%3D79740202-a219-47a2-b8c5-39ff7ca550c1%26s%3Dapparel%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy
+            - img "Amazon Prime"
+  - group:
+    - heading "Similar Brands on Amazon" [level=2]
+    - button "Leave feedback on Sponsored ad": Sponsored
+    - group:
+      - list:
+        - listitem:
+          - link "Sponsored video, click to navigate to featured page.":
+            - /url: https://aax-eu.amazon.in/x/c/JK0muCucaQakWGdEvE4eQ6YAAAGWvwHwRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDd2LMo/https://www.amazon.in/dp/B077XJ4D6W/?_encoding=UTF8&pd_rd_i=B077XJ4D6W&pd_rd_i=B077XJ4D6W&ref_=sbx_be_s_sparkle_ssd_vid&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Gods GHOST Anti Theft Backpack with 15.6 inch Laptop Compartment, Patented Design, Water Resistant Fabric, Quick Access Pockets & 8 Years Warranty for Men and Women (Capacity-25 Litre) PREMIUM SMOOTH":
+            - /url: https://aax-eu.amazon.in/x/c/JK0muCucaQakWGdEvE4eQ6YAAAGWvwHwRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDd2LMo/https://www.amazon.in/dp/B077XJ4D6W/?_encoding=UTF8&pd_rd_i=B077XJ4D6W&pd_rd_i=B077XJ4D6W&ref_=sbx_be_s_sparkle_ssd_img&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - img "Gods GHOST Anti Theft Backpack with 15.6 inch Laptop Compartment, Patented Design, Water Resistant Fabric, Quick Access Pockets & 8 Years Warranty for Men and Women (Capacity-25 Litre) PREMIUM SMOOTH"
+          - link "Gods GHOST 25 ltr Anti Theft 15.6 inch Laptop Tech Backpack for Men, Women, Boys, Girls | Premium bags for Gift | Bike Riding Bag for College, Travel, Office, Flight luggage | Black":
+            - /url: https://aax-eu.amazon.in/x/c/JK0muCucaQakWGdEvE4eQ6YAAAGWvwHwRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDd2LMo/https://www.amazon.in/dp/B077XJ4D6W/?_encoding=UTF8&pd_rd_i=B077XJ4D6W&pd_rd_i=B077XJ4D6W&ref_=sbx_be_s_sparkle_ssd_tt&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Rated 4.5 out of 5 stars from 9,164 reviews":
+            - /url: https://aax-eu.amazon.in/x/c/JK0muCucaQakWGdEvE4eQ6YAAAGWvwHwRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDd2LMo/https://www.amazon.in/dp/B077XJ4D6W/?_encoding=UTF8&pd_rd_i=B077XJ4D6W&pd_rd_i=B077XJ4D6W&ref_=sbx_be_s_sparkle_ssd_rev&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - text: 4.5 4.5 out of 5 stars 9,164
+          - link "42% off Limited time deal":
+            - /url: https://aax-eu.amazon.in/x/c/JK0muCucaQakWGdEvE4eQ6YAAAGWvwHwRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDd2LMo/https://www.amazon.in/dp/B077XJ4D6W/?_encoding=UTF8&pd_rd_i=B077XJ4D6W&pd_rd_i=B077XJ4D6W&ref_=sbx_be_s_sparkle_ssd_db&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - 'link "₹3,799.00 M.R.P: ₹6,500.00"':
+            - /url: https://aax-eu.amazon.in/x/c/JK0muCucaQakWGdEvE4eQ6YAAAGWvwHwRQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDd2LMo/https://www.amazon.in/dp/B077XJ4D6W/?_encoding=UTF8&pd_rd_i=B077XJ4D6W&pd_rd_i=B077XJ4D6W&ref_=sbx_be_s_sparkle_ssd_pce&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+        - listitem:
+          - link "Sponsored video, click to navigate to featured page.":
+            - /url: https://aax-eu.amazon.in/x/c/JPQr6uGzcy_NYuk-j91iWK8AAAGWvwHwRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDlQiPg/https://www.amazon.in/dp/B0CWRXXLJ8/?_encoding=UTF8&pd_rd_i=B0CWRXXLJ8&pd_rd_i=B0CWRXXLJ8&ref_=sbx_be_s_sparkle_ssd_vid&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "American Tourister Fizz Style 4, 31L Volume College 4 Compartment Backpack with Front Organizer and Spacious Interiors for Unisex - Blue/Red":
+            - /url: https://aax-eu.amazon.in/x/c/JPQr6uGzcy_NYuk-j91iWK8AAAGWvwHwRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDlQiPg/https://www.amazon.in/dp/B0CWRXXLJ8/?_encoding=UTF8&pd_rd_i=B0CWRXXLJ8&pd_rd_i=B0CWRXXLJ8&ref_=sbx_be_s_sparkle_ssd_img&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - img "American Tourister Fizz Style 4, 31L Volume College 4 Compartment Backpack with Front Organizer and Spacious Interiors for Unisex - Blue/Red"
+          - link "American Tourister Fizz Style 4, 31L Volume College 4 Compartment Backpack with Front Organizer and Spacious Interiors for Unisex - Blue/Red":
+            - /url: https://aax-eu.amazon.in/x/c/JPQr6uGzcy_NYuk-j91iWK8AAAGWvwHwRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDlQiPg/https://www.amazon.in/dp/B0CWRXXLJ8/?_encoding=UTF8&pd_rd_i=B0CWRXXLJ8&pd_rd_i=B0CWRXXLJ8&ref_=sbx_be_s_sparkle_ssd_tt&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Rated 4.0 out of 5 stars from 27,116 reviews":
+            - /url: https://aax-eu.amazon.in/x/c/JPQr6uGzcy_NYuk-j91iWK8AAAGWvwHwRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDlQiPg/https://www.amazon.in/dp/B0CWRXXLJ8/?_encoding=UTF8&pd_rd_i=B0CWRXXLJ8&pd_rd_i=B0CWRXXLJ8&ref_=sbx_be_s_sparkle_ssd_rev&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - text: 4.0 4.0 out of 5 stars 27,116
+          - link "54% off Limited time deal":
+            - /url: https://aax-eu.amazon.in/x/c/JPQr6uGzcy_NYuk-j91iWK8AAAGWvwHwRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDlQiPg/https://www.amazon.in/dp/B0CWRXXLJ8/?_encoding=UTF8&pd_rd_i=B0CWRXXLJ8&pd_rd_i=B0CWRXXLJ8&ref_=sbx_be_s_sparkle_ssd_db&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - 'link "₹1,199.00 M.R.P: ₹2,600.00"':
+            - /url: https://aax-eu.amazon.in/x/c/JPQr6uGzcy_NYuk-j91iWK8AAAGWvwHwRgMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDlQiPg/https://www.amazon.in/dp/B0CWRXXLJ8/?_encoding=UTF8&pd_rd_i=B0CWRXXLJ8&pd_rd_i=B0CWRXXLJ8&ref_=sbx_be_s_sparkle_ssd_pce&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+        - listitem:
+          - link "Sponsored video, click to navigate to featured page.":
+            - /url: https://aax-eu.amazon.in/x/c/JBhezkzIp249si8FSmerHj8AAAGWvwHwRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCOwJE3/https://www.amazon.in/dp/B09GPHHZPW/?_encoding=UTF8&pd_rd_i=B09GPHHZPW&pd_rd_i=B09GPHHZPW&ref_=sbx_be_s_sparkle_ssd_vid&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Arctic Fox Kobra Gaming Laptop Backpack (Black)| 35 Ltr Capacity|Water Resistant | Multipurpose Backpack |USB Cable holder Pocket|Rain Cover|Number Lock| Trolley sleeve|17\" Unisex Laptop Backpack":
+            - /url: https://aax-eu.amazon.in/x/c/JBhezkzIp249si8FSmerHj8AAAGWvwHwRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCOwJE3/https://www.amazon.in/dp/B09GPHHZPW/?_encoding=UTF8&pd_rd_i=B09GPHHZPW&pd_rd_i=B09GPHHZPW&ref_=sbx_be_s_sparkle_ssd_img&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - img "Arctic Fox Kobra Gaming Laptop Backpack (Black)| 35 Ltr Capacity|Water Resistant | Multipurpose Backpack |USB Cable holder Pocket|Rain Cover|Number Lock| Trolley sleeve|17\" Unisex Laptop Backpack"
+          - link "Arctic Fox Kobra Gaming Laptop Backpack | 27 Ltr Capacity|Water Resistant | Multipurpose Backpack |USB Cable holder Pocket|Rain Cover|Number Lock| Trolley sleeve|17\" Unisex Laptop Backpack":
+            - /url: https://aax-eu.amazon.in/x/c/JBhezkzIp249si8FSmerHj8AAAGWvwHwRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCOwJE3/https://www.amazon.in/dp/B09GPHHZPW/?_encoding=UTF8&pd_rd_i=B09GPHHZPW&pd_rd_i=B09GPHHZPW&ref_=sbx_be_s_sparkle_ssd_tt&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Rated 4.4 out of 5 stars from 1,280 reviews":
+            - /url: https://aax-eu.amazon.in/x/c/JBhezkzIp249si8FSmerHj8AAAGWvwHwRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCOwJE3/https://www.amazon.in/dp/B09GPHHZPW/?_encoding=UTF8&pd_rd_i=B09GPHHZPW&pd_rd_i=B09GPHHZPW&ref_=sbx_be_s_sparkle_ssd_rev&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - text: 4.4 4.4 out of 5 stars 1,280
+          - link "47% off Limited time deal":
+            - /url: https://aax-eu.amazon.in/x/c/JBhezkzIp249si8FSmerHj8AAAGWvwHwRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCOwJE3/https://www.amazon.in/dp/B09GPHHZPW/?_encoding=UTF8&pd_rd_i=B09GPHHZPW&pd_rd_i=B09GPHHZPW&ref_=sbx_be_s_sparkle_ssd_db&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - 'link "₹1,999.00 M.R.P: ₹3,799.00"':
+            - /url: https://aax-eu.amazon.in/x/c/JBhezkzIp249si8FSmerHj8AAAGWvwHwRwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICCOwJE3/https://www.amazon.in/dp/B09GPHHZPW/?_encoding=UTF8&pd_rd_i=B09GPHHZPW&pd_rd_i=B09GPHHZPW&ref_=sbx_be_s_sparkle_ssd_pce&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+        - listitem:
+          - link "Sponsored video, click to navigate to featured page.":
+            - /url: https://aax-eu.amazon.in/x/c/JKplwhk7laM_On0A_vlwOnEAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDN85iE/https://www.amazon.in/dp/B08B4T6HVR/?_encoding=UTF8&pd_rd_i=B08B4T6HVR&pd_rd_i=B08B4T6HVR&ref_=sbx_be_s_sparkle_ssd_vid&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Tinytot School Bag for Girl with Pencil Pouch – 26 Litre, 18 Inches, Durable & Sleek Waterproof Tuition and College Bag for Girls, Multicolored Picnic & Travel Backpack for Girls":
+            - /url: https://aax-eu.amazon.in/x/c/JKplwhk7laM_On0A_vlwOnEAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDN85iE/https://www.amazon.in/dp/B08B4T6HVR/?_encoding=UTF8&pd_rd_i=B08B4T6HVR&pd_rd_i=B08B4T6HVR&ref_=sbx_be_s_sparkle_ssd_img&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - img "Tinytot School Bag for Girl with Pencil Pouch – 26 Litre, 18 Inches, Durable & Sleek Waterproof Tuition and College Bag for Girls, Multicolored Picnic & Travel Backpack for Girls"
+          - link "Tinytot School Bag for Girl with Pencil Pouch – 26 Litre, 18 Inches, Durable & Sleek Waterproof Tuition and College Bag for Girls, Multicolored Picnic & Travel Backpack for Girls":
+            - /url: https://aax-eu.amazon.in/x/c/JKplwhk7laM_On0A_vlwOnEAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDN85iE/https://www.amazon.in/dp/B08B4T6HVR/?_encoding=UTF8&pd_rd_i=B08B4T6HVR&pd_rd_i=B08B4T6HVR&ref_=sbx_be_s_sparkle_ssd_tt&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Rated 3.8 out of 5 stars from 2,021 reviews":
+            - /url: https://aax-eu.amazon.in/x/c/JKplwhk7laM_On0A_vlwOnEAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDN85iE/https://www.amazon.in/dp/B08B4T6HVR/?_encoding=UTF8&pd_rd_i=B08B4T6HVR&pd_rd_i=B08B4T6HVR&ref_=sbx_be_s_sparkle_ssd_rev&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - text: 3.8 3.8 out of 5 stars 2,021
+          - link "66% off Limited time deal":
+            - /url: https://aax-eu.amazon.in/x/c/JKplwhk7laM_On0A_vlwOnEAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDN85iE/https://www.amazon.in/dp/B08B4T6HVR/?_encoding=UTF8&pd_rd_i=B08B4T6HVR&pd_rd_i=B08B4T6HVR&ref_=sbx_be_s_sparkle_ssd_db&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - 'link "₹674.00 M.R.P: ₹1,999.00"':
+            - /url: https://aax-eu.amazon.in/x/c/JKplwhk7laM_On0A_vlwOnEAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDN85iE/https://www.amazon.in/dp/B08B4T6HVR/?_encoding=UTF8&pd_rd_i=B08B4T6HVR&pd_rd_i=B08B4T6HVR&ref_=sbx_be_s_sparkle_ssd_pce&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+        - listitem:
+          - link "Sponsored video, click to navigate to featured page.":
+            - /url: https://aax-eu.amazon.in/x/c/JNofT6kkllvbUwt_ePmPMCoAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICANFbRN/https://www.amazon.in/dp/B0D41VBXZ4/?_encoding=UTF8&pd_rd_i=B0D41VBXZ4&pd_rd_i=B0D41VBXZ4&ref_=sbx_be_s_sparkle_ssd_vid&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Chantria Casual Backpack for Women Stylish 13L Small Backpack fit 14 inch Laptop Compact Daypack Polyester Multi-pockets for Office Casual and Shopping,Pale Mauve":
+            - /url: https://aax-eu.amazon.in/x/c/JNofT6kkllvbUwt_ePmPMCoAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICANFbRN/https://www.amazon.in/dp/B0D41VBXZ4/?_encoding=UTF8&pd_rd_i=B0D41VBXZ4&pd_rd_i=B0D41VBXZ4&ref_=sbx_be_s_sparkle_ssd_img&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - img "Chantria Casual Backpack for Women Stylish 13L Small Backpack fit 14 inch Laptop Compact Daypack Polyester Multi-pockets for Office Casual and Shopping,Pale Mauve"
+          - link "Chantria Casual Backpack for Women Stylish 13L Small Backpack fit 14 inch Laptop Compact Daypack Polyester Multi-pockets for Office Casual and Shopping":
+            - /url: https://aax-eu.amazon.in/x/c/JNofT6kkllvbUwt_ePmPMCoAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICANFbRN/https://www.amazon.in/dp/B0D41VBXZ4/?_encoding=UTF8&pd_rd_i=B0D41VBXZ4&pd_rd_i=B0D41VBXZ4&ref_=sbx_be_s_sparkle_ssd_tt&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+          - link "Rated 4.8 out of 5 stars from 7 reviews":
+            - /url: https://aax-eu.amazon.in/x/c/JNofT6kkllvbUwt_ePmPMCoAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICANFbRN/https://www.amazon.in/dp/B0D41VBXZ4/?_encoding=UTF8&pd_rd_i=B0D41VBXZ4&pd_rd_i=B0D41VBXZ4&ref_=sbx_be_s_sparkle_ssd_rev&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+            - text: 4.8 4.8 out of 5 stars 7
+          - 'link "₹3,324.00 M.R.P: ₹6,999.00"':
+            - /url: https://aax-eu.amazon.in/x/c/JNofT6kkllvbUwt_ePmPMCoAAAGWvwHwSAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICANFbRN/https://www.amazon.in/dp/B0D41VBXZ4/?_encoding=UTF8&pd_rd_i=B0D41VBXZ4&pd_rd_i=B0D41VBXZ4&ref_=sbx_be_s_sparkle_ssd_pce&pd_rd_w=hzAry&content-id=amzn1.sym.ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1&pf_rd_p=ab6f2f77-625e-4dc9-a3fd-6dee8969103a&pf_rd_r=GTY9J83G0YKYB4AHHJCA&pd_rd_wg=SbrfI&pd_rd_w=hzAry&pd_rd_r=79740202-a219-47a2-b8c5-39ff7ca550c1
+  - heading "Customer reviews" [level=2]
+  - text: 4.3 out of 5 stars 497 global ratings
+  - list:
+    - listitem:
+      - link "63 percent of reviews have 5 stars":
+        - /url: /product-reviews/B08912T17F/ref=acr_dp_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar
+        - text: 5 star
+        - progressbar
+        - text: 63%
+    - listitem:
+      - link "23 percent of reviews have 4 stars":
+        - /url: /product-reviews/B08912T17F/ref=acr_dp_hist_4?ie=UTF8&filterByStar=four_star&reviewerType=all_reviews#reviews-filter-bar
+        - text: 4 star
+        - progressbar
+        - text: 23%
+    - listitem:
+      - link "7 percent of reviews have 3 stars":
+        - /url: /product-reviews/B08912T17F/ref=acr_dp_hist_3?ie=UTF8&filterByStar=three_star&reviewerType=all_reviews#reviews-filter-bar
+        - text: 3 star
+        - progressbar
+        - text: 7%
+    - listitem:
+      - link "1 percent of reviews have 2 stars":
+        - /url: /product-reviews/B08912T17F/ref=acr_dp_hist_2?ie=UTF8&filterByStar=two_star&reviewerType=all_reviews#reviews-filter-bar
+        - text: 2 star
+        - progressbar
+        - text: 1%
+    - listitem:
+      - link "6 percent of reviews have 1 stars":
+        - /url: /product-reviews/B08912T17F/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star&reviewerType=all_reviews#reviews-filter-bar
+        - text: 1 star
+        - progressbar
+        - text: 6%
+  - button "How are ratings calculated?"
+  - heading "Review this product" [level=3]
+  - text: Share your thoughts with other customers
+  - link "Write a product review":
+    - /url: /review/create-review/ref=cm_cr_dp_d_wr_but_top?ie=UTF8&channel=glance-detail&asin=B08912T17F
+  - heading "Customers say" [level=3]
+  - paragraph: Customers find the backpack to be of good quality with a sturdy body and nice color. Moreover, they appreciate its spaciousness, comfort, and value for money. However, the pouch quality receives negative feedback, with several customers reporting that the happy pouch did not come with their purchase.
+  - paragraph: AI-generated from the text of customer reviews
+  - heading "Select to learn more" [level=4]
+  - tablist "Commonly Mentioned Aspects":
+    - tab "Positive aspect Quality" [selected]: Quality
+    - tab "Positive aspect Aesthetic": Aesthetic
+    - tab "Positive aspect Bag quality": Bag quality
+    - tab "Positive aspect Size": Size
+    - tab "Positive aspect Value for money": Value for money
+    - tab "Positive aspect Comfort": Comfort
+    - tab "Negative aspect Pouch quality": Pouch quality
+  - group:
+    - heading "Reviews with images" [level=3]
+    - link "See all photos":
+      - /url: javascript:void(0)
+    - group:
+      - list:
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+        - listitem:
+          - button "Customer Image, click to open customer review":
+            - img "Customer Image, click to open customer review"
+  - heading "Top reviews from India" [level=3]
+  - list:
+    - listitem:
+      - link "aqsa bano":
+        - /url: /gp/profile/amzn1.account.AGLI2SJAMYYRSHN4GPFBMCIT667A/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "5.0 out of 5 stars You need to required money" [level=5]:
+        - link "5.0 out of 5 stars You need to required money":
+          - /url: /gp/customer-reviews/R22TZXTRDIH4XO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 10 March 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase By this product it is very good quantity I rate it from 10 out of 10 it is very good good quality is very good the size is also big the looks as also very good and the space has a very loves days and the zipper quality is also perfect and the color is also perfect value for money you can see from the web page thank you bye"
+      - button "Customer image":
+        - img "Customer image"
+      - text: 3 people found this helpful
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhJlc5SIPHfkZkwX%252BLIuZpMF2rysWkPzScPmtKqB1ExZGAAAAAGggg5AAAAAB%26reviewId%3DR22TZXTRDIH4XO%23R22TZXTRDIH4XO&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by aqsa bano":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hJlc5SIPHfkZkwX%2BLIuZpMF2rysWkPzScPmtKqB1ExZGAAAAAGggg5AAAAAB&reviewId=R22TZXTRDIH4XO
+        - text: Report
+    - listitem:
+      - link "Rita dimasha":
+        - /url: /gp/profile/amzn1.account.AHJHTDNSJ337F4SBDPX5S2IIEHEQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "4.0 out of 5 stars It's beautiful and can cary a heavy weight" [level=5]:
+        - link "4.0 out of 5 stars It's beautiful and can cary a heavy weight":
+          - /url: /gp/customer-reviews/R3J3U114PKFEBS/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 30 April 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase Nice product good quality"
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhH7XbkPuWHOUBKpqM28XM0GTQQpOoARbiMFVXdRv92JuAAAAAGggg5AAAAAB%26reviewId%3DR3J3U114PKFEBS%23R3J3U114PKFEBS&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Rita dimasha":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hH7XbkPuWHOUBKpqM28XM0GTQQpOoARbiMFVXdRv92JuAAAAAGggg5AAAAAB&reviewId=R3J3U114PKFEBS
+        - text: Report
+    - listitem:
+      - link "Kashvi gupta":
+        - /url: /gp/profile/amzn1.account.AFQYQWUW4VE2VHHUSG2RNFJZQWSA/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "5.0 out of 5 stars Best Bag" [level=5]:
+        - link "5.0 out of 5 stars Best Bag":
+          - /url: /gp/customer-reviews/R35VUWH81U13Y0/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 9 April 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase Very nice quality . Colour is also very nice .Best bag for school"
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhHnidtbc3RO06bkKX5mXyLbXFr%252FETNckxi3ievsUJHTuAAAAAGggg5AAAAAB%26reviewId%3DR35VUWH81U13Y0%23R35VUWH81U13Y0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Kashvi gupta":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hHnidtbc3RO06bkKX5mXyLbXFr%2FETNckxi3ievsUJHTuAAAAAGggg5AAAAAB&reviewId=R35VUWH81U13Y0
+        - text: Report
+    - listitem:
+      - link "Mohd.khalid":
+        - /url: /gp/profile/amzn1.account.AHSVTTXU2YEJALP7ZA45M2K2TZGA/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "5.0 out of 5 stars The aesthetic level is on peak!" [level=5]:
+        - link "5.0 out of 5 stars The aesthetic level is on peak!":
+          - /url: /gp/customer-reviews/R74O8CSS2QOMR/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 18 April 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase It's perffff! Totally worth buying, go for it!"
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhItkz0MFG8WfiIgBy%252BriD%252FLg0jGLBAeXVa%252FCOORMKQnvAAAAAGggg5AAAAAB%26reviewId%3DR74O8CSS2QOMR%23R74O8CSS2QOMR&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Mohd.khalid":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hItkz0MFG8WfiIgBy%2BriD%2FLg0jGLBAeXVa%2FCOORMKQnvAAAAAGggg5AAAAAB&reviewId=R74O8CSS2QOMR
+        - text: Report
+    - listitem:
+      - link "Neha":
+        - /url: /gp/profile/amzn1.account.AGFH6K7DI6DQKALGZG66IGJJD6XA/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "5.0 out of 5 stars Very spacious" [level=5]:
+        - link "5.0 out of 5 stars Very spacious":
+          - /url: /gp/customer-reviews/R2RC88NPNO89UO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 6 April 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase The bag is spacious and also nice quality but I would recommend there should be more colours or shades"
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhE%252BZqYhtRJb8%252Fn7YGmDcWyEx6LsVQf5JKvUk8u9ifNrzAAAAAGggg5AAAAAB%26reviewId%3DR2RC88NPNO89UO%23R2RC88NPNO89UO&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Neha":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hE%2BZqYhtRJb8%2Fn7YGmDcWyEx6LsVQf5JKvUk8u9ifNrzAAAAAGggg5AAAAAB&reviewId=R2RC88NPNO89UO
+        - text: Report
+    - listitem:
+      - link "Rocky__itis":
+        - /url: /gp/profile/amzn1.account.AG3JIE2HXLXZYKU4FIXTTCBYJB7Q/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "4.0 out of 5 stars Perfect, worth the money" [level=5]:
+        - link "4.0 out of 5 stars Perfect, worth the money":
+          - /url: /gp/customer-reviews/R2O9JD53BJKFOZ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 20 April 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase Amazing quality, this bag includes a front accessable pocket which was helpful for tiffin, chargers etc. loving the padded base. Definitely worth your money."
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhKF%252FhjsGqtwkBIx69I3cvOSVd7EHIfPsMV6xNi6AmnGPAAAAAGggg5AAAAAB%26reviewId%3DR2O9JD53BJKFOZ%23R2O9JD53BJKFOZ&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Rocky__itis":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hKF%2FhjsGqtwkBIx69I3cvOSVd7EHIfPsMV6xNi6AmnGPAAAAAGggg5AAAAAB&reviewId=R2O9JD53BJKFOZ
+        - text: Report
+    - listitem:
+      - link "Kindle Customer":
+        - /url: /gp/profile/amzn1.account.AELBHT7ZALERLKRCU4J6JQ5C4QYQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "3.0 out of 5 stars School bag" [level=5]:
+        - link "3.0 out of 5 stars School bag":
+          - /url: /gp/customer-reviews/R39KB3AMTOWI7K/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 29 April 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase Good but torn with time"
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhL9CON3NlUp3HxmCI2dRl3GBQqbQjY%252Bmhjg6zsWcUQFcAAAAAGggg5AAAAAB%26reviewId%3DR39KB3AMTOWI7K%23R39KB3AMTOWI7K&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Kindle Customer":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hL9CON3NlUp3HxmCI2dRl3GBQqbQjY%2Bmhjg6zsWcUQFcAAAAAGggg5AAAAAB&reviewId=R39KB3AMTOWI7K
+        - text: Report
+    - listitem:
+      - link "Amazon Customer":
+        - /url: /gp/profile/amzn1.account.AEEEKOQFBQXQ5AAIXF6UUBB2XZLQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8
+      - heading "5.0 out of 5 stars Good bag" [level=5]:
+        - link "5.0 out of 5 stars Good bag":
+          - /url: /gp/customer-reviews/RF5XO7P3GUYT6/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08912T17F
+      - heading "Reviewed in India on 10 January 2025" [level=6]
+      - text: "Colour: Ash GreenVerified Purchase Very good bag, good quality and colour… has good value for money"
+      - link "Mark Review As Helpful":
+        - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08912T17F%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhFyokdFOJH3a4s6%252BKf0itg%252BpL4qgH3MjysbqyDjLrtoDAAAAAGggg5AAAAAB%26reviewId%3DRF5XO7P3GUYT6%23RF5XO7P3GUYT6&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&marketPlaceId=A21TJRUUN4KGV&language=en&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+        - text: Helpful
+      - link "Report review by Amazon Customer":
+        - /url: /hz/reviews-render/report-review?ie=UTF8&ref=cm_cr_dp_d_report&csrfT=hFyokdFOJH3a4s6%2BKf0itg%2BpL4qgH3MjysbqyDjLrtoDAAAAAGggg5AAAAAB&reviewId=RF5XO7P3GUYT6
+        - text: Report
+  - link "See more reviews":
+    - /url: /product-reviews/B08912T17F/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('Search for bags, filter for Men\'s Bags, and verify results', async ({ page }) => {
+   4 |   // Navigate to Amazon India homepage
+   5 |   await page.goto('https://www.amazon.in');
+   6 |   console.log('✅ Navigating to Amazon India homepage...');
+   7 |
+   8 |   // Search for "bags"
+   9 |   await page.fill('input[name="field-keywords"]', 'bags');
+  10 |   await page.click('input[type="submit"][value="Go"]');
+  11 |   console.log('✅ Searching for "bags"...');
+  12 |
+  13 |   // Wait for the results to load
+  14 |   await page.waitForSelector('.s-main-slot');
+  15 |   console.log('⏳ Waiting for product results...');
+  16 |
+  17 |   // Click on the first product
+  18 |   const firstProduct = await page.locator('.s-main-slot .s-result-item').first();
+  19 |   await firstProduct.click();
+  20 |   console.log('✅ Clicking on the first product...');
+  21 |
+  22 |   // Wait for the product page to load
+  23 |   await page.waitForSelector('span#productTitle');
+  24 |   console.log('⏳ Waiting for product page to load...');
+  25 |
+  26 |   // Now filter by "Men's Bags" (example filtering)
+> 27 |   await page.click('span#nav-hamburger-menu'); // Open the hamburger menu for filtering
+     |              ^ Error: page.click: Test timeout of 60000ms exceeded.
+  28 |   await page.waitForSelector('ul#hmenu-content'); // Wait for the menu to open
+  29 |   await page.click('a[href="/s?field-keywords=men%27s+bags"]'); // Click on Men's Bags filter link
+  30 |   console.log('✅ Filtering for Men\'s Bags...');
+  31 |
+  32 |   // Wait for the filtered results
+  33 |   await page.waitForSelector('.s-main-slot');
+  34 |   console.log('⏳ Waiting for filtered results...');
+  35 |
+  36 |   // Verify if the page contains Men's Bags in the product titles
+  37 |   const productTitles = await page.locator('.s-title').allTextContents();
+  38 |   const isFiltered = productTitles.some(title => title.includes('Men'));
+  39 |   expect(isFiltered).toBeTruthy(); // Assert that we have Men's Bags listed
+  40 |   console.log('✅ Verified that filtered results are for Men\'s Bags!');
+  41 | });
+  42 |
+```

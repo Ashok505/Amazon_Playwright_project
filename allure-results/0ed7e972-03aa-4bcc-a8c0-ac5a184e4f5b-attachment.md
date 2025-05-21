@@ -1,0 +1,1522 @@
+# Test info
+
+- Name: Search for a product and verify results
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/searchProduct.spec.js:4:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('.s-main-slot div[data-index="1"] h2 a span')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('.s-main-slot div[data-index="1"] h2 a span')
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/searchProduct.spec.js:16:29
+```
+
+# Page snapshot
+
+```yaml
+- button "Shortcuts menu"
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": wireless headphones
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dwireless%2Bheadphones%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+    - dialog
+- 'heading "1-16 of over 50,000 results for \"wireless headphones\" Sort by: Featured" [level=1]':
+  - heading "1-16 of over 50,000 results for \"wireless headphones\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- text: Showing products near you, with fast delivery
+- link "See all products, across price ranges.":
+  - /url: /s?k=wireless+headphones&nsdOptOutParam=true&ref=nb_sb_noss
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - group "Amazon's Choice for \"wireless headphones\""
+    - link:
+      - /url: /Rockerz-450-Wireless-Bluetooth-Headphone/dp/B07PR1CL3S/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-1
+    - link "boAt Rockerz 450, 15 HRS Battery, 40mm Drivers, Padded Ear Cushions, Integrated Controls, Dual Modes, On Ear Bluetooth Headphones, Wireless Headphone with Mic (Luscious Black)":
+      - /url: /Rockerz-450-Wireless-Bluetooth-Headphone/dp/B07PR1CL3S/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-1
+      - heading "boAt Rockerz 450, 15 HRS Battery, 40mm Drivers, Padded Ear Cushions, Integrated Controls, Dual Modes, On Ear Bluetooth Headphones, Wireless Headphone with Mic (Luscious Black)" [level=2]
+    - text: Top Reviewed for Battery life
+    - button "4.0 out of 5 stars, rating details"
+    - link "117,071 ratings":
+      - /url: /Rockerz-450-Wireless-Bluetooth-Headphone/dp/B07PR1CL3S/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-1#customerReviews
+    - text: 5K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,399 M.R.P: ₹3,990 M.R.P: ₹3,990"':
+      - /url: /Rockerz-450-Wireless-Bluetooth-Headphone/dp/B07PR1CL3S/ref=sr_1_1?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-1
+    - text: (65% off) Flat 50 Off on SBI Credit Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May
+    - button "Add to cart"
+    - button "Luscious Black"
+    - button "Amazonian Red"
+    - button "Aqua Blue"
+    - button "Aztec Fusion"
+    - button "Black Star"
+    - button "Hazel Beige"
+    - link "+4":
+      - /url: /Rockerz-450-Wireless-Bluetooth-Headphone/dp/B07PR1CL3S/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-1
+  - listitem:
+    - link:
+      - /url: /Oneplus-Bluetooth-Wireless-Earphones-Bombastic/dp/B09TVVGXWS/ref=sr_1_2?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-2
+    - link "Oneplus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic, Bombastic Bass - 12.4 mm Drivers, 10 Mins Charge - 20 Hrs Music, 30 Hrs Battery Life, IP55 Dust and Water Resistant (Magico Black)":
+      - /url: /Oneplus-Bluetooth-Wireless-Earphones-Bombastic/dp/B09TVVGXWS/ref=sr_1_2?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-2
+      - heading "Oneplus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic, Bombastic Bass - 12.4 mm Drivers, 10 Mins Charge - 20 Hrs Music, 30 Hrs Battery Life, IP55 Dust and Water Resistant (Magico Black)" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "192,062 ratings":
+      - /url: /Oneplus-Bluetooth-Wireless-Earphones-Bombastic/dp/B09TVVGXWS/ref=sr_1_2?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-2#customerReviews
+    - text: 20K+ bought in past month Price, product page
+    - 'link "₹1,523 M.R.P: ₹2,299 M.R.P: ₹2,299"':
+      - /url: /Oneplus-Bluetooth-Wireless-Earphones-Bombastic/dp/B09TVVGXWS/ref=sr_1_2?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-2
+    - text: (34% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Black"
+    - button "Beam Blue"
+    - button "Booming Black"
+    - button "Grand Green"
+    - button "Green"
+    - button "Red"
+  - listitem:
+    - group "Best seller in Over-Ear Headphones"
+    - link:
+      - /url: /Boult-Launched-Headphones-Bluetooth-headphones/dp/B0F2FF44NN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-3
+    - link "Boult Newly Launched Flex Headphones Bluetooth Wireless with 70H Playtime, 40mm Bass Driver, Zen ENC Mic, Type-C Fast Charging, 4 EQ Modes, Bluetooth 5.4, IPX5 headphones wireless with mic (Jet Black)":
+      - /url: /Boult-Launched-Headphones-Bluetooth-headphones/dp/B0F2FF44NN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-3
+      - heading "Boult Newly Launched Flex Headphones Bluetooth Wireless with 70H Playtime, 40mm Bass Driver, Zen ENC Mic, Type-C Fast Charging, 4 EQ Modes, Bluetooth 5.4, IPX5 headphones wireless with mic (Jet Black)" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "65 ratings":
+      - /url: /Boult-Launched-Headphones-Bluetooth-headphones/dp/B0F2FF44NN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-3#customerReviews
+    - text: Price, product page
+    - 'link "₹1,499 M.R.P: ₹5,499 M.R.P: ₹5,499"':
+      - /url: /Boult-Launched-Headphones-Bluetooth-headphones/dp/B0F2FF44NN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-3
+    - text: (73% off) Flat 50 Off on SBI Credit Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Jet Black"
+    - button "Navy Blue"
+  - listitem:
+    - link:
+      - /url: /JBL-Wireless-Headphones-Bluetooth-Assistant/dp/B08QTYYNDN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-4
+    - link "JBL Tune 510BT, On Ear Wireless Headphones with Mic, up to 40 Hours Playtime, Pure Bass, Quick Charging, Dual Pairing, Bluetooth 5.0 & Voice Assistant Support for Mobile Phones (Black)":
+      - /url: /JBL-Wireless-Headphones-Bluetooth-Assistant/dp/B08QTYYNDN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-4
+      - heading "JBL Tune 510BT, On Ear Wireless Headphones with Mic, up to 40 Hours Playtime, Pure Bass, Quick Charging, Dual Pairing, Bluetooth 5.0 & Voice Assistant Support for Mobile Phones (Black)" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "20,018 ratings":
+      - /url: /JBL-Wireless-Headphones-Bluetooth-Assistant/dp/B08QTYYNDN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-4#customerReviews
+    - text: 2K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,499 M.R.P: ₹4,449 M.R.P: ₹4,449"':
+      - /url: /JBL-Wireless-Headphones-Bluetooth-Assistant/dp/B08QTYYNDN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-4
+    - text: (44% off) Flat 50 Off on SBI Credit Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Black"
+    - button "Blue"
+    - button "Coral"
+  - listitem:
+    - link:
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1RT9S2/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-5
+    - link "Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery, Quick Charge, DSEE Upscale, Multipoint Connectivity, Voice Assistant, Customized EQ-Blue":
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1RT9S2/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-5
+      - heading "Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery, Quick Charge, DSEE Upscale, Multipoint Connectivity, Voice Assistant, Customized EQ-Blue" [level=2]
+    - text: Top Reviewed for Battery life
+    - button "4.1 out of 5 stars, rating details"
+    - link "20,279 ratings":
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1RT9S2/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-5#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹3,990 M.R.P: ₹5,990 M.R.P: ₹5,990"':
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1RT9S2/ref=sr_1_5?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-5
+    - text: (33% off) Prime Savings Flat INR 500 Off on ALL bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Blue"
+    - button "Black"
+    - button "Pink"
+    - button "Taupe"
+    - button "White"
+  - listitem:
+    - link:
+      - /url: /ZEBRONICS-Bluetooth-Headphones-assistant-Comfortable/dp/B07L8KNP5F/ref=sr_1_6?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-6
+    - link "ZEBRONICS THUNDER Bluetooth 5.3 Wireless Headphones with 60H Backup, Gaming Mode, Dual Pairing, ENC, AUX, Micro SD, Voice assistant, Comfortable Earcups, Call Function(Black)":
+      - /url: /ZEBRONICS-Bluetooth-Headphones-assistant-Comfortable/dp/B07L8KNP5F/ref=sr_1_6?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-6
+      - heading "ZEBRONICS THUNDER Bluetooth 5.3 Wireless Headphones with 60H Backup, Gaming Mode, Dual Pairing, ENC, AUX, Micro SD, Voice assistant, Comfortable Earcups, Call Function(Black)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "77,004 ratings":
+      - /url: /ZEBRONICS-Bluetooth-Headphones-assistant-Comfortable/dp/B07L8KNP5F/ref=sr_1_6?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-6#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹799 M.R.P: ₹1,199 M.R.P: ₹1,199"':
+      - /url: /ZEBRONICS-Bluetooth-Headphones-assistant-Comfortable/dp/B07L8KNP5F/ref=sr_1_6?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-6
+    - text: (33% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "black (Zeb-Thunder)"
+    - button "Beige (Zeb-Thunder Pro)"
+    - button "Blue (Zeb-Thunder Pro)"
+    - button "Blue (Zeb-Thunder)"
+    - button "Brown"
+    - button "Neon Yellow (Zeb-Thunder)"
+    - link "+4":
+      - /url: /ZEBRONICS-Bluetooth-Headphones-assistant-Comfortable/dp/B07L8KNP5F/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-6
+  - listitem:
+    - link:
+      - /url: /Launched-Noise-Headphones-Playtime-Latency/dp/B0B1PXM75C/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-7
+    - link "Noise Two Wireless On-Ear Headphones with 50 Hours Playtime, Low Latency(up to 40ms), 4 Play Modes, Dual Pairing, BT v5.3 (Serene Blue)":
+      - /url: /Launched-Noise-Headphones-Playtime-Latency/dp/B0B1PXM75C/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-7
+      - heading "Noise Two Wireless On-Ear Headphones with 50 Hours Playtime, Low Latency(up to 40ms), 4 Play Modes, Dual Pairing, BT v5.3 (Serene Blue)" [level=2]
+    - button "3.5 out of 5 stars, rating details"
+    - link "3,278 ratings":
+      - /url: /Launched-Noise-Headphones-Playtime-Latency/dp/B0B1PXM75C/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-7#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹1,499 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+      - /url: /Launched-Noise-Headphones-Playtime-Latency/dp/B0B1PXM75C/ref=sr_1_7?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-7
+    - text: (70% off) Flat 50 Off on SBI Credit Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May
+    - button "Add to cart"
+    - button "Serene Blue"
+    - button "Bold Black"
+    - button "Calm White"
+  - listitem:
+    - link:
+      - /url: /boAt-Rockerz-255-Plus-Bluetooth/dp/B0D6Y7Y3N3/ref=sr_1_8?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-8
+    - link "boAt Rockerz 255 Z Plus, AI-ENx Tech, Spatial Audio, 50HRS Battery, Low Latency Mode, Fast Charge, App Support, IPX4, GFPS, BT v5.3, Bluetooth Neckband, Wireless with Mic Earphones (Classic Black)":
+      - /url: /boAt-Rockerz-255-Plus-Bluetooth/dp/B0D6Y7Y3N3/ref=sr_1_8?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-8
+      - heading "boAt Rockerz 255 Z Plus, AI-ENx Tech, Spatial Audio, 50HRS Battery, Low Latency Mode, Fast Charge, App Support, IPX4, GFPS, BT v5.3, Bluetooth Neckband, Wireless with Mic Earphones (Classic Black)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "226,436 ratings":
+      - /url: /boAt-Rockerz-255-Plus-Bluetooth/dp/B0D6Y7Y3N3/ref=sr_1_8?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-8#customerReviews
+    - text: 5K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹999 M.R.P: ₹4,489 M.R.P: ₹4,489"':
+      - /url: /boAt-Rockerz-255-Plus-Bluetooth/dp/B0D6Y7Y3N3/ref=sr_1_8?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-8
+    - text: (78% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Classic Black w/50HRS"
+    - button "Active Black"
+    - button "Cosmic Grey w/ 60HRS"
+    - button "Deep Blue w/ 30HRS"
+    - button "Furious Blue"
+    - button "Green w/ 30HRS"
+    - link "+14":
+      - /url: /boAt-Rockerz-255-Plus-Bluetooth/dp/B0D6Y7Y3N3/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-8
+  - listitem:
+    - link:
+      - /url: /boAt-Rockerz-480-Bluetooth-Headphones/dp/B0DGTSRX3R/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-9
+    - link "boAt Rockerz 480 w/RGB LEDs, 6 Light Modes, 40mm Drivers, Beast Mode, 60hrs Playback, ENx Tech, BT v5.3, Adaptive Fit & Easy Access Controls, Bluetooth Headphones(Black Sabre)":
+      - /url: /boAt-Rockerz-480-Bluetooth-Headphones/dp/B0DGTSRX3R/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-9
+      - heading "boAt Rockerz 480 w/RGB LEDs, 6 Light Modes, 40mm Drivers, Beast Mode, 60hrs Playback, ENx Tech, BT v5.3, Adaptive Fit & Easy Access Controls, Bluetooth Headphones(Black Sabre)" [level=2]
+    - button "3.8 out of 5 stars, rating details"
+    - link "700 ratings":
+      - /url: /boAt-Rockerz-480-Bluetooth-Headphones/dp/B0DGTSRX3R/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-9#customerReviews
+    - text: 3K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,599 M.R.P: ₹3,790 M.R.P: ₹3,790"':
+      - /url: /boAt-Rockerz-480-Bluetooth-Headphones/dp/B0DGTSRX3R/ref=sr_1_9?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-9
+    - text: (58% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Black Sabre"
+    - button "White Sabre"
+  - listitem:
+    - link:
+      - /url: /ZEBRONICS-Zeb-Thunder-Connectivity-Sea-Green/dp/B09B5CPV71/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-10
+    - link "ZEBRONICS Thunder Bluetooth 5.3 Wireless Over Ear Headphones with 60H Backup, Gaming Mode, Dual Pairing, Enc, Aux, Micro Sd, Voice Assistant, Comfortable Earcups, Call Function (Sea Green)":
+      - /url: /ZEBRONICS-Zeb-Thunder-Connectivity-Sea-Green/dp/B09B5CPV71/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-10
+      - heading "ZEBRONICS Thunder Bluetooth 5.3 Wireless Over Ear Headphones with 60H Backup, Gaming Mode, Dual Pairing, Enc, Aux, Micro Sd, Voice Assistant, Comfortable Earcups, Call Function (Sea Green)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "77,004 ratings":
+      - /url: /ZEBRONICS-Zeb-Thunder-Connectivity-Sea-Green/dp/B09B5CPV71/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-10#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹799 M.R.P: ₹1,399 M.R.P: ₹1,399"':
+      - /url: /ZEBRONICS-Zeb-Thunder-Connectivity-Sea-Green/dp/B09B5CPV71/ref=sr_1_10?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-10
+    - text: (43% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Sea Green"
+    - button "Beige (Zeb-Thunder Pro)"
+    - button "Blue (Zeb-Thunder Pro)"
+    - button "Blue (Zeb-Thunder)"
+    - button "Brown"
+    - button "Neon Yellow (Zeb-Thunder)"
+    - link "+4":
+      - /url: /ZEBRONICS-Zeb-Thunder-Connectivity-Sea-Green/dp/B09B5CPV71/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-10
+  - listitem:
+    - link:
+      - /url: /boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-11
+    - link "Boat Rockerz 255 Pro+, 60HRS Battery, Fast Charge, IPX7, Dual Pairing, Low Latency, Magnetic Earbuds, Bluetooth Neckband, Wireless with Mic Earphones (Active Black)":
+      - /url: /boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-11
+      - heading "Boat Rockerz 255 Pro+, 60HRS Battery, Fast Charge, IPX7, Dual Pairing, Low Latency, Magnetic Earbuds, Bluetooth Neckband, Wireless with Mic Earphones (Active Black)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "226,436 ratings":
+      - /url: /boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-11#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹1,298 M.R.P: ₹3,990 M.R.P: ₹3,990"':
+      - /url: /boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-11
+    - text: (67% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Active Black"
+    - button "Classic Black w/50HRS"
+    - button "Cosmic Grey w/ 60HRS"
+    - button "Deep Blue w/ 30HRS"
+    - button "Furious Blue"
+    - button "Green w/ 30HRS"
+    - link "+14":
+      - /url: /boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-11
+  - listitem:
+    - link:
+      - /url: /boAt-Rockerz-430-Assistant-Headphones/dp/B0DGTSTQWL/ref=sr_1_12?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-12
+    - link "boAt Rockerz 430 w/ 40mm Drivers, Beast Mode w/ 40ms Latency, 40hrs Playback, ENx Tech, Voice Assistant, BTv5.4, Adaptive Fit & Easy Access Controls, Bluetooth Over Ear Headphones(Black Sabre)":
+      - /url: /boAt-Rockerz-430-Assistant-Headphones/dp/B0DGTSTQWL/ref=sr_1_12?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-12
+      - heading "boAt Rockerz 430 w/ 40mm Drivers, Beast Mode w/ 40ms Latency, 40hrs Playback, ENx Tech, Voice Assistant, BTv5.4, Adaptive Fit & Easy Access Controls, Bluetooth Over Ear Headphones(Black Sabre)" [level=2]
+    - text: Top Reviewed for Battery life
+    - button "3.1 out of 5 stars, rating details"
+    - link "1,013 ratings":
+      - /url: /boAt-Rockerz-430-Assistant-Headphones/dp/B0DGTSTQWL/ref=sr_1_12?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-12#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,199 M.R.P: ₹2,490 M.R.P: ₹2,490"':
+      - /url: /boAt-Rockerz-430-Assistant-Headphones/dp/B0DGTSTQWL/ref=sr_1_12?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-12
+    - text: (52% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Black Sabre"
+    - button "Bold Blue"
+    - button "Sage Green"
+  - listitem:
+    - link:
+      - /url: /Boat-Rockerz-450-Lightweight-Compatibility/dp/B08667772G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-13
+    - link "Boat Rockerz 450, 15 HRS Battery, 40mm Drivers, Padded Ear Cushions, Integrated Controls, Dual Modes, Bluetooth Headphones, Wireless Headphone with Mic (Aqua Blue)":
+      - /url: /Boat-Rockerz-450-Lightweight-Compatibility/dp/B08667772G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-13
+      - heading "Boat Rockerz 450, 15 HRS Battery, 40mm Drivers, Padded Ear Cushions, Integrated Controls, Dual Modes, Bluetooth Headphones, Wireless Headphone with Mic (Aqua Blue)" [level=2]
+    - text: Top Reviewed for Battery life
+    - button "4.0 out of 5 stars, rating details"
+    - link "117,071 ratings":
+      - /url: /Boat-Rockerz-450-Lightweight-Compatibility/dp/B08667772G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-13#customerReviews
+    - text: 2K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,399 M.R.P: ₹3,990 M.R.P: ₹3,990"':
+      - /url: /Boat-Rockerz-450-Lightweight-Compatibility/dp/B08667772G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-13
+    - text: (65% off) Flat 50 Off on SBI Credit Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Aqua Blue"
+    - button "Amazonian Red"
+    - button "Aztec Fusion"
+    - button "Black Star"
+    - button "Hazel Beige"
+    - button "King's Purple"
+    - link "+4":
+      - /url: /Boat-Rockerz-450-Lightweight-Compatibility/dp/B08667772G/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-13
+  - listitem:
+    - link:
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1PRC4L/ref=sr_1_14?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-14
+    - link "Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery, Quick Charge, DSEE Upscale, Multipoint Connectivity, Voice Assistant, Customized EQ-Black":
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1PRC4L/ref=sr_1_14?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-14
+      - heading "Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery, Quick Charge, DSEE Upscale, Multipoint Connectivity, Voice Assistant, Customized EQ-Black" [level=2]
+    - text: Top Reviewed for Battery life
+    - button "4.1 out of 5 stars, rating details"
+    - link "20,279 ratings":
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1PRC4L/ref=sr_1_14?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-14#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹3,990 M.R.P: ₹5,990 M.R.P: ₹5,990"':
+      - /url: /Sony-Bluetooth-Headphones-Multipoint-Connectivity/dp/B0BS1PRC4L/ref=sr_1_14?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-14
+    - text: (33% off) Prime Savings Flat INR 500 Off on ALL bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Black"
+    - button "Blue"
+    - button "Pink"
+    - button "Taupe"
+    - button "White"
+  - listitem:
+    - link:
+      - /url: /Boult-Bluetooth-Headphones-Playtime-Charging/dp/B0DFHFH16K/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-15
+    - link "Q Over Ear Bluetooth Headphones with 70H Playtime, 40mm Bass Drivers, Zen™ ENC Mic, Type-C Fast Charging, 4 EQ Modes, Bluetooth 5.4, AUX Option, Easy Control, IPX5 headphones wireless with mic (Black)":
+      - /url: /Boult-Bluetooth-Headphones-Playtime-Charging/dp/B0DFHFH16K/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-15
+      - heading "Q Over Ear Bluetooth Headphones with 70H Playtime, 40mm Bass Drivers, Zen™ ENC Mic, Type-C Fast Charging, 4 EQ Modes, Bluetooth 5.4, AUX Option, Easy Control, IPX5 headphones wireless with mic (Black)" [level=2]
+    - text: Top Reviewed for Battery life
+    - button "4.1 out of 5 stars, rating details"
+    - link "2,577 ratings":
+      - /url: /Boult-Bluetooth-Headphones-Playtime-Charging/dp/B0DFHFH16K/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-15#customerReviews
+    - text: 5K+ bought in past month Price, product page
+    - 'link "₹1,999 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+      - /url: /Boult-Bluetooth-Headphones-Playtime-Charging/dp/B0DFHFH16K/ref=sr_1_15?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-15
+    - text: (67% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May Or fastest delivery Tomorrow, 21 May
+    - button "Add to cart"
+    - button "Q Black"
+    - button "Blue"
+    - button "Q Beige"
+  - listitem:
+    - link:
+      - /url: /boAt-Rockerz-245-V2-Pro/dp/B0CC8SBFFR/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-16
+    - link "boAt Rockerz 245 v2 Pro, 30h Battery, ENx Tech, Fast Charge, Dual Pairing, Magnetic Buds, USB Type-C Interface & IPX5, Bluetooth in Ear Neckband, Wireless with Mic Earphones (Teal Green)":
+      - /url: /boAt-Rockerz-245-V2-Pro/dp/B0CC8SBFFR/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-16
+      - heading "boAt Rockerz 245 v2 Pro, 30h Battery, ENx Tech, Fast Charge, Dual Pairing, Magnetic Buds, USB Type-C Interface & IPX5, Bluetooth in Ear Neckband, Wireless with Mic Earphones (Teal Green)" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "2,158 ratings":
+      - /url: /boAt-Rockerz-245-V2-Pro/dp/B0CC8SBFFR/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-16#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹1,099 M.R.P: ₹3,490 M.R.P: ₹3,490"':
+      - /url: /boAt-Rockerz-245-V2-Pro/dp/B0CC8SBFFR/ref=sr_1_16?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-16
+    - text: (69% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sat, 24 May
+    - button "Add to cart"
+    - button "Teal Green"
+    - button "Active Black"
+    - button "Blue Bliss"
+    - button "Cool Blue"
+    - button "Fiery Black"
+    - button "Gray"
+    - link "+2":
+      - /url: /boAt-Rockerz-245-V2-Pro/dp/B0CC8SBFFR/ref=cs_sr_dp_n?dib=eyJ2IjoiMSJ9.dgKDtT8X6ZGiRIleF-lFoO-Yu-2pr_VmmcMUYsz1srSEx-F1HxFC4AUbMhF0PKNFja2d3-k9uLudYYUh2_oMHOjecGtMlq98hEO0m1tCQbK9NPqiU4iC6Umzj_gZH4puSBxn9XSCH0oBNqJd-9GffnU9Ir1Yljh5ThbFVNOcA1952IkvnfDTAlJY6rGebIs3mM02IoQmpGoxwCZ8Ta6MtGkJwlEwkKoXYaL5FCLcQBE.THoFw1g8Z--wXmYMTJbWar5u4KCoY40b3DoEOQ7ndzA&dib_tag=se&keywords=wireless+headphones&qid=1747723593&sr=8-16
+- heading "Related searches" [level=2]
+- list:
+  - link "wireless headphone with mic":
+    - /url: /s?k=wireless+headphone+with+mic&ref=rsl_sug_0_0&pd_rd_w=BwkKc&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=YB646MTWHTGYEP87CGWN&pd_rd_wg=QQENU&pd_rd_r=627dff1b-c446-4887-add9-05bf38a8576b&qid=1747723593
+    - listitem: wireless headphone with mic
+  - link "wireless earphones bluetooth":
+    - /url: /s?k=wireless+earphones+bluetooth&ref=rsl_sug_0_3&pd_rd_w=BwkKc&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=YB646MTWHTGYEP87CGWN&pd_rd_wg=QQENU&pd_rd_r=627dff1b-c446-4887-add9-05bf38a8576b&qid=1747723593
+    - listitem: wireless earphones bluetooth
+  - link "wireless headphones boat":
+    - /url: /s?k=wireless+headphones+boat&ref=rsl_sug_0_1&pd_rd_w=BwkKc&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=YB646MTWHTGYEP87CGWN&pd_rd_wg=QQENU&pd_rd_r=627dff1b-c446-4887-add9-05bf38a8576b&qid=1747723593
+    - listitem: wireless headphones boat
+  - link "wireless headphones sony":
+    - /url: /s?k=wireless+headphones+sony&ref=rsl_sug_0_4&pd_rd_w=BwkKc&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=YB646MTWHTGYEP87CGWN&pd_rd_wg=QQENU&pd_rd_r=627dff1b-c446-4887-add9-05bf38a8576b&qid=1747723593
+    - listitem: wireless headphones sony
+  - link "wired headphones":
+    - /url: /s?k=wired+headphones&ref=rsl_sug_0_2&pd_rd_w=BwkKc&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=YB646MTWHTGYEP87CGWN&pd_rd_wg=QQENU&pd_rd_r=627dff1b-c446-4887-add9-05bf38a8576b&qid=1747723593
+    - listitem: wired headphones
+  - link "wireless headphones jbl":
+    - /url: /s?k=wireless+headphones+jbl&ref=rsl_sug_0_5&pd_rd_w=BwkKc&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=YB646MTWHTGYEP87CGWN&pd_rd_wg=QQENU&pd_rd_r=627dff1b-c446-4887-add9-05bf38a8576b&qid=1747723593
+    - listitem: wireless headphones jbl
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It by Tomorrow to narrow results":
+        - /url: /s?k=wireless+headphones&rh=p_90%3A6741118031&dc&qid=1747723593&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3ABcjDI9%2B6H4mpBFT91qhCWtjt4CHImsMecOUt37xvQ0A
+        - text: Get It by Tomorrow
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=wireless+headphones&rh=p_90%3A20912642031&dc&qid=1747723593&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3AbD7%2B%2FJAhGy%2FsH4DkMMCIRM5P8Yc5B%2Bbl7J1%2FfcshlO0
+        - text: Get It in 2 Days
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=wireless+headphones&rh=p_72%3A1318476031&dc&qid=1747723593&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3Ah5FpbSN08D5P8noJjklPCIZbpjaZ7QWQ5US4ZO7OmP0
+        - text: 4 Stars & Up
+- group:
+  - text: Price ₹88 ₹92,700+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "189"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=wireless+headphones&rh=p_n_deal_type%3A26921226031&dc&qid=1747723593&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AqFt3ftS%2BlGRbPdMl4QibGqmoTbedxQqvUhKtB8B0C14
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=wireless+headphones&rh=p_n_deal_type%3A26921224031&dc&qid=1747723593&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3A0LonPinoa%2FfvGNKP8stkA480%2BUAgWFFFxX13Axq31xQ
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter boAt to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A214020&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3Ac667r05r%2FvX2XbR0KmSh187FDwGtJ%2FJ3zVkga27b14U
+        - text: boAt
+    - listitem:
+      - link "Apply the filter ZEBRONICS to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A396324&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3ADK2rciuZ9McSZHl%2BZmfYJ5RFR4fscHzMh7N3RMRqk%2FU
+        - text: ZEBRONICS
+    - listitem:
+      - link "Apply the filter Sony to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A237204&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3AFtYCtxMObqt0wThgr%2FFIvVWjTZdcLt9V9Mr%2B0v8V%2BYE
+        - text: Sony
+    - listitem:
+      - link "Apply the filter Boult to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A445583&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_4&ds=v1%3AespmS5jKMUVD6yQp%2B0bPu%2FclxWYfnty973n4xsgSpqI
+        - text: Boult
+    - listitem:
+      - link "Apply the filter Noise to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A42717&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_5&ds=v1%3ATrLRvJ9rQvE1QMz3svXD1MknRoUj08byn9jPHTmSxjk
+        - text: Noise
+    - listitem:
+      - link "Apply the filter JBL to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A233043&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_6&ds=v1%3AzldG%2FVvGbA%2BjabMgempYTQh9dCXWOgKUUd2liuhzmTk
+        - text: JBL
+    - listitem:
+      - link "Apply the filter soundcore to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_123%3A324795&dc&qid=1747723593&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3AJ%2F8EFzuuc0lffW7g6so59O%2B4kQ98P9FxZc%2Bdp1ISKtg
+        - text: soundcore
+    - listitem:
+      - button "See more, Brands": See more
+- group "Wireless Technology":
+  - heading "Wireless Technology" [level=2]
+  - list "Wireless Technology":
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A15564041031&dc&qid=1747723593&rnid=15564018031&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3ACVbVuL8KakJEcR17f4cjlVZQ5s%2B7mvMfB1OKIzoUZOM
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter Infrared to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A15564042031&dc&qid=1747723593&rnid=15564018031&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3ATnni4eaMlda0l1blVnugs0b6VL%2F0rGCVq1kbWk9p0V4
+        - text: Infrared
+    - listitem:
+      - link "Apply the filter RF to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A15564045031&dc&qid=1747723593&rnid=15564018031&ref=sr_nr_p_n_feature_five_browse-bin_3&ds=v1%3A8qx5jVSea6n%2FNiGIU5GJdoLh5iWfuq9tgyaWfBNXUgc
+        - text: RF
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1747723593&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3AwtI73yR9FAFcZjH5l2Zcut5j7lEdKRsbhQhcK%2FSyIHE
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1747723593&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3An%2FopRq5WCSfEUtgIsf9HmkiKfZ942mVhJ4JjR9WJUC0
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1747723593&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3ANH09bVv28t0TktNp8ECTeXL8Yo8XjoCs1u1Vyy90pWU
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1747723593&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3AtX%2F8blXZ6xT5B8WEjAsA6SirTiyWV7Z4pnQ%2Fb4ve1%2Fs
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1747723593&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3A%2FIbbJ50po4ADfrRwvosDFF2fwjDtx%2BBLNvmBtH3ioQo
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1747723593&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3AjJxDV1HOZnmMGvULgE4R6RVMLYOIXfKkUIMiy9nD3gk
+- group "Electronic Accessories Brands":
+  - heading "Electronic Accessories Brands" [level=2]
+  - list "Electronic Accessories Brands":
+    - listitem:
+      - link "Apply the filter Made for Amazon to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_format_browse-bin%3A30678585031&dc&qid=1747723593&rnid=30678575031&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3AoSeUXXW%2BkJ%2FF0LhF8zdfKj1PZviOKWVfleyKIzPW3MU
+        - text: Made for Amazon
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_format_browse-bin%3A30678584031&dc&qid=1747723593&rnid=30678575031&ref=sr_nr_p_n_format_browse-bin_2&ds=v1%3AhwC%2BQGRZfaqZPM7ycLxZbb3yekSdEuXpemcapqNs0NU
+        - text: Top Brands
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Audio Headphones":
+        - /url: /s?k=wireless+headphones&rh=n%3A1388921031&dc&qid=1747723593&rnid=3576079031&ref=sr_nr_n_1&ds=v1%3Ay1OUd9O59869RibljshIgwuXK0WNKi4kgGqW8das6Ug
+    - listitem:
+      - link "On-Ear Headphones":
+        - /url: /s?k=wireless+headphones&rh=n%3A1388921031%2Cn%3A14146391031&dc&qid=1747723593&rnid=3576079031&ref=sr_nr_n_2&ds=v1%3AjXRu4AwMeOTbhHjeNTyVrsftch3RhFtqnzUo3iNg7OY
+    - listitem:
+      - link "Over-Ear Headphones":
+        - /url: /s?k=wireless+headphones&rh=n%3A1388921031%2Cn%3A14146390031&dc&qid=1747723593&rnid=3576079031&ref=sr_nr_n_3&ds=v1%3A11NJyUy530MbwZ6oaFRK56vmWFL21Pd54bG7016Q%2BPA
+    - listitem:
+      - link "In-Ear Headphones":
+        - /url: /s?k=wireless+headphones&rh=n%3A1388921031%2Cn%3A14146389031&dc&qid=1747723593&rnid=3576079031&ref=sr_nr_n_4&ds=v1%3ACBLg6LIfKdVkRLpLd0iKRxEosYN4ObvJw76YLVqyf84
+    - listitem:
+      - link "Open-Ear Headphones":
+        - /url: /s?k=wireless+headphones&rh=n%3A1388921031%2Cn%3A76028196031&dc&qid=1747723593&rnid=3576079031&ref=sr_nr_n_5&ds=v1%3A3O0CAzr1YRI20u0jtG3nIyNjW8Bgu9K%2B7KVCDKOjzJA
+- group "Headphones Form Factor":
+  - heading "Headphones Form Factor" [level=2]
+  - list "Headphones Form Factor":
+    - listitem:
+      - link "Apply the filter In Ear to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A27344393031&dc&qid=1747723593&rnid=27344392031&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3A%2FLa6tn4z80N4OY5bDsR2IMcnD9%2Fl24ppPaVAutSnpik
+        - text: In Ear
+    - listitem:
+      - link "Apply the filter On Ear to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A27344394031&dc&qid=1747723593&rnid=27344392031&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3AtXNHW3BfxAm9MM3IgclbxPffJdJSd7MXZTbc%2Fgu%2B3G4
+        - text: On Ear
+    - listitem:
+      - link "Apply the filter Over Ear to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A27344395031&dc&qid=1747723593&rnid=27344392031&ref=sr_nr_p_n_feature_two_browse-bin_3&ds=v1%3AKTwONjjkjjD9Vka2b8DDL2THSThCX0blIaeDsBgvWZc
+        - text: Over Ear
+    - listitem:
+      - link "Apply the filter True Wireless to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A88081472031&dc&qid=1747723593&rnid=27344392031&ref=sr_nr_p_n_feature_two_browse-bin_4&ds=v1%3AYU3tCkEwk0fMokfm5qyCX1GbX57U29TYv%2Fk6a%2BWt8%2FI
+        - text: True Wireless
+- group "Connectivity":
+  - heading "Connectivity" [level=2]
+  - list "Connectivity":
+    - listitem:
+      - link "Apply the filter Wired to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A27315989031&dc&qid=1747723593&rnid=27315987031&ref=sr_nr_p_n_feature_fifteen_browse-bin_1&ds=v1%3AwxcYI%2BoB75r2EQDOuIwNBOWQPf7J%2FpZzCjewfbIebKQ
+        - text: Wired
+    - listitem:
+      - link "Apply the filter Wireless to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A27315988031&dc&qid=1747723593&rnid=27315987031&ref=sr_nr_p_n_feature_fifteen_browse-bin_2&ds=v1%3AIiFBm%2Fl%2F4qwCBYu5g%2Bb%2BsR9rERsv1%2B2konOOxV%2BbY08
+        - text: Wireless
+- group "Noise Control":
+  - heading "Noise Control" [level=2]
+  - list "Noise Control":
+    - listitem:
+      - link "Apply the filter Active Noise Cancellation to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A27957752031&dc&qid=1747723593&rnid=27957750031&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3A%2BC1vfEfd6fXWtyWzzzfhT1f2obkvsNDOqo8%2FqTMyfUo
+        - text: Active Noise Cancellation
+    - listitem:
+      - link "Apply the filter Adaptive Noise Cancellation to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A82376284031&dc&qid=1747723593&rnid=27957750031&ref=sr_nr_p_n_feature_six_browse-bin_2&ds=v1%3AI7K1JFzvysBXNYUKymo7lFPwpgdhDLM9LCl%2FofrSJHs
+        - text: Adaptive Noise Cancellation
+    - listitem:
+      - link "Apply the filter Hybrid Noise Cancellation to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A82376283031&dc&qid=1747723593&rnid=27957750031&ref=sr_nr_p_n_feature_six_browse-bin_3&ds=v1%3AxuZNyDK8jLXwgbSHaqidUH3owlxU8NGb%2FiutPlcZ7Ps
+        - text: Hybrid Noise Cancellation
+    - listitem:
+      - link "Apply the filter None to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A27957753031&dc&qid=1747723593&rnid=27957750031&ref=sr_nr_p_n_feature_six_browse-bin_4&ds=v1%3AgSG5VbWhHm2szmdhB8JySD7pAkIO6kNppdb2gTc2Npg
+        - text: None
+    - listitem:
+      - link "Apply the filter Passive Noise Cancellation to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A82376285031&dc&qid=1747723593&rnid=27957750031&ref=sr_nr_p_n_feature_six_browse-bin_5&ds=v1%3AOjvVCYvUeyPb9LSjKnkqYqta2zT%2F9Lc7Hr%2F0jwx7cBc
+        - text: Passive Noise Cancellation
+    - listitem:
+      - link "Apply the filter Sound Isolation to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A27957754031&dc&qid=1747723593&rnid=27957750031&ref=sr_nr_p_n_feature_six_browse-bin_6&ds=v1%3ABgYzt5xH%2FIXPPMd6RKpPaW1GqbYeIyMv2fyuePH4LH0
+        - text: Sound Isolation
+- group "Item Condition":
+  - heading "Item Condition" [level=2]
+  - list "Item Condition":
+    - listitem:
+      - link "New":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_condition-type%3A8609960031&dc&qid=1747723593&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3AtgRZajYsfaoXFttKDQDx3x%2BxCGP7kYU0WEE8E%2FTsRys
+    - listitem:
+      - link "Renewed":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_condition-type%3A13736826031&dc&qid=1747723593&rnid=8609959031&ref=sr_nr_p_n_condition-type_2&ds=v1%3AK59r6ujZQ3Qqu2TkEpZl025IX5ZRKNhIDibIZ0OhPas
+- group "Features":
+  - heading "Features" [level=2]
+  - list "Features":
+    - listitem:
+      - link "Apply the filter Noise Cancelling to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A6631676031&dc&qid=1747723593&rnid=6631674031&ref=sr_nr_p_n_feature_three_browse-bin_1&ds=v1%3A39Z0Gh51TINJ34J9pikYVcIzPfkYp9kgQ8wb8bzDCK8
+        - text: Noise Cancelling
+    - listitem:
+      - link "Apply the filter Sports & Fitness to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A13943167031&dc&qid=1747723593&rnid=6631674031&ref=sr_nr_p_n_feature_three_browse-bin_2&ds=v1%3Ad6jt9ApmQpeeqz7q1js42IrrO5fmF2lo9kzFmCscL%2B8
+        - text: Sports & Fitness
+    - listitem:
+      - link "Apply the filter Tangle Free Cord to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A13943169031&dc&qid=1747723593&rnid=6631674031&ref=sr_nr_p_n_feature_three_browse-bin_3&ds=v1%3AE%2B0jwq%2BjEMXlD1XM4JLjgzpg7Ag8tro5Mq2qAwPUdDw
+        - text: Tangle Free Cord
+    - listitem:
+      - link "Apply the filter Volume Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A13943168031&dc&qid=1747723593&rnid=6631674031&ref=sr_nr_p_n_feature_three_browse-bin_4&ds=v1%3A2HIjv44TrDPGMNSXhNiZGlknOXD2vAhXbk5yLw2Ux%2Bc
+        - text: Volume Control
+    - listitem:
+      - link "Apply the filter With Microphone to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A13943166031&dc&qid=1747723593&rnid=6631674031&ref=sr_nr_p_n_feature_three_browse-bin_5&ds=v1%3A7yRFqz%2BpvPotOl%2Bi7NvMO3YaNZAZA824qW1jWWjx1Q4
+        - text: With Microphone
+- group "Microphone":
+  - heading "Microphone" [level=2]
+  - list "Microphone":
+    - listitem:
+      - link "Apply the filter With Microphone to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A6631678031&dc&qid=1747723593&rnid=6705453031&ref=sr_nr_p_n_feature_four_browse-bin_1&ds=v1%3A8doku2sjs7J7Uz5I95WIo2vu97Uu0QRKhZvDtzGlmVY
+        - text: With Microphone
+    - listitem:
+      - link "Apply the filter Without Microphone to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A6705454031&dc&qid=1747723593&rnid=6705453031&ref=sr_nr_p_n_feature_four_browse-bin_2&ds=v1%3AXOtRFUgiueoE2aAmBB%2FpOAZY03BA%2FJuDx%2FYK4LguoJ8
+        - text: Without Microphone
+- group "Cable Feature":
+  - heading "Cable Feature" [level=2]
+  - list "Cable Feature":
+    - listitem:
+      - link "Apply the filter Detachable to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A28233512031&dc&qid=1747723593&rnid=28233496031&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3A0PEb%2F8lUi5ns67fv3u44iwGJv6XCUbTjDKNvABzLmKw
+        - text: Detachable
+    - listitem:
+      - link "Apply the filter Retractable to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A28233514031&dc&qid=1747723593&rnid=28233496031&ref=sr_nr_p_n_feature_nine_browse-bin_2&ds=v1%3AclVHrjZKlznq%2BluT2b7b1SqfCfNm6gPD0irHAOn1v%2FY
+        - text: Retractable
+    - listitem:
+      - link "Apply the filter Tangle Free to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A28233513031&dc&qid=1747723593&rnid=28233496031&ref=sr_nr_p_n_feature_nine_browse-bin_3&ds=v1%3Agg1yDecXiBZbPKNL5zltrJjSrU2sbSD8FOgGwFvSY8Q
+        - text: Tangle Free
+    - listitem:
+      - link "Apply the filter Without Cable to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nine_browse-bin%3A28233515031&dc&qid=1747723593&rnid=28233496031&ref=sr_nr_p_n_feature_nine_browse-bin_4&ds=v1%3AQIIE737bS3aFSW6i14znq4DesYg4cD9Ye%2FK1ut%2FRpME
+        - text: Without Cable
+- group "Age Range":
+  - heading "Age Range" [level=2]
+  - list "Age Range":
+    - listitem:
+      - link "Apply the filter Kid to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27387678031&dc&qid=1747723593&rnid=27387660031&ref=sr_nr_p_n_feature_sixteen_browse-bin_1&ds=v1%3ALDbPVMk%2B9swT7kGdpkZ%2Ff%2BxklWG1SOphhp%2FoJmYxnZE
+        - text: Kid
+    - listitem:
+      - link "Apply the filter Adult to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A27387679031&dc&qid=1747723593&rnid=27387660031&ref=sr_nr_p_n_feature_sixteen_browse-bin_2&ds=v1%3Aaq5dloTepgEO5ZGiAdsa7LrlwB5Pc7abRSgH9C4cCFo
+        - text: Adult
+    - listitem:
+      - link "Apply the filter Teen to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A68663467031&dc&qid=1747723593&rnid=27387660031&ref=sr_nr_p_n_feature_sixteen_browse-bin_3&ds=v1%3AALf3cdPFAXF%2FpydQ862IugE1p%2FHNphvsiWvuq16%2FhLo
+        - text: Teen
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=wireless+headphones&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1747723593&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AxXGeQREqnUOL6F%2B1txtGw7Y2Rj%2BuodFt8OokQZIYCsU
+        - text: Eligible for Pay On Delivery
+- group "Compatibility":
+  - heading "Compatibility" [level=2]
+  - list "Compatibility":
+    - listitem:
+      - link "Apply the filter Car Audio Systems to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A29248008031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_1&ds=v1%3AoY4VkfmdEv5T67Kf80cSGYmQAAb8t92b3jZNXgXOpbM
+        - text: Car Audio Systems
+    - listitem:
+      - link "Apply the filter Cellphones to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A29248010031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_2&ds=v1%3AAFT2PYPhxUXP%2BQVKsX%2FQ%2BfCkXypA37qveSEjCGU2AAc
+        - text: Cellphones
+    - listitem:
+      - link "Apply the filter Desktops to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A29248013031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_3&ds=v1%3ASK5zF54I1Rkldcuwadd68VYqFj2p2%2F9CeLurVb3mHgA
+        - text: Desktops
+    - listitem:
+      - link "Apply the filter Gaming Consoles to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A29248009031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_4&ds=v1%3Agk7IGY%2FwiCwRMgl%2FNJEY6i1xYpwQOc5r%2B9IdnHXPcGo
+        - text: Gaming Consoles
+    - listitem:
+      - link "Apply the filter Laptops to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A29248006031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_5&ds=v1%3A5biZRVdM2t%2FhvVCIiZB%2F0vH2Qs0mkL21zApWIt8xIkA
+        - text: Laptops
+    - listitem:
+      - link "Apply the filter Music Production Equipment to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A29248012031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_6&ds=v1%3A3OkBseKnzifF9TWf%2BwqWOTd9oyYPlygkAUZoOJIUTgg
+        - text: Music Production Equipment
+    - listitem:
+      - link "Apply the filter Smart Speaker to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A81399232031&dc&qid=1747723593&rnid=29247877031&ref=sr_nr_p_n_feature_seventeen_browse-bin_7&ds=v1%3ABoQ%2BXWRnBVzvkXdz6%2F%2FyDMQzPOF2%2BBWFHlUJZYu2jQw
+        - text: Smart Speaker
+    - listitem:
+      - button "See more, Compatibility": See more
+- group "Control":
+  - heading "Control" [level=2]
+  - list "Control":
+    - listitem:
+      - link "Apply the filter App Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A99972558031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3AR1reGaHbSZfESmrb3TsR4nNlWT%2BCabHvMxUew2cu5Ss
+        - text: App Control
+    - listitem:
+      - link "Apply the filter Button Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A99972557031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3AuAgTM863qzDztOfU1BvQGWSuxe%2B%2FZxblPkVeTZDWyZU
+        - text: Button Control
+    - listitem:
+      - link "Apply the filter Call Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A27179555031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_3&ds=v1%3AM9mpvP9a%2BeyWPzUuIzydMR7x4Y0yI00MUz9l6P3g6yc
+        - text: Call Control
+    - listitem:
+      - link "Apply the filter Google Assistant to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A30125464031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_4&ds=v1%3AF5w5G%2BMsolOC9X33JxscmwmvPp4Y5p0Nnh0K1VcRCnU
+        - text: Google Assistant
+    - listitem:
+      - link "Apply the filter Media Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A27179557031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_5&ds=v1%3AZwvWbiLIR7d52ncqeJhwL%2BzQeAl3vHze29reTkHtLvw
+        - text: Media Control
+    - listitem:
+      - link "Apply the filter Noise Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A27179556031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_6&ds=v1%3AKa1ZLVb8FR7PoD7iRcEfGoayzJI%2Bz1azmM7hnnKVEwc
+        - text: Noise Control
+    - listitem:
+      - link "Apply the filter Siri to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A30125463031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_7&ds=v1%3A640r3jZ6E2tZjhAk0Epi7U6FrtWL5%2FckO%2BM6mpo8MDQ
+        - text: Siri
+    - listitem:
+      - link "Apply the filter Touch Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A99972556031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_8&ds=v1%3Ald9SPS4pz7TGnk4u2Bk23CXtxuUZ4dI64VZEHuK738Y
+        - text: Touch Control
+    - listitem:
+      - link "Apply the filter Voice Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A27179559031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_9&ds=v1%3Aq4ffGuJJFk7sydVK6GJYqCzaz2XfL84e%2Fm40D%2FEQXz8
+        - text: Voice Control
+    - listitem:
+      - link "Apply the filter Volume Control to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A27179558031&dc&qid=1747723593&rnid=27179526031&ref=sr_nr_p_n_feature_eight_browse-bin_10&ds=v1%3A5ayOPKXk7kc9UXHK5oUOhif%2BujOjqJNArukXBuFSJxY
+        - text: Volume Control
+- group "Control Method":
+  - heading "Control Method" [level=2]
+  - list "Control Method":
+    - listitem:
+      - link "Apply the filter App to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A27179568031&dc&qid=1747723593&rnid=27179529031&ref=sr_nr_p_n_feature_ten_browse-bin_1&ds=v1%3ASBsaPjsu4sx47wdjqj1yP1gYxfUycMCqlpLjPDsjv7o
+        - text: App
+    - listitem:
+      - link "Apply the filter Remote to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A27179569031&dc&qid=1747723593&rnid=27179529031&ref=sr_nr_p_n_feature_ten_browse-bin_2&ds=v1%3AkCyXSlDeuwwBKVO2cOn%2BNvv6Avh54aVGb7VFeOaWNsg
+        - text: Remote
+    - listitem:
+      - link "Apply the filter Touch to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A27179571031&dc&qid=1747723593&rnid=27179529031&ref=sr_nr_p_n_feature_ten_browse-bin_3&ds=v1%3AnrIL%2FtH5SpZKS445xL8Pvf7TJp53D%2BKpLtNlJx0GWrw
+        - text: Touch
+    - listitem:
+      - link "Apply the filter Voice to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A27179570031&dc&qid=1747723593&rnid=27179529031&ref=sr_nr_p_n_feature_ten_browse-bin_4&ds=v1%3Alqcl3KDbvhFHBFgWsb4p2QgmrPzoe2I1C3SJqcDhke8
+        - text: Voice
+- group "Uses":
+  - heading "Uses" [level=2]
+  - list "Uses":
+    - listitem:
+      - link "Apply the filter Audio Monitoring to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387666031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3AamU2AqlZNr3F0Ieahnb1j1jCLor2H30i9ckc776GqUA
+        - text: Audio Monitoring
+    - listitem:
+      - link "Apply the filter Calling to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387677031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3AJST4TmkYgGYG7ZDHVSv5Rqv67hl%2F5F9Sw65llk4fw%2Bk
+        - text: Calling
+    - listitem:
+      - link "Apply the filter Cycling to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387673031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_3&ds=v1%3AxosDH5NPIBSi1yTFDHXMi4YcfI65pdPXDiqsLHiQdfM
+        - text: Cycling
+    - listitem:
+      - link "Apply the filter Disc Jockey Use to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387675031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_4&ds=v1%3A43dQupPlcypT296Dg%2Bf8%2BY6Rs%2FWCRnXRD2MV6rWFrvI
+        - text: Disc Jockey Use
+    - listitem:
+      - link "Apply the filter Exercising to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387669031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_5&ds=v1%3AMwBLOj1eBzP5hWkBdggucQGhTKZN%2FHbiu0GwnOoauaA
+        - text: Exercising
+    - listitem:
+      - link "Apply the filter Gaming to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387671031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_6&ds=v1%3AI71ZQip7GXSlCTW3pNWWCQwLRasB%2F2k4BUh%2F7Wj00g0
+        - text: Gaming
+    - listitem:
+      - link "Apply the filter Motorcycling to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387674031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_7&ds=v1%3ARV%2BBeD4XoHizCiPAoHFYGMzuiarN1TCEPO0gBfgg5zU
+        - text: Motorcycling
+    - listitem:
+      - link "Apply the filter Recording to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387672031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_8&ds=v1%3A51Q%2F8x9r8%2Fi9IvjdWPdrkUbd55gynFMmCNiYX1Ba4Eo
+        - text: Recording
+    - listitem:
+      - link "Apply the filter Running to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387676031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_9&ds=v1%3ACyO1mqR1YjNj1tydcbzXcV4IBDPYOmwIPPXuZJUfGlI
+        - text: Running
+    - listitem:
+      - link "Apply the filter Skateboarding to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387668031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_10&ds=v1%3AwvNGtiNY4EARTZobJPpA8YgL6jbgIzrQi5hg1NB%2FCVc
+        - text: Skateboarding
+    - listitem:
+      - link "Apply the filter Snowboarding to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387667031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_11&ds=v1%3A2m%2BnVl0KT9DHhPs716AMn%2Bg9MEPSjuSJD71BxopYXVw
+        - text: Snowboarding
+    - listitem:
+      - link "Apply the filter Swimming to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A27387670031&dc&qid=1747723593&rnid=27387659031&ref=sr_nr_p_n_feature_browse-bin_12&ds=v1%3AwvKegce7T5%2B97PwNfJVW2Jrv5nG1ry%2Btlz9HGQXOTo4
+        - text: Swimming
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1747723593&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3A%2F9Tu3p%2BRNui1WKCfe1Zyu%2FcRMcLlQNcKOqGtAWqvRJc
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1747723593&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3Ac7vDlq7DYg77sjukPMC4UnKsv%2FwlCotnkhAlF4FwVm4
+- group "Earpiece Shape":
+  - heading "Earpiece Shape" [level=2]
+  - list "Earpiece Shape":
+    - listitem:
+      - link "Apply the filter Bud to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A88307595031&dc&qid=1747723593&rnid=88307591031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_1&ds=v1%3AlLdOWO3zzwtrDSKRMIhv78BVjAb%2F2AozSTZJxlV5vhs
+        - text: Bud
+    - listitem:
+      - link "Apply the filter Circle to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A88307597031&dc&qid=1747723593&rnid=88307591031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_2&ds=v1%3AvuT9HaONauMdD6boYai%2FAqU5FWEjDmTFF7Dkdxz55Gc
+        - text: Circle
+    - listitem:
+      - link "Apply the filter Hook to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A88307592031&dc&qid=1747723593&rnid=88307591031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_3&ds=v1%3Aj8Ehyr%2BFzHWZmeaN%2Bw%2FddVe8ZkKk1dt47AhkwlqlmXo
+        - text: Hook
+    - listitem:
+      - link "Apply the filter Oval to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A88307593031&dc&qid=1747723593&rnid=88307591031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_4&ds=v1%3AXX1qVcC6VgIRc5RMUMZIpOMAafE8us1eE65Xdl%2FhllM
+        - text: Oval
+    - listitem:
+      - link "Apply the filter Rectangle to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A88307598031&dc&qid=1747723593&rnid=88307591031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_5&ds=v1%3AOBfPdueV3c4HPlcZ14kfgqhlsg5aFgR%2FspAm45gqZII
+        - text: Rectangle
+    - listitem:
+      - link "Apply the filter Stick to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A88307596031&dc&qid=1747723593&rnid=88307591031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_6&ds=v1%3AhlooaLOfJWSnNZxDyL39X1%2BJfB%2F2KGhKZ%2FMl6p2bSBQ
+        - text: Stick
+- group "Jack Type":
+  - heading "Jack Type" [level=2]
+  - list "Jack Type":
+    - listitem:
+      - link "Apply the filter 2.5 mm Jack to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A29677976031&dc&qid=1747723593&rnid=29677973031&ref=sr_nr_p_n_feature_eighteen_browse-bin_1&ds=v1%3A7bYTjPxnxPbbU20xJUUJHtXUb4FNaBT%2Bp2284q8KvBE
+        - text: 2.5 mm Jack
+    - listitem:
+      - link "Apply the filter 3.5 mm Jack to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A29677975031&dc&qid=1747723593&rnid=29677973031&ref=sr_nr_p_n_feature_eighteen_browse-bin_2&ds=v1%3A7pM%2BezeRQAhWw9iDidP6slh9U9sRMtAqreugnspPTkY
+        - text: 3.5 mm Jack
+    - listitem:
+      - link "Apply the filter 6.35 mm Jack to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A29677974031&dc&qid=1747723593&rnid=29677973031&ref=sr_nr_p_n_feature_eighteen_browse-bin_3&ds=v1%3ABoDzxOHqlja%2FvrecVerRpoGCwHhZzZlYFBbN8jeoqsg
+        - text: 6.35 mm Jack
+- group "Material":
+  - heading "Material" [level=2]
+  - list "Material":
+    - listitem:
+      - link "Apply the filter Acrylonitrile Butadiene Styrene (ABS) to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A65947460031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_1&ds=v1%3AzThWUiCnT9JFxOy6f%2Bz9%2Fond%2F96US6M32KkrhGk3VUk
+        - text: Acrylonitrile Butadiene Styrene (ABS)
+    - listitem:
+      - link "Apply the filter Aluminium to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A27270331031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_2&ds=v1%3AsPukV6%2FsVWG99ULumk%2F28PHZhi%2Bf%2FNRsgVCsu1Z%2Bb10
+        - text: Aluminium
+    - listitem:
+      - link "Apply the filter Faux Leather to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A27270332031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_3&ds=v1%3AghqZGhp82KFot3FCSf20TYJYR5P8q65RHrUsyni%2BbMs
+        - text: Faux Leather
+    - listitem:
+      - link "Apply the filter Leather to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A27270333031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_4&ds=v1%3AntEdVxcuhqC8aZVyyy7BbuOu6qhju5KBZTjGJPSM4P4
+        - text: Leather
+    - listitem:
+      - link "Apply the filter Metal to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A65947468031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_5&ds=v1%3AeWeMyXOXO5%2Bel4wu6jOw4MbSft8p3v3RyP26P99KBys
+        - text: Metal
+    - listitem:
+      - link "Apply the filter Plastic to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A27270334031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_6&ds=v1%3AVLlntDqfFrz77XxXYoger%2FdOzKEhnkpuGBqp6lENjNU
+        - text: Plastic
+    - listitem:
+      - link "Apply the filter Polycarbonate (PC) to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A65947466031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_7&ds=v1%3AhgM26gZM0ZVISjiB0YdbFsWQHqfwsDZwKsNGZ2i6P2g
+        - text: Polycarbonate (PC)
+    - listitem:
+      - link "Apply the filter Rubber to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A27270329031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_8&ds=v1%3ADf3zBd%2BEsYEIEAAHWG%2FaMAoj4mBPOrpoIKXIxq3TiDU
+        - text: Rubber
+    - listitem:
+      - link "Apply the filter Silicone to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A65947462031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_9&ds=v1%3AeoaFzzQyI%2BrS16lAhtX5I9RDbWvZUJUf0jlOArSqj3Q
+        - text: Silicone
+    - listitem:
+      - link "Apply the filter Stainless Steel to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A27270335031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_10&ds=v1%3AsEZkdmdRFNHMo4RFvL9QaeiYE6VyWW%2BM5Wk%2Fddz6%2Fes
+        - text: Stainless Steel
+    - listitem:
+      - link "Apply the filter Thermoplastic Elastomer (TPE) to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_thirteen_browse-bin%3A77182680031&dc&qid=1747723593&rnid=27270322031&ref=sr_nr_p_n_feature_thirteen_browse-bin_11&ds=v1%3Azxpe5K71M4T08fh8hS7X9vCpZ8XPtBw5Umou0VVHZts
+        - text: Thermoplastic Elastomer (TPE)
+- group "Sensitivity":
+  - heading "Sensitivity" [level=2]
+  - list "Sensitivity":
+    - listitem:
+      - link "Apply the filter Up to 99 dB to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A56163596031&dc&qid=1747723593&rnid=56162630031&ref=sr_nr_p_n_feature_twenty_browse-bin_1&ds=v1%3A3Ubv4T6Ho0C%2BU0IJenm1JDRHSoHXxvDfmVDVSLomPto
+        - text: Up to 99 dB
+    - listitem:
+      - link "Apply the filter 100 to 103 dB to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A56163595031&dc&qid=1747723593&rnid=56162630031&ref=sr_nr_p_n_feature_twenty_browse-bin_2&ds=v1%3AIJTHIc5Ka1BJz9X1L72p2lwF7YpykDaF0JF9%2FsizraU
+        - text: 100 to 103 dB
+    - listitem:
+      - link "Apply the filter 104 to 107 dB to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A56163597031&dc&qid=1747723593&rnid=56162630031&ref=sr_nr_p_n_feature_twenty_browse-bin_3&ds=v1%3AqABMCgxU%2BYPKrY5N4YmY4Kp4%2BThopUUAN1lhLEa%2FocQ
+        - text: 104 to 107 dB
+    - listitem:
+      - link "Apply the filter 108 dB & above to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A56163598031&dc&qid=1747723593&rnid=56162630031&ref=sr_nr_p_n_feature_twenty_browse-bin_4&ds=v1%3AvKq7VXCED73QbwUKO7Git2i1ixYciuq4d31bNo69x3I
+        - text: 108 dB & above
+- group "Theme":
+  - heading "Theme" [level=2]
+  - list "Theme":
+    - listitem:
+      - link "Apply the filter Animal to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298215031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3ASCn292LqjbYtVlwve%2FFJEWdP7Ysv6azimxX6yGl6pIY
+        - text: Animal
+    - listitem:
+      - link "Apply the filter Anime to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298211031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_2&ds=v1%3AV0EHUsWFzuLSb%2BdWzdkHfG4%2Bj8U3cDXFCUFftKSvmyU
+        - text: Anime
+    - listitem:
+      - link "Apply the filter Cartoon to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298212031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_3&ds=v1%3AMmYj127BeuaXb4LeHCQNbfWkyHRCEbKkCOBevFqfsVY
+        - text: Cartoon
+    - listitem:
+      - link "Apply the filter Fantasy to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298214031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_4&ds=v1%3ARNjBPk1RlVX1K%2BNk613%2BH6pONN4IuSRUbuC4%2Fkd2vX0
+        - text: Fantasy
+    - listitem:
+      - link "Apply the filter Movie to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298210031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_5&ds=v1%3AAs72qUojPe8anhoD3UcSZFPpG54tp%2F5UyTuBRtP0vLg
+        - text: Movie
+    - listitem:
+      - link "Apply the filter TV Series to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298209031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_6&ds=v1%3AZlLzGTfhd0cx2BU6VcwxFQ53%2Bou%2ByeE3kXr3F2gKbOc
+        - text: TV Series
+    - listitem:
+      - link "Apply the filter Video Game to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A27298213031&dc&qid=1747723593&rnid=27298206031&ref=sr_nr_p_n_feature_fourteen_browse-bin_7&ds=v1%3Ai3x5aWtHbmQtN2O1IkG6vCnyK5n08VzHlYQjBJkXI%2F4
+        - text: Video Game
+- group "Specific Uses":
+  - heading "Specific Uses" [level=2]
+  - list "Specific Uses":
+    - listitem:
+      - link "Apply the filter Business to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100434633031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_1&ds=v1%3AWgxisRpd%2FO8gvtaNMaocpymj7GXarsWWcupj85bJhVE
+        - text: Business
+    - listitem:
+      - link "Apply the filter Entertainment to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100434635031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_2&ds=v1%3AaoeAxvP%2Bbgwzy6wrwwPURSYIwrTWkwBJHslnc30c5tI
+        - text: Entertainment
+    - listitem:
+      - link "Apply the filter Fitness to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100434631031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_3&ds=v1%3A%2FzRi1zv0GHeMCPEWjXarJBoFLss2cM0mG8R3T2iFRG0
+        - text: Fitness
+    - listitem:
+      - link "Apply the filter Gaming to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100434623031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_4&ds=v1%3AObjJTwtS70m8jcQfyGpNJ5goX8xxz6TR7L%2FVdsXk7jE
+        - text: Gaming
+    - listitem:
+      - link "Apply the filter Professional to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100434626031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_5&ds=v1%3AqDD7bABhR8MszJPNlWHgXsJI4cHlNKR%2FMij3ApUC7oU
+        - text: Professional
+    - listitem:
+      - link "Apply the filter School to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A204236002031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_6&ds=v1%3ANzJuM6PUrizvPdUPVGEyW6sxkBlISf7X4o5Oztc26Uc
+        - text: School
+    - listitem:
+      - link "Apply the filter Travel to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100434628031&dc&qid=1747723593&rnid=100434565031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_7&ds=v1%3A7WWmDq1Y11orXW3KPFAGNT3XjUDEj3Q4MGrTnmFINmk
+        - text: Travel
+- group "Battery Charge Time":
+  - heading "Battery Charge Time" [level=2]
+  - list "Battery Charge Time":
+    - listitem:
+      - link "Apply the filter 1 to 1.9 h to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A100422684031&dc&qid=1747723593&rnid=100422679031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_1&ds=v1%3AKBOvZlpqFinCPz7AXDDf68odJKFZq06kSr5hQ9XwZ%2Bo
+        - text: 1 to 1.9 h
+    - listitem:
+      - link "Apply the filter 2 to 2.9 h to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A100422687031&dc&qid=1747723593&rnid=100422679031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_2&ds=v1%3AUNMwmQJeW9cOox3eiCm0dL%2Fpwd7hwQpM4dHSqr5n63w
+        - text: 2 to 2.9 h
+    - listitem:
+      - link "Apply the filter 3 h & above to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A100422686031&dc&qid=1747723593&rnid=100422679031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_3&ds=v1%3AW%2BgZTOuxOK6HobMdEgBggwqMXjUFIpsYNxrwuvfxC3I
+        - text: 3 h & above
+- group "Impedance":
+  - heading "Impedance" [level=2]
+  - list "Impedance":
+    - listitem:
+      - link "Apply the filter Up to 1 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A100422692031&dc&qid=1747723593&rnid=100422682031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_1&ds=v1%3AhJmOr8CehHY4DutBKzvvRevFtnhahU%2FTxkjWFRnXFqU
+        - text: Up to 1
+    - listitem:
+      - link "Apply the filter 1 to 1.9 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A100422689031&dc&qid=1747723593&rnid=100422682031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_2&ds=v1%3AHbHddQLwXrj%2FGh9hlhzA8RVLXc88rrUM1GC8B6rJDTw
+        - text: 1 to 1.9
+    - listitem:
+      - link "Apply the filter 2 to 2.9 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A100422691031&dc&qid=1747723593&rnid=100422682031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_3&ds=v1%3AXf%2FEZtssElhEEL1cfe9WgYttraMLl0MsfDGDlvtO7aI
+        - text: 2 to 2.9
+    - listitem:
+      - link "Apply the filter 3 & above to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A100422690031&dc&qid=1747723593&rnid=100422682031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_4&ds=v1%3APHJiQi9kmIakFMgWbrzZJfe0Zsr2MQ%2FgoT7XW6jckuQ
+        - text: 3 & above
+- group "Inclusions":
+  - heading "Inclusions" [level=2]
+  - list "Inclusions":
+    - listitem:
+      - link "Apply the filter Cable to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A27181600031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_1&ds=v1%3A8zQEHrpfMGeUrkxqg0Jmwf1VHScOnCDXnqlNe4%2F4foU
+        - text: Cable
+    - listitem:
+      - link "Apply the filter Charging Station to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A27181601031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_2&ds=v1%3AlTh9P%2Bm%2Bl6Xs1HyRY4dnhn3v%2BPbVjwKzq7C8Gtvjmk0
+        - text: Charging Station
+    - listitem:
+      - link "Apply the filter Ear Cushions to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A27181602031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_3&ds=v1%3ARQut1M5pEKPExhpyGF53LYhYmZwAkI3flrne65fHAy0
+        - text: Ear Cushions
+    - listitem:
+      - link "Apply the filter Eartip to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A77182765031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_4&ds=v1%3AnLjLFLkO%2FDj004HV%2BgaxZ2Xa5to7h8BLpBgsa2orOV8
+        - text: Eartip
+    - listitem:
+      - link "Apply the filter Headband to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A27181604031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_5&ds=v1%3AjdukU9LRAQpbkekL2aPTYWsSSbVR3NWOCyqwZU2itE4
+        - text: Headband
+    - listitem:
+      - link "Apply the filter Protective Case to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A27181599031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_6&ds=v1%3AOeZjW%2BW3d13%2FRRj%2FGCbTplReeLlZCtVJlt9CKjs%2FiiU
+        - text: Protective Case
+    - listitem:
+      - link "Apply the filter User Manual to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A65993795031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_7&ds=v1%3ABp3VlDcX51wOpICjcIx9em%2Fa6z1%2FXKh5gmmUZhCzs0w
+        - text: User Manual
+    - listitem:
+      - link "Apply the filter Wireless Charging Case to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A27181603031&dc&qid=1747723593&rnid=27181597031&ref=sr_nr_p_n_feature_eleven_browse-bin_8&ds=v1%3AwGlPGd3%2BHzcEV12OdYtL9P7N6A72Eae28XUDk7NdVbo
+        - text: Wireless Charging Case
+- group "Audio Driver Type":
+  - heading "Audio Driver Type" [level=2]
+  - list "Audio Driver Type":
+    - listitem:
+      - link "Apply the filter Balanced Armature Driver to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A100426754031&dc&qid=1747723593&rnid=100426749031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_1&ds=v1%3AlM6%2BNnulpkCwo3WpZdtxqDDXJFOAOfwMM97dDrBBobc
+        - text: Balanced Armature Driver
+    - listitem:
+      - link "Apply the filter Bone Conduction Driver to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A100426757031&dc&qid=1747723593&rnid=100426749031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_2&ds=v1%3AYpTCBbfLpmd%2BMQrjTwSXYhH2whqCp%2BtRwsIVY8cXatM
+        - text: Bone Conduction Driver
+    - listitem:
+      - link "Apply the filter Dynamic Driver to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A100426756031&dc&qid=1747723593&rnid=100426749031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_3&ds=v1%3AhtWSqVGIVBSkBDBf1w2qQdLL%2Fqq7CFqR5Clshbsak90
+        - text: Dynamic Driver
+    - listitem:
+      - link "Apply the filter Hybrid Driver to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A100426755031&dc&qid=1747723593&rnid=100426749031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_4&ds=v1%3Am8JiGGZ6fub5kocjbLCEU8FOTZoBMun2XHkgV%2FAiU88
+        - text: Hybrid Driver
+    - listitem:
+      - link "Apply the filter Planar Magnetic Driver to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-five_browse-bin%3A100426752031&dc&qid=1747723593&rnid=100426749031&ref=sr_nr_p_n_feature_twenty-five_browse-bin_5&ds=v1%3A%2FEAWzo012J54%2FNmobPZ%2BFgEEQzSXvAdFGkIljDp82Rk
+        - text: Planar Magnetic Driver
+- group "Number of Items":
+  - heading "Number of Items" [level=2]
+  - list "Number of Items":
+    - listitem:
+      - link "Apply the filter 1 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A94077349031&dc&qid=1747723593&rnid=94077346031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_1&ds=v1%3Ax3f6iY4STUYywxbguO9VFTggpWRCW65CizHyQupglhg
+        - text: "1"
+    - listitem:
+      - link "Apply the filter 2 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A94077347031&dc&qid=1747723593&rnid=94077346031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_2&ds=v1%3AM4sswJdR6L9tGEhyH0TDVGWhkIQnOcmyIY%2B9QXqABm8
+        - text: "2"
+    - listitem:
+      - link "Apply the filter 3 & above to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A94077348031&dc&qid=1747723593&rnid=94077346031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_3&ds=v1%3A3ey8DkmuzVjABhhdvhGM7GVXN2j6dGnP%2BRdNuMjA%2FaY
+        - text: 3 & above
+- group "Unit Count":
+  - heading "Unit Count" [level=2]
+  - list "Unit Count":
+    - listitem:
+      - link "Apply the filter 1 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A100104383031&dc&qid=1747723593&rnid=100104381031&ref=sr_nr_p_n_feature_nineteen_browse-bin_1&ds=v1%3AiouRE6kfgIF5Nogx5i8Y6LfjxJNRvQdRKT9twwzp5Eg
+        - text: "1"
+    - listitem:
+      - link "Apply the filter 2 to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A100104382031&dc&qid=1747723593&rnid=100104381031&ref=sr_nr_p_n_feature_nineteen_browse-bin_2&ds=v1%3AnPDpZzCoe1mIlWnz%2BHTJfzcqfAqS5vpLRH4V5HgZUjg
+        - text: "2"
+    - listitem:
+      - link "Apply the filter 3 & above to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A100104384031&dc&qid=1747723593&rnid=100104381031&ref=sr_nr_p_n_feature_nineteen_browse-bin_3&ds=v1%3A3R8a%2Fj8CmFVo5AquQUs66ezp51jmiq4%2FQP2lCbInl6E
+        - text: 3 & above
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter Siwi to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_6%3AANRH3HXS1X8W9&dc&qid=1747723593&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3Akkbvynoc72Es9ycgD0pX7l%2BI3641QgJ%2B68xEUAsmpbM
+        - text: Siwi
+    - listitem:
+      - link "Apply the filter ShopsNow (NC) to narrow results":
+        - /url: /s?k=wireless+headphones&rh=n%3A976419031%2Cp_6%3AA179GDN5NHDE9I&dc&qid=1747723593&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AZw5%2FtKu4H6CCFO69K5MiNzYs%2BOonYdJvROz4%2BntHGD0
+        - text: ShopsNow (NC)
+    - listitem:
+      - button "See more, Seller": See more
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=wireless+headphones&rh=p_n_availability%3A1318485031&dc&qid=1747723593&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3ANHBuvNLNP14oPmngKC1up6092Oyqxpxk7U8%2FpEs9Sck
+        - text: Include Out of Stock
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dwireless%2Bheadphones%26ref%3Dnb_sb_noss&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | // tests/searchProduct.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Search for a product and verify results', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('/');
+   7 |
+   8 |   console.log('✅ Searching for "wireless headphones"...');
+   9 |   await page.fill('#twotabsearchtextbox', 'wireless headphones');
+  10 |   await page.press('#twotabsearchtextbox', 'Enter');
+  11 |
+  12 |   console.log('✅ Waiting for results...');
+  13 |   await page.waitForSelector('.s-main-slot');
+  14 |
+  15 |   const firstResult = page.locator('.s-main-slot div[data-index="1"] h2 a span');
+> 16 |   await expect(firstResult).toBeVisible();
+     |                             ^ Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+  17 |
+  18 |   console.log('✅ Verifying if search result contains "wireless" keyword...');
+  19 |   await expect.soft(firstResult).toContainText('wireless');
+  20 |
+  21 |   console.log('🎯 Test Completed Successfully!');
+  22 | });
+  23 |
+```

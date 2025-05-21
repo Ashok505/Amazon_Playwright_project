@@ -1,0 +1,1929 @@
+# Test info
+
+- Name: Open product detail page
+- Location: /home/ashok/Desktop/amazon-playwright-js/tests/openProductDetail.spec.js:4:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for locator('.s-main-slot div[data-index="1"] h2 a')
+
+    at /home/ashok/Desktop/amazon-playwright-js/tests/openProductDetail.spec.js:14:22
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, option, forward slash"
+    - listitem:
+      - link "Cart, shift, option, c"
+    - listitem:
+      - link "Home, shift, option, h"
+    - listitem:
+      - link "Your orders, shift, option, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, option, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": Bluetooth Speakers
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3DBluetooth%2BSpeakers%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+      - listitem:
+        - link "Kindle eBooks":
+          - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+    - link "Big Savings, More Happiness":
+      - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_swm_gd&pf_rd_p=c16cc2dc-ffa6-4546-9f14-03d2cf15f2db&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=9NHVA84M59YN1MH5XF16
+      - img "Big Savings, More Happiness"
+    - dialog
+- 'heading "1-16 of over 30,000 results for \"Bluetooth Speakers\" Sort by: Featured" [level=1]':
+  - heading "1-16 of over 30,000 results for \"Bluetooth Speakers\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "Ultimate Ears":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_logo&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - img "Ultimate Ears"
+- link "So Portable, It’s Wearble":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_hl&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+- link "Shop Ultimate Ears":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_cta&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+- link "Branded image from Ultimate Ears":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_ls&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - img "Branded image from Ultimate Ears"
+- link "Ultimate Ears WONDERBOOM 3, Small Portable Wireless Bluetooth Speaker, Big Bass 360-Degree Sound for Outdoors, Waterproof, Dustproof IP67, Floatable, 40 m Range - Pink":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0BB72C85Z/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - img "Ultimate Ears WONDERBOOM 3, Small Portable Wireless Bluetooth Speaker, Big Bass 360-Degree Sound for Outdoors, Waterproof, Dustproof IP67, Floatable, 40 m Range - Pink"
+- link "Limited time deal":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0BB72C85Z/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_badge&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+- link "₹6,995 Eligible for Prime. ₹10,995 (36% off)":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0BB72C85Z/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_price&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - text: ₹6,995
+  - img "Eligible for Prime."
+  - text: ₹10,995 (36% off)
+- link "Ultimate Ears MINIROLL Ultra-Portable Waterproof Bluetooth Speaker, Big Bass, IP67 Dustproof, 40 m (131 ft) Range - Majestic Blue":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0DJYBKBJX/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_img&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - img "Ultimate Ears MINIROLL Ultra-Portable Waterproof Bluetooth Speaker, Big Bass, IP67 Dustproof, 40 m (131 ft) Range - Majestic Blue"
+- link "₹6,170 Eligible for Prime.":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0DJYBKBJX/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_price&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - text: ₹6,170
+  - img "Eligible for Prime."
+- link "Ultimate Ears WONDERBOOM 4 Portable Waterproof Bluetooth Speaker with Big Bass and 360-Degree Sound, Dustproof Floating Speaker with 40 m (131ft) Range - Enchanting Lilac":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0D7YTTM5Y/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_2_img&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - img "Ultimate Ears WONDERBOOM 4 Portable Waterproof Bluetooth Speaker with Big Bass and 360-Degree Sound, Dustproof Floating Speaker with 40 m (131ft) Range - Enchanting Lilac"
+- link "₹8,495 Eligible for Prime.":
+  - /url: https://aax-eu.amazon.in/x/c/JITjYdgt9DgePueZNRfbywkAAAGWe61xcQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCD_eKu/https://www.amazon.in/gp/aw/d/B0D7YTTM5Y/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=4c628ad1b7ec331fdd8dec4ea4b8af4e&hsa_cr_id=0&qid=1745831686&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_2_price&pd_rd_w=qAXdG&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=bfRzO&pd_rd_r=2cd1f684-4b42-47fe-ac17-8f002fb53d05
+  - text: ₹8,495
+  - img "Eligible for Prime."
+- button "Leave feedback on Sponsored ad": Sponsored
+- text: Showing products near you, with fast delivery
+- link "See all products, across price ranges.":
+  - /url: /s?k=Bluetooth+Speakers&nsdOptOutParam=true&ref=nb_sb_noss
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDU0NTA0NzcwNTUzMjo6MDo6&url=%2FBluetooth-Tribit-Upgraded-Portable-Waterproof%2Fdp%2FB078S4P3J9%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Tribit 2024 Version XSound Go Wireless Bluetooth 5.3 Speakers with Loud Stereo Sound & Rich Bass 16W,24H Playtime,150 ft Bluetooth Range,Outdoor Lightweight IPX7 Waterproof,Built-in Mic (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDU0NTA0NzcwNTUzMjo6MDo6&url=%2FBluetooth-Tribit-Upgraded-Portable-Waterproof%2Fdp%2FB078S4P3J9%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Tribit 2024 Version XSound Go Wireless Bluetooth 5.3 Speakers with Loud Stereo Sound & Rich Bass 16W,24H Playtime,150 ft Bluetooth Range,Outdoor Lightweight IPX7 Waterproof,Built-in Mic (Black)" [level=2]: Tribit 2024 Version XSound Go Wireless Bluetooth 5.3 Speakers with Loud Stereo Sound & Rich Bass 16W,24H Playtime,150 ft Bluetooth Range,Outdoor Lightweight IPX7 Waterproof,Built-in Mic (Black)
+    - button "4.4 out of 5 stars, rating details"
+    - link "15,466 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDU0NTA0NzcwNTUzMjo6MDo6&url=%2FBluetooth-Tribit-Upgraded-Portable-Waterproof%2Fdp%2FB078S4P3J9%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,799 M.R.P: ₹3,499 M.R.P: ₹3,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDU0NTA0NzcwNTUzMjo6MDo6&url=%2FBluetooth-Tribit-Upgraded-Portable-Waterproof%2Fdp%2FB078S4P3J9%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (20% off) Save ₹140 with coupon
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDI0NjA5MzAzNDAzMjo6MDo6&url=%2FHoneywell-P400-Bluetooth-Radiators-Manufacturer%2Fdp%2FB0CTMLXS2F%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Honeywell Newly Launched Suono P400 15W 5.3 Bluetooth Speaker,Deep Bass Radiators,10H Playtime,IPX 6,TWS Feature,RGB Lights,SD Card,AUX,Type-C Port,Built-In Mic,78mm Drivers,2Yrs Manufacturer Warranty":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDI0NjA5MzAzNDAzMjo6MDo6&url=%2FHoneywell-P400-Bluetooth-Radiators-Manufacturer%2Fdp%2FB0CTMLXS2F%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Honeywell Newly Launched Suono P400 15W 5.3 Bluetooth Speaker,Deep Bass Radiators,10H Playtime,IPX 6,TWS Feature,RGB Lights,SD Card,AUX,Type-C Port,Built-In Mic,78mm Drivers,2Yrs Manufacturer Warranty" [level=2]: Honeywell Newly Launched Suono P400 15W 5.3 Bluetooth Speaker,Deep Bass Radiators,10H Playtime,IPX 6,TWS Feature,RGB Lights,SD Card,AUX,Type-C Port,Built-In Mic,78mm Drivers,2Yrs Manufacturer Warranty
+    - button "4.0 out of 5 stars, rating details"
+    - link "164 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDI0NjA5MzAzNDAzMjo6MDo6&url=%2FHoneywell-P400-Bluetooth-Radiators-Manufacturer%2Fdp%2FB0CTMLXS2F%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,099 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYXRmOjMwMDI0NjA5MzAzNDAzMjo6MDo6&url=%2FHoneywell-P400-Bluetooth-Radiators-Manufacturer%2Fdp%2FB0CTMLXS2F%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (58% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - group "Best seller in Soundbar Speakers"
+    - link:
+      - /url: /ZEBRONICS-35-Portable-Bluetooth-Radiators/dp/B0DJ3FFC8R/ref=sr_1_3?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-3
+    - link "ZEBRONICS Astra 35, Portable Bluetooth Speaker, 16 Watts, Upto 24h Backup, Dual Drivers + Dual Passive Radiators, Call Function, Bluetooth v5.3 | USB | mSD| AUX, TWS, RGB LED":
+      - /url: /ZEBRONICS-35-Portable-Bluetooth-Radiators/dp/B0DJ3FFC8R/ref=sr_1_3?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-3
+      - heading "ZEBRONICS Astra 35, Portable Bluetooth Speaker, 16 Watts, Upto 24h Backup, Dual Drivers + Dual Passive Radiators, Call Function, Bluetooth v5.3 | USB | mSD| AUX, TWS, RGB LED" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "1,482 ratings":
+      - /url: /ZEBRONICS-35-Portable-Bluetooth-Radiators/dp/B0DJ3FFC8R/ref=sr_1_3?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-3#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹799 M.R.P: ₹1,899 M.R.P: ₹1,899"':
+      - /url: /ZEBRONICS-35-Portable-Bluetooth-Radiators/dp/B0DJ3FFC8R/ref=sr_1_3?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-3
+    - text: (58% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Zebronics-Zeb-County-Bluetooth-Speaker-Function/dp/B07YNV41FT/ref=sr_1_4?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-4
+    - link "Zebronics ZEB-COUNTY 3W Wireless Bluetooth Portable Speaker With Supporting Carry Handle, USB, SD Card, AUX, FM & Call Function. (Black)":
+      - /url: /Zebronics-Zeb-County-Bluetooth-Speaker-Function/dp/B07YNV41FT/ref=sr_1_4?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-4
+      - heading "Zebronics ZEB-COUNTY 3W Wireless Bluetooth Portable Speaker With Supporting Carry Handle, USB, SD Card, AUX, FM & Call Function. (Black)" [level=2]
+    - button "3.8 out of 5 stars, rating details"
+    - link "78,469 ratings":
+      - /url: /Zebronics-Zeb-County-Bluetooth-Speaker-Function/dp/B07YNV41FT/ref=sr_1_4?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-4#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹494 M.R.P: ₹999 M.R.P: ₹999"':
+      - /url: /Zebronics-Zeb-County-Bluetooth-Speaker-Function/dp/B07YNV41FT/ref=sr_1_4?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-4
+    - text: (51% off) FREE delivery Wed, 30 Apr on first order Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Mivi-Wireless-Bluetooth-Waterproof-Assistance/dp/B08PGYZQ9H/ref=sr_1_5?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-5
+    - link "Mivi Roam 2 Bluetooth Speakers wireless-5W Portable Speaker,24 Hours Playtime,Powerful Bass, Wireless Stereo Speaker with Studio Quality Sound,Waterproof, Bluetooth 5.0 and in-Built Mic, Made In India":
+      - /url: /Mivi-Wireless-Bluetooth-Waterproof-Assistance/dp/B08PGYZQ9H/ref=sr_1_5?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-5
+      - heading "Mivi Roam 2 Bluetooth Speakers wireless-5W Portable Speaker,24 Hours Playtime,Powerful Bass, Wireless Stereo Speaker with Studio Quality Sound,Waterproof, Bluetooth 5.0 and in-Built Mic, Made In India" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "42,751 ratings":
+      - /url: /Mivi-Wireless-Bluetooth-Waterproof-Assistance/dp/B08PGYZQ9H/ref=sr_1_5?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-5#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹799 M.R.P: ₹2,999 M.R.P: ₹2,999"':
+      - /url: /Mivi-Wireless-Bluetooth-Waterproof-Assistance/dp/B08PGYZQ9H/ref=sr_1_5?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-5
+    - text: (73% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+- heading "Trending now" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- group "Trending now":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM0NDk5NDgwODkzMjo6MDo6&url=%2FUltimate-Ears-WONDERBOOM-Waterproof-360-Degree%2Fdp%2FB0D7ZQS7Y6%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0D7ZQS7Y6%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Ultimate Ears WONDERBOOM 4 Portable Waterproof Bluetooth Speaker with Big Bass and 360-Degree Sound, Dustproof Floating Speaker with 40 m (131ft) Range - Active Black":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM0NDk5NDgwODkzMjo6MDo6&url=%2FUltimate-Ears-WONDERBOOM-Waterproof-360-Degree%2Fdp%2FB0D7ZQS7Y6%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0D7ZQS7Y6%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Ultimate Ears WONDERBOOM 4 Portable Waterproof Bluetooth Speaker with Big Bass and 360-Degree Sound, Dustproof Floating Speaker with 40 m (131ft) Range - Active Black" [level=2]: Ultimate Ears WONDERBOOM 4 Portable Waterproof Bluetooth Speaker with Big Bass and 360-Degree Sound, Dustproof Floating Speaker with 40 m (131ft) Range - Active Black
+        - button "4.6 out of 5 stars, rating details"
+        - link "34 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM0NDk5NDgwODkzMjo6MDo6&url=%2FUltimate-Ears-WONDERBOOM-Waterproof-360-Degree%2Fdp%2FB0D7ZQS7Y6%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0D7ZQS7Y6%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: Price, product page
+        - 'link "₹8,495 M.R.P: ₹10,995 M.R.P: ₹10,995"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM0NDk5NDgwODkzMjo6MDo6&url=%2FUltimate-Ears-WONDERBOOM-Waterproof-360-Degree%2Fdp%2FB0D7ZQS7Y6%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0D7ZQS7Y6%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (23% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzQ0OTM1Mjk4OjoxOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzQ0OTM1Mjk4OjoxOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)" [level=2]: amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)
+        - button "4.1 out of 5 stars, rating details"
+        - link "4,042 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzQ0OTM1Mjk4OjoxOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 1K+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹599 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzQ0OTM1Mjk4OjoxOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (60% off)
+        - img "Amazon Prime"
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyODk4NTk4MjczMjo6Mjo6&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Sound Speaker for Adults and Kids, Best Bluetooth Speakers with 2 Microphones, Portable Party Mini Karaoke Speakers with mic soundbar Box DJ Lights Support REC, PA System Best Gift for Brithday":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyODk4NTk4MjczMjo6Mjo6&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Sound Speaker for Adults and Kids, Best Bluetooth Speakers with 2 Microphones, Portable Party Mini Karaoke Speakers with mic soundbar Box DJ Lights Support REC, PA System Best Gift for Brithday" [level=2]: Sound Speaker for Adults and Kids, Best Bluetooth Speakers with 2 Microphones, Portable Party Mini Karaoke Speakers with mic soundbar Box DJ Lights Support REC, PA System Best Gift for Brithday
+        - button "4.1 out of 5 stars, rating details"
+        - link "1,022 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyODk4NTk4MjczMjo6Mjo6&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹11,000 M.R.P: ₹25,000 M.R.P: ₹25,000"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyODk4NTk4MjczMjo6Mjo6&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (56% off) 5% Off on SBI CreditCards
+        - img "Amazon Prime"
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ3OTQ4ODU2NTYzMjo6Mzo6&url=%2FZEBRONICS-20-Portable-Bluetooth-Playback%2Fdp%2FB0DSLML4CF%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DSLML4CF%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - ZEBRONICS Sonic POD 20, Portable Bluetooth Speaker, 10 Watts, Upto 15 Hours Playback, RGB LED, Call Function, Fabric Finish with Carry Loop, BTv5.3 | TWS | USB | mSD | AUX (Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ3OTQ4ODU2NTYzMjo6Mzo6&url=%2FZEBRONICS-20-Portable-Bluetooth-Playback%2Fdp%2FB0DSLML4CF%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DSLML4CF%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - ZEBRONICS Sonic POD 20, Portable Bluetooth Speaker, 10 Watts, Upto 15 Hours Playback, RGB LED, Call Function, Fabric Finish with Carry Loop, BTv5.3 | TWS | USB | mSD | AUX (Black)" [level=2]: ZEBRONICS Sonic POD 20, Portable Bluetooth Speaker, 10 Watts, Upto 15 Hours Playback, RGB LED, Call Function, Fabric Finish with Carry Loop, BTv5.3 | TWS | USB | mSD | AUX (Black)
+        - button "4.0 out of 5 stars, rating details"
+        - link "75 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ3OTQ4ODU2NTYzMjo6Mzo6&url=%2FZEBRONICS-20-Portable-Bluetooth-Playback%2Fdp%2FB0DSLML4CF%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DSLML4CF%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 300+ bought in past month Price, product page
+        - 'link "₹999 M.R.P: ₹2,099 M.R.P: ₹2,099"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ3OTQ4ODU2NTYzMjo6Mzo6&url=%2FZEBRONICS-20-Portable-Bluetooth-Playback%2Fdp%2FB0DSLML4CF%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DSLML4CF%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (52% off)
+        - img "Amazon Prime"
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyOTA5NDA2NDczMjo6NDo6&url=%2FGATE-Bluetooth-Soundbar-Radiator-Function%2Fdp%2FB0DHQMRP13%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DHQMRP13%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - E GATE C210 | 20W Bluetooth Speaker Soundbar, Dual Drivers + Dual Passive Radiator for Extra bass, RGB Light, Upto 15 Hrs Backup from 2000mah Battery, Call Function, TWS, Aux, USB, FM":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyOTA5NDA2NDczMjo6NDo6&url=%2FGATE-Bluetooth-Soundbar-Radiator-Function%2Fdp%2FB0DHQMRP13%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DHQMRP13%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - E GATE C210 | 20W Bluetooth Speaker Soundbar, Dual Drivers + Dual Passive Radiator for Extra bass, RGB Light, Upto 15 Hrs Backup from 2000mah Battery, Call Function, TWS, Aux, USB, FM" [level=2]: E GATE C210 | 20W Bluetooth Speaker Soundbar, Dual Drivers + Dual Passive Radiator for Extra bass, RGB Light, Upto 15 Hrs Backup from 2000mah Battery, Call Function, TWS, Aux, USB, FM
+        - button "4.0 out of 5 stars, rating details"
+        - link "489 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyOTA5NDA2NDczMjo6NDo6&url=%2FGATE-Bluetooth-Soundbar-Radiator-Function%2Fdp%2FB0DHQMRP13%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DHQMRP13%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 100+ bought in past month Price, product page
+        - 'link "₹990 M.R.P: ₹3,000 M.R.P: ₹3,000"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo4OTczMjc1NjM3MTM5ODU0OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDUyOTA5NDA2NDczMjo6NDo6&url=%2FGATE-Bluetooth-Soundbar-Radiator-Function%2Fdp%2FB0DHQMRP13%2Fref%3Dsxin_12_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%253Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DHQMRP13%26pd_rd_r%3D6ba99f22-6047-4d30-b325-fc94428aa79a%26pd_rd_w%3DghxAC%26pd_rd_wg%3DFfRUT%26pf_rd_p%3D70fd741c-68a9-470a-9805-115e3115104d%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (67% off)
+        - img "Amazon Prime"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JPLCElBkJAo4NjzhnpDLGnMAAAGWe61xOwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCq9e44/https://www.amazon.in/dp/B0CTMDVNR6?pd_rd_i=B0CTMDVNR6&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=FfRUT&pd_rd_w=tNz6A&pd_rd_r=6ba99f22-6047-4d30-b325-fc94428aa79a
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JPLCElBkJAo4NjzhnpDLGnMAAAGWe61xOwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCq9e44/https://www.amazon.in/Honeywell-Launched-P300-Bluetooth-Manufacturer/dp/B0CTMDVNR6/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=Bluetooth+Speakers&keywords=Bluetooth+Speakers&pd_rd_i=B0CTMDVNR6&pd_rd_r=6ba99f22-6047-4d30-b325-fc94428aa79a&pd_rd_w=tNz6A&pd_rd_wg=FfRUT&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9NHVA84M59YN1MH5XF16&qid=1745831686&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Sponsored
+- link "Honeywell Newly Launched Suono P300 10W 5.3 Bluetooth Speaker,9H Playtime, Deep Bass,IPX 4,TWS Feature,Fast Charging,SD Card,USB,AUX,Built-in Mic and 52mm Drivers,2 Years Manufacturer Warranty - Blue":
+  - /url: https://aax-eu.amazon.in/x/c/JPLCElBkJAo4NjzhnpDLGnMAAAGWe61xOwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCq9e44/https://www.amazon.in/Honeywell-Launched-P300-Bluetooth-Manufacturer/dp/B0CTMDVNR6/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=Bluetooth+Speakers&keywords=Bluetooth+Speakers&pd_rd_i=B0CTMDVNR6&pd_rd_r=6ba99f22-6047-4d30-b325-fc94428aa79a&pd_rd_w=tNz6A&pd_rd_wg=FfRUT&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9NHVA84M59YN1MH5XF16&qid=1745831686&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+  - heading "Honeywell Newly Launched Suono P300 10W 5.3 Bluetooth Speaker,9H Playtime, Deep Bass,IPX 4,TWS Feature,Fast Charging,SD Card,USB,AUX,Built-in Mic and 52mm Drivers,2 Years Manufacturer Warranty - Blue" [level=2]
+- button "3.8 out of 5 stars, rating details"
+- link "288 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JPLCElBkJAo4NjzhnpDLGnMAAAGWe61xOwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCq9e44/https://www.amazon.in/Honeywell-Launched-P300-Bluetooth-Manufacturer/dp/B0CTMDVNR6/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=Bluetooth+Speakers&keywords=Bluetooth+Speakers&pd_rd_i=B0CTMDVNR6&pd_rd_r=6ba99f22-6047-4d30-b325-fc94428aa79a&pd_rd_w=tNz6A&pd_rd_wg=FfRUT&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9NHVA84M59YN1MH5XF16&qid=1745831686&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+- text: 50+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹1,119 M.R.P: ₹2,999 M.R.P: ₹2,999"':
+  - /url: https://aax-eu.amazon.in/x/c/JPLCElBkJAo4NjzhnpDLGnMAAAGWe61xOwMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCq9e44/https://www.amazon.in/Honeywell-Launched-P300-Bluetooth-Manufacturer/dp/B0CTMDVNR6/ref=sxin_13_sbv_search_btf?content-id=amzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151%3Aamzn1.sym.288d7cd9-bdfb-4778-882a-c15de0f76151&cv_ct_cx=Bluetooth+Speakers&keywords=Bluetooth+Speakers&pd_rd_i=B0CTMDVNR6&pd_rd_r=6ba99f22-6047-4d30-b325-fc94428aa79a&pd_rd_w=tNz6A&pd_rd_wg=FfRUT&pf_rd_p=288d7cd9-bdfb-4778-882a-c15de0f76151&pf_rd_r=9NHVA84M59YN1MH5XF16&qid=1745831686&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: (63% off)
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 29 April FREE Delivery by Amazon
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /boAt-Bluetooth-Resistance-Playtime-Multi-Compatibility/dp/B0BYZ26QGB/ref=sr_1_6?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-6
+    - link "Boat Stone 352 Bluetooth Speaker with 10W RMS Stereo Sound, IPX7 Water Resistance, TWS Feature, Up to 12H Total Playtime, Multi-Compatibility Modes and Type-C Charging(Raging Black)":
+      - /url: /boAt-Bluetooth-Resistance-Playtime-Multi-Compatibility/dp/B0BYZ26QGB/ref=sr_1_6?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-6
+      - heading "Boat Stone 352 Bluetooth Speaker with 10W RMS Stereo Sound, IPX7 Water Resistance, TWS Feature, Up to 12H Total Playtime, Multi-Compatibility Modes and Type-C Charging(Raging Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "10,314 ratings":
+      - /url: /boAt-Bluetooth-Resistance-Playtime-Multi-Compatibility/dp/B0BYZ26QGB/ref=sr_1_6?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-6#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,399 M.R.P: ₹3,490 M.R.P: ₹3,490"':
+      - /url: /boAt-Bluetooth-Resistance-Playtime-Multi-Compatibility/dp/B0BYZ26QGB/ref=sr_1_6?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-6
+    - text: (60% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /boAt-Stone-352-Pro-Bluetooth/dp/B0D6W7F7WH/ref=sr_1_7?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-7
+    - link "boAt Stone 352 Pro/Stone 358 Pro w/ 14W Signature Sound, Up to 12 Hours Playback, RGB LEDs, TWS Feature, Built-in Mic, BTv5.3, AUX Port, IPX5 & Type-C Interface Bluetooth Speaker (Raging Black)":
+      - /url: /boAt-Stone-352-Pro-Bluetooth/dp/B0D6W7F7WH/ref=sr_1_7?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-7
+      - heading "boAt Stone 352 Pro/Stone 358 Pro w/ 14W Signature Sound, Up to 12 Hours Playback, RGB LEDs, TWS Feature, Built-in Mic, BTv5.3, AUX Port, IPX5 & Type-C Interface Bluetooth Speaker (Raging Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "856 ratings":
+      - /url: /boAt-Stone-352-Pro-Bluetooth/dp/B0D6W7F7WH/ref=sr_1_7?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-7#customerReviews
+    - text: 3K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,599 M.R.P: ₹4,990 M.R.P: ₹4,990"':
+      - /url: /boAt-Stone-352-Pro-Bluetooth/dp/B0D6W7F7WH/ref=sr_1_7?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-7
+    - text: (68% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /EDNITA-Bluetooth-Electroplating-Controlled-Multicolor/dp/B0D9R1F7ZP/ref=sr_1_8?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-8
+    - link "jbl Ultra Mini Wireless Bluetooth Speaker with Heavy Metal Electroplating Round Speaker | Wireless Power Button Controlled, Long Lasting Battery & Quick Charge Pack of 1 (Multicolor)":
+      - /url: /EDNITA-Bluetooth-Electroplating-Controlled-Multicolor/dp/B0D9R1F7ZP/ref=sr_1_8?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-8
+      - heading "jbl Ultra Mini Wireless Bluetooth Speaker with Heavy Metal Electroplating Round Speaker | Wireless Power Button Controlled, Long Lasting Battery & Quick Charge Pack of 1 (Multicolor)" [level=2]
+    - button "3.2 out of 5 stars, rating details"
+    - link "58 ratings":
+      - /url: /EDNITA-Bluetooth-Electroplating-Controlled-Multicolor/dp/B0D9R1F7ZP/ref=sr_1_8?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-8#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹301 M.R.P: ₹1,599 M.R.P: ₹1,599"':
+      - /url: /EDNITA-Bluetooth-Electroplating-Controlled-Multicolor/dp/B0D9R1F7ZP/ref=sr_1_8?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-8
+    - text: (81% off) FREE delivery Wed, 30 Apr on first order Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /AmazonBasics-Bluetooth-Playtime-Technology-Connectivity/dp/B0BLNMXT67/ref=sr_1_9?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-9
+    - link "amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)":
+      - /url: /AmazonBasics-Bluetooth-Playtime-Technology-Connectivity/dp/B0BLNMXT67/ref=sr_1_9?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-9
+      - heading "amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "4,042 ratings":
+      - /url: /AmazonBasics-Bluetooth-Playtime-Technology-Connectivity/dp/B0BLNMXT67/ref=sr_1_9?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-9#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹599 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+      - /url: /AmazonBasics-Bluetooth-Playtime-Technology-Connectivity/dp/B0BLNMXT67/ref=sr_1_9?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-9
+    - text: (60% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /boAt-Signature-Bluetooth-Interface-Wireless/dp/B0F22C1Y4J/ref=sr_1_10?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-10
+    - link "boAt Stone Uno, 3W Signature Sound, 6HRS Battery, TWS Feature, Bluetooth v5.4 & Type-C Interface, Bluetooth Speaker, Wireless Speaker, Portable Speaker(Raging Black)":
+      - /url: /boAt-Signature-Bluetooth-Interface-Wireless/dp/B0F22C1Y4J/ref=sr_1_10?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-10
+      - heading "boAt Stone Uno, 3W Signature Sound, 6HRS Battery, TWS Feature, Bluetooth v5.4 & Type-C Interface, Bluetooth Speaker, Wireless Speaker, Portable Speaker(Raging Black)" [level=2]
+    - button "3.3 out of 5 stars, rating details"
+    - link "4 ratings":
+      - /url: /boAt-Signature-Bluetooth-Interface-Wireless/dp/B0F22C1Y4J/ref=sr_1_10?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-10#customerReviews
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹599 M.R.P: ₹2,990 M.R.P: ₹2,990"':
+      - /url: /boAt-Signature-Bluetooth-Interface-Wireless/dp/B0F22C1Y4J/ref=sr_1_10?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-10
+    - text: (80% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjMwMDQzOTczMjgzOTQzMjo6MDo6&url=%2FZEBRONICS-100-Portable-Bluetooth-Radiators%2Fdp%2FB0DN1WCLXG%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - ZEBRONICS AXON 100 Portable Party Bluetooth Speaker, 90W RMS, Quad Drivers + Dual Passive Radiators, IPX5, Upto 6 Hours Playback, Rapid Charging, BT | USB | AUX | TWS, Fabric Finish, RGB, Deep Bass":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjMwMDQzOTczMjgzOTQzMjo6MDo6&url=%2FZEBRONICS-100-Portable-Bluetooth-Radiators%2Fdp%2FB0DN1WCLXG%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - ZEBRONICS AXON 100 Portable Party Bluetooth Speaker, 90W RMS, Quad Drivers + Dual Passive Radiators, IPX5, Upto 6 Hours Playback, Rapid Charging, BT | USB | AUX | TWS, Fabric Finish, RGB, Deep Bass" [level=2]: ZEBRONICS AXON 100 Portable Party Bluetooth Speaker, 90W RMS, Quad Drivers + Dual Passive Radiators, IPX5, Upto 6 Hours Playback, Rapid Charging, BT | USB | AUX | TWS, Fabric Finish, RGB, Deep Bass
+    - button "4.0 out of 5 stars, rating details"
+    - link "693 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjMwMDQzOTczMjgzOTQzMjo6MDo6&url=%2FZEBRONICS-100-Portable-Bluetooth-Radiators%2Fdp%2FB0DN1WCLXG%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹5,999 M.R.P: ₹12,999 M.R.P: ₹12,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjMwMDQzOTczMjgzOTQzMjo6MDo6&url=%2FZEBRONICS-100-Portable-Bluetooth-Radiators%2Fdp%2FB0DN1WCLXG%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (54% off) Flat 250 Off on SBI Credit Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjIwMTA1MzQ0OTM1Mjk4OjowOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjIwMTA1MzQ0OTM1Mjk4OjowOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)" [level=2]: amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)
+    - button "4.1 out of 5 stars, rating details"
+    - link "4,042 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjIwMTA1MzQ0OTM1Mjk4OjowOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹599 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfbXRmOjIwMTA1MzQ0OTM1Mjk4OjowOjo&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (60% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /HAMMER-Bluetooth-Wireless-Function-Auto-Pairing/dp/B0D7SLTNZY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-13
+    - link "HAMMER Drop 5W Bluetooth Wireless Speaker with Twin Pairing, 1200 mAh Battery, 100H Standby Time, TWS Function, TF Card, USB Slot, Auto-Pairing, in-Built Mic, Type-C Charging, 52mm Driver (Green)":
+      - /url: /HAMMER-Bluetooth-Wireless-Function-Auto-Pairing/dp/B0D7SLTNZY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-13
+      - heading "HAMMER Drop 5W Bluetooth Wireless Speaker with Twin Pairing, 1200 mAh Battery, 100H Standby Time, TWS Function, TF Card, USB Slot, Auto-Pairing, in-Built Mic, Type-C Charging, 52mm Driver (Green)" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "239 ratings":
+      - /url: /HAMMER-Bluetooth-Wireless-Function-Auto-Pairing/dp/B0D7SLTNZY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-13#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹699 M.R.P: ₹3,499 M.R.P: ₹3,499"':
+      - /url: /HAMMER-Bluetooth-Wireless-Function-Auto-Pairing/dp/B0D7SLTNZY/ref=sr_1_13?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-13
+    - text: (80% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 1 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /boAt-Portable-Immersive-Resistance-Multi-Connectivity/dp/B0B12Q8K2X/ref=sr_1_14?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-14
+    - link "boAt Stone 135 Portable Wireless Speaker with 5W RMS Immersive Sound,IPX4 Water Resistance, True Wireless Feature, Up to 11H Total Playtime, Multi-Connectivity Modes With Type C Charging(Active Black)":
+      - /url: /boAt-Portable-Immersive-Resistance-Multi-Connectivity/dp/B0B12Q8K2X/ref=sr_1_14?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-14
+      - heading "boAt Stone 135 Portable Wireless Speaker with 5W RMS Immersive Sound,IPX4 Water Resistance, True Wireless Feature, Up to 11H Total Playtime, Multi-Connectivity Modes With Type C Charging(Active Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "3,242 ratings":
+      - /url: /boAt-Portable-Immersive-Resistance-Multi-Connectivity/dp/B0B12Q8K2X/ref=sr_1_14?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-14#customerReviews
+    - text: 2K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹999 M.R.P: ₹1,990 M.R.P: ₹1,990"':
+      - /url: /boAt-Portable-Immersive-Resistance-Multi-Connectivity/dp/B0B12Q8K2X/ref=sr_1_14?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-14
+    - text: (50% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-SoundDrum-Portable-Bluetooth-Inbuilt-FM/dp/B095HBHKHB/ref=sr_1_15?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-15
+    - link "Portronics SoundDrum 1 12W TWS Portable Bluetooth Speaker with Powerful Bass, Bluetooth 5.3V, 360° Surround Sound, USB Drive in, Type C Fast Charging(Black)":
+      - /url: /Portronics-SoundDrum-Portable-Bluetooth-Inbuilt-FM/dp/B095HBHKHB/ref=sr_1_15?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-15
+      - heading "Portronics SoundDrum 1 12W TWS Portable Bluetooth Speaker with Powerful Bass, Bluetooth 5.3V, 360° Surround Sound, USB Drive in, Type C Fast Charging(Black)" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "9,980 ratings":
+      - /url: /Portronics-SoundDrum-Portable-Bluetooth-Inbuilt-FM/dp/B095HBHKHB/ref=sr_1_15?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-15#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹949 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /Portronics-SoundDrum-Portable-Bluetooth-Inbuilt-FM/dp/B095HBHKHB/ref=sr_1_15?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-15
+    - text: (62% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Portronics-Wireless-Bluetooth-Portable-Playtime/dp/B0DNFV8YQB/ref=sr_1_16?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-16
+    - link "Portronics Apollo One 20W Wireless Bluetooth Portable Speaker with Wireless Karaoke Mic, 5 Hour Playtime, RGB LED Light, Bluetooth V5.3, Easy Grab Handle, USB/AUX in/TF Card, Type C Charging(Black)":
+      - /url: /Portronics-Wireless-Bluetooth-Portable-Playtime/dp/B0DNFV8YQB/ref=sr_1_16?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-16
+      - heading "Portronics Apollo One 20W Wireless Bluetooth Portable Speaker with Wireless Karaoke Mic, 5 Hour Playtime, RGB LED Light, Bluetooth V5.3, Easy Grab Handle, USB/AUX in/TF Card, Type C Charging(Black)" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "404 ratings":
+      - /url: /Portronics-Wireless-Bluetooth-Portable-Playtime/dp/B0DNFV8YQB/ref=sr_1_16?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-16#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,349 M.R.P: ₹2,499 M.R.P: ₹2,499"':
+      - /url: /Portronics-Wireless-Bluetooth-Portable-Playtime/dp/B0DNFV8YQB/ref=sr_1_16?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-16
+    - text: (46% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /JBL-Wireless-Portable-Bluetooth-Waterproof/dp/B08FB396L1/ref=sr_1_17?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-17
+    - link "JBL Go 3, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, Vibrant Colors with Rugged Fabric Design, Waterproof, Type C (Without Mic, Blue)":
+      - /url: /JBL-Wireless-Portable-Bluetooth-Waterproof/dp/B08FB396L1/ref=sr_1_17?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-17
+      - heading "JBL Go 3, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, Vibrant Colors with Rugged Fabric Design, Waterproof, Type C (Without Mic, Blue)" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "18,060 ratings":
+      - /url: /JBL-Wireless-Portable-Bluetooth-Waterproof/dp/B08FB396L1/ref=sr_1_17?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-17#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹2,799 M.R.P: ₹3,999 M.R.P: ₹3,999"':
+      - /url: /JBL-Wireless-Portable-Bluetooth-Waterproof/dp/B08FB396L1/ref=sr_1_17?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-17
+    - text: (30% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Mivi-Bluetooth-Playtime-Exceptional-Mic-Black/dp/B094RCC4L1/ref=sr_1_18?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-18
+    - link "Mivi Play Bluetooth Speakers Wireless with 12 Hours Playtime. Wireless Speaker Made in India with Exceptional Sound Quality, Portable and Built in Mic-Black":
+      - /url: /Mivi-Bluetooth-Playtime-Exceptional-Mic-Black/dp/B094RCC4L1/ref=sr_1_18?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-18
+      - heading "Mivi Play Bluetooth Speakers Wireless with 12 Hours Playtime. Wireless Speaker Made in India with Exceptional Sound Quality, Portable and Built in Mic-Black" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "24,691 ratings":
+      - /url: /Mivi-Bluetooth-Playtime-Exceptional-Mic-Black/dp/B094RCC4L1/ref=sr_1_18?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-18#customerReviews
+    - text: 500+ bought in past month Price, product page
+    - 'link "₹740 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+      - /url: /Mivi-Bluetooth-Playtime-Exceptional-Mic-Black/dp/B094RCC4L1/ref=sr_1_18?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-18
+    - text: (63% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /pTron-Launched-Fusion-Bluetooth-Connectivity/dp/B0DG2ZHKCZ/ref=sr_1_19?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-19
+    - link "pTron Newly Launched Fusion Hook v2 6W Bluetooth Speaker with 8 Hrs Playtime, 2.04\" Neo Driver for Pristine Sound, Mini Size Portable Speaker, BTv5.1 Connectivity, TWS Feature & Type C Charging(Black)":
+      - /url: /pTron-Launched-Fusion-Bluetooth-Connectivity/dp/B0DG2ZHKCZ/ref=sr_1_19?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-19
+      - heading "pTron Newly Launched Fusion Hook v2 6W Bluetooth Speaker with 8 Hrs Playtime, 2.04\" Neo Driver for Pristine Sound, Mini Size Portable Speaker, BTv5.1 Connectivity, TWS Feature & Type C Charging(Black)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "261 ratings":
+      - /url: /pTron-Launched-Fusion-Bluetooth-Connectivity/dp/B0DG2ZHKCZ/ref=sr_1_19?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-19#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹549 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+      - /url: /pTron-Launched-Fusion-Bluetooth-Connectivity/dp/B0DG2ZHKCZ/ref=sr_1_19?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-19
+    - text: (63% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /boAt-Stone-193-Pro-Signature/dp/B0DH8CDH9J/ref=sr_1_20?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-20
+    - link "boAt Stone 193 Pro / Stone190 Pro with 5W Signature Sound, Up to 12hrs of Playtime, TWS Feature, Built-in Mic, Bluetooth v5.3, AUX Port, TF Card, IPX6 & Type-C Bluetooth Speaker (Tropical Blue)":
+      - /url: /boAt-Stone-193-Pro-Signature/dp/B0DH8CDH9J/ref=sr_1_20?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-20
+      - heading "boAt Stone 193 Pro / Stone190 Pro with 5W Signature Sound, Up to 12hrs of Playtime, TWS Feature, Built-in Mic, Bluetooth v5.3, AUX Port, TF Card, IPX6 & Type-C Bluetooth Speaker (Tropical Blue)" [level=2]
+    - button "3.7 out of 5 stars, rating details"
+    - link "417 ratings":
+      - /url: /boAt-Stone-193-Pro-Signature/dp/B0DH8CDH9J/ref=sr_1_20?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-20#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹799 M.R.P: ₹2,990 M.R.P: ₹2,990"':
+      - /url: /boAt-Stone-193-Pro-Signature/dp/B0DH8CDH9J/ref=sr_1_20?dib=eyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U&dib_tag=se&keywords=Bluetooth+Speakers&qid=1745831686&sr=8-20
+    - text: (73% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDUyNTg2NjIwMDkzMjo6MDo6&url=%2Famazon-basics-Speaker-Bluetooth-Connectivity%2Fdp%2FB0DLGM2Z6T%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - amazon basics Party Speaker with Karaoke Mic, 16W, 4\" Double Woofer, RGB Light, 1800 mAh Battery, Digital Display, Remote Control, Bluetooth/Aux/USB Port/SD Card Connectivity (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDUyNTg2NjIwMDkzMjo6MDo6&url=%2Famazon-basics-Speaker-Bluetooth-Connectivity%2Fdp%2FB0DLGM2Z6T%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - amazon basics Party Speaker with Karaoke Mic, 16W, 4\" Double Woofer, RGB Light, 1800 mAh Battery, Digital Display, Remote Control, Bluetooth/Aux/USB Port/SD Card Connectivity (Black)" [level=2]: amazon basics Party Speaker with Karaoke Mic, 16W, 4" Double Woofer, RGB Light, 1800 mAh Battery, Digital Display, Remote Control, Bluetooth/Aux/USB Port/SD Card Connectivity (Black)
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,399 M.R.P: ₹3,999 M.R.P: ₹3,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDUyNTg2NjIwMDkzMjo6MDo6&url=%2Famazon-basics-Speaker-Bluetooth-Connectivity%2Fdp%2FB0DLGM2Z6T%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (65% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 30 Apr Or fastest delivery Tomorrow, 29 Apr
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDM0Njg4OTU5NjEzMjo6MDo6&url=%2FStandalone-Bluetooth-Soundbar-Connectivity-Mountable%2Fdp%2FB0CWH61CH1%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - amazon basics C30W 30W Wired Standalone Bluetooth Soundbar | AC Powered | Bluetooth 5.3, Aux & USB Connectivity | Wall Mountable (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDM0Njg4OTU5NjEzMjo6MDo6&url=%2FStandalone-Bluetooth-Soundbar-Connectivity-Mountable%2Fdp%2FB0CWH61CH1%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - amazon basics C30W 30W Wired Standalone Bluetooth Soundbar | AC Powered | Bluetooth 5.3, Aux & USB Connectivity | Wall Mountable (Black)" [level=2]: amazon basics C30W 30W Wired Standalone Bluetooth Soundbar | AC Powered | Bluetooth 5.3, Aux & USB Connectivity | Wall Mountable (Black)
+    - button "3.1 out of 5 stars, rating details"
+    - link "2,481 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDM0Njg4OTU5NjEzMjo6MDo6&url=%2FStandalone-Bluetooth-Soundbar-Connectivity-Mountable%2Fdp%2FB0CWH61CH1%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,699 M.R.P: ₹4,499 M.R.P: ₹4,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTI4NTc3Njk3MTAxNjIwOjE3NDU4MzE2ODY6c3BfYnRmOjMwMDM0Njg4OTU5NjEzMjo6MDo6&url=%2FStandalone-Bluetooth-Soundbar-Connectivity-Mountable%2Fdp%2FB0CWH61CH1%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.MgxAAMMRzXIkoxQ9z8U0Dn4XmdxKDz_T2vsfAqskuGLufyVVibe8qcWEWrgkBr_1tD_-UpIznxAEn1Hf-IHQypdR-ISVqygDeetkgBV07X6WP-WQBtrxlt9noDscw0zXrL_WYlncfA7c1_LH1wtnXbhip-Mv_DI-1txrkOqcKmueM18IYnxqvjvQN82iW4Ma9S5CNpfgDyE3q39C-fEuF-IvO00riWPsGsG0rAtfulE.B4ilqg5GLBZsu1ylnotQHngF4EtdBDIQ20ST-xLja3U%26dib_tag%3Dse%26keywords%3DBluetooth%2BSpeakers%26qid%3D1745831686%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: "(62% off) FREE delivery as soon as Wed, 30 Apr, 11 am - 9 pm Service: Installation"
+    - button "Add to cart"
+- heading "Today's deals" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- group "Today's deals":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjoyMDEwNTM0NDkzNTI5ODo6MDo6&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - link "Sponsored Ad - amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjoyMDEwNTM0NDkzNTI5ODo6MDo6&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+          - heading "Sponsored Ad - amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)" [level=2]: amazon basics 5W Bluetooth 5.3 Speaker, Upto 36 Hrs Playtime, True Wireless Technology, Built in Mic, Multiple Connectivity Modes (Black)
+        - button "4.1 out of 5 stars, rating details"
+        - link "4,042 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjoyMDEwNTM0NDkzNTI5ODo6MDo6&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1#customerReviews
+        - text: 1K+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹599 M.R.P: ₹1,499 M.R.P: ₹1,499"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjoyMDEwNTM0NDkzNTI5ODo6MDo6&url=%2FAmazonBasics-Bluetooth-Playtime-Technology-Connectivity%2Fdp%2FB0BLNMXT67%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0BLNMXT67%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - text: (60% off)
+        - img "Amazon Prime"
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1Mjg5ODU5ODI3MzI6OjE6Og&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - link "Sponsored Ad - Sound Speaker for Adults and Kids, Best Bluetooth Speakers with 2 Microphones, Portable Party Mini Karaoke Speakers with mic soundbar Box DJ Lights Support REC, PA System Best Gift for Brithday":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1Mjg5ODU5ODI3MzI6OjE6Og&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+          - heading "Sponsored Ad - Sound Speaker for Adults and Kids, Best Bluetooth Speakers with 2 Microphones, Portable Party Mini Karaoke Speakers with mic soundbar Box DJ Lights Support REC, PA System Best Gift for Brithday" [level=2]: Sound Speaker for Adults and Kids, Best Bluetooth Speakers with 2 Microphones, Portable Party Mini Karaoke Speakers with mic soundbar Box DJ Lights Support REC, PA System Best Gift for Brithday
+        - button "4.1 out of 5 stars, rating details"
+        - link "1,022 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1Mjg5ODU5ODI3MzI6OjE6Og&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1#customerReviews
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹11,000 M.R.P: ₹25,000 M.R.P: ₹25,000"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1Mjg5ODU5ODI3MzI6OjE6Og&url=%2FJYX-Bluetooth-Speakers-Microphones-Portable%2Fdp%2FB0CKTF68SX%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0CKTF68SX%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - text: (56% off) 5% Off on SBI CreditCards
+        - img "Amazon Prime"
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1NDUzNDY0OTMyMzI6OjI6Og&url=%2FpTron-Fusion-Signature-Bluetooth-Pristine%2Fdp%2FB0DVZF8RQF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DVZF8RQF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - link "Sponsored Ad - pTron Fusion Pro Retro Signature 20W Bluetooth Speaker with Pristine Sound, 8 Hours Playtime, Dual Drivers, Playback via BT5.3/USB/TF Card, Easy Controls, Portable Speaker & Type C Charging (Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1NDUzNDY0OTMyMzI6OjI6Og&url=%2FpTron-Fusion-Signature-Bluetooth-Pristine%2Fdp%2FB0DVZF8RQF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DVZF8RQF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+          - heading "Sponsored Ad - pTron Fusion Pro Retro Signature 20W Bluetooth Speaker with Pristine Sound, 8 Hours Playtime, Dual Drivers, Playback via BT5.3/USB/TF Card, Easy Controls, Portable Speaker & Type C Charging (Black)" [level=2]: pTron Fusion Pro Retro Signature 20W Bluetooth Speaker with Pristine Sound, 8 Hours Playtime, Dual Drivers, Playback via BT5.3/USB/TF Card, Easy Controls, Portable Speaker & Type C Charging (Black)
+        - button "5.0 out of 5 stars, rating details"
+        - link "8 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1NDUzNDY0OTMyMzI6OjI6Og&url=%2FpTron-Fusion-Signature-Bluetooth-Pristine%2Fdp%2FB0DVZF8RQF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DVZF8RQF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1#customerReviews
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹1,699 M.R.P: ₹4,899 M.R.P: ₹4,899"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA1NDUzNDY0OTMyMzI6OjI6Og&url=%2FpTron-Fusion-Signature-Bluetooth-Pristine%2Fdp%2FB0DVZF8RQF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DVZF8RQF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - text: (65% off)
+        - img "Amazon Prime"
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAxOTM0NjMyOTQzMzI6OjM6Og&url=%2FMivi-Bluetooth-Playtime-Wireless-Exceptional%2Fdp%2FB094RD2SM9%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB094RD2SM9%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - link "Sponsored Ad - Mivi Play Bluetooth Speakers Wireless with 12 Hours Playtime. Wireless Speaker Made in India with Exceptional Sound Quality, Portable and Built in Mic-Blue":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAxOTM0NjMyOTQzMzI6OjM6Og&url=%2FMivi-Bluetooth-Playtime-Wireless-Exceptional%2Fdp%2FB094RD2SM9%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB094RD2SM9%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+          - heading "Sponsored Ad - Mivi Play Bluetooth Speakers Wireless with 12 Hours Playtime. Wireless Speaker Made in India with Exceptional Sound Quality, Portable and Built in Mic-Blue" [level=2]: Mivi Play Bluetooth Speakers Wireless with 12 Hours Playtime. Wireless Speaker Made in India with Exceptional Sound Quality, Portable and Built in Mic-Blue
+        - button "4.1 out of 5 stars, rating details"
+        - link "24,691 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAxOTM0NjMyOTQzMzI6OjM6Og&url=%2FMivi-Bluetooth-Playtime-Wireless-Exceptional%2Fdp%2FB094RD2SM9%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB094RD2SM9%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1#customerReviews
+        - text: 400+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹799 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAxOTM0NjMyOTQzMzI6OjM6Og&url=%2FMivi-Bluetooth-Playtime-Wireless-Exceptional%2Fdp%2FB094RD2SM9%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB094RD2SM9%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - text: (60% off)
+        - img "Amazon Prime"
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA0OTM5MTYxMTU0MzI6OjQ6Og&url=%2FPortronics-Magnetic-Bluetooth-Playtime-Transparent%2Fdp%2FB0DX78BKPF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DX78BKPF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - link "Sponsored Ad - Portronics Nadya 6W Magnetic Bluetooth Speaker with MagSafe Mobile Stand, HD Sound, Upto 4 Hours Playtime, 40mm Driver, RGB LED Lights, Bluetooth 5.3V, Transparent Speaker, Type C Charging(Black)":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA0OTM5MTYxMTU0MzI6OjQ6Og&url=%2FPortronics-Magnetic-Bluetooth-Playtime-Transparent%2Fdp%2FB0DX78BKPF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DX78BKPF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+          - heading "Sponsored Ad - Portronics Nadya 6W Magnetic Bluetooth Speaker with MagSafe Mobile Stand, HD Sound, Upto 4 Hours Playtime, 40mm Driver, RGB LED Lights, Bluetooth 5.3V, Transparent Speaker, Type C Charging(Black)" [level=2]: Portronics Nadya 6W Magnetic Bluetooth Speaker with MagSafe Mobile Stand, HD Sound, Upto 4 Hours Playtime, 40mm Driver, RGB LED Lights, Bluetooth 5.3V, Transparent Speaker, Type C Charging(Black)
+        - button "4.1 out of 5 stars, rating details"
+        - link "83 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA0OTM5MTYxMTU0MzI6OjQ6Og&url=%2FPortronics-Magnetic-Bluetooth-Playtime-Transparent%2Fdp%2FB0DX78BKPF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DX78BKPF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1#customerReviews
+        - text: 500+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹949 M.R.P: ₹1,999 M.R.P: ₹1,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MTozMzczNTA2NTgwODg2MTM3OjE3NDU4MzE2ODY6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA0OTM5MTYxMTU0MzI6OjQ6Og&url=%2FPortronics-Magnetic-Bluetooth-Playtime-Transparent%2Fdp%2FB0DX78BKPF%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%253Aamzn1.sym.030b404d-71b4-44ac-bd40-72a281aab15b%26cv_ct_cx%3DBluetooth%2BSpeakers%26keywords%3DBluetooth%2BSpeakers%26pd_rd_i%3DB0DX78BKPF%26pd_rd_r%3Df37d981a-17a5-4c07-9295-a00db6e67461%26pd_rd_w%3D690en%26pd_rd_wg%3DJMb9X%26pf_rd_p%3D030b404d-71b4-44ac-bd40-72a281aab15b%26pf_rd_r%3D9NHVA84M59YN1MH5XF16%26qid%3D1745831686%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-2907eac4-8056-42c7-8014-fdf7bd4c5395-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1
+        - text: (53% off)
+        - img "Amazon Prime"
+- heading "Related searches" [level=2]
+- list:
+  - listitem:
+    - link "bluetooth speaker":
+      - /url: /s?k=bluetooth+speaker&ref=rsl_st_0_0&pd_rd_w=LR430&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=JMb9X&pd_rd_r=f37d981a-17a5-4c07-9295-a00db6e67461&qid=1745831686
+  - listitem:
+    - link "bluetooth headphones":
+      - /url: /s?k=bluetooth+headphones&ref=rsl_st_0_0&pd_rd_w=LR430&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=JMb9X&pd_rd_r=f37d981a-17a5-4c07-9295-a00db6e67461&qid=1745831686
+  - listitem:
+    - link "bluetooth speakers wireless":
+      - /url: /s?k=bluetooth+speakers+wireless&ref=rsl_st_0_0&pd_rd_w=LR430&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=JMb9X&pd_rd_r=f37d981a-17a5-4c07-9295-a00db6e67461&qid=1745831686
+  - listitem:
+    - link "jbl bluetooth speaker":
+      - /url: /s?k=jbl+bluetooth+speaker&ref=rsl_st_0_0&pd_rd_w=LR430&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=JMb9X&pd_rd_r=f37d981a-17a5-4c07-9295-a00db6e67461&qid=1745831686
+  - listitem:
+    - link "bluetooth speakers jbl":
+      - /url: /s?k=bluetooth+speakers+jbl&ref=rsl_st_0_0&pd_rd_w=LR430&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=JMb9X&pd_rd_r=f37d981a-17a5-4c07-9295-a00db6e67461&qid=1745831686
+  - listitem:
+    - link "portable bluetooth speakers":
+      - /url: /s?k=portable+bluetooth+speakers&ref=rsl_st_0_0&pd_rd_w=LR430&content-id=amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255:amzn1.sym.d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_p=d59aed80-ea16-414c-a720-36d964fe9255&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=JMb9X&pd_rd_r=f37d981a-17a5-4c07-9295-a00db6e67461&qid=1745831686
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from boAt Audio":
+  - /url: https://aax-eu.amazon.in/x/c/JN37ki91qY2mrGDdH2LYcG0AAAGWe61x9gMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICD6hDxr/https://www.amazon.in/stores/page/A5BA0B13-FA6B-4E22-BAE3-D424365671D4/?_encoding=UTF8&store_ref=SB_A023706917GYNONRLU4X-A02051057RVA8X6FO5YK&pd_rd_plhdr=t&aaxitk=878b6f3e8823f73a81db9fcc3301e76d&hsa_cr_id=0&lp_asins=B0D6W7F7WH%2CB0CVQ75VM2%2CB0DQQ2VX26&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+  - img "Branded image from boAt Audio"
+- link "boAt Audio":
+  - /url: https://aax-eu.amazon.in/x/c/JN37ki91qY2mrGDdH2LYcG0AAAGWe61x9gMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICD6hDxr/https://www.amazon.in/stores/page/A5BA0B13-FA6B-4E22-BAE3-D424365671D4/?_encoding=UTF8&store_ref=SB_A023706917GYNONRLU4X-A02051057RVA8X6FO5YK&pd_rd_plhdr=t&aaxitk=878b6f3e8823f73a81db9fcc3301e76d&hsa_cr_id=0&lp_asins=B0D6W7F7WH%2CB0CVQ75VM2%2CB0DQQ2VX26&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+  - img "boAt Audio"
+- link "Deep Bass, Unmatched Sound":
+  - /url: https://aax-eu.amazon.in/x/c/JN37ki91qY2mrGDdH2LYcG0AAAGWe61x9gMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICD6hDxr/https://www.amazon.in/stores/page/A5BA0B13-FA6B-4E22-BAE3-D424365671D4/?_encoding=UTF8&store_ref=SB_A023706917GYNONRLU4X-A02051057RVA8X6FO5YK&pd_rd_plhdr=t&aaxitk=878b6f3e8823f73a81db9fcc3301e76d&hsa_cr_id=0&lp_asins=B0D6W7F7WH%2CB0CVQ75VM2%2CB0DQQ2VX26&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+- link "Branded image from Ultimate Ears":
+  - /url: https://aax-eu.amazon.in/x/c/JLLCRor9dC-MwDgnuxEji8QAAAGWe61x9wMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDC1XBf/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=92598ee8be3db6e6b4086ed04858124f&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+  - img "Branded image from Ultimate Ears"
+- link "Ultimate Ears":
+  - /url: https://aax-eu.amazon.in/x/c/JLLCRor9dC-MwDgnuxEji8QAAAGWe61x9wMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDC1XBf/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=92598ee8be3db6e6b4086ed04858124f&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+  - img "Ultimate Ears"
+- link "So Portable, It’s Wearble":
+  - /url: https://aax-eu.amazon.in/x/c/JLLCRor9dC-MwDgnuxEji8QAAAGWe61x9wMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDC1XBf/https://www.amazon.in/stores/page/278991FC-C40B-4E25-82C7-BF0570DEA5BA/?_encoding=UTF8&store_ref=SB_A0087846OLBZC5T3OH1B-A062231512OF1P2BV6PM7&pd_rd_plhdr=t&aaxitk=92598ee8be3db6e6b4086ed04858124f&hsa_cr_id=0&lp_asins=B0DJYBKBJX%2CB0BB72C85Z%2CB0D7YTTM5Y&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+- link "Branded image from Zebronics":
+  - /url: https://aax-eu.amazon.in/x/c/JMj0CxE0FDU5iZ61R-lOYkMAAAGWe61x9wMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICB1jFZe/https://www.amazon.in/stores/page/5FB91506-AEFA-4293-9B6C-C1146EC9BADA/?_encoding=UTF8&store_ref=SB_A05500442T2DTK32EC82S-A02226492G7DGNPYVM3GH&pd_rd_plhdr=t&aaxitk=03591eb6e43d63552140c605648075d3&hsa_cr_id=0&lp_asins=B0DWWY1FVV%2CB0DGPZTGB4%2CB0CTTXHPSK&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+  - img "Branded image from Zebronics"
+- link "Zebronics":
+  - /url: https://aax-eu.amazon.in/x/c/JMj0CxE0FDU5iZ61R-lOYkMAAAGWe61x9wMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICB1jFZe/https://www.amazon.in/stores/page/5FB91506-AEFA-4293-9B6C-C1146EC9BADA/?_encoding=UTF8&store_ref=SB_A05500442T2DTK32EC82S-A02226492G7DGNPYVM3GH&pd_rd_plhdr=t&aaxitk=03591eb6e43d63552140c605648075d3&hsa_cr_id=0&lp_asins=B0DWWY1FVV%2CB0DGPZTGB4%2CB0CTTXHPSK&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+  - img "Zebronics"
+- link "Your home, now a theater":
+  - /url: https://aax-eu.amazon.in/x/c/JMj0CxE0FDU5iZ61R-lOYkMAAAGWe61x9wMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICB1jFZe/https://www.amazon.in/stores/page/5FB91506-AEFA-4293-9B6C-C1146EC9BADA/?_encoding=UTF8&store_ref=SB_A05500442T2DTK32EC82S-A02226492G7DGNPYVM3GH&pd_rd_plhdr=t&aaxitk=03591eb6e43d63552140c605648075d3&hsa_cr_id=0&lp_asins=B0DWWY1FVV%2CB0DGPZTGB4%2CB0CTTXHPSK&lp_query=Bluetooth%20Speakers&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=HGfXO&content-id=amzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef%3Aamzn1.sym.f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_p=f1a4d09d-a292-48da-a86f-03294c9a41ef&pf_rd_r=9NHVA84M59YN1MH5XF16&pd_rd_wg=AUGpB&pd_rd_r=8ea733ee-50e2-4c88-addf-d84857e32028
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It by Tomorrow to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_90%3A6741118031&dc&qid=1745831686&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3A0a1vaKng6FzkIXiXSCYZmdrpidfqGA0xtYb2F%2B3KUUk
+        - checkbox
+        - text: Get It by Tomorrow
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_90%3A20912642031&dc&qid=1745831686&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3AwIlOqDnjzLrh4qlXF1OezZX09B0NrKsSt0%2BIe0fPJDc
+        - checkbox
+        - text: Get It in 2 Days
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_72%3A1318476031&dc&qid=1745831686&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3Anp2V4%2BVB8Ryd3cOqPqrxLa0i9rs2c6ySHKiNrINrsEo
+        - text: 4 Stars & Up & Up
+- group:
+  - text: Price ₹78 ₹189,000+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "189"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_n_deal_type%3A26921226031&dc&qid=1745831686&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AUR8paDkub9MYDbVsROo%2BGRBgeBEvmJJ079fcExnc1d4
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_n_deal_type%3A26921224031&dc&qid=1745831686&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3AUP781gLHFiD1GAAfxCj7ygUq1eLeEJefBI%2F%2BnBDl%2Fo4
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter ZEBRONICS to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A396324&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AHQN3m3qHfAF4FEusuZzkpGHG92cHjU0iLL8oAalqyh8
+        - checkbox
+        - text: ZEBRONICS
+    - listitem:
+      - link "Apply the filter boAt to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A214020&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3AYxTHR3IKxf54rY3h4E9HRTOO0jEk%2BzDIxSBSy3Mtn7Q
+        - checkbox
+        - text: boAt
+    - listitem:
+      - link "Apply the filter JBL to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A233043&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3AgCqfX2YSn7YUDDlTaUXSXYR0ABCcNEW1uUSdveRS7dY
+        - checkbox
+        - text: JBL
+    - listitem:
+      - link "Apply the filter Portronics to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A415162&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_4&ds=v1%3AjLan%2B5pWoNx6PgRXdxArfF61eYy9hXCqyX%2FP3O8I3%2FI
+        - checkbox
+        - text: Portronics
+    - listitem:
+      - link "Apply the filter amazon basics to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A234478&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_5&ds=v1%3A02cOl3wh9rwmXphkdGiAyx6YROHHsA%2F4U1Ht6JkFb2U
+        - checkbox
+        - text: amazon basics
+    - listitem:
+      - link "Apply the filter Mivi to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A433523&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_6&ds=v1%3AaqkxqSliIjy0hgwePye7LQggfeHI6YYdw43YLFu5pdE
+        - checkbox
+        - text: Mivi
+    - listitem:
+      - link "Apply the filter Tribit to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_123%3A688538&dc&qid=1745831686&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3ATMljAX%2Fu0J6vvfKY6DX9Z5aTol4uKoko9qBcvqeLE3E
+        - checkbox
+        - text: Tribit
+    - listitem:
+      - button "See more, Brands": See more
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665399031&dc&qid=1745831686&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3AZc4sz1M7JgOuYvndcTSOb42CZ0jlLdVZgLCbXA%2BQjj4
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665400031&dc&qid=1745831686&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3Arb%2FIilSwRUFN14YHfadKxbNGiDzA23LNexLuhOMV1c4
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665402031&dc&qid=1745831686&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3AQTuynQUzRuV1wcLJUg9zVwu1aQXWVFwmldcvcPyyI%2Bs
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A2665401031&dc&qid=1745831686&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3A95xNNGTizABjZ9nO6AIyk%2B52x2YctIrV9QiXrtX4H%2FM
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A27060456031&dc&qid=1745831686&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3AtZVoMGjVJ8vi4D6K%2BrhG4C%2B%2B5CxqhMx3DsbQaMDuEHQ
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_pct-off-with-tax%3A27060457031&dc&qid=1745831686&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3ASmPrNVrR6YlaGDoTL7PZg4iNtkYDTNJkdvvhfWME%2Fws
+- group "Max Power Output":
+  - heading "Max Power Output" [level=2]
+  - list "Max Power Output":
+    - listitem:
+      - link "Apply the filter Up to 69 W to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A58785324031&dc&qid=1745831686&rnid=58785322031&ref=sr_nr_p_n_feature_nineteen_browse-bin_1&ds=v1%3A964peiQ7aZOlifSWRAt36mvBprdhSMBMkcK3k1z%2B2Bw
+        - checkbox
+        - text: Up to 69 W
+    - listitem:
+      - link "Apply the filter 70 to 134 W to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A58785327031&dc&qid=1745831686&rnid=58785322031&ref=sr_nr_p_n_feature_nineteen_browse-bin_2&ds=v1%3ABEJB5tBQuw0XKlmE8itGrdYitQm1PqIGoo42PD4Gz6A
+        - checkbox
+        - text: 70 to 134 W
+    - listitem:
+      - link "Apply the filter 135 to 199 W to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A58785325031&dc&qid=1745831686&rnid=58785322031&ref=sr_nr_p_n_feature_nineteen_browse-bin_3&ds=v1%3AJhxV0fmm22GtwiaZhOsqUrTPysSm8MVBy%2FsNsBJUplE
+        - checkbox
+        - text: 135 to 199 W
+    - listitem:
+      - link "Apply the filter 200 W & Above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_nineteen_browse-bin%3A58785326031&dc&qid=1745831686&rnid=58785322031&ref=sr_nr_p_n_feature_nineteen_browse-bin_4&ds=v1%3Ax9xQHMaXO36WvI3akr9SC11wwo9GKnFBpbMqQP8gfwE
+        - checkbox
+        - text: 200 W & Above
+- group "Speaker Wattage":
+  - heading "Speaker Wattage" [level=2]
+  - list "Speaker Wattage":
+    - listitem:
+      - link "Apply the filter Up to 99 Watt to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A1485019031&dc&qid=1745831686&rnid=1485018031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3A768nwmllAmWAhnqB4vY%2BMUKbTqU2XrOsjKmUQQmUf9s
+        - checkbox
+        - text: Up to 99 Watt
+    - listitem:
+      - link "Apply the filter 100 - 199 Watt to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A1485020031&dc&qid=1745831686&rnid=1485018031&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3AfdfeimstzS3oKf3nJXy%2FKhDAKQ1QKTPXW9pfLSXcIz4
+        - checkbox
+        - text: 100 - 199 Watt
+    - listitem:
+      - link "Apply the filter 200 - 499 Watt to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A1485021031&dc&qid=1745831686&rnid=1485018031&ref=sr_nr_p_n_feature_browse-bin_3&ds=v1%3AbGEcJehHbGV%2Bu4SNBxiR4LnP6LzoYOzHyzFvBzL5t%2Bk
+        - checkbox
+        - text: 200 - 499 Watt
+    - listitem:
+      - link "Apply the filter 500 - 799 Watt to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A1485022031&dc&qid=1745831686&rnid=1485018031&ref=sr_nr_p_n_feature_browse-bin_4&ds=v1%3AHV5IL05aQw4HIQOPuFpCFvL%2BgriJc2p5GVPJzTqUvec
+        - checkbox
+        - text: 500 - 799 Watt
+    - listitem:
+      - link "Apply the filter 800 Watt & more to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_browse-bin%3A1485023031&dc&qid=1745831686&rnid=1485018031&ref=sr_nr_p_n_feature_browse-bin_5&ds=v1%3A206DuBfQz2ymXUvKhM%2BOMUTyxHJz6JBEeiaa7gdM2L4
+        - checkbox
+        - text: 800 Watt & more
+- group "Connectivity":
+  - heading "Connectivity" [level=2]
+  - list "Connectivity":
+    - listitem:
+      - link "Apply the filter Auxiliary to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435758031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_1&ds=v1%3ApUlnrhVzTlIwBljBpIw1E5Vta68hdkKuLEQYOPYb8vg
+        - checkbox
+        - text: Auxiliary
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435764031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_2&ds=v1%3AKhjiCfGjgo7ESJOixZssmsX8m4RCv7s2GvtniD8qRZU
+        - checkbox
+        - text: Bluetooth
+    - listitem:
+      - link "Apply the filter HDMI to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435756031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_3&ds=v1%3AIJvqDGI27gIioMXBGcYld0RqxUyhM5vU0rZE33BnhFI
+        - checkbox
+        - text: HDMI
+    - listitem:
+      - link "Apply the filter Optical to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435763031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_4&ds=v1%3Ao%2BqUJD63F53wIx5gyOKl34yM8AibuBlQqxHwWXOsWds
+        - checkbox
+        - text: Optical
+    - listitem:
+      - link "Apply the filter RCA to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435765031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_5&ds=v1%3A%2FJ0jx4o%2Bx2EIMzXGEqFmwPgxXOtkVwPgOjzFKh4MY2o
+        - checkbox
+        - text: RCA
+    - listitem:
+      - link "Apply the filter USB to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435759031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_6&ds=v1%3A5SLHdAsMhwnnjweAykX7ATmJDedj4TRRvrsu8N2vR6w
+        - checkbox
+        - text: USB
+    - listitem:
+      - link "Apply the filter Wi-Fi to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twelve_browse-bin%3A28435761031&dc&qid=1745831686&rnid=28435754031&ref=sr_nr_p_n_feature_twelve_browse-bin_7&ds=v1%3AhjM5elRrABsO%2BlY4%2BlGhAqQgo4o9yE67W8sXGrWxPW4
+        - checkbox
+        - text: Wi-Fi
+    - listitem:
+      - button "See more, Connectivity": See more
+- group "Battery Life":
+  - heading "Battery Life" [level=2]
+  - list "Battery Life":
+    - listitem:
+      - link "Apply the filter Up to 4.9 h to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A42062252031&dc&qid=1745831686&rnid=42062028031&ref=sr_nr_p_n_feature_seventeen_browse-bin_1&ds=v1%3AZ2CBO326F8MReQRH2K4h7AOEUH%2Fjv1YqkPfE4%2FqP91I
+        - checkbox
+        - text: Up to 4.9 h
+    - listitem:
+      - link "Apply the filter 5 to 7.9 h to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A42062250031&dc&qid=1745831686&rnid=42062028031&ref=sr_nr_p_n_feature_seventeen_browse-bin_2&ds=v1%3Azx6gZAiP8QU2vOczjFfgjl%2BNzzmcCbDMVytS8DYz%2Fvs
+        - checkbox
+        - text: 5 to 7.9 h
+    - listitem:
+      - link "Apply the filter 8 to 10.9 h to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A42062251031&dc&qid=1745831686&rnid=42062028031&ref=sr_nr_p_n_feature_seventeen_browse-bin_3&ds=v1%3ArKovMwyqWPnn9AqLMz6afCznKliVepXPXo0%2BLi0Rn%2BU
+        - checkbox
+        - text: 8 to 10.9 h
+    - listitem:
+      - link "Apply the filter 11 to 13.9 h to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A42062249031&dc&qid=1745831686&rnid=42062028031&ref=sr_nr_p_n_feature_seventeen_browse-bin_4&ds=v1%3AF4azLkqncEkUUEm6HAPza8bsAxdS9bdwUMmJVePyVKA
+        - checkbox
+        - text: 11 to 13.9 h
+    - listitem:
+      - link "Apply the filter 14 h & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seventeen_browse-bin%3A42062248031&dc&qid=1745831686&rnid=42062028031&ref=sr_nr_p_n_feature_seventeen_browse-bin_5&ds=v1%3A9tx9RyhC%2FCiN8izFcl1ZMRK6x4L82mMiySCPw8aEpjM
+        - checkbox
+        - text: 14 h & above
+- group "Item Condition":
+  - heading "Item Condition" [level=2]
+  - list "Item Condition":
+    - listitem:
+      - link "New":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_condition-type%3A8609960031&dc&qid=1745831686&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3AAsgX9LXJIgsYZj4uqgj%2BuIxrbUW7nQ%2BhxmMRjPDJIMo
+    - listitem:
+      - link "Renewed":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_condition-type%3A13736826031&dc&qid=1745831686&rnid=8609959031&ref=sr_nr_p_n_condition-type_2&ds=v1%3AsdBuNHzINVFa0neITNkl014IjPqYSUeSgWuDnWcXrLM
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Bluetooth Speakers":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A13773771031&dc&qid=1745831686&rnid=3576079031&ref=sr_nr_n_1&ds=v1%3Aj8BYd%2BNJu%2BQR0vZqUhcCVGWUvEBhWS9bKG5%2Bul%2BKGBw
+    - listitem:
+      - link "Soundbar Speakers":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A1389372031&dc&qid=1745831686&rnid=3576079031&ref=sr_nr_n_2&ds=v1%3AFNyhfN7OiQ8ZgWV8QboAQ6rE%2F2CALou819P3waBpPBw
+    - listitem:
+      - link "Home Theater, TV & Video":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A1389375031&dc&qid=1745831686&rnid=3576079031&ref=sr_nr_n_3&ds=v1%3AnxuC4gmPze4zqaMV9BByU3na1uMjZBxTrFfMjZkV7pY
+    - listitem:
+      - link "Home Theater Systems":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A1389375031%2Cn%3A1389387031&dc&qid=1745831686&rnid=3576079031&ref=sr_nr_n_4&ds=v1%3AZ2Vvt4t0rp15bFu%2FM7fgw4XumgZpbwppfR9ZRm7k%2B5E
+- group "Features":
+  - heading "Features" [level=2]
+  - list "Features":
+    - listitem:
+      - link "Apply the filter Bass Boost to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A28430913031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_1&ds=v1%3AFga6XfXFSoHobpjH%2FySMy%2FkjUJ7gPYllRprnRbyrH9w
+        - checkbox
+        - text: Bass Boost
+    - listitem:
+      - link "Apply the filter Built In Microphone to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A28430910031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_2&ds=v1%3AqA%2BAO9j5s%2Fv%2Bzq5ftVirCZGFnv4bALMjCyV9zK31vTU
+        - checkbox
+        - text: Built In Microphone
+    - listitem:
+      - link "Apply the filter Hi Res Audio to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A28430915031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_3&ds=v1%3ADKTp7pfaU720O1XJOdzKTUMPgelRNTEDhQrzwuZ%2FEZU
+        - checkbox
+        - text: Hi Res Audio
+    - listitem:
+      - link "Apply the filter USB Port to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A28430916031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_4&ds=v1%3ATiOmpmgVK%2FzyFaLSxtYbABukcCW1pJhHZIcZt2xtFKg
+        - checkbox
+        - text: USB Port
+    - listitem:
+      - link "Apply the filter Waterproof to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A28430911031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_5&ds=v1%3Au3ov41ODkcWd2cTxmizYoCi%2FFOn8U%2BHpYsFY8YI1184
+        - checkbox
+        - text: Waterproof
+    - listitem:
+      - link "Apply the filter Built-In Powerbank to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A94199611031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_6&ds=v1%3AC2RTGUAKpPf%2F30jVX5bhx3X5Xds8J5KoqqfwfhJsg%2BY
+        - checkbox
+        - text: Built-In Powerbank
+    - listitem:
+      - link "Apply the filter Display to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eleven_browse-bin%3A28430909031&dc&qid=1745831686&rnid=28430907031&ref=sr_nr_p_n_feature_eleven_browse-bin_7&ds=v1%3AWu2cOZHtGXF5j5M3KvxOzJXbaHbrZjgiOumUXFdhlaQ
+        - checkbox
+        - text: Display
+    - listitem:
+      - button "See more, Features": See more
+- group "Output Mode":
+  - heading "Output Mode" [level=2]
+  - list "Output Mode":
+    - listitem:
+      - link "Apply the filter Mono to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A27063513031&dc&qid=1745831686&rnid=27063511031&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3AaOvA1vhz0PrnbjSBXrKAHdJ6HujofJkRmNlvy5RpALo
+        - checkbox
+        - text: Mono
+    - listitem:
+      - link "Apply the filter Stereo to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A27063512031&dc&qid=1745831686&rnid=27063511031&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3AF4m9Ynu7n67rSO3Ln4Xgpx6IEWximAj2hXVWD70o540
+        - checkbox
+        - text: Stereo
+    - listitem:
+      - link "Apply the filter Surround to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_five_browse-bin%3A27063514031&dc&qid=1745831686&rnid=27063511031&ref=sr_nr_p_n_feature_five_browse-bin_3&ds=v1%3AXBJ1rMR%2Fu8o1XDWCtMI%2BJMoww1R05QVaG%2BYCTR92fbE
+        - checkbox
+        - text: Surround
+- group "Channel Configuration":
+  - heading "Channel Configuration" [level=2]
+  - list "Channel Configuration":
+    - listitem:
+      - link "Apply the filter 1.0 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467268031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3An7NfRIm0hys3YjpZpwtWU9%2F5r0W4j6SDw24uQ9Pqbmc
+        - checkbox
+        - text: "1.0"
+    - listitem:
+      - link "Apply the filter 2.0 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467290031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_2&ds=v1%3AHRCypUmeMNP1QRdIp0CmyPRWKS6MoytWE7XOgWpSeTs
+        - checkbox
+        - text: "2.0"
+    - listitem:
+      - link "Apply the filter 2.1 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467277031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_3&ds=v1%3Ata%2FBOApWCBN%2FFly04zZ7csdNg1kby0SS%2BQhHWgz6Iho
+        - checkbox
+        - text: "2.1"
+    - listitem:
+      - link "Apply the filter 2.2 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467276031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_4&ds=v1%3AdbPMoxV6WF%2FZ%2BlA7wVrbxvIFmEAnMSXeTGWupPCVfho
+        - checkbox
+        - text: "2.2"
+    - listitem:
+      - link "Apply the filter 3.0 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467281031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_5&ds=v1%3ABcEt9CX1%2Fniv0Hv8fSU4jgiIDFzLQPwQMZVqXOIows8
+        - checkbox
+        - text: "3.0"
+    - listitem:
+      - link "Apply the filter 3.1 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467283031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_6&ds=v1%3Avmx8JVetyVQuP6noLnIvd9WA0z05XDrAVWS6KXWL3Qs
+        - checkbox
+        - text: "3.1"
+    - listitem:
+      - link "Apply the filter 4.1 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fourteen_browse-bin%3A28467286031&dc&qid=1745831686&rnid=28467267031&ref=sr_nr_p_n_feature_fourteen_browse-bin_7&ds=v1%3AREKnH7Srb4FEl8D4e0%2FdS4%2B1F3QGAHw7L1v0QtXwp48
+        - checkbox
+        - text: "4.1"
+    - listitem:
+      - button "See more, Channel Configuration": See more
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1745831686&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3Azg6uNo8CaHkKzFqUChHG3BDaDwfPfasdry3DV%2Fyttv8
+        - checkbox
+        - text: Eligible for Pay On Delivery
+- group "Battery Capacity":
+  - heading "Battery Capacity" [level=2]
+  - list "Battery Capacity":
+    - listitem:
+      - link "Apply the filter Up to 489 mAh to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A59301839031&dc&qid=1745831686&rnid=59301577031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_1&ds=v1%3AehWNbyrxNnsdNuMpSJQ%2FUh3mmvHEIr61GGqHqCci%2FCM
+        - checkbox
+        - text: Up to 489 mAh
+    - listitem:
+      - link "Apply the filter 490 to 969 mAh to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A59301834031&dc&qid=1745831686&rnid=59301577031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_2&ds=v1%3ATn4K1d5%2BgC4TZMsGySPZjTbfHfkIoiGC7KBR%2F%2BAKANk
+        - checkbox
+        - text: 490 to 969 mAh
+    - listitem:
+      - link "Apply the filter 970 to 1,449 mAh to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A59301844031&dc&qid=1745831686&rnid=59301577031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_3&ds=v1%3A6HLaxchGmxrqSuT4A5PE%2F5INsWFfyfW3cVx9ob8jmjM
+        - checkbox
+        - text: 970 to 1,449 mAh
+    - listitem:
+      - link "Apply the filter 1,450 to 1,929 mAh to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A59301857031&dc&qid=1745831686&rnid=59301577031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_4&ds=v1%3A2aTpQI%2FJz1%2BcCU9%2FJW5VGXc%2BtcRqwIk8rB4cIzTe11g
+        - checkbox
+        - text: 1,450 to 1,929 mAh
+    - listitem:
+      - link "Apply the filter 1,930 to 2,409 mAh to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A59301852031&dc&qid=1745831686&rnid=59301577031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_5&ds=v1%3A01EMPOCKR1LemLv%2BqSVY0L0SNckxufvBRFGzDDZFz0M
+        - checkbox
+        - text: 1,930 to 2,409 mAh
+    - listitem:
+      - link "Apply the filter 2,410 mAh & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-two_browse-bin%3A59301849031&dc&qid=1745831686&rnid=59301577031&ref=sr_nr_p_n_feature_twenty-two_browse-bin_6&ds=v1%3AqBgfojyVKhVUBy6BFQqn8oHi4p8pGh9SGkIGjmmjdIk
+        - checkbox
+        - text: 2,410 mAh & above
+- group "Water Resistance Level":
+  - heading "Water Resistance Level" [level=2]
+  - list "Water Resistance Level":
+    - listitem:
+      - link "Apply the filter Not Water Resistant to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seven_browse-bin%3A28061135031&dc&qid=1745831686&rnid=28061076031&ref=sr_nr_p_n_feature_seven_browse-bin_1&ds=v1%3Ad2ue7rey6XCXbV%2FEfVjV%2FIxEDpD9yjI1wq1gUuLYhi0
+        - checkbox
+        - text: Not Water Resistant
+    - listitem:
+      - link "Apply the filter Water Repellent to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seven_browse-bin%3A28220652031&dc&qid=1745831686&rnid=28061076031&ref=sr_nr_p_n_feature_seven_browse-bin_2&ds=v1%3AElN9%2FEHQFPSlOIskFtc%2FQfsZf1x3Gy4%2BbzzQGYLNBig
+        - checkbox
+        - text: Water Repellent
+    - listitem:
+      - link "Apply the filter Water Resistant to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seven_browse-bin%3A28061134031&dc&qid=1745831686&rnid=28061076031&ref=sr_nr_p_n_feature_seven_browse-bin_3&ds=v1%3A7TpUEvIyERTpauilY%2FRup1XMUbu%2FiTeZ349LR%2FT9Ow4
+        - checkbox
+        - text: Water Resistant
+    - listitem:
+      - link "Apply the filter Waterproof to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_seven_browse-bin%3A28061133031&dc&qid=1745831686&rnid=28061076031&ref=sr_nr_p_n_feature_seven_browse-bin_4&ds=v1%3ANP2jw1RJw2Ss7NKCaUOjAQOl0ZSvOtUcbCcoEpY7MLk
+        - checkbox
+        - text: Waterproof
+- group "Recommended Uses":
+  - heading "Recommended Uses" [level=2]
+  - list "Recommended Uses":
+    - listitem:
+      - link "Apply the filter For Computers to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136438031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3APNL53J%2BG19TaHA4FdgQc9IOuWOSkw3cOKYES%2Fzb5F1c
+        - checkbox
+        - text: For Computers
+    - listitem:
+      - link "Apply the filter For DVD Players to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136439031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3AysCSTjRkjo6F4S5Erynebq38kNoi%2BcRRJ1orOD8ridE
+        - checkbox
+        - text: For DVD Players
+    - listitem:
+      - link "Apply the filter For Gaming Consoles to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136443031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_3&ds=v1%3AO7WSElic0sRafjknbFY8n9h%2B6bYZiteIRziWh%2BL42GQ
+        - checkbox
+        - text: For Gaming Consoles
+    - listitem:
+      - link "Apply the filter For Music Players to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136441031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_4&ds=v1%3A2tDHzWxKSW1XBX9GxgywViEW09KNKy1JVkSQSaJJBzk
+        - checkbox
+        - text: For Music Players
+    - listitem:
+      - link "Apply the filter For Smartphones or Tablets to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136442031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_5&ds=v1%3A40WY2%2BfyQHHdlULAVSes%2BETVt7hnmLS%2Bdwd6Jsni0To
+        - checkbox
+        - text: For Smartphones or Tablets
+    - listitem:
+      - link "Apply the filter For Surround Sound Systems to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136440031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_6&ds=v1%3ASvllMpBwMoOiZJSnSntebjD3zKpwYFVBizPZrL5WHG8
+        - checkbox
+        - text: For Surround Sound Systems
+    - listitem:
+      - link "Apply the filter For Televisions to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eight_browse-bin%3A28136444031&dc&qid=1745831686&rnid=28136436031&ref=sr_nr_p_n_feature_eight_browse-bin_7&ds=v1%3A5DB%2Fu9b7Y2KQsMWgNJ5w4tX%2FSMoPrIn7t8BIyWIn7XQ
+        - checkbox
+        - text: For Televisions
+- group "Mounting Type":
+  - heading "Mounting Type" [level=2]
+  - list "Mounting Type":
+    - listitem:
+      - link "Apply the filter Ceiling Mount to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A28435874031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_1&ds=v1%3Ak71AsYtKBsrmnEhnkellpbGfcp6xOM%2BC5UOMQ0dkxZ8
+        - checkbox
+        - text: Ceiling Mount
+    - listitem:
+      - link "Apply the filter Floor Standing to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A28435873031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_2&ds=v1%3Axp7oYKMWPZIpvZWKCN1SW0e9y8rX5rFq%2Fd2g7dAj524
+        - checkbox
+        - text: Floor Standing
+    - listitem:
+      - link "Apply the filter Flush Mount to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A28435875031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_3&ds=v1%3AapWbmaXA41%2FGsibKL5AywDe64KLNx2WFtaPV0pWXjds
+        - checkbox
+        - text: Flush Mount
+    - listitem:
+      - link "Apply the filter Handlebar Mount to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A28435871031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_4&ds=v1%3AH1NhLrT68i2milGNgFh0C4hci9HjRPcYZry%2FSvjOugs
+        - checkbox
+        - text: Handlebar Mount
+    - listitem:
+      - link "Apply the filter Shelf Mount to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A77182722031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_5&ds=v1%3AQN0mOMB9Km7QCLPNLO89KRDzf0AcZxrOPZDSSD%2BSQiA
+        - checkbox
+        - text: Shelf Mount
+    - listitem:
+      - link "Apply the filter Tabletop Mount to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A77182724031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_6&ds=v1%3ATG3e4e4%2FMhDBUUFALjmZYSHr7RGnxZKof7%2FLQ2DDFRQ
+        - checkbox
+        - text: Tabletop Mount
+    - listitem:
+      - link "Apply the filter Wall Mount to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_eighteen_browse-bin%3A28435872031&dc&qid=1745831686&rnid=28435870031&ref=sr_nr_p_n_feature_eighteen_browse-bin_7&ds=v1%3A6mtdJoNfUUFbuigp23BIb2Id%2B9AB72P4c0%2BBm%2F8obME
+        - checkbox
+        - text: Wall Mount
+- group "Made for Amazon":
+  - heading "Made for Amazon" [level=2]
+  - list "Made for Amazon":
+    - listitem:
+      - link "Apply the filter Made for Amazon to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_is_private_label%3A16184648031&dc&qid=1745831686&rnid=16184647031&ref=sr_nr_p_n_is_private_label_1&ds=v1%3Avn%2F%2BbVGDyYIBRBs9LelLBPu9i5vjYh1BY2DIt03SGeA
+        - checkbox
+        - text: Made for Amazon
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_date_first_available_absolute%3A1318487031&dc&qid=1745831686&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3A7O2nVkpn%2Fixp7lNEo0Uq9jjVISk2i0vqu62r4AyZm44
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_date_first_available_absolute%3A1318488031&dc&qid=1745831686&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3A5sTsj%2BjMTEQAskjiALOizX6vXYuFDTQV822NSHuGvn8
+- group "Maximum Range":
+  - heading "Maximum Range" [level=2]
+  - list "Maximum Range":
+    - listitem:
+      - link "Apply the filter Up to 8.9 m to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A59301811031&dc&qid=1745831686&rnid=59301569031&ref=sr_nr_p_n_feature_twenty_browse-bin_1&ds=v1%3AFBDdN%2B%2BZcizhwf0iYBoW0gW%2FkslrhLDrE%2FiHNk9qfzs
+        - checkbox
+        - text: Up to 8.9 m
+    - listitem:
+      - link "Apply the filter 9.0 to 9.9 m to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A59301809031&dc&qid=1745831686&rnid=59301569031&ref=sr_nr_p_n_feature_twenty_browse-bin_2&ds=v1%3AjHuxuIBoUZyilZ3Tjegcor%2FUC4G%2BJm1GFFMUQvfRgn0
+        - checkbox
+        - text: 9.0 to 9.9 m
+    - listitem:
+      - link "Apply the filter 10.0 m & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty_browse-bin%3A59301815031&dc&qid=1745831686&rnid=59301569031&ref=sr_nr_p_n_feature_twenty_browse-bin_3&ds=v1%3AWZuiLbCjmNdR3VbR8FR9Si6A7DO%2FYZnBGARo0uo1CGo
+        - checkbox
+        - text: 10.0 m & above
+- group "Height":
+  - heading "Height" [level=2]
+  - list "Height":
+    - listitem:
+      - link "Apply the filter Up to 12.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A30466374031&dc&qid=1745831686&rnid=30466339031&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3AcQtLivln1a9tZhvLtzxfwfP9HNIKq2F2DVKvtE9yi7k
+        - checkbox
+        - text: Up to 12.9 cm
+    - listitem:
+      - link "Apply the filter 13 to 22.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A30466376031&dc&qid=1745831686&rnid=30466339031&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3ASKYy2miMTsmTn3Ykong4qDKo%2FEee380LLYHqw7ik5AU
+        - checkbox
+        - text: 13 to 22.9 cm
+    - listitem:
+      - link "Apply the filter 23 to 32.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A30466377031&dc&qid=1745831686&rnid=30466339031&ref=sr_nr_p_n_feature_two_browse-bin_3&ds=v1%3AYVpcEp52zx3fhsdPL64jS7DJ0hZPyODESlrzhGmoxC8
+        - checkbox
+        - text: 23 to 32.9 cm
+    - listitem:
+      - link "Apply the filter 33 cm & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_two_browse-bin%3A30466375031&dc&qid=1745831686&rnid=30466339031&ref=sr_nr_p_n_feature_two_browse-bin_4&ds=v1%3AIOkhyUHW1sAw7LjVzCLG0jz60uJFq3M2cExQBwHiJgE
+        - checkbox
+        - text: 33 cm & above
+- group "Control Method":
+  - heading "Control Method" [level=2]
+  - list "Control Method":
+    - listitem:
+      - link "Apply the filter App to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A88225747031&dc&qid=1745831686&rnid=88225669031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_1&ds=v1%3AzVZw%2BORjs3%2BZRagvkIqjOqoNSFsq1prm5czg0%2BCJc5g
+        - checkbox
+        - text: App
+    - listitem:
+      - link "Apply the filter Remote to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A88225748031&dc&qid=1745831686&rnid=88225669031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_2&ds=v1%3AXd2WykrcTP8%2BJRTe1LUxrekfiuOCCZlbYlXFxGYrv1Q
+        - checkbox
+        - text: Remote
+    - listitem:
+      - link "Apply the filter Touch to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A88225750031&dc&qid=1745831686&rnid=88225669031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_3&ds=v1%3AI77xvqqWU0%2FrzLSqoH6KwdxNOxOucHv5XI82bkt7MSY
+        - checkbox
+        - text: Touch
+    - listitem:
+      - link "Apply the filter Voice to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-three_browse-bin%3A88225749031&dc&qid=1745831686&rnid=88225669031&ref=sr_nr_p_n_feature_twenty-three_browse-bin_4&ds=v1%3AfXWQ1edxIl%2FLGRxgvYEu%2FVlOHzblbB6n1dq8mBXRSK0
+        - checkbox
+        - text: Voice
+- group "Colour":
+  - heading "Colour" [level=2]
+  - list "Colour":
+    - listitem:
+      - link "Apply the filter Black to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631644031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_1&ds=v1%3AK%2F620SthdIHB%2FKctRYoBW70mSvNNXWexQQjG4kjauuU
+    - listitem:
+      - link "Apply the filter Blue to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631645031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_2&ds=v1%3A6cGmZMzyk9e40REbkwPdPE%2F8a8HDHJ4%2Fil1mZqJTexE
+    - listitem:
+      - link "Apply the filter Brown to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631646031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_3&ds=v1%3Al%2FcP4Dk3u%2B6LxCyBYWMZR2Y2a%2B6G5chi7n8qKJYkPaM
+    - listitem:
+      - link "Apply the filter Gold to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631647031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_4&ds=v1%3ANcUYl5cWTHbQ%2FeBbtTMG8G%2FKCe5Gbrq8qEQrLsaIOdE
+    - listitem:
+      - link "Apply the filter Green to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631648031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_5&ds=v1%3Arp4Il6857vi8Y9V6ocBc1KWmWl97Tfy7sgBPW8jHvn4
+    - listitem:
+      - link "Apply the filter Grey to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631649031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_6&ds=v1%3Ak0oIUc9OVZsFZfFiEdTIxH6B82is3dVtWVUce1YFK44
+    - listitem:
+      - link "Apply the filter Multicoloured to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631650031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_7&ds=v1%3AougJERnepspfxExcPanzFFZptSD0wg0TeB3yqsDc4zg
+    - listitem:
+      - link "Apply the filter Orange to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631652031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_8&ds=v1%3ApcReF8mIzThQLH5GFy%2FLAWaZWDLJF%2BulCJwIUQki%2Fdg
+    - listitem:
+      - link "Apply the filter Pink to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631653031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_9&ds=v1%3AstrXxMzVrfPruDmV7%2FS0WgLoRvbJHdYeVDe12irhHmw
+    - listitem:
+      - link "Apply the filter Purple to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631654031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_10&ds=v1%3ACFl2siN0EDztCXaDh66%2FpPZ8MTUFOMD7czzA2VcDAVY
+    - listitem:
+      - link "Apply the filter Red to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631655031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_11&ds=v1%3AItF8985cTGHBlBAzcB4l%2FsTgSP%2Fiti0lHTHdjtbC3Ik
+    - listitem:
+      - link "Apply the filter Silver to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631656031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_12&ds=v1%3A40ri8DBgvjbexdYUoDov7pTPz6J8d2zO7QxQzlK6pw4
+    - listitem:
+      - link "Apply the filter Transparent to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631657031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_13&ds=v1%3Afuwg6hI0iXmAfJEcWLpDFuwYcZSCLUjVwRf6%2BeOXAR8
+    - listitem:
+      - link "Apply the filter Turquoise to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631658031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_14&ds=v1%3AE1stvGwj%2FpHmvjolDohhqxloY3bjrcYqGeWlCEaBOJk
+    - listitem:
+      - link "Apply the filter White to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631659031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_15&ds=v1%3AnY%2BY4aOfuizYwKskQ95vSM%2FJJFH%2FyXG2tN8nzlBxrIM
+    - listitem:
+      - link "Apply the filter Yellow to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_size_two_browse-vebin%3A6631660031&dc&qid=1745831686&rnid=6631642031&ref=sr_nr_p_n_size_two_browse-vebin_16&ds=v1%3Awoy1uOBa4tRSQ4vMqGnVhfgWthLvb4PG4RkGCdOX0gA
+- group "Impedance":
+  - heading "Impedance" [level=2]
+  - list "Impedance":
+    - listitem:
+      - link "Apply the filter Up to 3.9 kΩ to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A85896185031&dc&qid=1745831686&rnid=85896175031&ref=sr_nr_p_n_feature_three_browse-bin_1&ds=v1%3AXbLroVX%2Buz4eCUcb7OPuV7X025N2d%2FZgKywmDfcB624
+        - checkbox
+        - text: Up to 3.9 kΩ
+    - listitem:
+      - link "Apply the filter 4.0 to 5.9 kΩ to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A85896184031&dc&qid=1745831686&rnid=85896175031&ref=sr_nr_p_n_feature_three_browse-bin_2&ds=v1%3AkICh6nNgINQS%2FaJx2Wl00I6fDmu72WAaF%2FIp4iebFiE
+        - checkbox
+        - text: 4.0 to 5.9 kΩ
+    - listitem:
+      - link "Apply the filter 6.0 to 7.9 kΩ to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A85896182031&dc&qid=1745831686&rnid=85896175031&ref=sr_nr_p_n_feature_three_browse-bin_3&ds=v1%3Ab2t4M1MK9YjJyzsd7ugJP8BzDLAR95mbdcBo060ryF8
+        - checkbox
+        - text: 6.0 to 7.9 kΩ
+    - listitem:
+      - link "Apply the filter 8.0 kΩ & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_three_browse-bin%3A85896183031&dc&qid=1745831686&rnid=85896175031&ref=sr_nr_p_n_feature_three_browse-bin_4&ds=v1%3A7uTq1IZIcW%2B83gG2atQvX9INihQ9UIFqbxQJL1MBTa0
+        - checkbox
+        - text: 8.0 kΩ & above
+- group "Frequency Response":
+  - heading "Frequency Response" [level=2]
+  - list "Frequency Response":
+    - listitem:
+      - link "Apply the filter Up to 99 kHz to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A59301823031&dc&qid=1745831686&rnid=59301573031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_1&ds=v1%3AjXHxfMk7smGUZh1dn%2BiXe83XlYzYsUGo0FZr8%2F0PuQ8
+        - checkbox
+        - text: Up to 99 kHz
+    - listitem:
+      - link "Apply the filter 100 to 199 kHz to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A59301829031&dc&qid=1745831686&rnid=59301573031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_2&ds=v1%3A9PjaNJb0K6WRiRxcluIKDa9XDufu%2Bdg4MDWOTtPt1%2Bg
+        - checkbox
+        - text: 100 to 199 kHz
+    - listitem:
+      - link "Apply the filter 300 kHz & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-one_browse-bin%3A59301818031&dc&qid=1745831686&rnid=59301573031&ref=sr_nr_p_n_feature_twenty-one_browse-bin_3&ds=v1%3AlRhQuqFBWy%2B3Z0xdnBmWCfg91VLFAdfXW5kj%2BMNndVs
+        - checkbox
+        - text: 300 kHz & above
+- group "Speaker Subwoofer Connectivity Technology":
+  - heading "Speaker Subwoofer Connectivity Technology" [level=2]
+  - list "Speaker Subwoofer Connectivity Technology":
+    - listitem:
+      - link "Apply the filter Wired to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A88307733031&dc&qid=1745831686&rnid=88307732031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_1&ds=v1%3Arj5xX5pA%2BjXDI24T66ss%2Bjy%2FphpfureTZEuy7HOHvII
+        - checkbox
+        - text: Wired
+    - listitem:
+      - link "Apply the filter Wireless to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-four_browse-bin%3A88307734031&dc&qid=1745831686&rnid=88307732031&ref=sr_nr_p_n_feature_twenty-four_browse-bin_2&ds=v1%3A%2BOBnpnFeaKRls44ekSQ5KwTNVcub%2FJfgbUwKMD%2BFzNg
+        - checkbox
+        - text: Wireless
+- group "Width":
+  - heading "Width" [level=2]
+  - list "Width":
+    - listitem:
+      - link "Apply the filter Up to 14.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A30466379031&dc&qid=1745831686&rnid=30466340031&ref=sr_nr_p_n_feature_fifteen_browse-bin_1&ds=v1%3ArkH8TNl8mWG08taenWCe3GLTxU3Qxp7BdE5o2T%2BzS28
+        - checkbox
+        - text: Up to 14.9 cm
+    - listitem:
+      - link "Apply the filter 15 to 29.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A30466380031&dc&qid=1745831686&rnid=30466340031&ref=sr_nr_p_n_feature_fifteen_browse-bin_2&ds=v1%3AM0kUX7G%2FGuD2jns7nfkzUKTw6Affc79OCBunXPLdYm4
+        - checkbox
+        - text: 15 to 29.9 cm
+    - listitem:
+      - link "Apply the filter 30 to 45.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A30466381031&dc&qid=1745831686&rnid=30466340031&ref=sr_nr_p_n_feature_fifteen_browse-bin_3&ds=v1%3Awb3FcWWqJTnZkLULQQkpqrKW7FJYHVJVaI7Q%2B%2B8v1%2BQ
+        - checkbox
+        - text: 30 to 45.9 cm
+    - listitem:
+      - link "Apply the filter 46 cm & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_fifteen_browse-bin%3A30466378031&dc&qid=1745831686&rnid=30466340031&ref=sr_nr_p_n_feature_fifteen_browse-bin_4&ds=v1%3AZ%2Fr%2Bcfq1rKKMGHz9KJOlwCVnVCnLlJvSuE%2FjWNXiXU8
+        - checkbox
+        - text: 46 cm & above
+- group "Depth":
+  - heading "Depth" [level=2]
+  - list "Depth":
+    - listitem:
+      - link "Apply the filter Up to 17.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A30466382031&dc&qid=1745831686&rnid=30466341031&ref=sr_nr_p_n_feature_sixteen_browse-bin_1&ds=v1%3AdKj8Zxt1pya3kXlPsT8UZOniupATdTMo%2BFwcCb%2Bxqyo
+        - checkbox
+        - text: Up to 17.9 cm
+    - listitem:
+      - link "Apply the filter 18 to 32.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A30466384031&dc&qid=1745831686&rnid=30466341031&ref=sr_nr_p_n_feature_sixteen_browse-bin_2&ds=v1%3As%2BNqYmmk%2FceUMVunQbUDhW2A3abgfMz4g18JM5ZrH%2BI
+        - checkbox
+        - text: 18 to 32.9 cm
+    - listitem:
+      - link "Apply the filter 33 to 47.9 cm to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A30466385031&dc&qid=1745831686&rnid=30466341031&ref=sr_nr_p_n_feature_sixteen_browse-bin_3&ds=v1%3AN67gv5AxSBPiaZ0WIcaf2nf1dtbwR2K75fbHAkPYpWI
+        - checkbox
+        - text: 33 to 47.9 cm
+    - listitem:
+      - link "Apply the filter 48 cm & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_sixteen_browse-bin%3A30466383031&dc&qid=1745831686&rnid=30466341031&ref=sr_nr_p_n_feature_sixteen_browse-bin_4&ds=v1%3AkJ8RqygXVdHBuNYlWg3496%2FysY8%2FVwLYtM93s1sSfEU
+        - checkbox
+        - text: 48 cm & above
+- group "Number of Microphones":
+  - heading "Number of Microphones" [level=2]
+  - list "Number of Microphones":
+    - listitem:
+      - link "Apply the filter 1 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100615079031&dc&qid=1745831686&rnid=100615010031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_1&ds=v1%3AhG2F6Smp%2Fela7RpzI6hrGGQ8GkcJR6MHjuxk4YBHBPM
+        - checkbox
+        - text: "1"
+    - listitem:
+      - link "Apply the filter 2 to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100615077031&dc&qid=1745831686&rnid=100615010031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_2&ds=v1%3A7Y29gKR4dtR0m9wRY%2FVUxjogaHA06OCA%2BfH2eEIoHq4
+        - checkbox
+        - text: "2"
+    - listitem:
+      - link "Apply the filter 3 & above to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_twenty-six_browse-bin%3A100615082031&dc&qid=1745831686&rnid=100615010031&ref=sr_nr_p_n_feature_twenty-six_browse-bin_3&ds=v1%3AobEEjsdSlSLV%2F9E9EZjbjA7UjF0vaV3KfJ4OHR3CiWE
+        - checkbox
+        - text: 3 & above
+- group "Control Type":
+  - heading "Control Type" [level=2]
+  - list "Control Type":
+    - listitem:
+      - link "Apply the filter Remote Control to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A28248598031&dc&qid=1745831686&rnid=28248594031&ref=sr_nr_p_n_feature_ten_browse-bin_1&ds=v1%3Aala9O5DVtiEpKT1BNfCYRcYS5ylUQnECkvJIh%2FpVn1E
+        - checkbox
+        - text: Remote Control
+    - listitem:
+      - link "Apply the filter Button to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A75527610031&dc&qid=1745831686&rnid=28248594031&ref=sr_nr_p_n_feature_ten_browse-bin_2&ds=v1%3AWK9OpSvmRZ1dxIdnsGe8TjjS4vwHWDAf9KS64Jk%2FoiA
+        - checkbox
+        - text: Button
+    - listitem:
+      - link "Apply the filter Google Assistant to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A28248601031&dc&qid=1745831686&rnid=28248594031&ref=sr_nr_p_n_feature_ten_browse-bin_3&ds=v1%3A3d1rcf7iNKE3hnS9x6qyHJ79T5H2gvGZh4%2FD4rur03Y
+        - checkbox
+        - text: Google Assistant
+    - listitem:
+      - link "Apply the filter Touchpad to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_ten_browse-bin%3A75527614031&dc&qid=1745831686&rnid=28248594031&ref=sr_nr_p_n_feature_ten_browse-bin_4&ds=v1%3AHsgeZjsv1JcOrkef4Hr%2Fz0HW9BaG9ggx8OvrbCUKJRo
+        - checkbox
+        - text: Touchpad
+- group "Speaker Type":
+  - heading "Speaker Type" [level=2]
+  - list "Speaker Type":
+    - listitem:
+      - link "Apply the filter 3D to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766899031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_1&ds=v1%3AKMb%2BhhV2T%2BAmtF6PaxE9R4YUt7d3hB0flHv7pZqBxwo
+        - checkbox
+        - text: 3D
+    - listitem:
+      - link "Apply the filter Bookshelf to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766906031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_2&ds=v1%3A6sEP%2BAaFOxjgtTiaxFH1Ftm85Tgd%2FIYd8VEkNQzKDUQ
+        - checkbox
+        - text: Bookshelf
+    - listitem:
+      - link "Apply the filter Coaxial to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766902031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_3&ds=v1%3ALd964TTPj45uzP8Y9c5If329VLQtXMPNpkzNaLGT%2FWc
+        - checkbox
+        - text: Coaxial
+    - listitem:
+      - link "Apply the filter Component to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766900031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_4&ds=v1%3A5VQlR%2FmYfri9sKMPoWndXeojsdk6snOMn%2BcfQNsoMt8
+        - checkbox
+        - text: Component
+    - listitem:
+      - link "Apply the filter Monitor to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766911031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_5&ds=v1%3AMeZJC86NVv%2Bl9bTSy9V2tHOp0ELojsncrrLuht4w318
+        - checkbox
+        - text: Monitor
+    - listitem:
+      - link "Apply the filter Multi Room to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766905031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_6&ds=v1%3A78J0nOzEJpC5n6IrwCJJ%2FkiJ2XlsiXR31MNuPOdB%2BOA
+        - checkbox
+        - text: Multi Room
+    - listitem:
+      - link "Apply the filter Multimedia to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_thirty-seven_browse-bin%3A100766903031&dc&qid=1745831686&rnid=100766819031&ref=sr_nr_p_n_feature_thirty-seven_browse-bin_7&ds=v1%3AT8qXC8hlMrFPtksTMGO9XDKxs2XRa2nU5wNSuPb4%2FdM
+        - checkbox
+        - text: Multimedia
+    - listitem:
+      - button "See more, Speaker Type": See more
+- group "Is Waterproof":
+  - heading "Is Waterproof" [level=2]
+  - list "Is Waterproof":
+    - listitem:
+      - link "Apply the filter False to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A99977854031&dc&qid=1745831686&rnid=99977852031&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3A0zVJLz8WiIYYaYJqQmAMDeQHLX7wV6axej%2BRrWecud8
+        - checkbox
+        - text: "False"
+    - listitem:
+      - link "Apply the filter True to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_six_browse-bin%3A99977853031&dc&qid=1745831686&rnid=99977852031&ref=sr_nr_p_n_feature_six_browse-bin_2&ds=v1%3AwJWojZOvHnT035p%2BzFwLbHLDiwQMsu%2BYj9ldPe0pujs
+        - checkbox
+        - text: "True"
+- group "Age Range":
+  - heading "Age Range" [level=2]
+  - list "Age Range":
+    - listitem:
+      - link "Apply the filter Kid to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A203313271031&dc&qid=1745831686&rnid=203313270031&ref=sr_nr_p_n_feature_four_browse-bin_1&ds=v1%3AS4BhGqMgJyPIUPvt%2F3LHiGsI72phedqzGYpyEJ2qZjQ
+        - checkbox
+        - text: Kid
+    - listitem:
+      - link "Apply the filter Teen to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A203313272031&dc&qid=1745831686&rnid=203313270031&ref=sr_nr_p_n_feature_four_browse-bin_2&ds=v1%3ABScDCbQGoJamgSmaMCDAyYopOD2pffutDm3ZchGX9%2B8
+        - checkbox
+        - text: Teen
+    - listitem:
+      - link "Apply the filter Adult to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_n_feature_four_browse-bin%3A203313273031&dc&qid=1745831686&rnid=203313270031&ref=sr_nr_p_n_feature_four_browse-bin_3&ds=v1%3A5HmJpOy5EIUDUXp9jvW67xQDkKSXOMff6YX5YX8v5Tc
+        - checkbox
+        - text: Adult
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter ROHIT ENTERPRISES TRADERS to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_6%3AA3734J75APQ87D&dc&qid=1745831686&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3AUKcjJS%2FPpjhJolMp1KkUT5AZK2%2FANZsl2OUPjVJc%2Bjk
+        - checkbox
+        - text: ROHIT ENTERPRISES TRADERS
+    - listitem:
+      - link "Apply the filter Salecart Brand Store to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=n%3A976419031%2Cp_6%3AA3SD4CUXN8FZPZ&dc&qid=1745831686&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3Ap8uqU7uxd8pOE%2FpmuUTK6L21sU1lEjNgO4%2Flc6%2FruOc
+        - checkbox
+        - text: Salecart Brand Store
+    - listitem:
+      - button "See more, Seller": See more
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=Bluetooth+Speakers&rh=p_n_availability%3A1318485031&dc&qid=1745831686&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3AqJuf9GzxGzZ2t9ZKtduSUPaRQL8jfp7ROmsLdN6fjhQ
+        - checkbox
+        - text: Include Out of Stock
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3DBluetooth%2BSpeakers%26ref%3Dnb_sb_noss&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | // tests/openProductDetail.spec.js
+   2 | import { test, expect } from '@playwright/test';
+   3 |
+   4 | test('Open product detail page', async ({ page }) => {
+   5 |   console.log('✅ Navigating to Amazon homepage...');
+   6 |   await page.goto('https://www.amazon.in');
+   7 |
+   8 |   console.log('✅ Searching for "Bluetooth Speakers"...');
+   9 |   await page.fill('#twotabsearchtextbox', 'Bluetooth Speakers');
+  10 |   await page.press('#twotabsearchtextbox', 'Enter');
+  11 |
+  12 |   console.log('✅ Clicking on first product...');
+  13 |   const firstProduct = page.locator('.s-main-slot div[data-index="1"] h2 a');
+> 14 |   await firstProduct.click();
+     |                      ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  15 |
+  16 |   console.log('✅ Checking for Add to Cart button...');
+  17 |   await expect(page.getByRole('button', { name: 'Add to Cart' })).toBeVisible();
+  18 |
+  19 |   console.log('🎯 Opened product detail successfully!');
+  20 | });
+  21 |
+```

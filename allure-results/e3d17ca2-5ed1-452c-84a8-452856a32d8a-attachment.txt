@@ -1,0 +1,8 @@
+Excel updated with following data:
+Name (C2): MeenaG
+Aadhar (D2): 991928466658
+PAN (E2): CMLUC4810O
+Account No (F2): 8576890079
+Mobile (G2): 9315124206
+Email (H2): meenag62@example.com
+Status (I2): Y
