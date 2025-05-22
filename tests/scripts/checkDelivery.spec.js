@@ -1,5 +1,5 @@
 // tests/checkDelivery.spec.js
-const { test, expect } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const { checkDelivery } = require('../pages/checkDelivery');
 
 test('Visit multiple sections on Amazon using POM', async ({ page }) => {

@@ -1,21 +1,21 @@
 // tests/searchProduct.spec.js
 import { test, expect } from '@playwright/test';
+import { applyFilter } from "../pages/applyFilter"
 
 test('Search for headphones and verify results appear', async ({ page }) => {
   console.log(' Navigating to Amazon homepage...');
-  await page.goto('https://www.amazon.in/');
 
-  console.log('Typing "headphones" in the search bar...');
-  await page.locator('#twotabsearchtextbox').fill('headphones');
+  const searchPage = new applyFilter(page);
 
-  console.log(' Submitting the search...');
-  await page.locator('#twotabsearchtextbox').press('Enter');
+  await searchPage.goto();
+  await searchPage.searchForProduct();
 
-  console.log(' Waiting for results to load...');
-  await page.waitForSelector('span.a-size-medium.a-color-base');
+  const resultExist = await searchPage.isResultVisible();
+  expect (resultExist).toBeTruthy();
 
-  const resultsExist = await page.locator('span.a-size-medium.a-color-base').first().isVisible();
-  expect(resultsExist).toBeTruthy();
+  console.log('search results for the headphones are available');
+  
 
-  console.log(' Search results for headphones are visible!');
+
+
 });

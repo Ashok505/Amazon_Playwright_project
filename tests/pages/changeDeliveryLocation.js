@@ -1,20 +1,33 @@
-const { test, expect } = require('@playwright/test');
+// pages/LocationPage.js
+class LocationPage {
+  constructor(page) {
+    this.page = page;
+    this.locationIcon = page.locator('#nav-global-location-popover-link');
+    this.pincodeInput = page.locator('input#GLUXZipUpdateInput');
+    this.applyButton = page.getByLabel('Apply');
+  }
 
-test('Change Delivery Location', async ({ page }) => {
-  console.log(' Navigating to Amazon homepage...');
-  await page.goto('https://www.amazon.in');
+  async goto() {
+    console.log('Navigating to Amazon homepage...');
+    await this.page.goto('https://www.amazon.in');
+  }
 
-  console.log(' Clicking location...');
-  await page.locator('#nav-global-location-popover-link').click();
+  async openLocationPopover() {
+    console.log('Clicking on location icon...');
+    await this.locationIcon.click();
+    await this.pincodeInput.waitFor({ timeout: 5000 });
+  }
 
-  console.log(' Filling pincode...');
-  await page.fill('input#GLUXZipUpdateInput', '560001');
+  async updatePincode(pincode) {
+    console.log(`Entering pincode: ${pincode}`);
+    await this.pincodeInput.fill(pincode);
 
-  console.log(' Clicking Apply...');
-  await page.click('input#GLUXZipUpdate');
+    console.log('Clicking Apply button...');
+    await this.applyButton.click();
 
-  console.log(' Waiting for location to refresh...');
-  await page.waitForTimeout(3000);
+    await this.page.waitForTimeout(3000);
+    console.log('Delivery location updated successfully!');
+  }
+}
 
-  console.log(' Delivery location updated!');
-});
+module.exports = { LocationPage };

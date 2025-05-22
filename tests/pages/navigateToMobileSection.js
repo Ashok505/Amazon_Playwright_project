@@ -1,14 +1,39 @@
-const { test, expect } = require('@playwright/test');
+// pages/MobileSearchPage.js
 
-test('Navigate to Mobiles category and verify', async ({ page }) => {
-  console.log(' Navigating to Amazon homepage...');
-  await page.goto('https://www.amazon.in');
+class MobileSearchPage {
+  constructor(page) {
+    this.page = page;
+    this.searchBox = page.locator('input[id="twotabsearchtextbox"]');
+    this.searchButton = page.locator('input[id="nav-search-submit-button"]');
+    this.resultsContainer = page.locator('.s-main-slot');
+    this.firstResult = page.locator('.s-main-slot .s-result-item').first();
+  }
 
-  console.log(' Clicking on Mobiles...');
-  await page.getByRole('link', { name: 'Mobiles' }).click();
+  async gotoHomePage() {
+    console.log('Navigating to Amazon India homepage...');
+    await this.page.goto('https://www.amazon.in');
+  }
 
-  console.log('Waiting for Mobiles section...');
-  await expect(page.locator('h1 span:has-text("Mobiles & Accessories")')).toBeVisible();
+  async searchForMobile() {
+    console.log('Searching for "mobile"...');
+    await this.searchBox.fill('mobile');
+    await this.searchButton.click();
+  }
 
-  console.log('Mobiles category verified!');
-});
+  async waitForResults() {
+    console.log('Waiting for product results...');
+    await this.resultsContainer.waitFor();
+  }
+
+  async clickFirstMobile() {
+    console.log('Clicking on the first mobile product...');
+    await this.firstResult.click();
+  }
+
+  async waitOnProductPage() {
+    console.log('Waiting for 3 seconds on the product page...');
+    await this.page.waitForTimeout(3000);
+  }
+}
+
+module.exports = { MobileSearchPage };
